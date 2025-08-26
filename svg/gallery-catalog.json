@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "title": "SOX Platform SVG Gallery Catalog",
+    "version": "1.0",
+    "lastUpdated": "2024-01-31",
+    "description": "Catalog of all SVG diagrams and visualizations for the SOX Platform"
+  },
+  "folders": [
+    {
+      "id": "dm0",
+      "folderName": "_dm0",
+      "displayName": "Core Data Models",
+      "description": "Conceptual data models and kanban board visualizations",
+      "category": "data-model",
+      "priority": 1,
+      "visible": true,
+      "files": [
+        {
+          "filename": "01_Conceptual_dataModel.svg",
+          "title": "Conceptual Data Model",
+          "description": "High-level conceptual overview of the SOX platform data architecture",
+          "tags": ["conceptual", "architecture", "overview"],
+          "date": "2024-01-15",
+          "visible": true,
+          "featured": true
+        },
+        {
+          "filename": "02_sox_tables_overview.svg",
+          "title": "SOX Tables Overview",
+          "description": "Complete overview of all 62 tables in the SOX platform",
+          "tags": ["tables", "database", "structure"],
+          "date": "2024-01-16",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "12_audit_reviewUI.svg",
+          "title": "Audit Review UI",
+          "description": "User interface design for audit review workflows",
+          "tags": ["ui", "audit", "workflow"],
+          "date": "2024-01-20",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "20_kanban_board.svg",
+          "title": "Kanban Board Design",
+          "description": "Personal productivity kanban board interface",
+          "tags": ["kanban", "ui", "productivity"],
+          "date": "2024-01-25",
+          "visible": true,
+          "featured": true
+        },
+        {
+          "filename": "21_kanban_transaction.svg",
+          "title": "Kanban Transaction Flow",
+          "description": "Transaction flow and state management for kanban cards",
+          "tags": ["kanban", "workflow", "transaction"],
+          "date": "2024-01-26",
+          "visible": true,
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "dm1",
+      "folderName": "_dm1",
+      "displayName": "SOX Audit Infographics",
+      "description": "Visual representations of SOX compliance processes and workflows",
+      "category": "infographic",
+      "priority": 2,
+      "visible": true,
+      "files": [
+        {
+          "filename": "01-sox1.svg",
+          "title": "SOX Overview",
+          "description": "Introduction to SOX compliance framework",
+          "tags": ["sox", "compliance", "overview"],
+          "date": "2024-01-10",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "02-svg.svg",
+          "title": "SOX Process Flow",
+          "description": "End-to-end SOX compliance process visualization",
+          "tags": ["process", "workflow", "sox"],
+          "date": "2024-01-11",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "03-sox.svg",
+          "title": "SOX Controls Framework",
+          "description": "Control framework and risk management overview",
+          "tags": ["controls", "risk", "framework"],
+          "date": "2024-01-12",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "04-sox_audit_infographic (2).svg",
+          "title": "Audit Process Detailed",
+          "description": "Detailed breakdown of the audit process",
+          "tags": ["audit", "process", "detailed"],
+          "date": "2024-01-13",
+          "visible": false,
+          "notes": "Duplicate - use 05 instead"
+        },
+        {
+          "filename": "05-sox_audit_infographic.svg",
+          "title": "SOX Audit Infographic",
+          "description": "Comprehensive SOX audit process infographic",
+          "tags": ["audit", "infographic", "comprehensive"],
+          "date": "2024-01-14",
+          "visible": true,
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "dm2",
+      "folderName": "_dm2",
+      "displayName": "UI & Data Models",
+      "description": "User interface designs and data model visualizations",
+      "category": "ui-design",
+      "priority": 3,
+      "visible": true,
+      "files": [
+        {
+          "filename": "01-dm-sox_audit_infographic.svg",
+          "title": "Data Model Audit View",
+          "description": "Data model perspective of SOX audit processes",
+          "tags": ["data-model", "audit", "visualization"],
+          "date": "2024-01-17",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "02-ui-sox_audit_infographic.svg",
+          "title": "UI Audit Dashboard",
+          "description": "User interface design for audit dashboard",
+          "tags": ["ui", "dashboard", "audit"],
+          "date": "2024-01-18",
+          "visible": true,
+          "featured": true
+        },
+        {
+          "filename": "03-ui-sox_audit_infographic.svg",
+          "title": "UI Components Library",
+          "description": "Reusable UI components for SOX platform",
+          "tags": ["ui", "components", "library"],
+          "date": "2024-01-19",
+          "visible": true,
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "dm3",
+      "folderName": "_dm3",
+      "displayName": "SOX Sections Breakdown",
+      "description": "Detailed breakdown of SOX compliance sections",
+      "category": "documentation",
+      "priority": 4,
+      "visible": true,
+      "files": [
+        {
+          "filename": "01-sox_audit_infographic.svg",
+          "title": "Section 1: Overview",
+          "description": "SOX compliance overview and introduction",
+          "tags": ["section", "overview", "documentation"],
+          "date": "2024-01-20",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "02b-sox_section_2.svg",
+          "title": "Section 2: Risk Assessment",
+          "description": "Risk assessment methodologies and frameworks",
+          "tags": ["section", "risk", "assessment"],
+          "date": "2024-01-21",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "03-sox_section_3.svg",
+          "title": "Section 3: Control Activities",
+          "description": "Control activities and implementation guidelines",
+          "tags": ["section", "controls", "activities"],
+          "date": "2024-01-22",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "04-sox_section_4.svg",
+          "title": "Section 4: Testing",
+          "description": "Testing procedures and validation methods",
+          "tags": ["section", "testing", "validation"],
+          "date": "2024-01-23",
+          "visible": true,
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "svg4_ui",
+      "folderName": "_svg4_ui",
+      "displayName": "UI Wireframes & Prototypes",
+      "description": "User interface wireframes and interactive prototypes",
+      "category": "wireframes",
+      "priority": 5,
+      "visible": true,
+      "files": [
+        {
+          "filename": "02-dashboard_wireframes.svg",
+          "title": "Dashboard Wireframes",
+          "description": "Main dashboard layout and component wireframes",
+          "tags": ["wireframe", "dashboard", "layout"],
+          "date": "2024-01-24",
+          "visible": true,
+          "featured": true
+        },
+        {
+          "filename": "03-detailed_section_wireframes.svg",
+          "title": "Detailed Section Wireframes",
+          "description": "Detailed wireframes for individual sections",
+          "tags": ["wireframe", "sections", "detailed"],
+          "date": "2024-01-25",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "04-prototype.html",
+          "title": "Interactive Prototype",
+          "description": "HTML prototype for user testing",
+          "tags": ["prototype", "interactive", "html"],
+          "date": "2024-01-26",
+          "visible": false,
+          "fileType": "html",
+          "notes": "Not an SVG - excluded from gallery"
+        },
+        {
+          "filename": "05-data_structure.json",
+          "title": "Data Structure",
+          "description": "JSON data structure for the platform",
+          "tags": ["data", "json", "structure"],
+          "date": "2024-01-27",
+          "visible": false,
+          "fileType": "json",
+          "notes": "Not an SVG - excluded from gallery"
+        },
+        {
+          "filename": "06-sox_workflow_ui_mapping.svg",
+          "title": "Workflow UI Mapping",
+          "description": "Mapping between SOX workflows and UI components",
+          "tags": ["workflow", "mapping", "ui"],
+          "date": "2024-01-28",
+          "visible": true,
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "svg5_themes",
+      "folderName": "_svg5_themes",
+      "displayName": "Visual Themes",
+      "description": "Different visual style themes for the SOX platform",
+      "category": "themes",
+      "priority": 6,
+      "visible": true,
+      "files": [
+        {
+          "filename": "style1_executive_professional.svg",
+          "title": "Executive Professional",
+          "description": "Professional theme for executive presentations",
+          "tags": ["theme", "executive", "professional"],
+          "date": "2024-01-29",
+          "visible": true,
+          "featured": true
+        },
+        {
+          "filename": "style2_modern_colorful.svg",
+          "title": "Modern Colorful",
+          "description": "Modern and vibrant theme with bold colors",
+          "tags": ["theme", "modern", "colorful"],
+          "date": "2024-01-29",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "style3_minimal_clean.svg",
+          "title": "Minimal Clean",
+          "description": "Minimalist theme with clean lines and subtle colors",
+          "tags": ["theme", "minimal", "clean"],
+          "date": "2024-01-29",
+          "visible": true,
+          "featured": false
+        },
+        {
+          "filename": "style4_corporate_traditional.svg",
+          "title": "Corporate Traditional",
+          "description": "Traditional corporate theme with conservative styling",
+          "tags": ["theme", "corporate", "traditional"],
+          "date": "2024-01-29",
+          "visible": true,
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "data-model": {
+      "name": "Data Models",
+      "description": "Conceptual and physical data model diagrams",
+      "icon": "🗂️",
+      "color": "#2196F3"
+    },
+    "infographic": {
+      "name": "Infographics",
+      "description": "Visual explanations of SOX processes",
+      "icon": "📊",
+      "color": "#FF9800"
+    },
+    "ui-design": {
+      "name": "UI Designs",
+      "description": "User interface designs and mockups",
+      "icon": "🎨",
+      "color": "#9C27B0"
+    },
+    "documentation": {
+      "name": "Documentation",
+      "description": "Visual documentation and guides",
+      "icon": "📚",
+      "color": "#4CAF50"
+    },
+    "wireframes": {
+      "name": "Wireframes",
+      "description": "UI wireframes and prototypes",
+      "icon": "📐",
+      "color": "#607D8B"
+    },
+    "themes": {
+      "name": "Visual Themes",
+      "description": "Different visual style options",
+      "icon": "🎨",
+      "color": "#E91E63"
+    }
+  },
+  "tags": {
+    "conceptual": { "color": "#E3F2FD", "icon": "🏗️" },
+    "architecture": { "color": "#F3E5F5", "icon": "🏛️" },
+    "ui": { "color": "#E8F5E9", "icon": "🖼️" },
+    "workflow": { "color": "#FFF3E0", "icon": "⚙️" },
+    "sox": { "color": "#FFEBEE", "icon": "📋" },
+    "audit": { "color": "#FCE4EC", "icon": "🔍" },
+    "kanban": { "color": "#F3E5F5", "icon": "📋" },
+    "dashboard": { "color": "#E1F5FE", "icon": "📊" },
+    "wireframe": { "color": "#ECEFF1", "icon": "📐" },
+    "theme": { "color": "#FFF8E1", "icon": "🎨" }
+  }
+}

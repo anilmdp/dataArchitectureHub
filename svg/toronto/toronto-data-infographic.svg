@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.95" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45b7d1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Header -->
+  <rect x="50" y="20" width="1100" height="80" rx="10" fill="url(#headerGrad)" filter="url(#shadow)"/>
+  <text x="600" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    TORONTO MUNICIPAL DATA ANALYSIS
+  </text>
+  <text x="600" y="75" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">
+    Comprehensive Dashboard Analytics &amp; Insights Platform
+  </text>
+  
+  <!-- Data Sources Section -->
+  <rect x="50" y="120" width="350" height="200" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="50" y="120" width="350" height="40" rx="8" fill="#ff6b6b"/>
+  <text x="225" y="145" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    📊 DATA SOURCES
+  </text>
+  
+  <text x="70" y="180" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    🗂️ TorontoMeasureData.csv
+  </text>
+  <text x="80" y="200" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    • Simple format: Measure, Year, Period, Value
+  </text>
+  <text x="80" y="215" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    • Time series data 2007-2019+
+  </text>
+  
+  <text x="70" y="245" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    📈 Key Metrics Dashboard.csv
+  </text>
+  <text x="80" y="265" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    • Rich metadata with targets &amp; variance
+  </text>
+  <text x="80" y="280" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    • Categories, data sources, directions
+  </text>
+  <text x="80" y="295" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    • 17 columns of contextual data
+  </text>
+  
+  <!-- Key Metrics Categories -->
+  <rect x="425" y="120" width="350" height="200" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="425" y="120" width="350" height="40" rx="8" fill="#4ecdc4"/>
+  <text x="600" y="145" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🏙️ KEY METRIC CATEGORIES
+  </text>
+  
+  <text x="445" y="180" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">🚇 Transit: TTC Ridership</text>
+  <text x="445" y="200" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">💼 Economy: Employment, CPI, Wages</text>
+  <text x="445" y="220" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">🏗️ Development: Building Permits</text>
+  <text x="445" y="240" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">🏠 Housing: Average Home Prices</text>
+  <text x="445" y="260" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">🤝 Social: Food Banks, Libraries</text>
+  <text x="445" y="280" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">📋 Planning: Committee Applications</text>
+  <text x="445" y="300" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">💰 Finance: Tax Interest, Fees</text>
+  
+  <!-- Analysis Capabilities -->
+  <rect x="800" y="120" width="350" height="200" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="800" y="120" width="350" height="40" rx="8" fill="#45b7d1"/>
+  <text x="975" y="145" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🔬 ANALYSIS CAPABILITIES
+  </text>
+  
+  <text x="820" y="180" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">📈 Time Series Analysis</text>
+  <text x="830" y="195" fill="#666" font-family="Arial, sans-serif" font-size="11">Trend detection, seasonality, forecasting</text>
+  
+  <text x="820" y="215" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">🔗 Correlation Analysis</text>
+  <text x="830" y="230" fill="#666" font-family="Arial, sans-serif" font-size="11">Cross-metric relationships &amp; dependencies</text>
+  
+  <text x="820" y="250" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">🎯 Performance Tracking</text>
+  <text x="830" y="265" fill="#666" font-family="Arial, sans-serif" font-size="11">YoY growth, target vs actual, variance</text>
+  
+  <text x="820" y="285" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">📊 Interactive Dashboards</text>
+  <text x="830" y="300" fill="#666" font-family="Arial, sans-serif" font-size="11">Real-time filtering &amp; drill-down views</text>
+  
+  <!-- Python Implementation -->
+  <rect x="50" y="350" width="500" height="220" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="50" y="350" width="500" height="40" rx="8" fill="#ff6b6b"/>
+  <text x="300" y="375" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🐍 PYTHON IMPLEMENTATION STACK
+  </text>
+  
+  <circle cx="130" cy="420" r="35" fill="#ff9999" opacity="0.8"/>
+  <text x="130" y="415" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">pandas</text>
+  <text x="130" y="430" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="9">Data Processing</text>
+  
+  <circle cx="230" cy="420" r="35" fill="#99ccff" opacity="0.8"/>
+  <text x="230" y="415" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">plotly</text>
+  <text x="230" y="430" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="9">Interactive Viz</text>
+  
+  <circle cx="330" cy="420" r="35" fill="#99ff99" opacity="0.8"/>
+  <text x="330" y="415" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">scipy</text>
+  <text x="330" y="430" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="9">Statistics</text>
+  
+  <circle cx="430" cy="420" r="35" fill="#ffcc99" opacity="0.8"/>
+  <text x="430" y="415" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">sklearn</text>
+  <text x="430" y="430" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="9">ML Models</text>
+  
+  <text x="70" y="485" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">🔧 Core Features:</text>
+  <text x="80" y="505" fill="#666" font-family="Arial, sans-serif" font-size="12">• Automated data cleaning &amp; validation</text>
+  <text x="80" y="520" fill="#666" font-family="Arial, sans-serif" font-size="12">• Multi-metric correlation matrices</text>
+  <text x="80" y="535" fill="#666" font-family="Arial, sans-serif" font-size="12">• Seasonal decomposition analysis</text>
+  <text x="80" y="550" fill="#666" font-family="Arial, sans-serif" font-size="12">• Predictive modeling &amp; forecasting</text>
+  
+  <!-- Use Cases -->
+  <rect x="575" y="350" width="575" height="220" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="575" y="350" width="575" height="40" rx="8" fill="#4ecdc4"/>
+  <text x="862.5" y="375" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🎯 PRACTICAL USE CASES
+  </text>
+  
+  <!-- Use case boxes -->
+  <rect x="595" y="405" width="165" height="70" rx="5" fill="#fff2f2" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="677.5" y="425" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">📊 Policy Impact</text>
+  <text x="605" y="440" fill="#666" font-family="Arial, sans-serif" font-size="10">Measure effect of city</text>
+  <text x="605" y="452" fill="#666" font-family="Arial, sans-serif" font-size="10">policies on key metrics</text>
+  <text x="605" y="464" fill="#666" font-family="Arial, sans-serif" font-size="10">like transit ridership</text>
+  
+  <rect x="775" y="405" width="165" height="70" rx="5" fill="#f2fff2" stroke="#4ecdc4" stroke-width="2"/>
+  <text x="857.5" y="425" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">🔮 Forecasting</text>
+  <text x="785" y="440" fill="#666" font-family="Arial, sans-serif" font-size="10">Predict future trends in</text>
+  <text x="785" y="452" fill="#666" font-family="Arial, sans-serif" font-size="10">housing, employment</text>
+  <text x="785" y="464" fill="#666" font-family="Arial, sans-serif" font-size="10">and service demand</text>
+  
+  <rect x="955" y="405" width="165" height="70" rx="5" fill="#f2f2ff" stroke="#45b7d1" stroke-width="2"/>
+  <text x="1037.5" y="425" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">⚠️ Early Warning</text>
+  <text x="965" y="440" fill="#666" font-family="Arial, sans-serif" font-size="10">Detect anomalies in</text>
+  <text x="965" y="452" fill="#666" font-family="Arial, sans-serif" font-size="10">social services usage</text>
+  <text x="965" y="464" fill="#666" font-family="Arial, sans-serif" font-size="10">indicating community stress</text>
+  
+  <rect x="595" y="490" width="165" height="70" rx="5" fill="#fff9f2" stroke="#ffa726" stroke-width="2"/>
+  <text x="677.5" y="510" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">💰 Budget Planning</text>
+  <text x="605" y="525" fill="#666" font-family="Arial, sans-serif" font-size="10">Optimize resource</text>
+  <text x="605" y="537" fill="#666" font-family="Arial, sans-serif" font-size="10">allocation based on</text>
+  <text x="605" y="549" fill="#666" font-family="Arial, sans-serif" font-size="10">historical patterns</text>
+  
+  <rect x="775" y="490" width="165" height="70" rx="5" fill="#f9f2ff" stroke="#ab47bc" stroke-width="2"/>
+  <text x="857.5" y="510" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">🏙️ Urban Planning</text>
+  <text x="785" y="525" fill="#666" font-family="Arial, sans-serif" font-size="10">Correlate development</text>
+  <text x="785" y="537" fill="#666" font-family="Arial, sans-serif" font-size="10">with infrastructure</text>
+  <text x="785" y="549" fill="#666" font-family="Arial, sans-serif" font-size="10">and service needs</text>
+  
+  <rect x="955" y="490" width="165" height="70" rx="5" fill="#f2fdf2" stroke="#66bb6a" stroke-width="2"/>
+  <text x="1037.5" y="510" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">📈 Performance KPIs</text>
+  <text x="965" y="525" fill="#666" font-family="Arial, sans-serif" font-size="10">Track city goals vs</text>
+  <text x="965" y="537" fill="#666" font-family="Arial, sans-serif" font-size="10">actual outcomes with</text>
+  <text x="965" y="549" fill="#666" font-family="Arial, sans-serif" font-size="10">automated reporting</text>
+  
+  <!-- Footer -->
+  <rect x="50" y="590" width="1100" height="60" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="600" y="615" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    🚀 Ready to transform Toronto's data into actionable insights for better city governance
+  </text>
+  <text x="600" y="635" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="12">
+    Temporal data spanning 2007-2019+ | Monthly granularity | 20+ key performance indicators
+  </text>
+  
+  <!-- Connecting arrows -->
+  <path d="M 400 225 Q 450 225 500 225" stroke="#4ecdc4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 775 225 Q 825 225 875 225" stroke="#45b7d1" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 300 350 Q 350 325 400 350" stroke="#ff6b6b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+</svg>

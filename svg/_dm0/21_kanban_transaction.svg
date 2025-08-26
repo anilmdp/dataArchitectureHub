@@ -1,0 +1,278 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1976D2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="kanbanFloatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45a049;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="floatShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="60" fill="url(#headerGrad)"/>
+  <text x="30" y="35" fill="white" font-size="18" font-weight="bold" font-family="Arial">SOX Platform - Control Testing</text>
+  
+  <!-- Breadcrumb -->
+  <text x="400" y="35" fill="white" font-size="12" font-family="Arial">Dashboard > Testing > Revenue Recognition > Test Details</text>
+  
+  <!-- User  &amp; Kanban status -->
+  <rect x="1300" y="15" width="120" height="30" rx="15" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <circle cx="1320" cy="30" r="8" fill="#4CAF50"/>
+  <text x="1335" y="35" fill="white" font-size="11" font-family="Arial">5 Kanban Tasks</text>
+  
+  <circle cx="1450" cy="30" r="15" fill="white"/>
+  <text x="1450" y="35" text-anchor="middle" fill="#1976D2" font-size="12" font-weight="bold" font-family="Arial">JS</text>
+
+  <!-- Main Content Area -->
+  <rect x="20" y="80" width="1100" height="900" rx="8" fill="white" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  
+  <!-- Form Header -->
+  <rect x="20" y="80" width="1100" height="50" rx="8" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="40" y="110" fill="#333" font-size="16" font-weight="bold" font-family="Arial">Test Details: Revenue Recognition - Q1 2024</text>
+  
+  <!-- Kanban Quick Actions Bar -->
+  <rect x="750" y="90" width="350" height="30" rx="15" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <circle cx="770" cy="105" r="8" fill="#4CAF50"/>
+  <text x="785" y="109" fill="#4CAF50" font-size="11" font-weight="bold" font-family="Arial">Kanban Actions:</text>
+  
+  <rect x="890" y="95" width="60" height="20" rx="10" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+  <text x="920" y="107" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial">📌 ADD</text>
+  
+  <rect x="960" y="95" width="60" height="20" rx="10" fill="#2196F3" stroke="#1976D2" stroke-width="1"/>
+  <text x="990" y="107" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial">👁 VIEW</text>
+  
+  <rect x="1030" y="95" width="60" height="20" rx="10" fill="#FF9800" stroke="#F57C00" stroke-width="1"/>
+  <text x="1060" y="107" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial">⚡ AUTO</text>
+
+  <!-- Form Fields -->
+  <text x="40" y="165" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Control Information</text>
+  
+  <!-- Control ID -->
+  <text x="40" y="185" fill="#666" font-size="11" font-family="Arial">Control ID:</text>
+  <rect x="40" y="195" width="200" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="50" y="210" fill="#333" font-size="11" font-family="Arial">CTRL-REV-001</text>
+  
+  <!-- Control Name with Kanban indicator -->
+  <text x="260" y="185" fill="#666" font-size="11" font-family="Arial">Control Name:</text>
+  <rect x="260" y="195" width="400" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="270" y="210" fill="#333" font-size="11" font-family="Arial">Revenue Recognition - Quarterly Review</text>
+  <circle cx="640" cy="207" r="6" fill="#4CAF50"/>
+  <text x="655" y="211" fill="#4CAF50" font-size="9" font-family="Arial">On Kanban</text>
+
+  <!-- Test Period -->
+  <text x="40" y="245" fill="#666" font-size="11" font-family="Arial">Testing Period:</text>
+  <rect x="40" y="255" width="150" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="50" y="270" fill="#333" font-size="11" font-family="Arial">Q1 2024</text>
+  
+  <!-- Due Date with urgency indicator -->
+  <text x="210" y="245" fill="#666" font-size="11" font-family="Arial">Due Date:</text>
+  <rect x="210" y="255" width="150" height="25" rx="3" fill="#FFEBEE" stroke="#F44336" stroke-width="2"/>
+  <text x="220" y="270" fill="#F44336" font-size="11" font-weight="bold" font-family="Arial">2024-02-15</text>
+  <text x="285" y="270" fill="#F44336" font-size="9" font-family="Arial">⚠ 3 days overdue</text>
+
+  <!-- Tester Assignment -->
+  <text x="380" y="245" fill="#666" font-size="11" font-family="Arial">Assigned Tester:</text>
+  <rect x="380" y="255" width="200" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="390" y="270" fill="#333" font-size="11" font-family="Arial">Jane Smith (Current User)</text>
+
+  <!-- Test Status -->
+  <text x="600" y="245" fill="#666" font-size="11" font-family="Arial">Status:</text>
+  <rect x="600" y="255" width="120" height="25" rx="3" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="610" y="270" fill="#FF9800" font-size="11" font-weight="bold" font-family="Arial">IN PROGRESS</text>
+
+  <!-- Sample Information -->
+  <text x="40" y="315" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Sample Information</text>
+  
+  <text x="40" y="335" fill="#666" font-size="11" font-family="Arial">Population Size:</text>
+  <rect x="40" y="345" width="100" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="50" y="360" fill="#333" font-size="11" font-family="Arial">1,247</text>
+  
+  <text x="160" y="335" fill="#666" font-size="11" font-family="Arial">Sample Size:</text>
+  <rect x="160" y="345" width="100" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="170" y="360" fill="#333" font-size="11" font-family="Arial">25</text>
+  
+  <text x="280" y="335" fill="#666" font-size="11" font-family="Arial">Completed:</text>
+  <rect x="280" y="345" width="100" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="290" y="360" fill="#333" font-size="11" font-family="Arial">18 / 25</text>
+  
+  <!-- Progress Bar -->
+  <text x="400" y="335" fill="#666" font-size="11" font-family="Arial">Progress:</text>
+  <rect x="400" y="350" width="200" height="15" rx="7" fill="#f0f0f0"/>
+  <rect x="400" y="350" width="144" height="15" rx="7" fill="#4CAF50"/>
+  <text x="510" y="361" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">72%</text>
+
+  <!-- Test Results Table -->
+  <text x="40" y="405" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Test Results</text>
+  
+  <!-- Table Header -->
+  <rect x="40" y="420" width="1060" height="30" rx="3" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="60" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Select</text>
+  <text x="120" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Sample ID</text>
+  <text x="220" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Transaction Date</text>
+  <text x="350" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Amount</text>
+  <text x="450" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Status</text>
+  <text x="550" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Exception</text>
+  <text x="650" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Evidence</text>
+  <text x="750" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Notes</text>
+  <text x="950" y="438" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Kanban</text>
+
+  <!-- Table Row 1 - Complete -->
+  <rect x="40" y="450" width="1060" height="35" fill="white" stroke="#ddd" stroke-width="1"/>
+  <rect x="50" y="460" width="15" height="15" rx="2" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="120" y="470" fill="#333" font-size="10" font-family="Arial">REV-001</text>
+  <text x="220" y="470" fill="#333" font-size="10" font-family="Arial">2024-01-15</text>
+  <text x="350" y="470" fill="#333" font-size="10" font-family="Arial">$125,000</text>
+  <rect x="440" y="460" width="60" height="15" rx="7" fill="#4CAF50"/>
+  <text x="470" y="470" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">PASSED</text>
+  <text x="550" y="470" fill="#333" font-size="10" font-family="Arial">None</text>
+  <text x="650" y="470" fill="#2196F3" font-size="10" font-family="Arial">📎 Invoice.pdf</text>
+  <text x="750" y="470" fill="#333" font-size="10" font-family="Arial">Complete</text>
+  <circle cx="970" cy="467" r="6" fill="#4CAF50"/>
+
+  <!-- Table Row 2 - Exception -->
+  <rect x="40" y="485" width="1060" height="35" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <rect x="50" y="495" width="15" height="15" rx="2" fill="white" stroke="#ddd" stroke-width="1"/>
+  <rect x="52" y="497" width="11" height="11" rx="1" fill="#F44336"/>
+  <text x="120" y="505" fill="#333" font-size="10" font-family="Arial">REV-002</text>
+  <text x="220" y="505" fill="#333" font-size="10" font-family="Arial">2024-01-18</text>
+  <text x="350" y="505" fill="#333" font-size="10" font-family="Arial">$89,500</text>
+  <rect x="440" y="495" width="60" height="15" rx="7" fill="#F44336"/>
+  <text x="470" y="505" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">FAILED</text>
+  <text x="550" y="505" fill="#F44336" font-size="10" font-weight="bold" font-family="Arial">Missing approval</text>
+  <text x="650" y="505" fill="#FF9800" font-size="10" font-family="Arial">📎 Pending</text>
+  <text x="750" y="505" fill="#F44336" font-size="10" font-family="Arial">Needs follow-up</text>
+  <rect x="950" y="495" width="50" height="15" rx="7" fill="#FF9800"/>
+  <text x="975" y="505" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">ADD TO</text>
+
+  <!-- Table Row 3 - In Progress -->
+  <rect x="40" y="520" width="1060" height="35" fill="white" stroke="#ddd" stroke-width="1"/>
+  <rect x="50" y="530" width="15" height="15" rx="2" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="120" y="540" fill="#333" font-size="10" font-family="Arial">REV-003</text>
+  <text x="220" y="540" fill="#333" font-size="10" font-family="Arial">2024-01-20</text>
+  <text x="350" y="540" fill="#333" font-size="10" font-family="Arial">$75,200</text>
+  <rect x="440" y="530" width="60" height="15" rx="7" fill="#FF9800"/>
+  <text x="470" y="540" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">TESTING</text>
+  <text x="550" y="540" fill="#333" font-size="10" font-family="Arial">TBD</text>
+  <text x="650" y="540" fill="#FF9800" font-size="10" font-family="Arial">📎 Collecting</text>
+  <text x="750" y="540" fill="#333" font-size="10" font-family="Arial">In review</text>
+  <circle cx="970" cy="537" r="6" fill="#FF9800"/>
+
+  <!-- Bulk Actions for Selected -->
+  <rect x="40" y="570" width="1060" height="40" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="60" y="585" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Bulk Actions (1 selected):</text>
+  
+  <rect x="200" y="575" width="100" height="25" rx="3" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+  <text x="250" y="590" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">📌 Add to Kanban</text>
+  
+  <rect x="320" y="575" width="80" height="25" rx="3" fill="#F44336" stroke="#D32F2F" stroke-width="1"/>
+  <text x="360" y="590" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">Mark Exception</text>
+  
+  <rect x="420" y="575" width="80" height="25" rx="3" fill="#2196F3" stroke="#1976D2" stroke-width="1"/>
+  <text x="460" y="590" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">Request Evidence</text>
+
+  <!-- Action Buttons -->
+  <rect x="40" y="640" width="1060" height="60" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  
+  <rect x="60" y="660" width="100" height="30" rx="5" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+  <text x="110" y="678" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">Save Test</text>
+  
+  <rect x="180" y="660" width="100" height="30" rx="5" fill="#2196F3" stroke="#1976D2" stroke-width="1"/>
+  <text x="230" y="678" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">Submit for Review</text>
+  
+  <rect x="300" y="660" width="100" height="30" rx="5" fill="#FF9800" stroke="#F57C00" stroke-width="1"/>
+  <text x="350" y="678" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">Generate Report</text>
+  
+  <rect x="420" y="660" width="120" height="30" rx="5" fill="#9C27B0" stroke="#7B1FA2" stroke-width="1"/>
+  <text x="480" y="678" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">📌 Create Kanban Task</text>
+
+  <!-- Floating Kanban Panel -->
+  <rect x="1140" y="80" width="440" height="900" rx="8" fill="white" stroke="#4CAF50" stroke-width="2" filter="url(#floatShadow)"/>
+  <rect x="1140" y="80" width="440" height="40" rx="8" fill="url(#kanbanFloatGrad)"/>
+  <text x="1160" y="103" fill="white" font-size="14" font-weight="bold" font-family="Arial">📌 Quick Kanban Panel</text>
+  <text x="1540" y="103" fill="white" font-size="18" font-weight="bold" font-family="Arial">×</text>
+
+  <!-- Mini Kanban Board -->
+  <text x="1160" y="140" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Related Tasks (5)</text>
+  
+  <!-- Mini Card 1 -->
+  <rect x="1160" y="150" width="400" height="60" rx="5" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="1170" y="170" fill="#333" font-size="11" font-weight="bold" font-family="Arial">📋 Test Revenue Recognition - Q1</text>
+  <text x="1170" y="185" fill="#666" font-size="10" font-family="Arial">Status: In Progress | Due: 2024-02-15</text>
+  <rect x="1170" y="190" width="50" height="15" rx="7" fill="#FF9800"/>
+  <text x="1195" y="200" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">CURRENT</text>
+  <text x="1530" y="200" fill="#2196F3" font-size="12" font-family="Arial">👁</text>
+
+  <!-- Mini Card 2 -->
+  <rect x="1160" y="220" width="400" height="50" rx="5" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <text x="1170" y="240" fill="#333" font-size="11" font-weight="bold" font-family="Arial">⚠ Follow up on REV-002 Exception</text>
+  <text x="1170" y="255" fill="#666" font-size="10" font-family="Arial">High Priority | Created from this screen</text>
+  <text x="1530" y="255" fill="#F44336" font-size="12" font-family="Arial">🔗</text>
+
+  <!-- Mini Card 3 -->
+  <rect x="1160" y="280" width="400" height="50" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="1170" y="300" fill="#333" font-size="11" font-weight="bold" font-family="Arial">📎 Collect Evidence Package</text>
+  <text x="1170" y="315" fill="#666" font-size="10" font-family="Arial">Medium Priority | Due: 2024-02-20</text>
+
+  <!-- Quick Add Section -->
+  <rect x="1160" y="350" width="400" height="120" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="1170" y="370" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Quick Add Task</text>
+  
+  <text x="1170" y="390" fill="#666" font-size="10" font-family="Arial">Task Title:</text>
+  <rect x="1170" y="395" width="370" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="1180" y="410" fill="#999" font-size="10" font-family="Arial">Follow up on missing approval for REV-002</text>
+  
+  <text x="1170" y="430" fill="#666" font-size="10" font-family="Arial">Priority:</text>
+  <rect x="1170" y="435" width="100" height="20" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="1180" y="447" fill="#333" font-size="10" font-family="Arial">High ▼</text>
+  
+  <text x="1290" y="430" fill="#666" font-size="10" font-family="Arial">Due Date:</text>
+  <rect x="1290" y="435" width="100" height="20" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="1300" y="447" fill="#333" font-size="10" font-family="Arial">2024-02-16</text>
+  
+  <rect x="1410" y="435" width="60" height="20" rx="10" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+  <text x="1440" y="447" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial">ADD TASK</text>
+
+  <!-- Smart Suggestions -->
+  <text x="1170" y="485" fill="#333" font-size="12" font-weight="bold" font-family="Arial">💡 Smart Suggestions</text>
+  
+  <rect x="1170" y="495" width="370" height="30" rx="5" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="1180" y="510" fill="#FF9800" font-size="10" font-family="Arial">🤖 Create deficiency task for REV-002 missing approval</text>
+  <text x="1520" y="510" fill="#FF9800" font-size="10" font-family="Arial">+ ADD</text>
+  
+  <rect x="1170" y="530" width="370" height="30" rx="5" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="1180" y="545" fill="#2196F3" font-size="10" font-family="Arial">🤖 Schedule evidence collection review for next week</text>
+  <text x="1520" y="545" fill="#2196F3" font-size="10" font-family="Arial">+ ADD</text>
+
+  <!-- Connection Lines -->
+  <line x1="1000" y1="502" x2="1140" y2="245" stroke="#F44336" stroke-width="2" stroke-dasharray="3,3"/>
+  <circle cx="1010" cy="502" r="3" fill="#F44336"/>
+  
+  <!-- Notification Badge -->
+  <circle cx="1550" cy="90" r="12" fill="#F44336"/>
+  <text x="1550" y="95" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">3</text>
+
+  <!-- Status Indicators -->
+  <rect x="1160" y="900" width="400" height="70" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="1170" y="920" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Kanban Integration Status:</text>
+  
+  <circle cx="1180" cy="935" r="4" fill="#4CAF50"/>
+  <text x="1190" y="938" fill="#4CAF50" font-size="10" font-family="Arial">Connected to "My SOX Tasks" board</text>
+  
+  <circle cx="1180" cy="950" r="4" fill="#FF9800"/>
+  <text x="1190" y="953" fill="#FF9800" font-size="10" font-family="Arial">2 tasks auto-created from this screen</text>
+  
+  <circle cx="1180" cy="965" r="4" fill="#2196F3"/>
+  <text x="1190" y="968" fill="#2196F3" font-size="10" font-family="Arial">Real-time sync enabled</text>
+
+</svg>

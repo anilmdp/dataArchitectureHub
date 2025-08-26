@@ -1,0 +1,391 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="entityGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="controlGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="testGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="evidenceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="auditGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#138d75;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+    <marker id="oneToMany" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 L 3 4 Z" fill="#2c3e50"/>
+      <circle cx="10" cy="4" r="1.5" fill="#2c3e50"/>
+    </marker>
+    <marker id="manyToOne" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <circle cx="2" cy="4" r="1.5" fill="#2c3e50"/>
+      <path d="M 4 0 L 12 4 L 4 8 L 7 4 Z" fill="#2c3e50"/>
+    </marker>
+    <marker id="manyToMany" markerWidth="16" markerHeight="8" refX="15" refY="4" orient="auto">
+      <circle cx="2" cy="4" r="1.5" fill="#2c3e50"/>
+      <line x1="4" y1="4" x2="12" y2="4" stroke="#2c3e50" stroke-width="1"/>
+      <circle cx="14" cy="4" r="1.5" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1200" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="70" fill="url(#headerGrad)"/>
+  <text x="800" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">SOX Compliance Conceptual Data Model</text>
+  <text x="800" y="50" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Core Entities, Relationships &amp; Data Flows for Section 404 Compliance</text>
+
+  <!-- Legend -->
+  <rect x="50" y="90" width="1500" height="60" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="800" y="110" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold" font-family="Arial">ENTITY RELATIONSHIP LEGEND</text>
+  
+  <line x1="200" y1="125" x2="250" y2="125" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  <text x="260" y="130" fill="#2c3e50" font-size="11" font-family="Arial">One-to-Many</text>
+  
+  <line x1="400" y1="125" x2="450" y2="125" stroke="#2c3e50" stroke-width="2" marker-end="url(#manyToOne)"/>
+  <text x="460" y="130" fill="#2c3e50" font-size="11" font-family="Arial">Many-to-One</text>
+  
+  <line x1="600" y1="125" x2="650" y2="125" stroke="#2c3e50" stroke-width="2" marker-end="url(#manyToMany)"/>
+  <text x="660" y="130" fill="#2c3e50" font-size="11" font-family="Arial">Many-to-Many</text>
+
+  <rect x="850" y="120" width="20" height="15" fill="#3498db"/>
+  <text x="880" y="132" fill="#2c3e50" font-size="11" font-family="Arial">Entity/Legal Entity</text>
+  
+  <rect x="1050" y="120" width="20" height="15" fill="#e74c3c"/>
+  <text x="1080" y="132" fill="#2c3e50" font-size="11" font-family="Arial">Business Process</text>
+  
+  <rect x="1250" y="120" width="20" height="15" fill="#27ae60"/>
+  <text x="1280" y="132" fill="#2c3e50" font-size="11" font-family="Arial">Control/Testing</text>
+
+  <!-- Core Entity Layer -->
+  
+  <!-- Legal Entity -->
+  <rect x="50" y="180" width="180" height="100" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="140" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">LEGAL ENTITY</text>
+  <rect x="60" y="215" width="160" height="55" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="70" y="230" fill="#2c3e50" font-size="10" font-family="Arial">• entity_id (PK)</text>
+  <text x="70" y="243" fill="#2c3e50" font-size="10" font-family="Arial">• entity_name</text>
+  <text x="70" y="256" fill="#2c3e50" font-size="10" font-family="Arial">• entity_type (Parent/Sub)</text>
+
+  <!-- Business Unit -->
+  <rect x="280" y="180" width="180" height="100" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="370" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">BUSINESS UNIT</text>
+  <rect x="290" y="215" width="160" height="55" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="300" y="230" fill="#2c3e50" font-size="10" font-family="Arial">• business_unit_id (PK)</text>
+  <text x="300" y="243" fill="#2c3e50" font-size="10" font-family="Arial">• unit_name</text>
+  <text x="300" y="256" fill="#2c3e50" font-size="10" font-family="Arial">• entity_id (FK)</text>
+
+  <!-- Financial Account -->
+  <rect x="510" y="180" width="180" height="100" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="600" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">FINANCIAL ACCOUNT</text>
+  <rect x="520" y="215" width="160" height="55" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="530" y="230" fill="#2c3e50" font-size="10" font-family="Arial">• account_id (PK)</text>
+  <text x="530" y="243" fill="#2c3e50" font-size="10" font-family="Arial">• account_number</text>
+  <text x="530" y="256" fill="#2c3e50" font-size="10" font-family="Arial">• account_type</text>
+
+  <!-- Process Layer -->
+  
+  <!-- Business Process -->
+  <rect x="750" y="180" width="200" height="100" rx="8" fill="url(#processGrad)" filter="url(#shadow)"/>
+  <text x="850" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">BUSINESS PROCESS</text>
+  <rect x="760" y="215" width="180" height="55" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="770" y="230" fill="#2c3e50" font-size="10" font-family="Arial">• process_id (PK)</text>
+  <text x="770" y="243" fill="#2c3e50" font-size="10" font-family="Arial">• process_name</text>
+  <text x="770" y="256" fill="#2c3e50" font-size="10" font-family="Arial">• process_owner</text>
+
+  <!-- Process Risk -->
+  <rect x="1000" y="180" width="180" height="100" rx="8" fill="url(#processGrad)" filter="url(#shadow)"/>
+  <text x="1090" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">PROCESS RISK</text>
+  <rect x="1010" y="215" width="160" height="55" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="1020" y="230" fill="#2c3e50" font-size="10" font-family="Arial">• risk_id (PK)</text>
+  <text x="1020" y="243" fill="#2c3e50" font-size="10" font-family="Arial">• risk_description</text>
+  <text x="1020" y="256" fill="#2c3e50" font-size="10" font-family="Arial">• risk_rating</text>
+
+  <!-- SOX Control -->
+  <rect x="1230" y="180" width="200" height="100" rx="8" fill="url(#controlGrad)" filter="url(#shadow)"/>
+  <text x="1330" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">SOX CONTROL</text>
+  <rect x="1240" y="215" width="180" height="55" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="1250" y="230" fill="#2c3e50" font-size="10" font-family="Arial">• control_id (PK)</text>
+  <text x="1250" y="243" fill="#2c3e50" font-size="10" font-family="Arial">• control_description</text>
+  <text x="1250" y="256" fill="#2c3e50" font-size="10" font-family="Arial">• control_type</text>
+
+  <!-- Control Layer Continued -->
+  
+  <!-- Control Activity -->
+  <rect x="50" y="330" width="180" height="120" rx="8" fill="url(#controlGrad)" filter="url(#shadow)"/>
+  <text x="140" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">CONTROL ACTIVITY</text>
+  <rect x="60" y="365" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="70" y="380" fill="#2c3e50" font-size="10" font-family="Arial">• activity_id (PK)</text>
+  <text x="70" y="393" fill="#2c3e50" font-size="10" font-family="Arial">• control_id (FK)</text>
+  <text x="70" y="406" fill="#2c3e50" font-size="10" font-family="Arial">• frequency</text>
+  <text x="70" y="419" fill="#2c3e50" font-size="10" font-family="Arial">• performer</text>
+  <text x="70" y="432" fill="#2c3e50" font-size="10" font-family="Arial">• reviewer</text>
+
+  <!-- Control Objective -->
+  <rect x="280" y="330" width="180" height="120" rx="8" fill="url(#controlGrad)" filter="url(#shadow)"/>
+  <text x="370" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">CONTROL OBJECTIVE</text>
+  <rect x="290" y="365" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="300" y="380" fill="#2c3e50" font-size="10" font-family="Arial">• objective_id (PK)</text>
+  <text x="300" y="393" fill="#2c3e50" font-size="10" font-family="Arial">• assertion_type</text>
+  <text x="300" y="406" fill="#2c3e50" font-size="10" font-family="Arial">• financial_statement_item</text>
+  <text x="300" y="419" fill="#2c3e50" font-size="10" font-family="Arial">• materiality_threshold</text>
+
+  <!-- Test Cycle -->
+  <rect x="510" y="330" width="180" height="120" rx="8" fill="url(#testGrad)" filter="url(#shadow)"/>
+  <text x="600" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">TEST CYCLE</text>
+  <rect x="520" y="365" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="530" y="380" fill="#2c3e50" font-size="10" font-family="Arial">• cycle_id (PK)</text>
+  <text x="530" y="393" fill="#2c3e50" font-size="10" font-family="Arial">• fiscal_year</text>
+  <text x="530" y="406" fill="#2c3e50" font-size="10" font-family="Arial">• period (Q1/Q2/Q3/YE)</text>
+  <text x="530" y="419" fill="#2c3e50" font-size="10" font-family="Arial">• cycle_status</text>
+  <text x="530" y="432" fill="#2c3e50" font-size="10" font-family="Arial">• due_date</text>
+
+  <!-- Control Test -->
+  <rect x="750" y="330" width="200" height="120" rx="8" fill="url(#testGrad)" filter="url(#shadow)"/>
+  <text x="850" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">CONTROL TEST</text>
+  <rect x="760" y="365" width="180" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="770" y="380" fill="#2c3e50" font-size="10" font-family="Arial">• test_id (PK)</text>
+  <text x="770" y="393" fill="#2c3e50" font-size="10" font-family="Arial">• control_id (FK)</text>
+  <text x="770" y="406" fill="#2c3e50" font-size="10" font-family="Arial">• cycle_id (FK)</text>
+  <text x="770" y="419" fill="#2c3e50" font-size="10" font-family="Arial">• test_approach</text>
+  <text x="770" y="432" fill="#2c3e50" font-size="10" font-family="Arial">• test_result</text>
+
+  <!-- Test Sample -->
+  <rect x="1000" y="330" width="180" height="120" rx="8" fill="url(#testGrad)" filter="url(#shadow)"/>
+  <text x="1090" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">TEST SAMPLE</text>
+  <rect x="1010" y="365" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="1020" y="380" fill="#2c3e50" font-size="10" font-family="Arial">• sample_id (PK)</text>
+  <text x="1020" y="393" fill="#2c3e50" font-size="10" font-family="Arial">• test_id (FK)</text>
+  <text x="1020" y="406" fill="#2c3e50" font-size="10" font-family="Arial">• sample_selection_method</text>
+  <text x="1020" y="419" fill="#2c3e50" font-size="10" font-family="Arial">• sample_size</text>
+  <text x="1020" y="432" fill="#2c3e50" font-size="10" font-family="Arial">• population_size</text>
+
+  <!-- Evidence/Documentation Layer -->
+  
+  <!-- Test Evidence -->
+  <rect x="1230" y="330" width="200" height="120" rx="8" fill="url(#evidenceGrad)" filter="url(#shadow)"/>
+  <text x="1330" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">TEST EVIDENCE</text>
+  <rect x="1240" y="365" width="180" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="1250" y="380" fill="#2c3e50" font-size="10" font-family="Arial">• evidence_id (PK)</text>
+  <text x="1250" y="393" fill="#2c3e50" font-size="10" font-family="Arial">• test_id (FK)</text>
+  <text x="1250" y="406" fill="#2c3e50" font-size="10" font-family="Arial">• evidence_type</text>
+  <text x="1250" y="419" fill="#2c3e50" font-size="10" font-family="Arial">• file_path</text>
+  <text x="1250" y="432" fill="#2c3e50" font-size="10" font-family="Arial">• created_timestamp</text>
+
+  <!-- Deficiency -->
+  <rect x="50" y="500" width="180" height="120" rx="8" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="140" y="525" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">DEFICIENCY</text>
+  <rect x="60" y="535" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="70" y="550" fill="#2c3e50" font-size="10" font-family="Arial">• deficiency_id (PK)</text>
+  <text x="70" y="563" fill="#2c3e50" font-size="10" font-family="Arial">• test_id (FK)</text>
+  <text x="70" y="576" fill="#2c3e50" font-size="10" font-family="Arial">• deficiency_type</text>
+  <text x="70" y="589" fill="#2c3e50" font-size="10" font-family="Arial">• severity</text>
+  <text x="70" y="602" fill="#2c3e50" font-size="10" font-family="Arial">• remediation_plan</text>
+
+  <!-- Exception -->
+  <rect x="280" y="500" width="180" height="120" rx="8" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="370" y="525" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">EXCEPTION</text>
+  <rect x="290" y="535" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="300" y="550" fill="#2c3e50" font-size="10" font-family="Arial">• exception_id (PK)</text>
+  <text x="300" y="563" fill="#2c3e50" font-size="10" font-family="Arial">• sample_id (FK)</text>
+  <text x="300" y="576" fill="#2c3e50" font-size="10" font-family="Arial">• exception_description</text>
+  <text x="300" y="589" fill="#2c3e50" font-size="10" font-family="Arial">• root_cause</text>
+  <text x="300" y="602" fill="#2c3e50" font-size="10" font-family="Arial">• corrective_action</text>
+
+  <!-- User/Role Layer -->
+  
+  <!-- User -->
+  <rect x="510" y="500" width="180" height="120" rx="8" fill="#34495e" filter="url(#shadow)"/>
+  <text x="600" y="525" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">USER</text>
+  <rect x="520" y="535" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="530" y="550" fill="#2c3e50" font-size="10" font-family="Arial">• user_id (PK)</text>
+  <text x="530" y="563" fill="#2c3e50" font-size="10" font-family="Arial">• user_name</text>
+  <text x="530" y="576" fill="#2c3e50" font-size="10" font-family="Arial">• email</text>
+  <text x="530" y="589" fill="#2c3e50" font-size="10" font-family="Arial">• business_unit_id (FK)</text>
+  <text x="530" y="602" fill="#2c3e50" font-size="10" font-family="Arial">• role</text>
+
+  <!-- Audit Trail -->
+  <rect x="750" y="500" width="200" height="120" rx="8" fill="url(#auditGrad)" filter="url(#shadow)"/>
+  <text x="850" y="525" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">AUDIT TRAIL</text>
+  <rect x="760" y="535" width="180" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="770" y="550" fill="#2c3e50" font-size="10" font-family="Arial">• audit_id (PK)</text>
+  <text x="770" y="563" fill="#2c3e50" font-size="10" font-family="Arial">• table_name</text>
+  <text x="770" y="576" fill="#2c3e50" font-size="10" font-family="Arial">• record_id</text>
+  <text x="770" y="589" fill="#2c3e50" font-size="10" font-family="Arial">• action_type</text>
+  <text x="770" y="602" fill="#2c3e50" font-size="10" font-family="Arial">• user_id (FK)</text>
+
+  <!-- Workflow -->
+  <rect x="1000" y="500" width="180" height="120" rx="8" fill="url(#auditGrad)" filter="url(#shadow)"/>
+  <text x="1090" y="525" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">WORKFLOW</text>
+  <rect x="1010" y="535" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="1020" y="550" fill="#2c3e50" font-size="10" font-family="Arial">• workflow_id (PK)</text>
+  <text x="1020" y="563" fill="#2c3e50" font-size="10" font-family="Arial">• test_id (FK)</text>
+  <text x="1020" y="576" fill="#2c3e50" font-size="10" font-family="Arial">• current_step</text>
+  <text x="1020" y="589" fill="#2c3e50" font-size="10" font-family="Arial">• assigned_user_id (FK)</text>
+  <text x="1020" y="602" fill="#2c3e50" font-size="10" font-family="Arial">• due_date</text>
+
+  <!-- Reporting/Output Layer -->
+  
+  <!-- Management Report -->
+  <rect x="1230" y="500" width="200" height="120" rx="8" fill="#8e44ad" filter="url(#shadow)"/>
+  <text x="1330" y="525" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">MANAGEMENT REPORT</text>
+  <rect x="1240" y="535" width="180" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="1250" y="550" fill="#2c3e50" font-size="10" font-family="Arial">• report_id (PK)</text>
+  <text x="1250" y="563" fill="#2c3e50" font-size="10" font-family="Arial">• cycle_id (FK)</text>
+  <text x="1250" y="576" fill="#2c3e50" font-size="10" font-family="Arial">• report_type</text>
+  <text x="1250" y="589" fill="#2c3e50" font-size="10" font-family="Arial">• conclusion</text>
+  <text x="1250" y="602" fill="#2c3e50" font-size="10" font-family="Arial">• certification_date</text>
+
+  <!-- Configuration/Template Layer -->
+  
+  <!-- AI Template -->
+  <rect x="50" y="670" width="180" height="120" rx="8" fill="#9b59b6" filter="url(#shadow)"/>
+  <text x="140" y="695" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">AI TEMPLATE</text>
+  <rect x="60" y="705" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="70" y="720" fill="#2c3e50" font-size="10" font-family="Arial">• template_id (PK)</text>
+  <text x="70" y="733" fill="#2c3e50" font-size="10" font-family="Arial">• template_type</text>
+  <text x="70" y="746" fill="#2c3e50" font-size="10" font-family="Arial">• schema_pattern</text>
+  <text x="70" y="759" fill="#2c3e50" font-size="10" font-family="Arial">• auto_generation_rules</text>
+  <text x="70" y="772" fill="#2c3e50" font-size="10" font-family="Arial">• usage_count</text>
+
+  <!-- Data Source -->
+  <rect x="280" y="670" width="180" height="120" rx="8" fill="#16a085" filter="url(#shadow)"/>
+  <text x="370" y="695" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">DATA SOURCE</text>
+  <rect x="290" y="705" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="300" y="720" fill="#2c3e50" font-size="10" font-family="Arial">• source_id (PK)</text>
+  <text x="300" y="733" fill="#2c3e50" font-size="10" font-family="Arial">• source_name</text>
+  <text x="300" y="746" fill="#2c3e50" font-size="10" font-family="Arial">• source_type (ERP/DB)</text>
+  <text x="300" y="759" fill="#2c3e50" font-size="10" font-family="Arial">• connection_string</text>
+  <text x="300" y="772" fill="#2c3e50" font-size="10" font-family="Arial">• last_extract_date</text>
+
+  <!-- Sample Population -->
+  <rect x="510" y="670" width="180" height="120" rx="8" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="600" y="695" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">SAMPLE POPULATION</text>
+  <rect x="520" y="705" width="160" height="75" rx="4" fill="rgba(255,255,255,0.9)"/>
+  <text x="530" y="720" fill="#2c3e50" font-size="10" font-family="Arial">• population_id (PK)</text>
+  <text x="530" y="733" fill="#2c3e50" font-size="10" font-family="Arial">• test_id (FK)</text>
+  <text x="530" y="746" fill="#2c3e50" font-size="10" font-family="Arial">• population_criteria</text>
+  <text x="530" y="759" fill="#2c3e50" font-size="10" font-family="Arial">• total_population</text>
+  <text x="530" y="772" fill="#2c3e50" font-size="10" font-family="Arial">• extract_query</text>
+
+  <!-- Relationships/Lines -->
+  
+  <!-- Entity to Business Unit -->
+  <line x1="230" y1="230" x2="280" y2="230" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Business Unit to Process -->
+  <line x1="460" y1="230" x2="750" y2="230" stroke="#2c3e50" stroke-width="2" marker-end="url(#manyToMany)"/>
+  
+  <!-- Process to Risk -->
+  <line x1="950" y1="230" x2="1000" y2="230" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Risk to Control -->
+  <line x1="1180" y1="230" x2="1230" y2="230" stroke="#2c3e50" stroke-width="2" marker-end="url(#manyToOne)"/>
+  
+  <!-- Control to Control Activity -->
+  <line x1="1230" y1="270" x2="230" y2="330" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Control to Test -->
+  <line x1="1280" y1="280" x2="850" y2="330" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Test Cycle to Control Test -->
+  <line x1="690" y1="390" x2="750" y2="390" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Control Test to Sample -->
+  <line x1="950" y1="390" x2="1000" y2="390" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Control Test to Evidence -->
+  <line x1="950" y1="380" x2="1230" y2="380" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Sample to Exception -->
+  <line x1="1000" y1="440" x2="460" y2="500" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- Test to Deficiency -->
+  <line x1="750" y1="440" x2="230" y2="500" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+  
+  <!-- User to Audit Trail -->
+  <line x1="690" y1="560" x2="750" y2="560" stroke="#2c3e50" stroke-width="2" marker-end="url(#manyToOne)"/>
+  
+  <!-- Test to Workflow -->
+  <line x1="900" y1="450" x2="1050" y2="500" stroke="#2c3e50" stroke-width="2" marker-end="url(#oneToMany)"/>
+
+  <!-- Key Insights -->
+  <rect x="50" y="820" width="1500" height="120" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="845" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">KEY DATA MODEL INSIGHTS</text>
+
+  <rect x="70" y="860" width="350" height="70" rx="5" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="245" y="880" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">HIERARCHICAL STRUCTURE</text>
+  <text x="80" y="895" fill="#2c3e50" font-size="10" font-family="Arial">Entity → Business Unit → Process → Risk → Control</text>
+  <text x="80" y="908" fill="#2c3e50" font-size="10" font-family="Arial">Enables rollup reporting and consolidation</text>
+  <text x="80" y="921" fill="#2c3e50" font-size="10" font-family="Arial">Supports multi-entity SOX compliance</text>
+
+  <rect x="440" y="860" width="350" height="70" rx="5" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="615" y="880" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">TESTING FRAMEWORK</text>
+  <text x="450" y="895" fill="#2c3e50" font-size="10" font-family="Arial">Test Cycle → Control Test → Sample → Evidence</text>
+  <text x="450" y="908" fill="#2c3e50" font-size="10" font-family="Arial">Complete audit trail from population to conclusion</text>
+  <text x="450" y="921" fill="#2c3e50" font-size="10" font-family="Arial">Statistical sampling and evidence management</text>
+
+  <rect x="810" y="860" width="350" height="70" rx="5" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="985" y="880" text-anchor="middle" fill="#8e44ad" font-size="12" font-weight="bold" font-family="Arial">AI/AUTOMATION LAYER</text>
+  <text x="820" y="895" fill="#2c3e50" font-size="10" font-family="Arial">AI Templates drive automatic configuration</text>
+  <text x="820" y="908" fill="#2c3e50" font-size="10" font-family="Arial">Data Sources enable automated evidence collection</text>
+  <text x="820" y="921" fill="#2c3e50" font-size="10" font-family="Arial">Workflow engine manages process orchestration</text>
+
+  <rect x="1180" y="860" width="350" height="70" rx="5" fill="#fff3e0" stroke="#f39c12" stroke-width="2"/>
+  <text x="1355" y="880" text-anchor="middle" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">COMPLIANCE OUTPUTS</text>
+  <text x="1190" y="895" fill="#2c3e50" font-size="10" font-family="Arial">Deficiency tracking and remediation</text>
+  <text x="1190" y="908" fill="#2c3e50" font-size="10" font-family="Arial">Management reports and certifications</text>
+  <text x="1190" y="921" fill="#2c3e50" font-size="10" font-family="Arial">External auditor evidence packages</text>
+
+  <!-- Implementation Notes -->
+  <rect x="50" y="960" width="1500" height="200" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="985" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">IMPLEMENTATION CONSIDERATIONS</text>
+
+  <rect x="70" y="1000" width="460" height="70" rx="5" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="300" y="1020" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">EXCEL INTEGRATION STRATEGY</text>
+  <text x="80" y="1035" fill="#2c3e50" font-size="10" font-family="Arial">• Excel sheets map to specific entities (Controls, Tests, Samples)</text>
+  <text x="80" y="1048" fill="#2c3e50" font-size="10" font-family="Arial">• AI Templates auto-generate Excel structures from data model</text>
+  <text x="80" y="1061" fill="#2c3e50" font-size="10" font-family="Arial">• Real-time sync between Excel and central database via WebSocket</text>
+
+  <rect x="550" y="1000" width="460" height="70" rx="5" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="780" y="1020" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">DATA PIPELINE ARCHITECTURE</text>
+  <text x="560" y="1035" fill="#2c3e50" font-size="10" font-family="Arial">• Apache Hop ETL populates Sample Population from Data Sources</text>
+  <text x="560" y="1048" fill="#2c3e50" font-size="10" font-family="Arial">• MCP Server orchestrates automated testing and evidence collection</text>
+  <text x="560" y="1061" fill="#2c3e50" font-size="10" font-family="Arial">• Audit Trail captures all changes with complete lineage</text>
+
+  <rect x="1030" y="1000" width="460" height="70" rx="5" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="1260" y="1020" text-anchor="middle" fill="#8e44ad" font-size="12" font-weight="bold" font-family="Arial">SCALABILITY &amp; PERFORMANCE</text>
+  <text x="1040" y="1035" fill="#2c3e50" font-size="10" font-family="Arial">• Supports thousands of controls across multiple entities</text>
+  <text x="1040" y="1048" fill="#2c3e50" font-size="10" font-family="Arial">• Partitioned by Test Cycle for efficient query performance</text>
+  <text x="1040" y="1061" fill="#2c3e50" font-size="10" font-family="Arial">• Archival strategy for historical test cycles and evidence</text>
+
+  <rect x="70" y="1090" width="690" height="60" rx="5" fill="#fff3e0" stroke="#f39c12" stroke-width="2"/>
+  <text x="415" y="1110" text-anchor="middle" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">SECURITY &amp; COMPLIANCE FEATURES</text>
+  <text x="80" y="1125" fill="#2c3e50" font-size="10" font-family="Arial">• Role-based access controls integrated with User entity • Digital signatures on all test conclusions</text>
+  <text x="80" y="1138" fill="#2c3e50" font-size="10" font-family="Arial">• Immutable audit trail prevents tampering • Evidence encryption and secure storage</text>
+
+  <rect x="780" y="1090" width="710" height="60" rx="5" fill="#ffebee" stroke="#e74c3c" stroke-width="2"/>
+  <text x="1135" y="1110" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="bold" font-family="Arial">AI/MCP INTELLIGENCE INTEGRATION</text>
+  <text x="790" y="1125" fill="#2c3e50" font-size="10" font-family="Arial">• AI Templates learn from historical test patterns • Smart sampling algorithms adjust to risk levels</text>
+  <text x="790" y="1138" fill="#2c3e50" font-size="10" font-family="Arial">• Predictive analytics for deficiency risk scoring • Auto-generation of test procedures from control descriptions</text>
+
+</svg>

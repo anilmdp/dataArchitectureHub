@@ -1,0 +1,161 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2980b9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="planGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="testGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="auditGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7d3c98;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="remedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e67e22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d68910;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#138d75;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ecf0f1"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="80" fill="url(#headerGrad)"/>
+  <text x="400" y="35" text-anchor="middle" fill="white" font-size="24" font-weight="bold" font-family="Arial">SOX Compliance Audit Process</text>
+  <text x="400" y="58" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Section 404 Internal Controls Flow</text>
+
+  <!-- Flow Steps -->
+  
+  <!-- Step 1: Planning -->
+  <rect x="50" y="120" width="120" height="60" rx="10" fill="url(#planGrad)" filter="url(#shadow)"/>
+  <text x="110" y="138" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">PLANNING &amp;</text>
+  <text x="110" y="152" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">SCOPING</text>
+  <text x="110" y="170" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Risk Assessment</text>
+
+  <!-- Arrow 1 -->
+  <line x1="170" y1="150" x2="230" y2="150" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Documentation -->
+  <rect x="250" y="120" width="120" height="60" rx="10" fill="url(#docGrad)" filter="url(#shadow)"/>
+  <text x="310" y="138" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">CONTROL</text>
+  <text x="310" y="152" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">DOCUMENTATION</text>
+  <text x="310" y="170" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Process Mapping</text>
+
+  <!-- Arrow 2 -->
+  <line x1="370" y1="150" x2="430" y2="150" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: Management Testing -->
+  <rect x="450" y="120" width="120" height="60" rx="10" fill="url(#testGrad)" filter="url(#shadow)"/>
+  <text x="510" y="138" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">MANAGEMENT</text>
+  <text x="510" y="152" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">TESTING</text>
+  <text x="510" y="170" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Control Testing</text>
+
+  <!-- Arrow 3 down -->
+  <line x1="510" y1="180" x2="510" y2="240" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: External Audit -->
+  <rect x="450" y="260" width="120" height="60" rx="10" fill="url(#auditGrad)" filter="url(#shadow)"/>
+  <text x="510" y="278" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">EXTERNAL</text>
+  <text x="510" y="292" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">AUDITOR</text>
+  <text x="510" y="310" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Independent Review</text>
+
+  <!-- Arrow 4 left -->
+  <line x1="450" y1="290" x2="370" y2="290" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 5: Remediation -->
+  <rect x="250" y="260" width="120" height="60" rx="10" fill="url(#remedGrad)" filter="url(#shadow)"/>
+  <text x="310" y="278" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">REMEDIATION</text>
+  <text x="310" y="292" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">&amp; REPORTING</text>
+  <text x="310" y="310" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Fix Deficiencies</text>
+
+  <!-- Arrow 5 left -->
+  <line x1="250" y1="290" x2="170" y2="290" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 6: Certification -->
+  <rect x="50" y="260" width="120" height="60" rx="10" fill="url(#certGrad)" filter="url(#shadow)"/>
+  <text x="110" y="278" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">CERTIFICATION</text>
+  <text x="110" y="292" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">&amp; FILING</text>
+  <text x="110" y="310" text-anchor="middle" fill="white" font-size="9" font-family="Arial">SEC Disclosure</text>
+
+  <!-- Key Icons -->
+  
+  <!-- Planning Icon -->
+  <circle cx="110" cy="100" r="8" fill="#e74c3c"/>
+  <text x="110" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">1</text>
+
+  <!-- Documentation Icon -->
+  <circle cx="310" cy="100" r="8" fill="#f39c12"/>
+  <text x="310" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">2</text>
+
+  <!-- Testing Icon -->
+  <circle cx="510" cy="100" r="8" fill="#27ae60"/>
+  <text x="510" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">3</text>
+
+  <!-- Audit Icon -->
+  <circle cx="580" cy="290" r="8" fill="#8e44ad"/>
+  <text x="580" y="295" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">4</text>
+
+  <!-- Remediation Icon -->
+  <circle cx="310" cy="340" r="8" fill="#e67e22"/>
+  <text x="310" y="345" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">5</text>
+
+  <!-- Certification Icon -->
+  <circle cx="110" cy="340" r="8" fill="#16a085"/>
+  <text x="110" y="345" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">6</text>
+
+  <!-- Key Requirements Box -->
+  <rect x="600" y="120" width="180" height="200" rx="10" fill="#34495e" filter="url(#shadow)"/>
+  <text x="690" y="140" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">KEY REQUIREMENTS</text>
+  
+  <!-- Requirement items -->
+  <rect x="620" y="155" width="140" height="30" rx="5" fill="#3498db"/>
+  <text x="690" y="168" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">Section 302</text>
+  <text x="690" y="179" text-anchor="middle" fill="white" font-size="8" font-family="Arial">CEO/CFO Certification</text>
+
+  <rect x="620" y="195" width="140" height="30" rx="5" fill="#e74c3c"/>
+  <text x="690" y="208" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">Section 404</text>
+  <text x="690" y="219" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Internal Controls</text>
+
+  <rect x="620" y="235" width="140" height="30" rx="5" fill="#f39c12"/>
+  <text x="690" y="248" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">Section 906</text>
+  <text x="690" y="259" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Criminal Penalties</text>
+
+  <rect x="620" y="275" width="140" height="30" rx="5" fill="#27ae60"/>
+  <text x="690" y="288" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">PCAOB</text>
+  <text x="690" y="299" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Auditor Attestation</text>
+
+  <!-- Timeline indicator -->
+  <text x="400" y="400" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="bold" font-family="Arial">ANNUAL CYCLE</text>
+  <line x1="100" y1="410" x2="700" y2="410" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="100" y="430" text-anchor="start" fill="#7f8c8d" font-size="10" font-family="Arial">Q1-Q2: Planning &amp; Documentation</text>
+  <text x="400" y="430" text-anchor="middle" fill="#7f8c8d" font-size="10" font-family="Arial">Q3: Testing</text>
+  <text x="700" y="430" text-anchor="end" fill="#7f8c8d" font-size="10" font-family="Arial">Q4: Audit &amp; Filing</text>
+
+  <!-- Management vs External paths -->
+  <text x="400" y="460" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Management Assessment + External Auditor Validation</text>
+
+  <!-- Process flow indicators -->
+  <path d="M 50 350 Q 400 380 750 350" stroke="#95a5a6" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <text x="400" y="485" text-anchor="middle" fill="#7f8c8d" font-size="10" font-family="Arial">Continuous monitoring and improvement throughout the year</text>
+
+</svg>

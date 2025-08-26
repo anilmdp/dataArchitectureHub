@@ -1,0 +1,217 @@
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <rect width="1200" height="120" fill="#1e40af"/>
+  <text x="600" y="50" text-anchor="middle" font-size="32" font-weight="bold" fill="white" font-family="Roboto, sans-serif">
+    Toronto Data Collection Workflow
+  </text>
+  <text x="600" y="80" text-anchor="middle" font-size="16" fill="#e0f2fe" font-family="Roboto, sans-serif">
+    From Official Portal to Custom Data Explorer
+  </text>
+
+  <!-- Step 1: Official Toronto Portal -->
+  <rect x="50" y="150" width="1100" height="200" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="10"/>
+  <text x="70" y="190" font-size="24" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">1. Starting Point: Toronto Official Portal</text>
+  
+  <!-- Portal Icon -->
+  <rect x="80" y="210" width="120" height="120" fill="#ffffff" stroke="#10b981" stroke-width="2" rx="10"/>
+  <circle cx="140" cy="250" r="25" fill="#10b981"/>
+  <text x="140" y="260" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">🏛️</text>
+  <text x="140" y="285" text-anchor="middle" font-size="12" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">City Portal</text>
+  <text x="140" y="305" text-anchor="middle" font-size="10" fill="#047857" font-family="Roboto, sans-serif">toronto.ca/dashboard</text>
+
+  <!-- Manual Process -->
+  <rect x="230" y="210" width="300" height="120" fill="#d1fae5" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="380" y="240" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Manual Data Extract Process</text>
+  <text x="250" y="260" font-size="12" fill="#047857" font-family="Roboto, sans-serif">• Navigate to Data Research Maps</text>
+  <text x="250" y="280" font-size="12" fill="#047857" font-family="Roboto, sans-serif">• Click Export Data Button</text>
+  <text x="250" y="300" font-size="12" fill="#047857" font-family="Roboto, sans-serif">• Create Data Extract</text>
+  <text x="250" y="320" font-size="12" fill="#047857" font-family="Roboto, sans-serif">• Download CSV Files</text>
+
+  <!-- Screenshots Reference -->
+  <rect x="560" y="210" width="180" height="120" fill="#ffffff" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="650" y="235" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Screenshots</text>
+  <text x="570" y="255" font-size="11" fill="#047857" font-family="Roboto, sans-serif">📸 1a-export-data-button.png</text>
+  <text x="570" y="270" font-size="11" fill="#047857" font-family="Roboto, sans-serif">📸 1a-export-data-sources.png</text>
+  <text x="570" y="285" font-size="11" fill="#047857" font-family="Roboto, sans-serif">📸 1b-create-data-extract.png</text>
+  <text x="570" y="300" font-size="11" fill="#047857" font-family="Roboto, sans-serif">📸 1d-downloaded-file.png</text>
+
+  <!-- Files Obtained -->
+  <rect x="770" y="210" width="200" height="120" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="8"/>
+  <text x="870" y="235" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Files Obtained</text>
+  <circle cx="790" cy="255" r="8" fill="#10b981"/>
+  <text x="805" y="260" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">TorontoMeasureData.csv</text>
+  <circle cx="790" cy="275" r="8" fill="#10b981"/>
+  <text x="805" y="280" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">Dashboard metrics</text>
+  <circle cx="790" cy="295" r="8" fill="#10b981"/>
+  <text x="805" y="300" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">Key indicators</text>
+
+  <!-- Arrow 1 -->
+  <path d="M600,350 L600,380" stroke="#64748b" stroke-width="4" fill="none"/>
+  <path d="M595,375 L600,385 L605,375" fill="#64748b"/>
+
+  <!-- Step 2: CKAN API Discovery -->
+  <rect x="50" y="400" width="1100" height="220" fill="#fef7ff" stroke="#a855f7" stroke-width="2" rx="10"/>
+  <text x="70" y="440" font-size="24" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">2. CKAN API Investigation</text>
+
+  <!-- API Icon -->
+  <rect x="80" y="460" width="120" height="140" fill="#ffffff" stroke="#a855f7" stroke-width="2" rx="10"/>
+  <circle cx="140" cy="510" r="25" fill="#a855f7"/>
+  <text x="140" y="520" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">🔌</text>
+  <text x="140" y="545" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">CKAN API</text>
+  <text x="140" y="565" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">ckan0.cf.opendata</text>
+  <text x="140" y="578" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">.inter.prod-toronto.ca</text>
+
+  <!-- API Endpoints -->
+  <rect x="230" y="460" width="280" height="140" fill="#f3e8ff" stroke="#a855f7" stroke-width="1" rx="8"/>
+  <text x="370" y="485" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">API Endpoints Tested</text>
+  <text x="240" y="505" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/package_list</text>
+  <text x="240" y="525" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/package_search</text>
+  <text x="240" y="545" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/package_show</text>
+  <text x="240" y="565" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/organization_list</text>
+
+  <!-- Data Collection Results -->
+  <rect x="540" y="460" width="220" height="140" fill="#ffffff" stroke="#a855f7" stroke-width="1" rx="8"/>
+  <text x="650" y="485" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Collection Results</text>
+  <circle cx="560" cy="505" r="8" fill="#10b981"/>
+  <text x="575" y="510" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">523 datasets found</text>
+  <circle cx="560" cy="525" r="8" fill="#10b981"/>
+  <text x="575" y="530" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">46 divisions identified</text>
+  <circle cx="560" cy="545" r="8" fill="#10b981"/>
+  <text x="575" y="550" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">298 categories mapped</text>
+  <circle cx="560" cy="565" r="8" fill="#10b981"/>
+  <text x="575" y="570" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">4,051 resources cataloged</text>
+
+  <!-- Generated Files -->
+  <rect x="790" y="460" width="180" height="140" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="8"/>
+  <text x="880" y="485" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Generated Files</text>
+  <text x="800" y="505" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">📄 toronto_datasets_catalog.json</text>
+  <text x="800" y="520" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">📄 toronto_all_datasets_metadata.json</text>
+  <text x="800" y="535" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">📄 toronto_summary.json</text>
+  <text x="800" y="550" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">📄 datasets.csv</text>
+  <text x="800" y="565" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">📄 dimensions.csv</text>
+
+  <!-- Arrow 2 -->
+  <path d="M600,620 L600,650" stroke="#64748b" stroke-width="4" fill="none"/>
+  <path d="M595,645 L600,655 L605,645" fill="#64748b"/>
+
+  <!-- Step 3: Data Processing -->
+  <rect x="50" y="670" width="1100" height="200" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="10"/>
+  <text x="70" y="710" font-size="24" font-weight="bold" fill="#92400e" font-family="Roboto, sans-serif">3. Data Processing and Unification</text>
+
+  <!-- Processing Icon -->
+  <rect x="80" y="730" width="120" height="120" fill="#ffffff" stroke="#f59e0b" stroke-width="2" rx="10"/>
+  <circle cx="140" cy="770" r="25" fill="#f59e0b"/>
+  <text x="140" y="780" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">⚙️</text>
+  <text x="140" y="805" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e" font-family="Roboto, sans-serif">Python Script</text>
+  <text x="140" y="825" text-anchor="middle" font-size="10" fill="#92400e" font-family="Roboto, sans-serif">Data Processing</text>
+
+  <!-- Processing Steps -->
+  <rect x="230" y="730" width="280" height="120" fill="#fed7aa" stroke="#f59e0b" stroke-width="1" rx="8"/>
+  <text x="370" y="755" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e" font-family="Roboto, sans-serif">Processing Pipeline</text>
+  <text x="240" y="775" font-size="12" fill="#92400e" font-family="Roboto, sans-serif">• Parse JSON files</text>
+  <text x="240" y="795" font-size="12" fill="#92400e" font-family="Roboto, sans-serif">• Calculate relationships</text>
+  <text x="240" y="815" font-size="12" fill="#92400e" font-family="Roboto, sans-serif">• Generate UI metadata</text>
+  <text x="240" y="835" font-size="12" fill="#92400e" font-family="Roboto, sans-serif">• Create unified CSV</text>
+
+  <!-- Unified Output -->
+  <rect x="540" y="730" width="200" height="120" fill="#ffffff" stroke="#f59e0b" stroke-width="1" rx="8"/>
+  <text x="640" y="755" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e" font-family="Roboto, sans-serif">Unified Output</text>
+  <circle cx="560" cy="775" r="8" fill="#10b981"/>
+  <text x="575" y="780" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">unified_dimensions.csv</text>
+  <circle cx="560" cy="795" r="8" fill="#10b981"/>
+  <text x="575" y="800" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">134KB, 344 records</text>
+  <circle cx="560" cy="815" r="8" fill="#10b981"/>
+  <text x="575" y="820" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">All relationships mapped</text>
+
+  <!-- Performance Benefits -->
+  <rect x="770" y="730" width="200" height="120" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="8"/>
+  <text x="870" y="755" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Benefits</text>
+  <text x="780" y="775" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">⚡ No CORS issues</text>
+  <text x="780" y="795" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">⚡ Instant search</text>
+  <text x="780" y="815" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">⚡ Single file load</text>
+  <text x="780" y="835" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">⚡ Offline capable</text>
+
+  <!-- Arrow 3 -->
+  <path d="M600,870 L600,900" stroke="#64748b" stroke-width="4" fill="none"/>
+  <path d="M595,895 L600,905 L605,895" fill="#64748b"/>
+
+  <!-- Step 4: Frontend Implementation -->
+  <rect x="50" y="920" width="1100" height="220" fill="#f0f9ff" stroke="#0891b2" stroke-width="2" rx="10"/>
+  <text x="70" y="960" font-size="24" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">4. Frontend Implementation</text>
+
+  <!-- React Icon -->
+  <rect x="80" y="980" width="120" height="140" fill="#ffffff" stroke="#0891b2" stroke-width="2" rx="10"/>
+  <circle cx="140" cy="1030" r="25" fill="#0891b2"/>
+  <text x="140" y="1040" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">⚛️</text>
+  <text x="140" y="1065" text-anchor="middle" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">React + D3</text>
+  <text x="140" y="1085" text-anchor="middle" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">Frontend App</text>
+
+  <!-- Dual Tree -->
+  <rect x="230" y="980" width="200" height="140" fill="#e0f2fe" stroke="#0891b2" stroke-width="1" rx="8"/>
+  <text x="330" y="1005" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Dual Tree Explorer</text>
+  
+  <!-- Left Tree -->
+  <rect x="240" y="1020" width="80" height="80" fill="#ffffff" stroke="#0891b2" stroke-width="1" rx="5"/>
+  <text x="280" y="1035" text-anchor="middle" font-size="10" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Divisions</text>
+  <text x="250" y="1050" font-size="9" fill="#0369a1" font-family="Roboto, sans-serif">🏢 Transportation</text>
+  <text x="250" y="1065" font-size="9" fill="#0369a1" font-family="Roboto, sans-serif">🏢 Public Safety</text>
+  <text x="250" y="1080" font-size="9" fill="#0369a1" font-family="Roboto, sans-serif">🏢 Health Services</text>
+
+  <!-- Right Tree -->
+  <rect x="340" y="1020" width="80" height="80" fill="#ffffff" stroke="#0891b2" stroke-width="1" rx="5"/>
+  <text x="380" y="1035" text-anchor="middle" font-size="10" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Categories</text>
+  <text x="350" y="1050" font-size="9" fill="#0369a1" font-family="Roboto, sans-serif">📊 Transportation</text>
+  <text x="350" y="1065" font-size="9" fill="#0369a1" font-family="Roboto, sans-serif">📊 Public Transit</text>
+  <text x="350" y="1080" font-size="9" fill="#0369a1" font-family="Roboto, sans-serif">📊 Traffic Data</text>
+
+  <!-- Features -->
+  <rect x="460" y="980" width="220" height="140" fill="#ffffff" stroke="#0891b2" stroke-width="1" rx="8"/>
+  <text x="570" y="1005" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Key Features</text>
+  <text x="470" y="1025" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">🔍 Real-time search across 344 dimensions</text>
+  <text x="470" y="1045" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">🔗 Cross-highlighting relationships</text>
+  <text x="470" y="1065" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">📥 Direct download integration</text>
+  <text x="470" y="1085" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">🎨 Color-coded visual organization</text>
+  <text x="470" y="1105" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">📱 Responsive design</text>
+
+  <!-- User Experience -->
+  <rect x="710" y="980" width="180" height="140" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="800" y="1005" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">User Experience</text>
+  <circle cx="730" cy="1025" r="8" fill="#10b981"/>
+  <text x="745" y="1030" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Zero loading delays</text>
+  <circle cx="730" cy="1045" r="8" fill="#10b981"/>
+  <text x="745" y="1050" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Instant interactions</text>
+  <circle cx="730" cy="1065" r="8" fill="#10b981"/>
+  <text x="745" y="1070" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Meaningful data display</text>
+  <circle cx="730" cy="1085" r="8" fill="#10b981"/>
+  <text x="745" y="1090" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Direct portal access</text>
+
+  <!-- Route -->
+  <rect x="920" y="980" width="150" height="140" fill="#fef7ff" stroke="#a855f7" stroke-width="1" rx="8"/>
+  <text x="995" y="1005" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Access Route</text>
+  <rect x="930" y="1020" width="130" height="40" fill="#a855f7" rx="5"/>
+  <text x="995" y="1045" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">/explore-dimensions</text>
+  <text x="995" y="1080" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">🌳 Data Explorer</text>
+  <text x="995" y="1100" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">Navigation Menu</text>
+
+  <!-- Footer Summary -->
+  <rect x="50" y="1160" width="1100" height="80" fill="#1e40af"/>
+  <text x="600" y="1190" text-anchor="middle" font-size="20" font-weight="bold" fill="white" font-family="Roboto, sans-serif">
+    Result: Complete Toronto Open Data Explorer
+  </text>
+  <text x="600" y="1215" text-anchor="middle" font-size="14" fill="#e0f2fe" font-family="Roboto, sans-serif">
+    523 datasets • 46 divisions • 298 categories • Zero CORS issues • Instant search • Direct downloads
+  </text>
+
+  <!-- Timeline -->
+  <line x1="100" y1="120" x2="100" y2="1160" stroke="#64748b" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="250" r="6" fill="#10b981"/>
+  <circle cx="100" cy="530" r="6" fill="#a855f7"/>
+  <circle cx="100" cy="790" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="1050" r="6" fill="#0891b2"/>
+
+  <!-- Discovery Date -->
+  <rect x="20" y="1280" width="200" height="60" fill="#f8fafc" stroke="#64748b" stroke-width="1" rx="5"/>
+  <text x="120" y="1300" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Data Collection Date</text>
+  <text x="120" y="1320" text-anchor="middle" font-size="11" fill="#64748b" font-family="Roboto, sans-serif">2025-08-20T10:38:44.457Z</text>
+
+</svg>

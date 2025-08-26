@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial Black', sans-serif; font-size: 24px; font-weight: bold; }
+      .section-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; }
+      .subsection { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; }
+      .code { font-family: 'Courier New', monospace; font-size: 10px; }
+      .highlight { fill: #e8f4f8; stroke: #2196F3; stroke-width: 2; }
+      .solution-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .tech-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .feature-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .innovation-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .impact-box { fill: #fce4ec; stroke: #e91e63; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#1976d2"/>
+  <text x="600" y="45" text-anchor="middle" class="title" fill="white">🚀 Our Data Catalog Solution</text>
+
+  <!-- Solution Overview -->
+  <rect x="20" y="100" width="1160" height="200" class="solution-box" rx="10"/>
+  <text x="40" y="130" class="section-title" fill="#1976d2">💡 Solution Vision</text>
+
+  <rect x="40" y="150" width="1120" height="130" fill="white" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <text x="60" y="175" class="subsection" fill="#1976d2">Toronto Dashboard: Interactive Data Exploration Platform</text>
+  <text x="60" y="195" class="text" fill="#000">Our solution transforms Toronto's 523 datasets from a static catalog into an interactive,</text>
+  <text x="60" y="210" class="text" fill="#000">visually engaging exploration platform. We bridge the gap between Toronto's comprehensive</text>
+  <text x="60" y="225" class="text" fill="#000">CKAN data portal and intuitive user experience through:</text>
+  <text x="80" y="245" class="text" fill="#1976d2">• 3D visualization metaphors for data discovery</text>
+  <text x="80" y="260" class="text" fill="#1976d2">• Dual-tree interface for relationship exploration</text>
+  <text x="600" y="245" class="text" fill="#1976d2">• Unified data model eliminating frontend complexity</text>
+  <text x="600" y="260" class="text" fill="#1976d2">• Direct integration with Toronto's official APIs</text>
+
+  <!-- Architecture Overview -->
+  <rect x="20" y="320" width="1160" height="350" class="tech-box" rx="10"/>
+  <text x="40" y="350" class="section-title" fill="#4caf50">🏗️ Technical Architecture</text>
+
+  <!-- Data Layer -->
+  <rect x="40" y="370" width="280" height="140" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="180" y="390" text-anchor="middle" class="subsection" fill="#000">📊 Data Layer</text>
+  <text x="50" y="410" class="small" fill="#4caf50" font-weight="bold">Sources:</text>
+  <text x="50" y="425" class="small" fill="#000">• CKAN API (523 datasets)</text>
+  <text x="50" y="440" class="small" fill="#000">• Toronto Dashboard Portal</text>
+  <text x="50" y="455" class="small" fill="#000">• Open Data Catalogue</text>
+  <text x="50" y="475" class="small" fill="#4caf50" font-weight="bold">Processing:</text>
+  <text x="50" y="490" class="small" fill="#000">• Python extraction scripts</text>
+  <text x="50" y="505" class="small" fill="#000">• Unified CSV generation</text>
+
+  <!-- Processing Layer -->
+  <rect x="340" y="370" width="280" height="140" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="480" y="390" text-anchor="middle" class="subsection" fill="#000">⚙️ Processing Layer</text>
+  <text x="350" y="410" class="small" fill="#4caf50" font-weight="bold">Data Modeling:</text>
+  <text x="350" y="425" class="small" fill="#000">• 46 Divisions mapped</text>
+  <text x="350" y="440" class="small" fill="#000">• 298 Categories organized</text>
+  <text x="350" y="455" class="small" fill="#000">• 344 Unified dimensions</text>
+  <text x="350" y="475" class="small" fill="#4caf50" font-weight="bold">CORS Solutions:</text>
+  <text x="350" y="490" class="small" fill="#000">• Local data caching</text>
+  <text x="350" y="505" class="small" fill="#000">• Pre-computed relationships</text>
+
+  <!-- Frontend Layer -->
+  <rect x="640" y="370" width="280" height="140" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="780" y="390" text-anchor="middle" class="subsection" fill="#000">🖥️ Frontend Layer</text>
+  <text x="650" y="410" class="small" fill="#4caf50" font-weight="bold">React + TypeScript:</text>
+  <text x="650" y="425" class="small" fill="#000">• React Router (SPA)</text>
+  <text x="650" y="440" class="small" fill="#000">• D3.js for data visualization</text>
+  <text x="650" y="455" class="small" fill="#000">• React Three Fiber (3D)</text>
+  <text x="650" y="475" class="small" fill="#4caf50" font-weight="bold">Responsive Design:</text>
+  <text x="650" y="490" class="small" fill="#000">• Mobile-first approach</text>
+  <text x="650" y="505" class="small" fill="#000">• Progressive enhancement</text>
+
+  <!-- Visualization Layer -->
+  <rect x="940" y="370" width="220" height="140" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="1050" y="390" text-anchor="middle" class="subsection" fill="#000">🎨 Visualization</text>
+  <text x="950" y="410" class="small" fill="#4caf50" font-weight="bold">3D Metaphors:</text>
+  <text x="950" y="425" class="small" fill="#000">• City Skyline</text>
+  <text x="950" y="440" class="small" fill="#000">• Galaxy Clusters</text>
+  <text x="950" y="455" class="small" fill="#000">• Data Forest</text>
+  <text x="950" y="475" class="small" fill="#4caf50" font-weight="bold">Interactive:</text>
+  <text x="950" y="490" class="small" fill="#000">• Dual-tree explorer</text>
+  <text x="950" y="505" class="small" fill="#000">• Search &amp; filtering</text>
+
+  <!-- Data Flow -->
+  <rect x="40" y="530" width="1120" height="130" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="50" y="550" class="subsection" fill="#000">🔄 Data Flow Pipeline</text>
+
+  <!-- Flow steps -->
+  <rect x="60" y="570" width="120" height="40" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="3"/>
+  <text x="120" y="595" text-anchor="middle" class="small" fill="#000">CKAN API</text>
+
+  <rect x="200" y="570" width="120" height="40" fill="#e8f5e8" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="260" y="595" text-anchor="middle" class="small" fill="#000">Python Script</text>
+
+  <rect x="340" y="570" width="120" height="40" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="3"/>
+  <text x="400" y="595" text-anchor="middle" class="small" fill="#000">Unified CSV</text>
+
+  <rect x="480" y="570" width="120" height="40" fill="#fce4ec" stroke="#e91e63" stroke-width="1" rx="3"/>
+  <text x="540" y="595" text-anchor="middle" class="small" fill="#000">React App</text>
+
+  <rect x="620" y="570" width="120" height="40" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="680" y="595" text-anchor="middle" class="small" fill="#000">D3 Processing</text>
+
+  <rect x="760" y="570" width="120" height="40" fill="#e0f2f1" stroke="#00796b" stroke-width="1" rx="3"/>
+  <text x="820" y="595" text-anchor="middle" class="small" fill="#000">3D Rendering</text>
+
+  <rect x="900" y="570" width="120" height="40" fill="#fff8e1" stroke="#ffc107" stroke-width="1" rx="3"/>
+  <text x="960" y="595" text-anchor="middle" class="small" fill="#000">User Interface</text>
+
+  <!-- Arrows -->
+  <path d="M 180 590 L 200 590" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 320 590 L 340 590" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 460 590 L 480 590" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 600 590 L 620 590" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 740 590 L 760 590" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 880 590 L 900 590" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="50" y="635" class="small" fill="#666">523 datasets → 344 dimensions → Interactive visualizations</text>
+  <text x="50" y="650" class="small" fill="#4caf50" font-weight="bold">Automated pipeline from API to user interface</text>
+
+  <!-- Key Features -->
+  <rect x="20" y="690" width="1160" height="350" class="feature-box" rx="10"/>
+  <text x="40" y="720" class="section-title" fill="#ff9800">✨ Key Features &amp; Innovations</text>
+
+  <!-- 3D Visualizations -->
+  <rect x="40" y="740" width="360" height="140" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="50" y="760" class="subsection" fill="#000">🌆 3D Data Metaphors</text>
+  <text x="50" y="780" class="small" fill="#ff9800" font-weight="bold">City Skyline:</text>
+  <text x="50" y="795" class="small" fill="#000">• Datasets as buildings by division</text>
+  <text x="50" y="810" class="small" fill="#000">• Height represents data volume</text>
+  <text x="50" y="830" class="small" fill="#ff9800" font-weight="bold">Galaxy Clusters:</text>
+  <text x="50" y="845" class="small" fill="#000">• Categories as star systems</text>
+  <text x="50" y="860" class="small" fill="#000">• Relationships as orbital paths</text>
+  <text x="220" y="760" class="subsection" fill="#000">🌲 Data Forest</text>
+  <text x="220" y="780" class="small" fill="#000">• Procedural tree growth</text>
+  <text x="220" y="795" class="small" fill="#000">• Based on data freshness</text>
+  <text x="220" y="810" class="small" fill="#000">• Interactive exploration</text>
+  <text x="220" y="830" class="small" fill="#ff9800" font-weight="bold">Crystal Structures:</text>
+  <text x="220" y="845" class="small" fill="#000">• Geometric data patterns</text>
+  <text x="220" y="860" class="small" fill="#000">• Faceted information display</text>
+
+  <!-- Dual Tree Interface -->
+  <rect x="420" y="740" width="360" height="140" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="430" y="760" class="subsection" fill="#000">🌳 Dual-Tree Explorer</text>
+  <text x="430" y="780" class="small" fill="#ff9800" font-weight="bold">Left Tree - Divisions:</text>
+  <text x="430" y="795" class="small" fill="#000">• 46 organizational units</text>
+  <text x="430" y="810" class="small" fill="#000">• Hierarchical structure</text>
+  <text x="430" y="825" class="small" fill="#000">• Dataset count indicators</text>
+  <text x="430" y="845" class="small" fill="#ff9800" font-weight="bold">Right Tree - Categories:</text>
+  <text x="430" y="860" class="small" fill="#000">• 298 subject classifications</text>
+  <text x="600" y="780" class="subsection" fill="#000">🔍 Search Features</text>
+  <text x="600" y="800" class="small" fill="#000">• Real-time filtering</text>
+  <text x="600" y="815" class="small" fill="#000">• Cross-tree relationships</text>
+  <text x="600" y="830" class="small" fill="#000">• Dataset details modal</text>
+  <text x="600" y="845" class="small" fill="#000">• Download integration</text>
+  <text x="600" y="860" class="small" fill="#ff9800">Direct portal links</text>
+
+  <!-- User Experience -->
+  <rect x="800" y="740" width="360" height="140" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="810" y="760" class="subsection" fill="#000">👥 User Experience Design</text>
+  <text x="810" y="780" class="small" fill="#ff9800" font-weight="bold">Progressive Disclosure:</text>
+  <text x="810" y="795" class="small" fill="#000">• Overview first, details on demand</text>
+  <text x="810" y="810" class="small" fill="#000">• Breadcrumb navigation</text>
+  <text x="810" y="825" class="small" fill="#000">• Context-aware help</text>
+  <text x="810" y="845" class="small" fill="#ff9800" font-weight="bold">Accessibility:</text>
+  <text x="810" y="860" class="small" fill="#000">• Keyboard navigation</text>
+  <text x="980" y="780" class="small" fill="#000">• Screen reader support</text>
+  <text x="980" y="795" class="small" fill="#000">• High contrast modes</text>
+  <text x="980" y="810" class="small" fill="#000">• Responsive design</text>
+  <text x="980" y="825" class="small" fill="#000">• Touch-friendly controls</text>
+  <text x="980" y="845" class="small" fill="#ff9800">Mobile optimized</text>
+
+  <!-- Performance & Technical -->
+  <rect x="40" y="900" width="1120" height="130" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="50" y="920" class="subsection" fill="#000">⚡ Performance &amp; Technical Excellence</text>
+  <text x="50" y="940" class="small" fill="#000">Frontend Performance:</text>
+  <text x="60" y="955" class="small" fill="#ff9800">• React.memo optimization • Virtual scrolling • Lazy loading • Bundle splitting</text>
+  <text x="50" y="975" class="small" fill="#000">Data Processing:</text>
+  <text x="60" y="990" class="small" fill="#ff9800">• Local CSV caching • Pre-computed relationships • Efficient search algorithms</text>
+  <text x="50" y="1010" class="small" fill="#000">3D Rendering:</text>
+  <text x="60" y="1025" class="small" fill="#ff9800">• WebGL acceleration • Instanced rendering • Level-of-detail optimization • Memory management</text>
+
+  <!-- Innovation & Impact -->
+  <rect x="20" y="1060" width="1160" height="280" class="innovation-box" rx="10"/>
+  <text x="40" y="1090" class="section-title" fill="#9c27b0">🚀 Innovation &amp; Unique Value</text>
+
+  <!-- Innovation Points -->
+  <rect x="40" y="1110" width="360" height="120" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="1130" class="subsection" fill="#000">💡 Technical Innovations</text>
+  <text x="50" y="1150" class="small" fill="#9c27b0" font-weight="bold">CORS Workaround Solution:</text>
+  <text x="50" y="1165" class="small" fill="#000">• Eliminates browser restrictions</text>
+  <text x="50" y="1180" class="small" fill="#000">• Maintains data freshness</text>
+  <text x="50" y="1200" class="small" fill="#9c27b0" font-weight="bold">Unified Data Model:</text>
+  <text x="50" y="1215" class="small" fill="#000">• 99.995% complexity reduction</text>
+
+  <rect x="420" y="1110" width="360" height="120" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="430" y="1130" class="subsection" fill="#000">🎯 User Experience Innovation</text>
+  <text x="430" y="1150" class="small" fill="#9c27b0" font-weight="bold">3D Data Metaphors:</text>
+  <text x="430" y="1165" class="small" fill="#000">• Makes abstract data tangible</text>
+  <text x="430" y="1180" class="small" fill="#000">• Engages multiple learning styles</text>
+  <text x="430" y="1200" class="small" fill="#9c27b0" font-weight="bold">Relationship Visualization:</text>
+  <text x="430" y="1215" class="small" fill="#000">• Clear division-category mapping</text>
+
+  <rect x="800" y="1110" width="360" height="120" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="810" y="1130" class="subsection" fill="#000">🌐 Open Data Innovation</text>
+  <text x="810" y="1150" class="small" fill="#9c27b0" font-weight="bold">Democratizing Data Access:</text>
+  <text x="810" y="1165" class="small" fill="#000">• No technical skills required</text>
+  <text x="810" y="1180" class="small" fill="#000">• Visual discovery interface</text>
+  <text x="810" y="1200" class="small" fill="#9c27b0" font-weight="bold">Community Engagement:</text>
+  <text x="810" y="1215" class="small" fill="#000">• Encourages data exploration</text>
+
+  <!-- Competitive Advantages -->
+  <rect x="40" y="1250" width="1120" height="80" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="1270" class="subsection" fill="#000">🏆 Competitive Advantages Over Traditional Data Portals</text>
+  <text x="50" y="1290" class="text" fill="#9c27b0" font-weight="bold">Visual-First Approach:</text>
+  <text x="200" y="1290" class="text" fill="#000">Unlike text-heavy catalogs, we use 3D metaphors for immediate understanding</text>
+  <text x="50" y="1305" class="text" fill="#9c27b0" font-weight="bold">Relationship Discovery:</text>
+  <text x="200" y="1305" class="text" fill="#000">Dual-tree interface reveals data connections that are hidden in traditional lists</text>
+  <text x="50" y="1320" class="text" fill="#9c27b0" font-weight="bold">Performance Optimization:</text>
+  <text x="200" y="1320" class="text" fill="#000">Local processing eliminates API latency and CORS issues</text>
+
+  <!-- Impact & Future -->
+  <rect x="20" y="1360" width="1160" height="220" class="impact-box" rx="10"/>
+  <text x="40" y="1390" class="section-title" fill="#e91e63">📈 Impact &amp; Future Vision</text>
+
+  <!-- Current Impact -->
+  <rect x="40" y="1410" width="360" height="120" fill="white" stroke="#e91e63" stroke-width="1" rx="5"/>
+  <text x="50" y="1430" class="subsection" fill="#000">🎯 Current Impact</text>
+  <text x="50" y="1450" class="small" fill="#e91e63" font-weight="bold">Data Accessibility:</text>
+  <text x="50" y="1465" class="small" fill="#000">• 523 datasets now visually explorable</text>
+  <text x="50" y="1480" class="small" fill="#000">• Complex relationships simplified</text>
+  <text x="50" y="1500" class="small" fill="#e91e63" font-weight="bold">Technical Achievement:</text>
+  <text x="50" y="1515" class="small" fill="#000">• Full Toronto data integration</text>
+
+  <!-- Future Enhancements -->
+  <rect x="420" y="1410" width="360" height="120" fill="white" stroke="#e91e63" stroke-width="1" rx="5"/>
+  <text x="430" y="1430" class="subsection" fill="#000">🚀 Future Enhancements</text>
+  <text x="430" y="1450" class="small" fill="#e91e63" font-weight="bold">AI Integration:</text>
+  <text x="430" y="1465" class="small" fill="#000">• Natural language queries</text>
+  <text x="430" y="1480" class="small" fill="#000">• Automated insights generation</text>
+  <text x="430" y="1500" class="small" fill="#e91e63" font-weight="bold">Real-time Updates:</text>
+  <text x="430" y="1515" class="small" fill="#000">• Live data synchronization</text>
+
+  <!-- Scalability -->
+  <rect x="800" y="1410" width="360" height="120" fill="white" stroke="#e91e63" stroke-width="1" rx="5"/>
+  <text x="810" y="1430" class="subsection" fill="#000">📏 Scalability Potential</text>
+  <text x="810" y="1450" class="small" fill="#e91e63" font-weight="bold">Multi-City Platform:</text>
+  <text x="810" y="1465" class="small" fill="#000">• Template for other municipalities</text>
+  <text x="810" y="1480" class="small" fill="#000">• Standardized CKAN integration</text>
+  <text x="810" y="1500" class="small" fill="#e91e63" font-weight="bold">Open Source Release:</text>
+  <text x="810" y="1515" class="small" fill="#000">• Community contributions</text>
+
+  <!-- Summary -->
+  <rect x="40" y="1550" width="1120" height="20" fill="white" stroke="#e91e63" stroke-width="2" rx="8"/>
+  <text x="60" y="1565" class="text" fill="#e91e63" font-weight="bold">Our solution transforms static data catalogs into engaging, discoverable experiences that democratize open data access.</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

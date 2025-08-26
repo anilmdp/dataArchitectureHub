@@ -1,0 +1,484 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2024-01-28T10:00:00Z",
+    "description": "SOX Dashboard Data Structure - Supporting cradle-to-grave process management",
+    "dataRefreshInterval": 30000
+  },
+  "project": {
+    "id": "sox-impl-001",
+    "name": "SOX Compliance Implementation - Manufacturing Corp",
+    "startDate": "2024-01-01",
+    "estimatedEndDate": "2025-06-30",
+    "actualEndDate": null,
+    "status": "in_progress",
+    "currentPhase": "foundation",
+    "currentWeek": 28,
+    "totalWeeks": 72,
+    "overallProgress": {
+      "percentage": 40,
+      "status": "on_track",
+      "lastUpdated": "2024-01-28T09:30:00Z"
+    }
+  },
+  "budget": {
+    "approved": 1500000,
+    "spent": 1200000,
+    "remaining": 300000,
+    "utilization": 0.80,
+    "status": "on_track",
+    "forecast": {
+      "projectedTotal": 1450000,
+      "variance": -50000,
+      "confidenceLevel": 0.85
+    },
+    "breakdownByPhase": {
+      "planning": {
+        "budgeted": 200000,
+        "actual": 185000,
+        "status": "complete"
+      },
+      "foundation": {
+        "budgeted": 800000,
+        "actual": 640000,
+        "status": "in_progress"
+      },
+      "execution": {
+        "budgeted": 300000,
+        "actual": 0,
+        "status": "pending"
+      },
+      "optimization": {
+        "budgeted": 150000,
+        "actual": 0,
+        "status": "pending"
+      },
+      "scaling": {
+        "budgeted": 50000,
+        "actual": 0,
+        "status": "pending"
+      }
+    }
+  },
+  "timeline": {
+    "phases": [
+      {
+        "id": "planning",
+        "name": "Strategic Planning & Assessment",
+        "startWeek": 1,
+        "endWeek": 8,
+        "duration": 8,
+        "status": "complete",
+        "progress": 100,
+        "description": "Initial assessment and strategic planning",
+        "milestones": [
+          {
+            "id": "risk_assessment",
+            "name": "Risk Assessment Complete",
+            "week": 4,
+            "status": "complete"
+          },
+          {
+            "id": "resource_planning",
+            "name": "Resource Planning Approved",
+            "week": 8,
+            "status": "complete"
+          }
+        ]
+      },
+      {
+        "id": "foundation",
+        "name": "Foundation Implementation",
+        "startWeek": 9,
+        "endWeek": 36,
+        "duration": 28,
+        "status": "in_progress",
+        "progress": 70,
+        "description": "Core platform and business configuration",
+        "currentLayer": "layer2",
+        "layers": [
+          {
+            "id": "layer1",
+            "name": "Infrastructure & Core Platform",
+            "startWeek": 9,
+            "endWeek": 14,
+            "status": "complete",
+            "progress": 100
+          },
+          {
+            "id": "layer2",
+            "name": "Business Configuration & Data Setup",
+            "startWeek": 15,
+            "endWeek": 20,
+            "status": "in_progress",
+            "progress": 70
+          },
+          {
+            "id": "layer3",
+            "name": "User Onboarding & Training",
+            "startWeek": 21,
+            "endWeek": 24,
+            "status": "pending",
+            "progress": 0
+          },
+          {
+            "id": "layer4",
+            "name": "System Testing & Validation",
+            "startWeek": 25,
+            "endWeek": 28,
+            "status": "pending",
+            "progress": 0
+          }
+        ]
+      },
+      {
+        "id": "execution",
+        "name": "First SOX Cycle Execution",
+        "startWeek": 37,
+        "endWeek": 72,
+        "duration": 36,
+        "status": "pending",
+        "progress": 0,
+        "description": "Complete SOX cycle with AI learning"
+      },
+      {
+        "id": "optimization",
+        "name": "Lessons Learned & Optimization",
+        "startWeek": 73,
+        "endWeek": 78,
+        "duration": 6,
+        "status": "pending",
+        "progress": 0,
+        "description": "Process optimization and template creation"
+      },
+      {
+        "id": "scaling",
+        "name": "Scaling & Market Expansion",
+        "startWeek": 79,
+        "endWeek": 104,
+        "duration": 26,
+        "status": "pending",
+        "progress": 0,
+        "description": "Prepare for next implementations"
+      }
+    ]
+  },
+  "controls": {
+    "total": 47,
+    "completed": 35,
+    "inProgress": 8,
+    "notStarted": 4,
+    "byCategory": {
+      "revenue": {
+        "total": 12,
+        "completed": 10,
+        "progress": 83
+      },
+      "procurement": {
+        "total": 9,
+        "completed": 6,
+        "progress": 67
+      },
+      "inventory": {
+        "total": 8,
+        "completed": 7,
+        "progress": 88
+      },
+      "payroll": {
+        "total": 6,
+        "completed": 3,
+        "progress": 50
+      },
+      "financial_close": {
+        "total": 7,
+        "completed": 2,
+        "progress": 29
+      },
+      "it_general": {
+        "total": 5,
+        "completed": 3,
+        "progress": 60
+      }
+    },
+    "testingProcedures": {
+      "total": 156,
+      "documented": 156,
+      "validated": 89,
+      "approved": 67
+    }
+  },
+  "team": {
+    "totalMembers": 12,
+    "activeMembers": 10,
+    "utilization": 0.80,
+    "status": "high_utilization",
+    "members": [
+      {
+        "id": "js001",
+        "name": "John Smith",
+        "role": "Executive Sponsor",
+        "avatar": "JS",
+        "status": "available",
+        "utilization": 0.40,
+        "skills": ["leadership", "strategy", "stakeholder_management"],
+        "currentTasks": 3,
+        "overdueTasks": 0
+      },
+      {
+        "id": "md002",
+        "name": "Mary Davis",
+        "role": "SOX Program Manager",
+        "avatar": "MD",
+        "status": "busy",
+        "utilization": 0.90,
+        "skills": ["project_management", "sox_compliance", "process_design"],
+        "currentTasks": 12,
+        "overdueTasks": 1
+      },
+      {
+        "id": "rj003",
+        "name": "Robert Jones",
+        "role": "Technical Lead",
+        "avatar": "RJ",
+        "status": "overloaded",
+        "utilization": 1.20,
+        "skills": ["rust", "postgresql", "systems_integration"],
+        "currentTasks": 18,
+        "overdueTasks": 3,
+        "notes": "Handling SAP integration issues - needs support"
+      },
+      {
+        "id": "sk004",
+        "name": "Sarah Kim",
+        "role": "SOX Analyst",
+        "avatar": "SK",
+        "status": "training",
+        "utilization": 0.60,
+        "skills": ["sox_testing", "documentation", "data_analysis"],
+        "currentTasks": 8,
+        "overdueTasks": 0,
+        "notes": "Currently in SOX certification training"
+      }
+    ]
+  },
+  "risks": {
+    "overall": "medium",
+    "score": 6.2,
+    "maxScore": 10,
+    "items": [
+      {
+        "id": "sap_integration",
+        "title": "SAP Integration Behind Schedule",
+        "severity": "high",
+        "probability": 0.85,
+        "impact": 8,
+        "status": "active",
+        "owner": "Robert Jones",
+        "dueDate": "2024-02-15",
+        "description": "SAP RFC connections failing in production environment",
+        "mitigation": "Engage external SAP consultant, escalate to IT security team"
+      },
+      {
+        "id": "resource_constraint",
+        "title": "Team Utilization at Maximum",
+        "severity": "medium",
+        "probability": 0.70,
+        "impact": 6,
+        "status": "active",
+        "owner": "Mary Davis",
+        "dueDate": "2024-02-28",
+        "description": "Current team operating at 80% utilization with peaks at 120%",
+        "mitigation": "Hire additional senior analyst, redistribute workload"
+      },
+      {
+        "id": "stakeholder_availability",
+        "title": "Process Owner Engagement",
+        "severity": "medium",
+        "probability": 0.60,
+        "impact": 5,
+        "status": "monitoring",
+        "owner": "John Smith",
+        "dueDate": "2024-03-15",
+        "description": "Process owners struggle to allocate time for SOX activities",
+        "mitigation": "Executive mandate, dedicated time allocation, incentive alignment"
+      }
+    ]
+  },
+  "ai": {
+    "templateLibrary": {
+      "total": 47,
+      "generated": 35,
+      "validated": 23,
+      "accuracy": 0.94,
+      "userAdoption": 0.78
+    },
+    "learningMetrics": {
+      "patternsRecognized": 1247,
+      "businessRules": 89,
+      "testingProcedures": 156,
+      "modelAccuracy": 0.82,
+      "improvementRate": 0.15
+    },
+    "recommendations": [
+      {
+        "id": "auto_evidence",
+        "title": "Automated Evidence Collection for Inventory Controls",
+        "confidence": 0.85,
+        "estimatedEfficiencyGain": 0.85,
+        "status": "pending_review",
+        "description": "Based on patterns, implementing automated evidence collection could achieve 85% efficiency gain"
+      },
+      {
+        "id": "sample_optimization",
+        "title": "Sample Size Optimization",
+        "confidence": 0.92,
+        "estimatedEfficiencyGain": 0.35,
+        "status": "implemented",
+        "description": "AI-recommended sample sizes showing 35% reduction in testing effort"
+      }
+    ]
+  },
+  "businessConfiguration": {
+    "organizationalStructure": {
+      "legalEntities": {
+        "total": 4,
+        "configured": 4,
+        "status": "complete"
+      },
+      "businessUnits": {
+        "total": 8,
+        "configured": 8,
+        "status": "complete"
+      },
+      "reportingHierarchy": {
+        "levels": 4,
+        "configured": 3,
+        "status": "in_progress"
+      },
+      "userRoles": {
+        "total": 47,
+        "configured": 28,
+        "status": "blocked",
+        "blocker": "Waiting for HR approval on role definitions"
+      },
+      "accessPermissions": {
+        "total": 47,
+        "configured": 0,
+        "status": "pending"
+      }
+    },
+    "processFramework": {
+      "majorProcesses": {
+        "total": 8,
+        "mapped": 6,
+        "processes": [
+          {"name": "Revenue Recognition", "status": "complete"},
+          {"name": "Procurement Cycle", "status": "complete"},
+          {"name": "Inventory Management", "status": "complete"},
+          {"name": "Payroll Processing", "status": "in_progress"},
+          {"name": "Asset Management", "status": "pending"},
+          {"name": "Financial Close", "status": "pending"},
+          {"name": "IT General Controls", "status": "complete"},
+          {"name": "Treasury Operations", "status": "complete"}
+        ]
+      },
+      "riskAssessment": {
+        "totalRisks": 67,
+        "highRisk": 12,
+        "mediumRisk": 28,
+        "lowRisk": 27,
+        "mitigationPlans": 60,
+        "completionRate": 0.89
+      },
+      "processOwnerEngagement": {
+        "totalOwners": 20,
+        "engaged": 16,
+        "engagementRate": 0.80,
+        "challenge": "Process owners struggle to allocate time for documentation"
+      }
+    }
+  },
+  "notifications": {
+    "active": [
+      {
+        "id": "sap_delay",
+        "type": "alert",
+        "severity": "high",
+        "title": "SAP Integration Delay",
+        "message": "SAP integration is 2 weeks behind schedule. External consultant recommended.",
+        "timestamp": "2024-01-28T08:00:00Z",
+        "acknowledged": false,
+        "assignedTo": "rj003"
+      },
+      {
+        "id": "milestone_approaching",
+        "type": "reminder",
+        "severity": "medium",
+        "title": "Layer 2 Completion Due",
+        "message": "Business Configuration layer due for completion in 5 days.",
+        "timestamp": "2024-01-28T09:00:00Z",
+        "acknowledged": true,
+        "assignedTo": "md002"
+      }
+    ]
+  },
+  "systemStatus": {
+    "overallHealth": "operational",
+    "lastUpdate": "2024-01-28T09:58:00Z",
+    "uptime": 0.999,
+    "activeUsers": 23,
+    "dataSync": {
+      "status": "syncing",
+      "progress": 0.85,
+      "lastSync": "2024-01-28T09:55:00Z"
+    },
+    "integrations": {
+      "sap": {
+        "status": "degraded",
+        "lastConnected": "2024-01-28T06:30:00Z",
+        "errorCount": 12
+      },
+      "activeDirectory": {
+        "status": "operational",
+        "lastConnected": "2024-01-28T09:57:00Z",
+        "errorCount": 0
+      },
+      "office365": {
+        "status": "operational",
+        "lastConnected": "2024-01-28T09:58:00Z",
+        "errorCount": 0
+      }
+    }
+  },
+  "analytics": {
+    "weeklyStats": {
+      "tasksCompleted": 127,
+      "aiRecommendations": 23,
+      "userSessions": 342,
+      "documentsGenerated": 89
+    },
+    "trends": {
+      "productivity": {
+        "week": 0.15,
+        "month": 0.08,
+        "quarter": 0.25
+      },
+      "riskReduction": {
+        "week": -0.05,
+        "month": -0.12,
+        "quarter": -0.30
+      }
+    }
+  },
+  "userPreferences": {
+    "dashboardLayout": "executive",
+    "refreshInterval": 30,
+    "notifications": {
+      "email": true,
+      "push": true,
+      "sms": false
+    },
+    "theme": "light",
+    "language": "en-US"
+  }
+}

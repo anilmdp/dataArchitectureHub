@@ -1,0 +1,266 @@
+<svg viewBox="0 0 1200 2000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <rect width="1200" height="120" fill="#047857"/>
+  <text x="600" y="50" text-anchor="middle" font-size="32" font-weight="bold" fill="white" font-family="Roboto, sans-serif">
+    Toronto Data Discovery - Starting Point
+  </text>
+  <text x="600" y="80" text-anchor="middle" font-size="16" fill="#d1fae5" font-family="Roboto, sans-serif">
+    From Official City Portals to Complete Data Collection
+  </text>
+
+  <!-- Portal Comparison Section -->
+  <rect x="50" y="150" width="1100" height="300" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="10"/>
+  <text x="70" y="190" font-size="24" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Two Official Toronto Data Portals</text>
+
+  <!-- Toronto Dashboard Portal -->
+  <rect x="80" y="210" width="480" height="220" fill="#ffffff" stroke="#10b981" stroke-width="2" rx="8"/>
+  <rect x="80" y="210" width="480" height="40" fill="#d1fae5" rx="8"/>
+  <text x="320" y="235" text-anchor="middle" font-size="18" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">🏛️ Toronto Dashboard Portal</text>
+  
+  <!-- Dashboard Features -->
+  <text x="100" y="265" font-size="12" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Key Features:</text>
+  <text x="100" y="285" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Social and economic indicators</text>
+  <text x="100" y="300" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Quarterly data updates</text>
+  <text x="100" y="315" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Export to CSV, XML, JSON</text>
+  <text x="100" y="330" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• 5 specialized dashboards</text>
+  <text x="100" y="345" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Video tutorial included</text>
+  
+  <text x="300" y="265" font-size="12" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Categories:</text>
+  <text x="300" y="285" font-size="10" fill="#047857" font-family="Roboto, sans-serif">📈 Business and Economy</text>
+  <text x="300" y="300" font-size="10" fill="#047857" font-family="Roboto, sans-serif">🏗️ City Building and Mobility</text>
+  <text x="300" y="315" font-size="10" fill="#047857" font-family="Roboto, sans-serif">🌱 Climate Action</text>
+  <text x="300" y="330" font-size="10" fill="#047857" font-family="Roboto, sans-serif">🏠 Housing and Homelessness</text>
+  <text x="300" y="345" font-size="10" fill="#047857" font-family="Roboto, sans-serif">🏥 Public Health and Safety</text>
+
+  <!-- Dashboard URL -->
+  <rect x="90" y="360" width="460" height="25" fill="#f0fdf4" stroke="#10b981" stroke-width="1" rx="5"/>
+  <text x="320" y="377" text-anchor="middle" font-size="10" fill="#047857" font-family="Roboto, sans-serif">https://www.toronto.ca/city-government/data-research-maps/toronto-dashboard/</text>
+
+  <!-- Contact Info -->
+  <text x="100" y="405" font-size="10" fill="#047857" font-family="Roboto, sans-serif">📧 Contact: dataresearch@toronto.ca</text>
+  <text x="100" y="420" font-size="10" fill="#047857" font-family="Roboto, sans-serif">⚠️ Data provided "as is" - no guaranteed accuracy</text>
+
+  <!-- Open Data Portal -->
+  <rect x="640" y="210" width="480" height="220" fill="#ffffff" stroke="#0891b2" stroke-width="2" rx="8"/>
+  <rect x="640" y="210" width="480" height="40" fill="#e0f2fe" rx="8"/>
+  <text x="880" y="235" text-anchor="middle" font-size="18" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">🌐 Open Data Portal</text>
+  
+  <!-- Open Data Features -->
+  <text x="660" y="265" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Key Features:</text>
+  <text x="660" y="285" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">• 523 datasets confirmed</text>
+  <text x="660" y="300" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">• CKAN-powered platform</text>
+  <text x="660" y="315" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">• API access available</text>
+  <text x="660" y="330" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">• Multiple data formats</text>
+  <text x="660" y="345" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">• Regular updates</text>
+  
+  <text x="860" y="265" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Target Users:</text>
+  <text x="860" y="285" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">👨‍💻 App developers</text>
+  <text x="860" y="300" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">🏛️ Engaged citizens</text>
+  <text x="860" y="315" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">🎓 Students</text>
+  <text x="860" y="330" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">🔬 Researchers</text>
+
+  <!-- Open Data URL -->
+  <rect x="650" y="360" width="460" height="25" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="5"/>
+  <text x="880" y="377" text-anchor="middle" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">https://open.toronto.ca/</text>
+
+  <!-- Contact Info -->
+  <text x="660" y="405" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">📧 Contact: opendata@toronto.ca</text>
+  <text x="660" y="420" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">🏆 2025 Open Data Awards active</text>
+
+  <!-- Connection Arrow -->
+  <path d="M560,320 L640,320" stroke="#64748b" stroke-width="3" fill="none"/>
+  <path d="M635,315 L645,320 L635,325" fill="#64748b"/>
+
+  <!-- Screenshot Documentation Section -->
+  <rect x="50" y="480" width="1100" height="380" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="10"/>
+  <text x="70" y="520" font-size="24" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Manual Data Extraction Process - Screenshot Documentation</text>
+  
+  <!-- Screenshot Grid -->
+  <!-- Screenshot 1: Homepage -->
+  <rect x="80" y="540" width="220" height="160" fill="#ffffff" stroke="#64748b" stroke-width="2" rx="8"/>
+  <image x="85" y="545" width="210" height="120" href="0a-homepage.png" opacity="0.8"/>
+  <rect x="85" y="665" width="210" height="30" fill="#f1f5f9"/>
+  <text x="190" y="682" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Step 1: Homepage</text>
+  <text x="190" y="695" text-anchor="middle" font-size="9" fill="#334155" font-family="Roboto, sans-serif">0a-homepage.png</text>
+
+  <!-- Screenshot 2: Export Button -->
+  <rect x="320" y="540" width="220" height="160" fill="#ffffff" stroke="#64748b" stroke-width="2" rx="8"/>
+  <image x="325" y="545" width="210" height="120" href="1a-export-data-button.png" opacity="0.8"/>
+  <rect x="325" y="665" width="210" height="30" fill="#f1f5f9"/>
+  <text x="430" y="682" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Step 2: Export Button</text>
+  <text x="430" y="695" text-anchor="middle" font-size="9" fill="#334155" font-family="Roboto, sans-serif">1a-export-data-button.png</text>
+
+  <!-- Screenshot 3: Data Sources -->
+  <rect x="560" y="540" width="220" height="160" fill="#ffffff" stroke="#64748b" stroke-width="2" rx="8"/>
+  <image x="565" y="545" width="210" height="120" href="1a-export-data-sources.png" opacity="0.8"/>
+  <rect x="565" y="665" width="210" height="30" fill="#f1f5f9"/>
+  <text x="670" y="682" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Step 3: Data Sources</text>
+  <text x="670" y="695" text-anchor="middle" font-size="9" fill="#334155" font-family="Roboto, sans-serif">1a-export-data-sources.png</text>
+
+  <!-- Screenshot 4: Create Extract -->
+  <rect x="800" y="540" width="220" height="160" fill="#ffffff" stroke="#64748b" stroke-width="2" rx="8"/>
+  <image x="805" y="545" width="210" height="120" href="1b-create data extract.png" opacity="0.8"/>
+  <rect x="805" y="665" width="210" height="30" fill="#f1f5f9"/>
+  <text x="910" y="682" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Step 4: Create Extract</text>
+  <text x="910" y="695" text-anchor="middle" font-size="9" fill="#334155" font-family="Roboto, sans-serif">1b-create-data-extract.png</text>
+
+  <!-- Screenshot 5: Downloaded File -->
+  <rect x="200" y="720" width="220" height="120" fill="#ffffff" stroke="#64748b" stroke-width="2" rx="8"/>
+  <image x="205" y="725" width="210" height="80" href="1d-downlaoded-file.png" opacity="0.8"/>
+  <rect x="205" y="805" width="210" height="30" fill="#f1f5f9"/>
+  <text x="310" y="822" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Step 5: Downloaded File</text>
+  <text x="310" y="835" text-anchor="middle" font-size="9" fill="#334155" font-family="Roboto, sans-serif">1d-downloaded-file.png</text>
+
+  <!-- Process Flow -->
+  <rect x="460" y="720" width="280" height="120" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="8"/>
+  <text x="600" y="745" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Manual Process Results</text>
+  <circle cx="480" cy="765" r="6" fill="#10b981"/>
+  <text x="495" y="770" font-size="11" fill="#047857" font-family="Roboto, sans-serif">TorontoMeasureData.csv obtained</text>
+  <circle cx="480" cy="785" r="6" fill="#10b981"/>
+  <text x="495" y="790" font-size="11" fill="#047857" font-family="Roboto, sans-serif">Dashboard key indicators extracted</text>
+  <circle cx="480" cy="805" r="6" fill="#10b981"/>
+  <text x="495" y="810" font-size="11" fill="#047857" font-family="Roboto, sans-serif">Quarterly metrics captured</text>
+  <circle cx="480" cy="825" r="6" fill="#10b981"/>
+  <text x="495" y="830" font-size="11" fill="#047857" font-family="Roboto, sans-serif">Foundation for automation established</text>
+
+  <!-- Arrow Flow Between Screenshots -->
+  <path d="M300,700 L320,720" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M540,700 L560,720" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M780,700 L800,720" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M900,700 L420,720" stroke="#64748b" stroke-width="2" fill="none"/>
+
+  <!-- API Discovery Section -->
+  <rect x="50" y="890" width="1100" height="280" fill="#fef7ff" stroke="#a855f7" stroke-width="2" rx="10"/>
+  <text x="70" y="930" font-size="24" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">CKAN API Discovery and Validation</text>
+
+  <!-- Current API Status -->
+  <rect x="80" y="950" width="340" height="200" fill="#ffffff" stroke="#a855f7" stroke-width="2" rx="8"/>
+  <rect x="80" y="950" width="340" height="35" fill="#f3e8ff" rx="8"/>
+  <text x="250" y="975" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🔌 CKAN API Status</text>
+  
+  <text x="100" y="1005" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Confirmed Active (2025-08-21):</text>
+  <circle cx="110" cy="1025" r="6" fill="#10b981"/>
+  <text x="125" y="1030" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">523 datasets accessible</text>
+  <circle cx="110" cy="1045" r="6" fill="#10b981"/>
+  <text x="125" y="1050" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">No authentication required</text>
+  <circle cx="110" cy="1065" r="6" fill="#10b981"/>
+  <text x="125" y="1070" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">Multiple format support</text>
+  <circle cx="110" cy="1085" r="6" fill="#10b981"/>
+  <text x="125" y="1090" font-size="11" fill="#7c3aed" font-family="Roboto, sans-serif">JSON responses validated</text>
+  
+  <text x="100" y="1115" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">Base URL: ckan0.cf.opendata.inter.prod-toronto.ca</text>
+  <text x="100" y="1130" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">Organization: City of Toronto (single entity)</text>
+
+  <!-- API Endpoints -->
+  <rect x="440" y="950" width="340" height="200" fill="#ffffff" stroke="#a855f7" stroke-width="2" rx="8"/>
+  <rect x="440" y="950" width="340" height="35" fill="#f3e8ff" rx="8"/>
+  <text x="610" y="975" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">📡 Working API Endpoints</text>
+  
+  <text x="460" y="1005" font-size="11" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/package_search</text>
+  <text x="460" y="1020" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Search all datasets with filtering</text>
+  <text x="460" y="1035" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Returns: 523 total datasets</text>
+  
+  <text x="460" y="1055" font-size="11" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/package_show</text>
+  <text x="460" y="1070" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Individual dataset details</text>
+  <text x="460" y="1085" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Returns: metadata and resource URLs</text>
+  
+  <text x="460" y="1105" font-size="11" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">GET /api/3/action/organization_list</text>
+  <text x="460" y="1120" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• City organizational structure</text>
+  <text x="460" y="1135" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Returns: Single Toronto organization</text>
+
+  <!-- Data Statistics -->
+  <rect x="800" y="950" width="320" height="200" fill="#ffffff" stroke="#a855f7" stroke-width="2" rx="8"/>
+  <rect x="800" y="950" width="320" height="35" fill="#f3e8ff" rx="8"/>
+  <text x="960" y="975" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">📊 Live Data Statistics</text>
+  
+  <!-- Statistics Bars -->
+  <rect x="820" y="995" width="280" height="20" fill="#f1f5f9" rx="10"/>
+  <rect x="820" y="995" width="280" height="20" fill="#a855f7" rx="10"/>
+  <text x="960" y="1010" text-anchor="middle" font-size="11" font-weight="bold" fill="white" font-family="Roboto, sans-serif">523 Total Datasets</text>
+  
+  <rect x="820" y="1025" width="280" height="15" fill="#f1f5f9" rx="8"/>
+  <rect x="820" y="1025" width="200" height="15" fill="#10b981" rx="8"/>
+  <text x="870" y="1037" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Popular Formats</text>
+  
+  <text x="830" y="1060" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">📊 CSV (most common)</text>
+  <text x="830" y="1075" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">🗺️ SHP (spatial data)</text>
+  <text x="830" y="1090" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">🌐 GeoJSON (geographic)</text>
+  <text x="830" y="1105" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">📋 XML (structured)</text>
+  <text x="830" y="1120" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">💻 JSON (web-friendly)</text>
+
+  <!-- Popular Categories -->
+  <text x="830" y="1140" font-size="10" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Top Tags: toronto, transportation, cycling, library</text>
+
+  <!-- Transition to Automation Section -->
+  <rect x="50" y="1200" width="1100" height="180" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="10"/>
+  <text x="70" y="1240" font-size="24" font-weight="bold" fill="#92400e" font-family="Roboto, sans-serif">Transition from Manual to Automated Collection</text>
+
+  <!-- Before/After Comparison -->
+  <rect x="80" y="1260" width="480" height="100" fill="#fed7aa" stroke="#f59e0b" stroke-width="1" rx="8"/>
+  <text x="320" y="1285" text-anchor="middle" font-size="16" font-weight="bold" fill="#92400e" font-family="Roboto, sans-serif">❌ Manual Process Limitations</text>
+  <text x="100" y="1305" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">• Time-consuming multi-step process</text>
+  <text x="100" y="1320" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">• Limited to dashboard metrics only</text>
+  <text x="100" y="1335" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">• No automated updates possible</text>
+  <text x="100" y="1350" font-size="11" fill="#92400e" font-family="Roboto, sans-serif">• Single file format output</text>
+
+  <rect x="640" y="1260" width="480" height="100" fill="#d1fae5" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="880" y="1285" text-anchor="middle" font-size="16" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">✅ API Automation Benefits</text>
+  <text x="660" y="1305" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Complete 523 dataset access</text>
+  <text x="660" y="1320" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Automated collection scripts</text>
+  <text x="660" y="1335" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Multiple format support</text>
+  <text x="660" y="1350" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Real-time data validation</text>
+
+  <!-- Arrow showing progression -->
+  <path d="M560,1310 L640,1310" stroke="#64748b" stroke-width="4" fill="none"/>
+  <path d="M635,1305 L645,1310 L635,1315" fill="#64748b"/>
+
+  <!-- Discovery Timeline -->
+  <rect x="50" y="1410" width="1100" height="120" fill="#1e40af"/>
+  <text x="600" y="1445" text-anchor="middle" font-size="20" font-weight="bold" fill="white" font-family="Roboto, sans-serif">
+    Discovery Timeline: From Manual Portal to Complete API Integration
+  </text>
+  
+  <!-- Timeline Points -->
+  <circle cx="200" cy="1480" r="10" fill="#fed7aa"/>
+  <text x="200" y="1500" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">Manual</text>
+  <text x="200" y="1515" text-anchor="middle" font-size="10" fill="#e0f2fe" font-family="Roboto, sans-serif">Dashboard Export</text>
+  
+  <circle cx="400" cy="1480" r="10" fill="#f3e8ff"/>
+  <text x="400" y="1500" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">API</text>
+  <text x="400" y="1515" text-anchor="middle" font-size="10" fill="#e0f2fe" font-family="Roboto, sans-serif">Discovery</text>
+  
+  <circle cx="600" cy="1480" r="10" fill="#ecfdf5"/>
+  <text x="600" y="1500" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">Automation</text>
+  <text x="600" y="1515" text-anchor="middle" font-size="10" fill="#e0f2fe" font-family="Roboto, sans-serif">523 Datasets</text>
+  
+  <circle cx="800" cy="1480" r="10" fill="#f0f9ff"/>
+  <text x="800" y="1500" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">Integration</text>
+  <text x="800" y="1515" text-anchor="middle" font-size="10" fill="#e0f2fe" font-family="Roboto, sans-serif">Custom Portal</text>
+  
+  <circle cx="1000" cy="1480" r="10" fill="#d1fae5"/>
+  <text x="1000" y="1500" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">Live</text>
+  <text x="1000" y="1515" text-anchor="middle" font-size="10" fill="#e0f2fe" font-family="Roboto, sans-serif">Explorer</text>
+  
+  <!-- Timeline Connection Line -->
+  <line x1="200" y1="1480" x2="1000" y2="1480" stroke="#e0f2fe" stroke-width="2"/>
+
+  <!-- Final Status -->
+  <rect x="50" y="1550" width="1100" height="80" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="10"/>
+  <text x="600" y="1580" text-anchor="middle" font-size="18" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">
+    ✅ Complete Data Source Documentation: Manual Discovery → API Automation → Custom Explorer
+  </text>
+  <text x="600" y="1605" text-anchor="middle" font-size="14" fill="#047857" font-family="Roboto, sans-serif">
+    Foundation established for comprehensive Toronto Open Data analysis and visualization
+  </text>
+
+  <!-- Collection Date Reference -->
+  <rect x="50" y="1650" width="300" height="60" fill="#f8fafc" stroke="#64748b" stroke-width="1" rx="5"/>
+  <text x="200" y="1675" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Original Collection</text>
+  <text x="200" y="1695" text-anchor="middle" font-size="11" fill="#64748b" font-family="Roboto, sans-serif">2025-08-20T10:38:44.457Z</text>
+
+  <!-- Current Validation -->
+  <rect x="400" y="1650" width="300" height="60" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="5"/>
+  <text x="550" y="1675" text-anchor="middle" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Current Validation</text>
+  <text x="550" y="1695" text-anchor="middle" font-size="11" fill="#0369a1" font-family="Roboto, sans-serif">2025-08-21 - All APIs Active</text>
+
+</svg>

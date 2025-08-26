@@ -1,0 +1,278 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mcpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="expensiveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metadataGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fpaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="biGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="masterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7d3c98;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="savingsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a085;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+    <marker id="moneyArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00b894" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1200" fill="#ecf0f1"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="70" fill="url(#headerGrad)"/>
+  <text x="800" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">AI/MCP Pattern: Targeting High-Value Non-Transactional Systems</text>
+  <text x="800" y="50" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Metadata, FP &amp;amp;A, BI - Expensive Configuration Systems Ripe for Disruption</text>
+
+  <!-- Market Opportunity -->
+  <rect x="50" y="90" width="1500" height="120" rx="15" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="115" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">THE OPPORTUNITY: $50B+ NON-TRANSACTIONAL ENTERPRISE SOFTWARE MARKET</text>
+
+  <!-- Current Expensive Tools -->
+  <rect x="70" y="130" width="300" height="60" rx="8" fill="url(#expensiveGrad)" filter="url(#shadow)"/>
+  <text x="220" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">CURRENT: EXPENSIVE TOOLS</text>
+  <text x="80" y="175" fill="white" font-size="11" font-family="Arial">Anaplan $500K+ • Collibra $300K+ • Tableau $200K+</text>
+  <text x="80" y="188" fill="white" font-size="10" font-family="Arial">95% configuration, 5% actual computation</text>
+
+  <!-- AI/MCP Alternative -->
+  <rect x="400" y="130" width="300" height="60" rx="8" fill="url(#mcpGrad)" filter="url(#shadow)"/>
+  <text x="550" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">AI/MCP ALTERNATIVE</text>
+  <text x="410" y="175" fill="white" font-size="11" font-family="Arial">Excel + AI Templates + Smart ETL</text>
+  <text x="410" y="188" fill="white" font-size="10" font-family="Arial">Auto-generate 90% of configuration</text>
+
+  <!-- Savings Potential -->
+  <rect x="730" y="130" width="300" height="60" rx="8" fill="url(#savingsGrad)" filter="url(#shadow)"/>
+  <text x="880" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">POTENTIAL SAVINGS</text>
+  <text x="740" y="175" fill="white" font-size="11" font-family="Arial">85-95% cost reduction possible</text>
+  <text x="740" y="188" fill="white" font-size="10" font-family="Arial">$1M+ annual savings for large enterprises</text>
+
+  <!-- Why These Systems -->
+  <rect x="1060" y="130" width="460" height="60" rx="8" fill="#34495e" filter="url(#shadow)"/>
+  <text x="1290" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">WHY THESE SYSTEMS?</text>
+  <text x="1070" y="175" fill="white" font-size="11" font-family="Arial">• Non-transactional = low switching risk • High licensing costs</text>
+  <text x="1070" y="188" fill="white" font-size="10" font-family="Arial">• Mostly configuration  &amp; calculation = perfect for AI templates</text>
+
+  <!-- Target Systems Analysis -->
+  <text x="800" y="240" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">TARGET SYSTEMS: HIGH-COST, LOW-COMPLEXITY CONFIGURATION PLATFORMS</text>
+
+  <!-- Metadata Management -->
+  <rect x="50" y="270" width="350" height="200" rx="12" fill="url(#metadataGrad)" filter="url(#shadow)"/>
+  <text x="225" y="295" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">METADATA MANAGEMENT</text>
+
+  <rect x="70" y="310" width="310" height="50" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="80" y="325" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Expensive Tools: Collibra, Informatica, Alation</text>
+  <text x="80" y="338" fill="#2c3e50" font-size="10" font-family="Arial">Cost: $300K-800K annually • User licenses: $3K-8K each</text>
+  <text x="80" y="351" fill="#2c3e50" font-size="10" font-family="Arial">What they do: Data cataloging, lineage, governance</text>
+
+  <rect x="70" y="370" width="310" height="80" rx="5" fill="#e8f4fd"/>
+  <text x="80" y="385" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AI/MCP Replacement:</text>
+  <text x="80" y="400" fill="#2c3e50" font-size="10" font-family="Arial">• Auto-discover schemas from databases/APIs</text>
+  <text x="80" y="413" fill="#2c3e50" font-size="10" font-family="Arial">• Generate lineage maps using SQL parsing</text>
+  <text x="80" y="426" fill="#2c3e50" font-size="10" font-family="Arial">• AI-powered data classification  &amp; tagging</text>
+  <text x="80" y="439" fill="#2c3e50" font-size="10" font-family="Arial">• Web UI generated from metadata templates</text>
+
+  <!-- FP &amp;A Tools -->
+  <rect x="420" y="270" width="350" height="200" rx="12" fill="url(#fpaGrad)" filter="url(#shadow)"/>
+  <text x="595" y="295" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">FP &amp;A PLANNING TOOLS</text>
+
+  <rect x="440" y="310" width="310" height="50" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="450" y="325" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Expensive Tools: Anaplan, Adaptive, OneStream</text>
+  <text x="450" y="338" fill="#2c3e50" font-size="10" font-family="Arial">Cost: $500K-2M annually • Complex implementation</text>
+  <text x="450" y="351" fill="#2c3e50" font-size="10" font-family="Arial">What they do: Budgeting, forecasting, modeling</text>
+
+  <rect x="440" y="370" width="310" height="80" rx="5" fill="#fff3e0"/>
+  <text x="450" y="385" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AI/MCP Replacement:</text>
+  <text x="450" y="400" fill="#2c3e50" font-size="10" font-family="Arial">• Excel models auto-converted to web forms</text>
+  <text x="450" y="413" fill="#2c3e50" font-size="10" font-family="Arial">• AI generates allocation logic from patterns</text>
+  <text x="450" y="426" fill="#2c3e50" font-size="10" font-family="Arial">• Multi-dimensional cube calculations in-memory</text>
+  <text x="450" y="439" fill="#2c3e50" font-size="10" font-family="Arial">• Workflow automation for approval processes</text>
+
+  <!-- BI/Analytics -->
+  <rect x="790" y="270" width="350" height="200" rx="12" fill="url(#biGrad)" filter="url(#shadow)"/>
+  <text x="965" y="295" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">BI/ANALYTICS PLATFORMS</text>
+
+  <rect x="810" y="310" width="310" height="50" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="820" y="325" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Expensive Tools: Tableau, Qlik, PowerBI Premium</text>
+  <text x="820" y="338" fill="#2c3e50" font-size="10" font-family="Arial">Cost: $200K-500K annually • Per-user licensing</text>
+  <text x="820" y="351" fill="#2c3e50" font-size="10" font-family="Arial">What they do: Dashboards, reports, visualization</text>
+
+  <rect x="810" y="370" width="310" height="80" rx="5" fill="#e8f5e8"/>
+  <text x="820" y="385" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AI/MCP Replacement:</text>
+  <text x="820" y="400" fill="#2c3e50" font-size="10" font-family="Arial">• Auto-generate dashboards from data patterns</text>
+  <text x="820" y="413" fill="#2c3e50" font-size="10" font-family="Arial">• AI suggests optimal chart types  &amp; layouts</text>
+  <text x="820" y="426" fill="#2c3e50" font-size="10" font-family="Arial">• Web-based responsive visualization engine</text>
+  <text x="820" y="439" fill="#2c3e50" font-size="10" font-family="Arial">• Embed analytics directly in workflow apps</text>
+
+  <!-- Master Data Management -->
+  <rect x="1160" y="270" width="350" height="200" rx="12" fill="url(#masterGrad)" filter="url(#shadow)"/>
+  <text x="1335" y="295" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">MASTER DATA MGMT</text>
+
+  <rect x="1180" y="310" width="310" height="50" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1190" y="325" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Expensive Tools: Informatica MDM, IBM InfoSphere</text>
+  <text x="1190" y="338" fill="#2c3e50" font-size="10" font-family="Arial">Cost: $400K-1M annually • Complex architecture</text>
+  <text x="1190" y="351" fill="#2c3e50" font-size="10" font-family="Arial">What they do: Customer, product, vendor masters</text>
+
+  <rect x="1180" y="370" width="310" height="80" rx="5" fill="#f4ecf7"/>
+  <text x="1190" y="385" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AI/MCP Replacement:</text>
+  <text x="1190" y="400" fill="#2c3e50" font-size="10" font-family="Arial">• AI-powered duplicate detection  &amp; merging</text>
+  <text x="1190" y="413" fill="#2c3e50" font-size="10" font-family="Arial">• Smart data quality rules generation</text>
+  <text x="1190" y="426" fill="#2c3e50" font-size="10" font-family="Arial">• Golden record creation algorithms</text>
+  <text x="1190" y="439" fill="#2c3e50" font-size="10" font-family="Arial">• Excel-based stewardship workflows</text>
+
+  <!-- Central MCP Server -->
+  <rect x="600" y="500" width="400" height="120" rx="15" fill="url(#mcpGrad)" filter="url(#shadow) url(#glow)"/>
+  <text x="800" y="525" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">UNIVERSAL AI/MCP SERVER</text>
+  <text x="800" y="545" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Configuration Intelligence Engine</text>
+
+  <rect x="620" y="560" width="360" height="50" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="630" y="575" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">✓ Schema analysis  &amp; template generation across all domains</text>
+  <text x="630" y="588" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">✓ Business logic extraction from existing configurations</text>
+  <text x="630" y="601" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">✓ Cross-system integration  &amp; workflow orchestration</text>
+
+  <!-- AI Intelligence Flows -->
+  <line x1="680" y1="500" x2="225" y2="470" stroke="#9b59b6" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="750" y1="500" x2="595" y2="470" stroke="#9b59b6" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="850" y1="500" x2="965" y2="470" stroke="#9b59b6" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="920" y1="500" x2="1335" y2="470" stroke="#9b59b6" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Implementation Strategy -->
+  <rect x="50" y="650" width="1500" height="160" rx="15" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="675" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">IMPLEMENTATION STRATEGY: TARGET HIGH-IMPACT, LOW-RISK SYSTEMS FIRST</text>
+
+  <!-- Priority Matrix -->
+  <rect x="70" y="690" width="300" height="100" rx="8" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="220" y="710" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">HIGH PRIORITY TARGETS</text>
+  <text x="80" y="730" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">1. FP &amp;A Tools (Highest ROI)</text>
+  <text x="80" y="743" fill="#2c3e50" font-size="10" font-family="Arial">• Excel-native workflows</text>
+  <text x="80" y="756" fill="#2c3e50" font-size="10" font-family="Arial">• $500K+ annual savings potential</text>
+  <text x="80" y="769" fill="#2c3e50" font-size="10" font-family="Arial">• Non-transactional = low risk</text>
+
+  <rect x="390" y="690" width="300" height="100" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="540" y="710" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">MEDIUM PRIORITY</text>
+  <text x="400" y="730" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">2. Metadata Management</text>
+  <text x="400" y="743" fill="#2c3e50" font-size="10" font-family="Arial">• Clear technical patterns</text>
+  <text x="400" y="756" fill="#2c3e50" font-size="10" font-family="Arial">• $300K+ savings</text>
+  <text x="400" y="769" fill="#2c3e50" font-size="10" font-family="Arial">• Integrates with existing data</text>
+
+  <rect x="710" y="690" width="300" height="100" rx="8" fill="#fff3e0" stroke="#f39c12" stroke-width="2"/>
+  <text x="860" y="710" text-anchor="middle" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">STRATEGIC TARGETS</text>
+  <text x="720" y="730" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">3. BI/Analytics Platforms</text>
+  <text x="720" y="743" fill="#2c3e50" font-size="10" font-family="Arial">• High user adoption impact</text>
+  <text x="720" y="756" fill="#2c3e50" font-size="10" font-family="Arial">• $200K+ per-year savings</text>
+  <text x="720" y="769" fill="#2c3e50" font-size="10" font-family="Arial">• Complements other domains</text>
+
+  <rect x="1030" y="690" width="300" height="100" rx="8" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="1180" y="710" text-anchor="middle" fill="#8e44ad" font-size="12" font-weight="bold" font-family="Arial">LONG-TERM TARGETS</text>
+  <text x="1040" y="730" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">4. Master Data Management</text>
+  <text x="1040" y="743" fill="#2c3e50" font-size="10" font-family="Arial">• Complex data relationships</text>
+  <text x="1040" y="756" fill="#2c3e50" font-size="10" font-family="Arial">• $400K+ savings potential</text>
+  <text x="1040" y="769" fill="#2c3e50" font-size="10" font-family="Arial">• Requires mature AI capabilities</text>
+
+  <!-- ROI Analysis -->
+  <rect x="50" y="840" width="1500" height="140" rx="15" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="865" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">ROI ANALYSIS: MASSIVE COST REDUCTION OPPORTUNITY</text>
+
+  <!-- Current Costs -->
+  <rect x="70" y="880" width="350" height="80" rx="8" fill="#ffebee" stroke="#e74c3c" stroke-width="2"/>
+  <text x="245" y="900" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="bold" font-family="Arial">CURRENT ENTERPRISE COSTS</text>
+  <text x="80" y="920" fill="#2c3e50" font-size="10" font-family="Arial">• Anaplan: $500K-2M annually</text>
+  <text x="80" y="933" fill="#2c3e50" font-size="10" font-family="Arial">• Collibra: $300K-800K annually</text>
+  <text x="80" y="946" fill="#2c3e50" font-size="10" font-family="Arial">• Tableau/Qlik: $200K-500K annually</text>
+  <text x="250" y="946" fill="#e74c3c" font-size="11" font-weight="bold" font-family="Arial">Total: $1M-3.3M/year</text>
+
+  <!-- AI/MCP Costs -->
+  <rect x="440" y="880" width="350" height="80" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="615" y="900" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">AI/MCP ALTERNATIVE COSTS</text>
+  <text x="450" y="920" fill="#2c3e50" font-size="10" font-family="Arial">• Development: $500K-1M one-time</text>
+  <text x="450" y="933" fill="#2c3e50" font-size="10" font-family="Arial">• Infrastructure: $50K-100K annually</text>
+  <text x="450" y="946" fill="#2c3e50" font-size="10" font-family="Arial">• Maintenance: $100K-200K annually</text>
+  <text x="620" y="946" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">Total: $150K-300K/year</text>
+
+  <!-- Savings -->
+  <rect x="810" y="880" width="350" height="80" rx="8" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="985" y="900" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">NET SAVINGS</text>
+  <text x="820" y="920" fill="#2c3e50" font-size="10" font-family="Arial">• Year 1: $0-2.3M (after development)</text>
+  <text x="820" y="933" fill="#2c3e50" font-size="10" font-family="Arial">• Year 2+: $850K-3M annually</text>
+  <text x="820" y="946" fill="#2c3e50" font-size="10" font-family="Arial">• 5-year NPV: $3M-12M savings</text>
+  <text x="985" y="946" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">85-95% cost reduction</text>
+
+  <!-- Market Opportunity -->
+  <rect x="1180" y="880" width="350" height="80" rx="8" fill="#fff3e0" stroke="#f39c12" stroke-width="2"/>
+  <text x="1355" y="900" text-anchor="middle" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">MARKET OPPORTUNITY</text>
+  <text x="1190" y="920" fill="#2c3e50" font-size="10" font-family="Arial">• Enterprise market: $50B+ annually</text>
+  <text x="1190" y="933" fill="#2c3e50" font-size="10" font-family="Arial">• SME adoption potential: 10x market</text>
+  <text x="1190" y="946" fill="#2c3e50" font-size="10" font-family="Arial">• SaaS offering: $100M-1B revenue</text>
+
+  <!-- Key Success Factors -->
+  <rect x="50" y="1010" width="1500" height="120" rx="15" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="1035" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">KEY SUCCESS FACTORS FOR NON-TRANSACTIONAL SYSTEM REPLACEMENT</text>
+
+  <rect x="70" y="1050" width="280" height="70" rx="8" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="210" y="1070" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">START WITH EXCEL USERS</text>
+  <text x="80" y="1085" fill="#2c3e50" font-size="10" font-family="Arial">• FP &amp;A teams already use Excel</text>
+  <text x="80" y="1098" fill="#2c3e50" font-size="10" font-family="Arial">• Easy migration path</text>
+  <text x="80" y="1111" fill="#2c3e50" font-size="10" font-family="Arial">• Immediate productivity gains</text>
+
+  <rect x="370" y="1050" width="280" height="70" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="510" y="1070" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">LEVERAGE EXISTING DATA</text>
+  <text x="380" y="1085" fill="#2c3e50" font-size="10" font-family="Arial">• Don't replace transactional systems</text>
+  <text x="380" y="1098" fill="#2c3e50" font-size="10" font-family="Arial">• Connect to existing ERP/CRM</text>
+  <text x="380" y="1111" fill="#2c3e50" font-size="10" font-family="Arial">• Focus on analytics layer</text>
+
+  <rect x="670" y="1050" width="280" height="70" rx="8" fill="#fff3e0" stroke="#f39c12" stroke-width="2"/>
+  <text x="810" y="1070" text-anchor="middle" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">TEMPLATE-DRIVEN DEV</text>
+  <text x="680" y="1085" fill="#2c3e50" font-size="10" font-family="Arial">• 90% auto-generated code</text>
+  <text x="680" y="1098" fill="#2c3e50" font-size="10" font-family="Arial">• Rapid prototyping</text>
+  <text x="680" y="1111" fill="#2c3e50" font-size="10" font-family="Arial">• Continuous learning from usage</text>
+
+  <rect x="970" y="1050" width="280" height="70" rx="8" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="1110" y="1070" text-anchor="middle" fill="#8e44ad" font-size="12" font-weight="bold" font-family="Arial">PHASED MIGRATION</text>
+  <text x="980" y="1085" fill="#2c3e50" font-size="10" font-family="Arial">• Run parallel initially</text>
+  <text x="980" y="1098" fill="#2c3e50" font-size="10" font-family="Arial">• Prove value before switching</text>
+  <text x="980" y="1111" fill="#2c3e50" font-size="10" font-family="Arial">• Gradual feature migration</text>
+
+  <rect x="1270" y="1050" width="280" height="70" rx="8" fill="#ffebee" stroke="#e74c3c" stroke-width="2"/>
+  <text x="1410" y="1070" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="bold" font-family="Arial">VENDOR LOCK-IN EXIT</text>
+  <text x="1280" y="1085" fill="#2c3e50" font-size="10" font-family="Arial">• Export all configurations</text>
+  <text x="1280" y="1098" fill="#2c3e50" font-size="10" font-family="Arial">• Maintain data ownership</text>
+  <text x="1280" y="1111" fill="#2c3e50" font-size="10" font-family="Arial">• Open source alternatives</text>
+
+  <!-- Savings Flow -->
+  <line x1="420" y1="920" x2="810" y2="920" stroke="#00b894" stroke-width="4" marker-end="url(#moneyArrow)"/>
+  <text x="615" y="910" text-anchor="middle" fill="#00b894" font-size="12" font-weight="bold" font-family="Arial">$850K-3M Annual Savings</text>
+
+</svg>

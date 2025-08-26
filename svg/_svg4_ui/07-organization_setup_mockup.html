@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Setup Wizard - SOX Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .progress-bar {
+            background: rgba(255,255,255,0.2);
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: white;
+            height: 100%;
+            width: 25%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .step.active .step-number {
+            background: #3498db;
+            color: white;
+        }
+
+        .step.completed .step-number {
+            background: #27ae60;
+            color: white;
+        }
+
+        .step.pending .step-number {
+            background: #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .form-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .entity-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .entity-card:hover {
+            border-color: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .entity-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .entity-type {
+            background: #3498db;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .remove-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .add-entity-btn {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .add-entity-btn:hover {
+            background: #229954;
+        }
+
+        .org-chart {
+            background: #f8f9fa;
+            border: 2px dashed #bdc3c7;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .location-card {
+            background: #e8f4fd;
+            border: 1px solid #3498db;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .location-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .location-details {
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+        .action-bar {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            border-top: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .ai-suggestion {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .ai-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .validation-message {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .help-text {
+            font-size: 12px;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Organization Setup Wizard</h1>
+            <p>Configure your organizational structure for SOX compliance implementation</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <span>Company Structure</span>
+            </div>
+            <div class="step pending">
+                <div class="step-number">2</div>
+                <span>Business Units</span>
+            </div>
+            <div class="step pending">
+                <div class="step-number">3</div>
+                <span>Locations</span>
+            </div>
+            <div class="step pending">
+                <div class="step-number">4</div>
+                <span>Review & Confirm</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Company Information -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    🏢 Company Information
+                </h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Company Name <span class="required">*</span></label>
+                        <input type="text" class="form-input" value="Manufacturing Corp International" placeholder="Enter company name">
+                        <div class="help-text">This will be the parent entity in your organizational structure</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Industry <span class="required">*</span></label>
+                        <select class="form-input">
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="technology">Technology</option>
+                            <option value="financial">Financial Services</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="retail">Retail</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Fiscal Year End <span class="required">*</span></label>
+                        <select class="form-input">
+                            <option value="december">December 31</option>
+                            <option value="march">March 31</option>
+                            <option value="june">June 30</option>
+                            <option value="september">September 30</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Annual Revenue <span class="required">*</span></label>
+                        <input type="text" class="form-input" value="$2.5B" placeholder="e.g., $500M, $2.5B">
+                        <div class="help-text">Used for materiality threshold calculations</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Suggestion -->
+            <div class="ai-suggestion">
+                <div class="ai-title">
+                    🤖 AI Recommendation
+                </div>
+                <p>Based on your industry and revenue size, we recommend implementing 47 SOX controls across 8 major business processes. This typically requires 18-24 months for first implementation.</p>
+            </div>
+
+            <!-- Legal Entities -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    ⚖️ Legal Entity Structure
+                </h2>
+                
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <div class="entity-type">Parent Company</div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Entity Name</label>
+                            <input type="text" class="form-input" value="Manufacturing Corp International Inc.">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Jurisdiction</label>
+                            <input type="text" class="form-input" value="Delaware, USA">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Tax ID</label>
+                            <input type="text" class="form-input" value="XX-XXXXXXX" placeholder="Federal Tax ID">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Public/Private</label>
+                            <select class="form-input">
+                                <option value="public">Public Company</option>
+                                <option value="private">Private Company</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="validation-message">
+                        ✓ Parent entity configuration is valid
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <div class="entity-type">Subsidiary</div>
+                        <button class="remove-btn">×</button>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Entity Name</label>
+                            <input type="text" class="form-input" value="Manufacturing Corp Europe Ltd.">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Jurisdiction</label>
+                            <input type="text" class="form-input" value="United Kingdom">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Ownership %</label>
+                            <input type="number" class="form-input" value="100" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Materiality</label>
+                            <select class="form-input">
+                                <option value="significant">Significant (>5% revenue)</option>
+                                <option value="moderate">Moderate (1-5% revenue)</option>
+                                <option value="minor">Minor (<1% revenue)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <div class="entity-type">Subsidiary</div>
+                        <button class="remove-btn">×</button>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Entity Name</label>
+                            <input type="text" class="form-input" value="Manufacturing Corp Asia Pte Ltd.">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Jurisdiction</label>
+                            <input type="text" class="form-input" value="Singapore">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Ownership %</label>
+                            <input type="number" class="form-input" value="100" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Materiality</label>
+                            <select class="form-input">
+                                <option value="significant">Significant (>5% revenue)</option>
+                                <option value="moderate">Moderate (1-5% revenue)</option>
+                                <option value="minor">Minor (<1% revenue)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="add-entity-btn" onclick="addEntity()">+ Add Subsidiary</button>
+            </div>
+
+            <!-- Organizational Chart Preview -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    📊 Organizational Structure Preview
+                </h2>
+                <div class="org-chart">
+                    <p style="color: #7f8c8d;">Organizational chart will be generated automatically based on your entity configuration</p>
+                    <p style="font-size: 12px; color: #95a5a6; margin-top: 10px;">You can modify reporting relationships in the next step</p>
+                </div>
+            </div>
+
+            <!-- Locations -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    📍 Operating Locations
+                </h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-name">New York, USA</div>
+                        <div class="location-details">Headquarters<br>Manufacturing & Admin</div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-name">Chicago, USA</div>
+                        <div class="location-details">Manufacturing Plant<br>Production Facility</div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-name">London, UK</div>
+                        <div class="location-details">European Office<br>Sales & Distribution</div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-name">Singapore</div>
+                        <div class="location-details">Asia Pacific Hub<br>Manufacturing & Sales</div>
+                    </div>
+                    <div class="location-card" style="border: 2px dashed #bdc3c7; background: #f8f9fa;">
+                        <div style="color: #6c757d; font-size: 24px; margin-bottom: 10px;">+</div>
+                        <div style="color: #6c757d; font-size: 12px;">Add Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button class="btn btn-secondary">← Previous</button>
+            <div style="font-size: 14px; color: #6c757d;">
+                Step 1 of 4 - Company Structure
+            </div>
+            <button class="btn btn-primary" onclick="nextStep()">Next: Business Units →</button>
+        </div>
+    </div>
+
+    <script>
+        function addEntity() {
+            const entityHtml = `
+                <div class="entity-card">
+                    <div class="entity-header">
+                        <div class="entity-type">Subsidiary</div>
+                        <button class="remove-btn" onclick="removeEntity(this)">×</button>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Entity Name</label>
+                            <input type="text" class="form-input" placeholder="Enter entity name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Jurisdiction</label>
+                            <input type="text" class="form-input" placeholder="Enter jurisdiction">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Ownership %</label>
+                            <input type="number" class="form-input" min="0" max="100" placeholder="0-100">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Materiality</label>
+                            <select class="form-input">
+                                <option value="">Select materiality</option>
+                                <option value="significant">Significant (>5% revenue)</option>
+                                <option value="moderate">Moderate (1-5% revenue)</option>
+                                <option value="minor">Minor (<1% revenue)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            const addButton = document.querySelector('.add-entity-btn');
+            addButton.insertAdjacentHTML('beforebegin', entityHtml);
+        }
+
+        function removeEntity(button) {
+            button.closest('.entity-card').remove();
+        }
+
+        function nextStep() {
+            // Validate current step
+            const requiredFields = document.querySelectorAll('.form-input[required], .form-input');
+            let allValid = true;
+            
+            // Simple validation
+            requiredFields.forEach(field => {
+                if (field.value.trim() === '') {
+                    field.style.borderColor = '#e74c3c';
+                    allValid = false;
+                } else {
+                    field.style.borderColor = '#e9ecef';
+                }
+            });
+            
+            if (allValid) {
+                // Update progress
+                document.querySelector('.progress-fill').style.width = '50%';
+                
+                // Show success message
+                const message = document.createElement('div');
+                message.className = 'validation-message';
+                message.textContent = '✓ Company structure saved successfully! Proceeding to business units...';
+                document.querySelector('.content').appendChild(message);
+                
+                setTimeout(() => {
+                    // In real app, would navigate to next step
+                    console.log('Navigating to business units step...');
+                }, 1500);
+            } else {
+                // Show error message
+                const message = document.createElement('div');
+                message.className = 'error-message';
+                message.textContent = '⚠ Please fill in all required fields before proceeding.';
+                document.querySelector('.content').appendChild(message);
+                
+                setTimeout(() => {
+                    message.remove();
+                }, 3000);
+            }
+        }
+
+        // Add some interactivity
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Auto-save functionality
+        let saveTimeout;
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('input', function() {
+                clearTimeout(saveTimeout);
+                saveTimeout = setTimeout(() => {
+                    console.log('Auto-saving organization data...');
+                    // In real app, would save to backend
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

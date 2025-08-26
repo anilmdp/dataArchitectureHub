@@ -1,0 +1,314 @@
+<svg viewBox="0 0 1400 1800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sectionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1800" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="80" fill="url(#headerGrad)"/>
+  <text x="700" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">DETAILED SECTION VIEWS - WIREFRAMES</text>
+  <text x="700" y="55" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Foundation Phase Drill-Down Interface</text>
+
+  <!-- Breadcrumb Navigation -->
+  <rect x="20" y="100" width="1360" height="40" rx="5" fill="white" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <text x="40" y="125" fill="#3498db" font-size="11" font-family="Arial">Dashboard</text>
+  <text x="120" y="125" fill="#7f8c8d" font-size="11" font-family="Arial">></text>
+  <text x="140" y="125" fill="#3498db" font-size="11" font-family="Arial">Foundation Phase</text>
+  <text x="250" y="125" fill="#7f8c8d" font-size="11" font-family="Arial">></text>
+  <text x="270" y="125" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Layer 2: Business Configuration</text>
+
+  <!-- Section Header -->
+  <rect x="20" y="160" width="1360" height="60" rx="8" fill="url(#sectionGrad)" filter="url(#shadow)"/>
+  <text x="700" y="185" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 2: BUSINESS CONFIGURATION &amp; DATA SETUP</text>
+  <text x="700" y="205" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Weeks 15-20: Converting Business Requirements into System Configuration</text>
+
+  <!-- Progress Overview -->
+  <rect x="20" y="240" width="1360" height="80" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <text x="40" y="265" fill="#2c3e50" font-size="14" font-weight="bold" font-family="Arial">Overall Progress: 70% Complete</text>
+  <rect x="40" y="275" width="1200" height="20" rx="10" fill="#ecf0f1"/>
+  <rect x="40" y="275" width="840" height="20" rx="10" fill="#27ae60"/>
+  <text x="1260" y="290" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">On Track</text>
+
+  <text x="40" y="315" fill="#7f8c8d" font-size="10" font-family="Arial">Estimated Completion: Week 19 (1 week ahead of schedule)</text>
+
+  <!-- Four Main Components Grid -->
+  
+  <!-- Component 1: Organizational Structure -->
+  <rect x="20" y="340" width="660" height="300" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="340" width="660" height="40" rx="8" fill="#3498db"/>
+  <text x="350" y="365" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">ORGANIZATIONAL STRUCTURE</text>
+  
+  <!-- Org Structure Content -->
+  <text x="40" y="395" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">Configuration Status:</text>
+  
+  <!-- Status Items -->
+  <circle cx="60" cy="415" r="6" fill="#27ae60"/>
+  <text x="80" y="420" fill="#2c3e50" font-size="10" font-family="Arial">Legal Entities: Parent + 3 subsidiaries</text>
+  <text x="400" y="420" fill="#27ae60" font-size="10" font-weight="bold" font-family="Arial">✓ Complete</text>
+  
+  <circle cx="60" cy="435" r="6" fill="#27ae60"/>
+  <text x="80" y="440" fill="#2c3e50" font-size="10" font-family="Arial">Business Units: 8 divisions across 5 locations</text>
+  <text x="400" y="440" fill="#27ae60" font-size="10" font-weight="bold" font-family="Arial">✓ Complete</text>
+  
+  <circle cx="60" cy="455" r="6" fill="#f39c12"/>
+  <text x="80" y="460" fill="#2c3e50" font-size="10" font-family="Arial">Reporting Hierarchy: 4-level management</text>
+  <text x="400" y="460" fill="#f39c12" font-size="10" font-weight="bold" font-family="Arial">⚠ In Progress</text>
+  
+  <circle cx="60" cy="475" r="6" fill="#e74c3c"/>
+  <text x="80" y="480" fill="#2c3e50" font-size="10" font-family="Arial">User Roles: 47 users across 6 role types</text>
+  <text x="400" y="480" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">🔴 Blocked</text>
+  
+  <circle cx="60" cy="495" r="6" fill="#95a5a6"/>
+  <text x="80" y="500" fill="#2c3e50" font-size="10" font-family="Arial">Access Permissions: Complex matrix setup</text>
+  <text x="400" y="500" fill="#95a5a6" font-size="10" font-weight="bold" font-family="Arial">○ Pending</text>
+  
+  <!-- Interactive Elements -->
+  <rect x="40" y="520" width="120" height="30" rx="5" fill="#3498db"/>
+  <text x="100" y="540" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">VIEW DETAILS</text>
+  
+  <rect x="180" y="520" width="120" height="30" rx="5" fill="#27ae60"/>
+  <text x="240" y="540" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">EDIT CONFIG</text>
+  
+  <rect x="320" y="520" width="120" height="30" rx="5" fill="#f39c12"/>
+  <text x="380" y="540" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">ASSIGN USERS</text>
+  
+  <!-- Progress Bar -->
+  <text x="40" y="575" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Component Progress:</text>
+  <rect x="40" y="585" width="400" height="12" rx="6" fill="#ecf0f1"/>
+  <rect x="40" y="585" width="280" height="12" rx="6" fill="#27ae60"/>
+  <text x="450" y="595" fill="#27ae60" font-size="10" font-weight="bold" font-family="Arial">70%</text>
+  
+  <text x="40" y="615" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">Blocker:</text>
+  <text x="100" y="615" fill="#7f8c8d" font-size="10" font-family="Arial">Waiting for HR approval on role definitions</text>
+  
+  <text x="40" y="630" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">ETA:</text>
+  <text x="80" y="630" fill="#27ae60" font-size="10" font-family="Arial">End of Week 18 (2 days)</text>
+
+  <!-- Component 2: Business Process Framework -->
+  <rect x="700" y="340" width="680" height="300" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="700" y="340" width="680" height="40" rx="8" fill="#27ae60"/>
+  <text x="1040" y="365" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">BUSINESS PROCESS FRAMEWORK</text>
+  
+  <!-- Process Framework Content -->
+  <text x="720" y="395" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">Process Mapping Status:</text>
+  
+  <!-- Process List -->
+  <rect x="720" y="410" width="300" height="120" rx="5" fill="#f8f9fa" stroke="#ddd"/>
+  <text x="730" y="430" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Major Processes Mapped:</text>
+  <text x="730" y="445" fill="#27ae60" font-size="9" font-family="Arial">✓ Revenue Recognition</text>
+  <text x="730" y="460" fill="#27ae60" font-size="9" font-family="Arial">✓ Procurement Cycle</text>
+  <text x="730" y="475" fill="#27ae60" font-size="9" font-family="Arial">✓ Inventory Management</text>
+  <text x="730" y="490" fill="#f39c12" font-size="9" font-family="Arial">⚠ Payroll Processing</text>
+  <text x="730" y="505" fill="#95a5a6" font-size="9" font-family="Arial">○ Asset Management</text>
+  <text x="730" y="520" fill="#95a5a6" font-size="9" font-family="Arial">○ Financial Close</text>
+  
+  <!-- Risk Assessment -->
+  <rect x="1040" y="410" width="320" height="120" rx="5" fill="#f8f9fa" stroke="#ddd"/>
+  <text x="1050" y="430" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Risk Assessment Progress:</text>
+  <text x="1050" y="450" fill="#2c3e50" font-size="9" font-family="Arial">Total Risks Identified: 67</text>
+  
+  <text x="1050" y="470" fill="#e74c3c" font-size="9" font-family="Arial">High Risk: 12</text>
+  <rect x="1130" y="465" width="80" height="8" rx="4" fill="#ecf0f1"/>
+  <rect x="1130" y="465" width="60" height="8" rx="4" fill="#e74c3c"/>
+  
+  <text x="1050" y="485" fill="#f39c12" font-size="9" font-family="Arial">Medium Risk: 28</text>
+  <rect x="1130" y="480" width="80" height="8" rx="4" fill="#ecf0f1"/>
+  <rect x="1130" y="480" width="70" height="8" rx="4" fill="#f39c12"/>
+  
+  <text x="1050" y="500" fill="#27ae60" font-size="9" font-family="Arial">Low Risk: 27</text>
+  <rect x="1130" y="495" width="80" height="8" rx="4" fill="#ecf0f1"/>
+  <rect x="1130" y="495" width="68" height="8" rx="4" fill="#27ae60"/>
+  
+  <text x="1050" y="520" fill="#2c3e50" font-size="9" font-family="Arial">Mitigation Plans: 89% complete</text>
+  
+  <!-- Process Owner Status -->
+  <text x="720" y="555" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Process Owner Engagement:</text>
+  <rect x="720" y="565" width="400" height="12" rx="6" fill="#ecf0f1"/>
+  <rect x="720" y="565" width="320" height="12" rx="6" fill="#f39c12"/>
+  <text x="1130" y="575" fill="#f39c12" font-size="10" font-weight="bold" font-family="Arial">80% Engaged</text>
+  
+  <text x="720" y="595" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">Challenge:</text>
+  <text x="800" y="595" fill="#7f8c8d" font-size="10" font-family="Arial">Process owners struggle to allocate time for documentation</text>
+  
+  <text x="720" y="615" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Next Steps:</text>
+  <text x="720" y="630" fill="#7f8c8d" font-size="9" font-family="Arial">• Schedule dedicated workshops with each process owner</text>
+
+  <!-- Component 3: Control Library Creation -->
+  <rect x="20" y="660" width="660" height="300" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="660" width="660" height="40" rx="8" fill="#f39c12"/>
+  <text x="350" y="685" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">CONTROL LIBRARY CREATION</text>
+  
+  <!-- Control Library Content -->
+  <text x="40" y="715" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">Control Development Progress:</text>
+  
+  <!-- Control Status Grid -->
+  <rect x="40" y="730" width="280" height="180" rx="5" fill="#f8f9fa" stroke="#ddd"/>
+  <text x="50" y="750" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Controls by Status:</text>
+  
+  <circle cx="70" cy="770" r="6" fill="#27ae60"/>
+  <text x="85" y="775" fill="#2c3e50" font-size="9" font-family="Arial">Complete: 35 controls</text>
+  <rect x="200" y="765" width="100" height="10" rx="5" fill="#ecf0f1"/>
+  <rect x="200" y="765" width="74" height="10" rx="5" fill="#27ae60"/>
+  
+  <circle cx="70" cy="790" r="6" fill="#f39c12"/>
+  <text x="85" y="795" fill="#2c3e50" font-size="9" font-family="Arial">In Progress: 8 controls</text>
+  <rect x="200" y="785" width="100" height="10" rx="5" fill="#ecf0f1"/>
+  <rect x="200" y="785" width="17" height="10" rx="5" fill="#f39c12"/>
+  
+  <circle cx="70" cy="810" r="6" fill="#95a5a6"/>
+  <text x="85" y="815" fill="#2c3e50" font-size="9" font-family="Arial">Not Started: 4 controls</text>
+  <rect x="200" y="805" width="100" height="10" rx="5" fill="#ecf0f1"/>
+  <rect x="200" y="805" width="9" height="10" rx="5" fill="#95a5a6"/>
+  
+  <text x="50" y="840" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Testing Procedures:</text>
+  <text x="50" y="855" fill="#27ae60" font-size="9" font-family="Arial">✓ 156 procedures defined</text>
+  <text x="50" y="870" fill="#27ae60" font-size="9" font-family="Arial">✓ Risk-to-control mapping complete</text>
+  <text x="50" y="885" fill="#f39c12" font-size="9" font-family="Arial">⚠ Financial assertions 80% linked</text>
+  <text x="50" y="900" fill="#95a5a6" font-size="9" font-family="Arial">○ Custom testing procedures pending</text>
+  
+  <!-- Control Categories -->
+  <rect x="340" y="730" width="320" height="180" rx="5" fill="#f8f9fa" stroke="#ddd"/>
+  <text x="350" y="750" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Controls by Category:</text>
+  
+  <text x="350" y="770" fill="#2c3e50" font-size="9" font-family="Arial">Revenue: 12 controls</text>
+  <rect x="450" y="765" width="150" height="8" rx="4" fill="#e8f5e8"/>
+  <rect x="450" y="765" width="120" height="8" rx="4" fill="#27ae60"/>
+  <text x="610" y="772" fill="#27ae60" font-size="8" font-family="Arial">80%</text>
+  
+  <text x="350" y="785" fill="#2c3e50" font-size="9" font-family="Arial">Procurement: 9 controls</text>
+  <rect x="450" y="780" width="150" height="8" rx="4" fill="#fff3cd"/>
+  <rect x="450" y="780" width="105" height="8" rx="4" fill="#f39c12"/>
+  <text x="610" y="787" fill="#f39c12" font-size="8" font-family="Arial">70%</text>
+  
+  <text x="350" y="800" fill="#2c3e50" font-size="9" font-family="Arial">Inventory: 8 controls</text>
+  <rect x="450" y="795" width="150" height="8" rx="4" fill="#e8f5e8"/>
+  <rect x="450" y="795" width="135" height="8" rx="4" fill="#27ae60"/>
+  <text x="610" y="802" fill="#27ae60" font-size="8" font-family="Arial">90%</text>
+  
+  <text x="350" y="815" fill="#2c3e50" font-size="9" font-family="Arial">Payroll: 6 controls</text>
+  <rect x="450" y="810" width="150" height="8" rx="4" fill="#fdf2f2"/>
+  <rect x="450" y="810" width="75" height="8" rx="4" fill="#e74c3c"/>
+  <text x="610" y="817" fill="#e74c3c" font-size="8" font-family="Arial">50%</text>
+  
+  <text x="350" y="830" fill="#2c3e50" font-size="9" font-family="Arial">Financial Close: 7 controls</text>
+  <rect x="450" y="825" width="150" height="8" rx="4" fill="#f8f9fa"/>
+  <rect x="450" y="825" width="45" height="8" rx="4" fill="#95a5a6"/>
+  <text x="610" y="832" fill="#95a5a6" font-size="8" font-family="Arial">30%</text>
+  
+  <text x="350" y="845" fill="#2c3e50" font-size="9" font-family="Arial">IT General: 5 controls</text>
+  <rect x="450" y="840" width="150" height="8" rx="4" fill="#fff3cd"/>
+  <rect x="450" y="840" width="90" height="8" rx="4" fill="#f39c12"/>
+  <text x="610" y="847" fill="#f39c12" font-size="8" font-family="Arial">60%</text>
+  
+  <!-- Timeline and Resources -->
+  <text x="40" y="935" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Timeline &amp; Resources:</text>
+  <text x="40" y="950" fill="#7f8c8d" font-size="9" font-family="Arial">Estimated completion: 5 weeks (no templates available - building from scratch)</text>
+
+  <!-- Component 4: AI Template Generation -->
+  <rect x="700" y="660" width="680" height="300" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="700" y="660" width="680" height="40" rx="8" fill="#9b59b6"/>
+  <text x="1040" y="685" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">AI TEMPLATE GENERATION</text>
+  
+  <!-- AI Template Content -->
+  <text x="720" y="715" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">AI Learning Progress:</text>
+  
+  <!-- Learning Metrics -->
+  <rect x="720" y="730" width="300" height="140" rx="5" fill="#f4ecf7" stroke="#9b59b6"/>
+  <text x="730" y="750" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Pattern Recognition:</text>
+  <text x="730" y="765" fill="#9b59b6" font-size="9" font-family="Arial">• Excel workflow patterns: 1,247 captured</text>
+  <text x="730" y="780" fill="#9b59b6" font-size="9" font-family="Arial">• Business rule extractions: 89 rules identified</text>
+  <text x="730" y="795" fill="#9b59b6" font-size="9" font-family="Arial">• Testing procedure patterns: 156 documented</text>
+  <text x="730" y="810" fill="#9b59b6" font-size="9" font-family="Arial">• Sample size calculations: 23 models created</text>
+  
+  <text x="730" y="835" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Learning Accuracy:</text>
+  <rect x="730" y="845" width="200" height="12" rx="6" fill="#ecf0f1"/>
+  <rect x="730" y="845" width="164" height="12" rx="6" fill="#9b59b6"/>
+  <text x="940" y="855" fill="#9b59b6" font-size="10" font-weight="bold" font-family="Arial">82%</text>
+  
+  <!-- Template Generation Status -->
+  <rect x="1040" y="730" width="320" height="140" rx="5" fill="#f4ecf7" stroke="#9b59b6"/>
+  <text x="1050" y="750" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Template Generation Status:</text>
+  
+  <text x="1050" y="770" fill="#27ae60" font-size="9" font-family="Arial">✓ Manufacturing templates: 23 generated</text>
+  <text x="1050" y="785" fill="#f39c12" font-size="9" font-family="Arial">⚠ Financial templates: 12 in progress</text>
+  <text x="1050" y="800" fill="#95a5a6" font-size="9" font-family="Arial">○ Industry-specific: 8 pending</text>
+  
+  <text x="1050" y="825" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Quality Metrics:</text>
+  <text x="1050" y="840" fill="#27ae60" font-size="9" font-family="Arial">Template accuracy: 94%</text>
+  <text x="1050" y="855" fill="#3498db" font-size="9" font-family="Arial">User adoption rate: 78%</text>
+  
+  <!-- AI Insights Panel -->
+  <text x="720" y="895" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AI Insights &amp; Recommendations:</text>
+  <rect x="720" y="905" width="640" height="40" rx="5" fill="#e8f4fd" stroke="#3498db"/>
+  <text x="730" y="920" fill="#3498db" font-size="9" font-weight="bold" font-family="Arial">🤖 RECOMMENDATION:</text>
+  <text x="730" y="935" fill="#2c3e50" font-size="9" font-family="Arial">Based on patterns, suggest implementing automated evidence collection for inventory controls (85% efficiency gain)</text>
+
+  <!-- Action Panel -->
+  <rect x="20" y="980" width="1360" height="120" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="980" width="1360" height="40" rx="8" fill="#34495e"/>
+  <text x="700" y="1005" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">ACTIONS &amp; NEXT STEPS</text>
+  
+  <!-- Action Buttons -->
+  <rect x="50" y="1040" width="150" height="35" rx="5" fill="#e74c3c"/>
+  <text x="125" y="1062" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">RESOLVE BLOCKERS</text>
+  
+  <rect x="220" y="1040" width="150" height="35" rx="5" fill="#f39c12"/>
+  <text x="295" y="1062" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">SCHEDULE REVIEWS</text>
+  
+  <rect x="390" y="1040" width="150" height="35" rx="5" fill="#27ae60"/>
+  <text x="465" y="1062" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">APPROVE CHANGES</text>
+  
+  <rect x="560" y="1040" width="150" height="35" rx="5" fill="#3498db"/>
+  <text x="635" y="1062" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">VIEW ANALYTICS</text>
+  
+  <rect x="730" y="1040" width="150" height="35" rx="5" fill="#9b59b6"/>
+  <text x="805" y="1062" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">AI OPTIMIZE</text>
+  
+  <!-- Quick Actions -->
+  <text x="950" y="1050" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Quick Actions:</text>
+  <text x="950" y="1065" fill="#7f8c8d" font-size="9" font-family="Arial">• Export progress report</text>
+  <text x="1100" y="1065" fill="#7f8c8d" font-size="9" font-family="Arial">• Send status email</text>
+  <text x="950" y="1080" fill="#7f8c8d" font-size="9" font-family="Arial">• Schedule stakeholder meeting</text>
+  <text x="1100" y="1080" fill="#7f8c8d" font-size="9" font-family="Arial">• Update timeline</text>
+
+  <!-- Mobile View Considerations -->
+  <rect x="20" y="1120" width="1360" height="100" rx="8" fill="#f8f9fa" stroke="#ddd" stroke-width="2"/>
+  <text x="700" y="1145" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">MOBILE VIEW ADAPTATIONS</text>
+  
+  <text x="40" y="1165" fill="#7f8c8d" font-size="10" font-family="Arial">• Stacked layout: Components stack vertically on mobile devices</text>
+  <text x="40" y="1180" fill="#7f8c8d" font-size="10" font-family="Arial">• Collapsible sections: Each component can be collapsed/expanded</text>
+  <text x="40" y="1195" fill="#7f8c8d" font-size="10" font-family="Arial">• Touch-optimized: Larger buttons and touch targets for mobile interaction</text>
+  <text x="40" y="1210" fill="#7f8c8d" font-size="10" font-family="Arial">• Progressive disclosure: Show summary first, drill-down for details</text>
+
+  <!-- Performance Indicators -->
+  <rect x="20" y="1240" width="1360" height="80" rx="8" fill="white" stroke="#ddd" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="1265" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">REAL-TIME PERFORMANCE INDICATORS</text>
+  
+  <text x="40" y="1285" fill="#27ae60" font-size="10" font-weight="bold" font-family="Arial">System Status:</text>
+  <circle cx="150" cy="1282" r="5" fill="#27ae60"/>
+  <text x="165" y="1287" fill="#27ae60" font-size="9" font-family="Arial">Operational</text>
+  
+  <text x="250" y="1285" fill="#3498db" font-size="10" font-weight="bold" font-family="Arial">Last Update:</text>
+  <text x="350" y="1285" fill="#7f8c8d" font-size="9" font-family="Arial">2 minutes ago</text>
+  
+  <text x="450" y="1285" fill="#f39c12" font-size="10" font-weight="bold" font-family="Arial">Active Users:</text>
+  <text x="550" y="1285" fill="#7f8c8d" font-size="9" font-family="Arial">23 online</text>
+  
+  <text x="40" y="1305" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">Data Sync:</text>
+  <rect x="130" y="1300" width="100" height="8" rx="4" fill="#e8f5e8"/>
+  <rect x="130" y="1300" width="85" height="8" rx="4" fill="#27ae60"/>
+  <text x="240" y="1307" fill="#27ae60" font-size="8" font-family="Arial">85% complete</text>
+
+</svg>

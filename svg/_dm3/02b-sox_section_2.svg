@@ -1,0 +1,284 @@
+<svg viewBox="0 0 1600 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="foundationGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer3Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer4Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="challengeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <marker id="buildArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1400" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="70" fill="url(#foundationGrad)"/>
+  <text x="800" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">Section 2: Foundation Implementation (The Hard Part)</text>
+  <text x="800" y="50" text-anchor="middle" fill="white" font-size="14" font-family="Arial">16-24 weeks of intensive system building, learning, and adaptation</text>
+
+  <!-- Overview -->
+  <rect x="50" y="90" width="1500" height="100" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="115" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">THE FOUNDATION PHASE: WHERE 80% OF EFFORT CREATES 90% OF VALUE</text>
+  <text x="70" y="140" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">Why This Is Hard:</text>
+  <text x="190" y="140" fill="#2c3e50" font-size="11" font-family="Arial">No templates exist, every decision is custom, constant learning curve</text>
+  <text x="70" y="155" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">Why It's Critical:</text>
+  <text x="190" y="155" fill="#2c3e50" font-size="11" font-family="Arial">All future implementations scale from patterns established here</text>
+  <text x="70" y="170" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">Success Metrics:</text>
+  <text x="190" y="170" fill="#2c3e50" font-size="11" font-family="Arial">Working system + documented templates + trained users + external auditor acceptance</text>
+
+  <!-- Layer 1: Infrastructure &amp; Core Platform -->
+  <rect x="50" y="210" width="1500" height="200" rx="8" fill="url(#layer1Grad)" filter="url(#shadow)"/>
+  <text x="800" y="240" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 1: INFRASTRUCTURE &amp; CORE PLATFORM BUILD</text>
+  <text x="800" y="260" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Weeks 9-14: Technical Foundation - Everything Must Work From Scratch</text>
+
+  <!-- Infrastructure Setup -->
+  <rect x="70" y="280" width="280" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">INFRASTRUCTURE DEPLOYMENT</text>
+  <text x="80" y="315" fill="#2c3e50" font-size="9" font-family="Arial">• Azure environment provisioning</text>
+  <text x="80" y="328" fill="#2c3e50" font-size="9" font-family="Arial">• PostgreSQL cluster setup</text>
+  <text x="80" y="341" fill="#2c3e50" font-size="9" font-family="Arial">• Rust WebSocket server deployment</text>
+  <text x="80" y="354" fill="#2c3e50" font-size="9" font-family="Arial">• Load balancer configuration</text>
+  <text x="80" y="367" fill="#2c3e50" font-size="9" font-family="Arial">• SSL certificates &amp; security</text>
+  <text x="80" y="380" fill="#2c3e50" font-size="9" font-family="Arial">⏱️ Challenge: 3 weeks for full stack</text>
+
+  <!-- MCP/AI Services -->
+  <rect x="370" y="280" width="280" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">MCP/AI SERVICES SETUP</text>
+  <text x="380" y="315" fill="#2c3e50" font-size="9" font-family="Arial">• MCP server deployment</text>
+  <text x="380" y="328" fill="#2c3e50" font-size="9" font-family="Arial">• Base AI model configuration</text>
+  <text x="380" y="341" fill="#2c3e50" font-size="9" font-family="Arial">• Apache Hop ETL engine</text>
+  <text x="380" y="354" fill="#2c3e50" font-size="9" font-family="Arial">• Template engine initialization</text>
+  <text x="380" y="367" fill="#2c3e50" font-size="9" font-family="Arial">• Business rule learning framework</text>
+  <text x="380" y="380" fill="#e74c3c" font-size="9" font-family="Arial">⚠️ No existing patterns to follow</text>
+
+  <!-- Integration Development -->
+  <rect x="670" y="280" width="280" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">INTEGRATION DEVELOPMENT</text>
+  <text x="680" y="315" fill="#2c3e50" font-size="9" font-family="Arial">• SAP RFC connection (3 attempts)</text>
+  <text x="680" y="328" fill="#2c3e50" font-size="9" font-family="Arial">• Active Directory authentication</text>
+  <text x="680" y="341" fill="#2c3e50" font-size="9" font-family="Arial">• Office 365 API integration</text>
+  <text x="680" y="354" fill="#2c3e50" font-size="9" font-family="Arial">• Email notification services</text>
+  <text x="680" y="367" fill="#2c3e50" font-size="9" font-family="Arial">• File storage &amp; security protocols</text>
+  <text x="680" y="380" fill="#e74c3c" font-size="9" font-family="Arial">🔴 SAP integration takes 4 weeks</text>
+
+  <!-- Excel Add-in Development -->
+  <rect x="970" y="280" width="280" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">EXCEL ADD-IN DEVELOPMENT</text>
+  <text x="980" y="315" fill="#2c3e50" font-size="9" font-family="Arial">• Office.js add-in framework</text>
+  <text x="980" y="328" fill="#2c3e50" font-size="9" font-family="Arial">• SOX ribbon interface design</text>
+  <text x="980" y="341" fill="#2c3e50" font-size="9" font-family="Arial">• WebSocket client integration</text>
+  <text x="980" y="354" fill="#2c3e50" font-size="9" font-family="Arial">• Real-time data synchronization</text>
+  <text x="980" y="367" fill="#2c3e50" font-size="9" font-family="Arial">• Cross-version compatibility testing</text>
+  <text x="980" y="380" fill="#f39c12" font-size="9" font-family="Arial">🟡 Excel versions compatibility issues</text>
+
+  <!-- Web Platform -->
+  <rect x="1270" y="280" width="280" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1410" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">WEB PLATFORM BUILD</text>
+  <text x="1280" y="315" fill="#2c3e50" font-size="9" font-family="Arial">• React dashboard development</text>
+  <text x="1280" y="328" fill="#2c3e50" font-size="9" font-family="Arial">• User interface design system</text>
+  <text x="1280" y="341" fill="#2c3e50" font-size="9" font-family="Arial">• Role-based access controls</text>
+  <text x="1280" y="354" fill="#2c3e50" font-size="9" font-family="Arial">• Mobile responsive design</text>
+  <text x="1280" y="367" fill="#2c3e50" font-size="9" font-family="Arial">• API endpoint development</text>
+  <text x="1280" y="380" fill="#27ae60" font-size="9" font-family="Arial">✅ Web development on track</text>
+
+  <!-- Layer 2: Business Configuration -->
+  <rect x="50" y="430" width="1500" height="200" rx="8" fill="url(#layer2Grad)" filter="url(#shadow)"/>
+  <text x="800" y="460" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 2: BUSINESS CONFIGURATION &amp; DATA SETUP</text>
+  <text x="800" y="480" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Weeks 15-20: Converting Business Requirements into System Configuration</text>
+
+  <!-- Organizational Setup -->
+  <rect x="70" y="500" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="245" y="520" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">ORGANIZATIONAL STRUCTURE</text>
+  <text x="80" y="535" fill="#2c3e50" font-size="9" font-family="Arial">• Legal entities: Parent + 3 subsidiaries</text>
+  <text x="80" y="548" fill="#2c3e50" font-size="9" font-family="Arial">• Business units: 8 divisions across 5 locations</text>
+  <text x="80" y="561" fill="#2c3e50" font-size="9" font-family="Arial">• Reporting hierarchy: 4-level management</text>
+  <text x="80" y="574" fill="#2c3e50" font-size="9" font-family="Arial">• User roles: 47 users across 6 role types</text>
+  <text x="80" y="587" fill="#2c3e50" font-size="9" font-family="Arial">• Access permissions: Complex matrix setup</text>
+  <text x="80" y="600" fill="#f39c12" font-size="9" font-family="Arial">⚠️ 3 weeks for org structure complexity</text>
+
+  <!-- Process Framework -->
+  <rect x="440" y="500" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="615" y="520" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">BUSINESS PROCESS FRAMEWORK</text>
+  <text x="450" y="535" fill="#2c3e50" font-size="9" font-family="Arial">• 8 major processes mapped (Revenue, Procurement, etc.)</text>
+  <text x="450" y="548" fill="#2c3e50" font-size="9" font-family="Arial">• 23 sub-processes identified and documented</text>
+  <text x="450" y="561" fill="#2c3e50" font-size="9" font-family="Arial">• Risk assessment: 67 risks across processes</text>
+  <text x="450" y="574" fill="#2c3e50" font-size="9" font-family="Arial">• Process owners assigned and trained</text>
+  <text x="450" y="587" fill="#2c3e50" font-size="9" font-family="Arial">• Materiality thresholds established</text>
+  <text x="450" y="600" fill="#e74c3c" font-size="9" font-family="Arial">🔴 Hardest part: Business stakeholder time</text>
+
+  <!-- Control Library -->
+  <rect x="810" y="500" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="985" y="520" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">CONTROL LIBRARY CREATION</text>
+  <text x="820" y="535" fill="#2c3e50" font-size="9" font-family="Arial">• 47 SOX controls designed from scratch</text>
+  <text x="820" y="548" fill="#2c3e50" font-size="9" font-family="Arial">• Control activities: 156 specific procedures</text>
+  <text x="820" y="561" fill="#2c3e50" font-size="9" font-family="Arial">• Risk-to-control mapping: Complex matrix</text>
+  <text x="820" y="574" fill="#2c3e50" font-size="9" font-family="Arial">• Financial statement assertions linked</text>
+  <text x="820" y="587" fill="#2c3e50" font-size="9" font-family="Arial">• Testing procedures: Custom for each control</text>
+  <text x="820" y="600" fill="#f39c12" font-size="9" font-family="Arial">🟡 5 weeks - no templates available</text>
+
+  <!-- AI Template Building -->
+  <rect x="1180" y="500" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1355" y="520" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AI TEMPLATE GENERATION</text>
+  <text x="1190" y="535" fill="#2c3e50" font-size="9" font-family="Arial">• Learning from customer's Excel patterns</text>
+  <text x="1190" y="548" fill="#2c3e50" font-size="9" font-family="Arial">• Business rule extraction algorithms</text>
+  <text x="1190" y="561" fill="#2c3e50" font-size="9" font-family="Arial">• Testing procedure pattern recognition</text>
+  <text x="1190" y="574" fill="#2c3e50" font-size="9" font-family="Arial">• Sample size calculation models</text>
+  <text x="1190" y="587" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence collection rule creation</text>
+  <text x="1190" y="600" fill="#9b59b6" font-size="9" font-family="Arial">🔮 Building foundation for future AI</text>
+
+  <!-- Layer 3: User Onboarding &amp; Training -->
+  <rect x="50" y="650" width="1500" height="180" rx="8" fill="url(#layer3Grad)" filter="url(#shadow)"/>
+  <text x="800" y="680" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 3: USER ONBOARDING &amp; TRAINING PROGRAM</text>
+  <text x="800" y="700" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Weeks 21-24: Getting Users Productive in the New System</text>
+
+  <!-- Training Program -->
+  <rect x="70" y="720" width="450" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="295" y="740" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">COMPREHENSIVE TRAINING PROGRAM</text>
+  <text x="80" y="755" fill="#2c3e50" font-size="9" font-family="Arial">• Executive briefing: 2-hour overview for C-suite</text>
+  <text x="80" y="768" fill="#2c3e50" font-size="9" font-family="Arial">• Manager training: 8-hour program for 12 managers</text>
+  <text x="80" y="781" fill="#2c3e50" font-size="9" font-family="Arial">• Power user bootcamp: 16-hour intensive for 8 analysts</text>
+  <text x="80" y="794" fill="#2c3e50" font-size="9" font-family="Arial">• End user workshops: 4-hour sessions for 35 users</text>
+
+  <!-- Change Management -->
+  <rect x="540" y="720" width="450" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="765" y="740" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">CHANGE MANAGEMENT STRATEGY</text>
+  <text x="550" y="755" fill="#2c3e50" font-size="9" font-family="Arial">• Champion network: 8 super-users across departments</text>
+  <text x="550" y="768" fill="#2c3e50" font-size="9" font-family="Arial">• Communication plan: Weekly updates, success stories</text>
+  <text x="550" y="781" fill="#2c3e50" font-size="9" font-family="Arial">• Feedback loops: Bi-weekly feedback sessions</text>
+  <text x="550" y="794" fill="#2c3e50" font-size="9" font-family="Arial">• Support model: 24/7 help desk during transition</text>
+
+  <!-- Documentation -->
+  <rect x="1010" y="720" width="450" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1235" y="740" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">DOCUMENTATION &amp; KNOWLEDGE TRANSFER</text>
+  <text x="1020" y="755" fill="#2c3e50" font-size="9" font-family="Arial">• User manuals: Role-specific guides with screenshots</text>
+  <text x="1020" y="768" fill="#2c3e50" font-size="9" font-family="Arial">• Process documentation: End-to-end workflows</text>
+  <text x="1020" y="781" fill="#2c3e50" font-size="9" font-family="Arial">• Troubleshooting guides: Common issues &amp; solutions</text>
+  <text x="1020" y="794" fill="#2c3e50" font-size="9" font-family="Arial">• Video library: 47 how-to videos created</text>
+
+  <!-- Layer 4: Testing &amp; Validation -->
+  <rect x="50" y="850" width="1500" height="180" rx="8" fill="url(#layer4Grad)" filter="url(#shadow)"/>
+  <text x="800" y="880" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 4: SYSTEM TESTING &amp; VALIDATION</text>
+  <text x="800" y="900" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Weeks 25-28: Proving the System Works Before Go-Live</text>
+
+  <!-- Technical Testing -->
+  <rect x="70" y="920" width="300" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="220" y="940" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">TECHNICAL TESTING</text>
+  <text x="80" y="955" fill="#2c3e50" font-size="9" font-family="Arial">• Load testing: 100 concurrent users</text>
+  <text x="80" y="968" fill="#2c3e50" font-size="9" font-family="Arial">• Security penetration testing</text>
+  <text x="80" y="981" fill="#2c3e50" font-size="9" font-family="Arial">• Excel add-in compatibility: 15 versions</text>
+  <text x="80" y="994" fill="#2c3e50" font-size="9" font-family="Arial">• Integration testing: SAP, AD, O365</text>
+
+  <!-- Business Testing -->
+  <rect x="390" y="920" width="300" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="540" y="940" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">BUSINESS TESTING</text>
+  <text x="400" y="955" fill="#2c3e50" font-size="9" font-family="Arial">• User acceptance testing: 47 controls</text>
+  <text x="400" y="968" fill="#2c3e50" font-size="9" font-family="Arial">• End-to-end process validation</text>
+  <text x="400" y="981" fill="#2c3e50" font-size="9" font-family="Arial">• Workflow testing: All approval paths</text>
+  <text x="400" y="994" fill="#2c3e50" font-size="9" font-family="Arial">• Reporting validation: Management dashboards</text>
+
+  <!-- Auditor Validation -->
+  <rect x="710" y="920" width="300" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="860" y="940" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">AUDITOR VALIDATION</text>
+  <text x="720" y="955" fill="#2c3e50" font-size="9" font-family="Arial">• External auditor system review</text>
+  <text x="720" y="968" fill="#2c3e50" font-size="9" font-family="Arial">• Audit trail demonstration</text>
+  <text x="720" y="981" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence package validation</text>
+  <text x="720" y="994" fill="#2c3e50" font-size="9" font-family="Arial">• Compliance framework approval</text>
+
+  <!-- Parallel Run -->
+  <rect x="1030" y="920" width="300" height="90" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1180" y="940" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">PARALLEL RUN</text>
+  <text x="1040" y="955" fill="#2c3e50" font-size="9" font-family="Arial">• Side-by-side with existing system</text>
+  <text x="1040" y="968" fill="#2c3e50" font-size="9" font-family="Arial">• 3 controls tested both ways</text>
+  <text x="1040" y="981" fill="#2c3e50" font-size="9" font-family="Arial">• Results comparison &amp; validation</text>
+  <text x="1040" y="994" fill="#2c3e50" font-size="9" font-family="Arial">• Risk mitigation for go-live</text>
+
+  <!-- Major Challenges Section -->
+  <rect x="50" y="1050" width="1500" height="200" rx="8" fill="url(#challengeGrad)" filter="url(#shadow)"/>
+  <text x="800" y="1080" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">MAJOR CHALLENGES ENCOUNTERED (REAL IMPLEMENTATION ISSUES)</text>
+  <text x="800" y="1100" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Why First Implementations Take 6 Months Longer Than Planned</text>
+
+  <!-- Technical Challenges -->
+  <rect x="70" y="1120" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="245" y="1140" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">TECHNICAL CHALLENGES</text>
+  <text x="80" y="1155" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">🔴 SAP Integration Nightmare (4 weeks delay)</text>
+  <text x="80" y="1168" fill="#2c3e50" font-size="9" font-family="Arial">• RFC connections failed in production</text>
+  <text x="80" y="1181" fill="#2c3e50" font-size="9" font-family="Arial">• Security team blocked ports</text>
+  <text x="80" y="1194" fill="#2c3e50" font-size="9" font-family="Arial">• Data extraction permissions issues</text>
+  <text x="80" y="1207" fill="#f39c12" font-size="9" font-weight="bold" font-family="Arial">🟡 Excel Compatibility Issues (2 weeks)</text>
+  <text x="80" y="1220" fill="#2c3e50" font-size="9" font-family="Arial">• Office 2016 vs 2021 differences</text>
+
+  <!-- Business Challenges -->
+  <rect x="440" y="1120" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="615" y="1140" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">BUSINESS CHALLENGES</text>
+  <text x="450" y="1155" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">🔴 Stakeholder Availability (ongoing)</text>
+  <text x="450" y="1168" fill="#2c3e50" font-size="9" font-family="Arial">• Process owners too busy for meetings</text>
+  <text x="450" y="1181" fill="#2c3e50" font-size="9" font-family="Arial">• Requirements kept changing</text>
+  <text x="450" y="1194" fill="#2c3e50" font-size="9" font-family="Arial">• "That's not how we actually do it"</text>
+  <text x="450" y="1207" fill="#f39c12" font-size="9" font-weight="bold" font-family="Arial">🟡 Change Resistance (3 weeks)</text>
+  <text x="450" y="1220" fill="#2c3e50" font-size="9" font-family="Arial">• "Excel worked fine before"</text>
+
+  <!-- Learning Curve -->
+  <rect x="810" y="1120" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="985" y="1140" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">LEARNING CURVE ISSUES</text>
+  <text x="820" y="1155" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">🔴 No Playbook Exists (constant)</text>
+  <text x="820" y="1168" fill="#2c3e50" font-size="9" font-family="Arial">• Every decision requires research</text>
+  <text x="820" y="1181" fill="#2c3e50" font-size="9" font-family="Arial">• Multiple architecture revisions</text>
+  <text x="820" y="1194" fill="#2c3e50" font-size="9" font-family="Arial">• Testing approach refined 3 times</text>
+  <text x="820" y="1207" fill="#f39c12" font-size="9" font-weight="bold" font-family="Arial">🟡 AI Model Training (2 weeks)</text>
+  <text x="820" y="1220" fill="#2c3e50" font-size="9" font-family="Arial">• Insufficient training data initially</text>
+
+  <!-- External Dependencies -->
+  <rect x="1180" y="1120" width="350" height="110" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1355" y="1140" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">EXTERNAL DEPENDENCIES</text>
+  <text x="1190" y="1155" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">🔴 External Auditor Skepticism</text>
+  <text x="1190" y="1168" fill="#2c3e50" font-size="9" font-family="Arial">• "Unproven technology" concerns</text>
+  <text x="1190" y="1181" fill="#2c3e50" font-size="9" font-family="Arial">• Extensive documentation required</text>
+  <text x="1190" y="1194" fill="#2c3e50" font-size="9" font-family="Arial">• Multiple review cycles</text>
+  <text x="1190" y="1207" fill="#f39c12" font-size="9" font-weight="bold" font-family="Arial">🟡 IT Security Reviews (1 week)</text>
+  <text x="1190" y="1220" fill="#2c3e50" font-size="9" font-family="Arial">• Additional penetration testing</text>
+
+  <!-- Success Outcomes -->
+  <rect x="50" y="1270" width="1500" height="100" rx="8" fill="#d4edda" stroke="#28a745" stroke-width="3" filter="url(#shadow)"/>
+  <text x="800" y="1300" text-anchor="middle" fill="#155724" font-size="16" font-weight="bold" font-family="Arial">✅ FOUNDATION COMPLETE: SYSTEM READY FOR FIRST SOX CYCLE</text>
+  
+  <rect x="70" y="1320" width="450" height="40" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="295" y="1335" text-anchor="middle" fill="#155724" font-size="11" font-weight="bold" font-family="Arial">DELIVERABLES ACHIEVED</text>
+  <text x="80" y="1350" fill="#2c3e50" font-size="9" font-family="Arial">• Working platform with all integrations • 47 controls configured</text>
+
+  <rect x="540" y="1320" width="450" height="40" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="765" y="1335" text-anchor="middle" fill="#155724" font-size="11" font-weight="bold" font-family="Arial">KNOWLEDGE CAPTURED</text>
+  <text x="550" y="1350" fill="#2c3e50" font-size="9" font-family="Arial">• 156 templates created • All lessons documented for next implementation</text>
+
+  <rect x="1010" y="1320" width="450" height="40" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1235" y="1335" text-anchor="middle" fill="#155724" font-size="11" font-weight="bold" font-family="Arial">USERS TRAINED &amp; READY</text>
+  <text x="1020" y="1350" fill="#2c3e50" font-size="9" font-family="Arial">• 47 users certified • External auditor approved • Go-live authorized</text>
+
+  <!-- Timeline Summary -->
+  <rect x="50" y="1390" width="1500" height="20" rx="5" fill="#f8f9fa"/>
+  <text x="800" y="1405" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold" font-family="Arial">TOTAL: 28 weeks foundation + 8 weeks delays = 36 weeks (9 months) to reach operational readiness</text>
+
+</svg>

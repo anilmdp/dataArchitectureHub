@@ -1,0 +1,219 @@
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <rect width="1200" height="120" fill="#1e40af"/>
+  <text x="600" y="50" text-anchor="middle" font-size="32" font-weight="bold" fill="white" font-family="Roboto, sans-serif">
+    Open Data Fundamentals
+  </text>
+  <text x="600" y="80" text-anchor="middle" font-size="16" fill="#e0f2fe" font-family="Roboto, sans-serif">
+    Principles, Standards, and Global Movement
+  </text>
+
+  <!-- What is Open Data Section -->
+  <rect x="50" y="150" width="1100" height="280" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="10"/>
+  <text x="70" y="190" font-size="24" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">What is Open Data?</text>
+  
+  <!-- Definition -->
+  <rect x="80" y="210" width="320" height="200" fill="#ffffff" stroke="#10b981" stroke-width="2" rx="8"/>
+  <circle cx="240" cy="250" r="25" fill="#10b981"/>
+  <text x="240" y="260" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">📊</text>
+  <text x="240" y="290" text-anchor="middle" font-size="16" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Definition</text>
+  
+  <text x="100" y="315" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Data that is:</text>
+  <text x="100" y="335" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Freely available to everyone</text>
+  <text x="100" y="350" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Used and redistributed by anyone</text>
+  <text x="100" y="365" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Machine-readable formats</text>
+  <text x="100" y="380" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• No legal restrictions</text>
+  <text x="100" y="395" font-size="11" fill="#047857" font-family="Roboto, sans-serif">• Published by government entities</text>
+
+  <!-- Principles -->
+  <rect x="420" y="210" width="320" height="200" fill="#ffffff" stroke="#10b981" stroke-width="2" rx="8"/>
+  <circle cx="580" cy="250" r="25" fill="#10b981"/>
+  <text x="580" y="260" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">⚖️</text>
+  <text x="580" y="290" text-anchor="middle" font-size="16" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Core Principles</text>
+  
+  <text x="440" y="315" font-size="11" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">1. Accessible</text>
+  <text x="450" y="330" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Available to the widest range of users</text>
+  <text x="440" y="350" font-size="11" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">2. Complete</text>
+  <text x="450" y="365" font-size="10" fill="#047857" font-family="Roboto, sans-serif">All public data made available</text>
+  <text x="440" y="380" font-size="11" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">3. Timely</text>
+  <text x="450" y="395" font-size="10" fill="#047857" font-family="Roboto, sans-serif">Updated as quickly as possible</text>
+
+  <!-- Benefits -->
+  <rect x="760" y="210" width="320" height="200" fill="#ffffff" stroke="#10b981" stroke-width="2" rx="8"/>
+  <circle cx="920" cy="250" r="25" fill="#10b981"/>
+  <text x="920" y="260" text-anchor="middle" font-size="20" fill="white" font-family="Roboto, sans-serif">🎯</text>
+  <text x="920" y="290" text-anchor="middle" font-size="16" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Key Benefits</text>
+  
+  <text x="780" y="315" font-size="11" fill="#047857" font-family="Roboto, sans-serif">🏛️ Government Transparency</text>
+  <text x="780" y="335" font-size="11" fill="#047857" font-family="Roboto, sans-serif">💰 Economic Growth</text>
+  <text x="780" y="350" font-size="11" fill="#047857" font-family="Roboto, sans-serif">🚀 Innovation Catalyst</text>
+  <text x="780" y="365" font-size="11" fill="#047857" font-family="Roboto, sans-serif">🎓 Research and Education</text>
+  <text x="780" y="380" font-size="11" fill="#047857" font-family="Roboto, sans-serif">👥 Citizen Engagement</text>
+  <text x="780" y="395" font-size="11" fill="#047857" font-family="Roboto, sans-serif">📱 App Development</text>
+
+  <!-- Open Data Standards Section -->
+  <rect x="50" y="450" width="1100" height="320" fill="#f0f9ff" stroke="#0891b2" stroke-width="2" rx="10"/>
+  <text x="70" y="490" font-size="24" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Open Data Standards and Formats</text>
+  
+  <!-- File Formats -->
+  <rect x="80" y="510" width="280" height="240" fill="#ffffff" stroke="#0891b2" stroke-width="2" rx="8"/>
+  <text x="220" y="535" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">📁 Standard Formats</text>
+  
+  <!-- Format Icons and Names -->
+  <rect x="100" y="550" width="60" height="40" fill="#10b981" rx="5"/>
+  <text x="130" y="575" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">CSV</text>
+  <text x="180" y="575" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">Comma-separated values</text>
+  
+  <rect x="100" y="600" width="60" height="40" fill="#a855f7" rx="5"/>
+  <text x="130" y="625" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">JSON</text>
+  <text x="180" y="625" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">JavaScript Object Notation</text>
+  
+  <rect x="100" y="650" width="60" height="40" fill="#f59e0b" rx="5"/>
+  <text x="130" y="675" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">XML</text>
+  <text x="180" y="675" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">Extensible Markup Language</text>
+  
+  <rect x="100" y="700" width="60" height="40" fill="#0891b2" rx="5"/>
+  <text x="130" y="725" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Roboto, sans-serif">API</text>
+  <text x="180" y="725" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">Application Programming Interface</text>
+
+  <!-- Licensing -->
+  <rect x="380" y="510" width="280" height="240" fill="#ffffff" stroke="#0891b2" stroke-width="2" rx="8"/>
+  <text x="520" y="535" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">⚖️ Open Licenses</text>
+  
+  <rect x="400" y="550" width="240" height="35" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="5"/>
+  <text x="520" y="572" text-anchor="middle" font-size="12" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Creative Commons (CC)</text>
+  <text x="410" y="600" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">• CC0 - Public Domain</text>
+  <text x="410" y="615" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">• CC BY - Attribution Required</text>
+  <text x="410" y="630" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">• CC BY-SA - Share Alike</text>
+  
+  <rect x="400" y="645" width="240" height="35" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="5"/>
+  <text x="520" y="667" text-anchor="middle" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Open Government License</text>
+  <text x="410" y="695" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">• Government-specific open license</text>
+  <text x="410" y="710" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">• Used by Canada, UK, and others</text>
+  <text x="410" y="725" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">• Toronto uses this license type</text>
+
+  <!-- Accessibility Requirements -->
+  <rect x="680" y="510" width="400" height="240" fill="#ffffff" stroke="#0891b2" stroke-width="2" rx="8"/>
+  <text x="880" y="535" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">♿ Accessibility Requirements</text>
+  
+  <text x="700" y="560" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Technical Accessibility:</text>
+  <text x="700" y="580" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Machine-readable formats</text>
+  <text x="700" y="595" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Structured data with clear schemas</text>
+  <text x="700" y="610" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Bulk download capabilities</text>
+  <text x="700" y="625" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ API access for real-time data</text>
+  
+  <text x="700" y="650" font-size="12" font-weight="bold" fill="#0369a1" font-family="Roboto, sans-serif">Human Accessibility:</text>
+  <text x="700" y="670" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Clear documentation and metadata</text>
+  <text x="700" y="685" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ User-friendly web interfaces</text>
+  <text x="700" y="700" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Multiple language support</text>
+  <text x="700" y="715" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Search and discovery tools</text>
+  <text x="700" y="730" font-size="10" fill="#0369a1" font-family="Roboto, sans-serif">✓ Mobile-responsive design</text>
+
+  <!-- Global Open Data Movement -->
+  <rect x="50" y="790" width="1100" height="350" fill="#fef7ff" stroke="#a855f7" stroke-width="2" rx="10"/>
+  <text x="70" y="830" font-size="24" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Global Open Data Movement</text>
+  
+  <!-- World Map Representation with Key Countries -->
+  <rect x="80" y="850" width="500" height="270" fill="#ffffff" stroke="#a855f7" stroke-width="2" rx="8"/>
+  <text x="330" y="875" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🌍 Leading Open Data Countries</text>
+  
+  <!-- Country Examples -->
+  <rect x="100" y="890" width="130" height="60" fill="#f3e8ff" rx="5"/>
+  <text x="165" y="910" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🇺🇸 United States</text>
+  <text x="165" y="925" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">data.gov</text>
+  <text x="165" y="940" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">200,000+ datasets</text>
+  
+  <rect x="240" y="890" width="130" height="60" fill="#f3e8ff" rx="5"/>
+  <text x="305" y="910" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🇬🇧 United Kingdom</text>
+  <text x="305" y="925" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">data.gov.uk</text>
+  <text x="305" y="940" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">50,000+ datasets</text>
+  
+  <rect x="380" y="890" width="130" height="60" fill="#f3e8ff" rx="5"/>
+  <text x="445" y="910" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🇨🇦 Canada</text>
+  <text x="445" y="925" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">open.canada.ca</text>
+  <text x="445" y="940" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">80,000+ datasets</text>
+  
+  <rect x="100" y="960" width="130" height="60" fill="#f3e8ff" rx="5"/>
+  <text x="165" y="980" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🇪🇺 European Union</text>
+  <text x="165" y="995" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">data.europa.eu</text>
+  <text x="165" y="1010" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">1,000,000+ datasets</text>
+  
+  <rect x="240" y="960" width="130" height="60" fill="#f3e8ff" rx="5"/>
+  <text x="305" y="980" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🇦🇺 Australia</text>
+  <text x="305" y="995" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">data.gov.au</text>
+  <text x="305" y="1010" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Roboto, sans-serif">60,000+ datasets</text>
+  
+  <rect x="380" y="960" width="130" height="60" fill="#d1fae5" rx="5"/>
+  <text x="445" y="980" text-anchor="middle" font-size="12" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">🇨🇦 Toronto</text>
+  <text x="445" y="995" text-anchor="middle" font-size="10" fill="#047857" font-family="Roboto, sans-serif">open.toronto.ca</text>
+  <text x="445" y="1010" text-anchor="middle" font-size="9" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">523 datasets</text>
+
+  <!-- Best Practices -->
+  <rect x="600" y="850" width="480" height="270" fill="#ffffff" stroke="#a855f7" stroke-width="2" rx="8"/>
+  <text x="840" y="875" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">🏆 Global Best Practices</text>
+  
+  <text x="620" y="900" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Data Governance:</text>
+  <text x="620" y="920" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Clear data management policies</text>
+  <text x="620" y="935" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Regular quality assessments</text>
+  <text x="620" y="950" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Metadata standards compliance</text>
+  
+  <text x="620" y="975" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Technical Infrastructure:</text>
+  <text x="620" y="995" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• CKAN or equivalent platforms</text>
+  <text x="620" y="1010" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• RESTful API endpoints</text>
+  <text x="620" y="1025" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• High availability and performance</text>
+  
+  <text x="620" y="1050" font-size="12" font-weight="bold" fill="#7c3aed" font-family="Roboto, sans-serif">Community Engagement:</text>
+  <text x="620" y="1070" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Developer feedback channels</text>
+  <text x="620" y="1085" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Regular hackathons and events</text>
+  <text x="620" y="1100" font-size="10" fill="#7c3aed" font-family="Roboto, sans-serif">• Educational resources and support</text>
+
+  <!-- Open Data Impact Statistics -->
+  <rect x="50" y="1160" width="1100" height="180" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="10"/>
+  <text x="70" y="1200" font-size="24" font-weight="bold" fill="#047857" font-family="Roboto, sans-serif">Global Open Data Impact</text>
+  
+  <!-- Statistics Grid -->
+  <rect x="80" y="1220" width="200" height="100" fill="#ffffff" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="180" y="1245" text-anchor="middle" font-size="20" font-weight="bold" fill="#10b981" font-family="Roboto, sans-serif">$3T+</text>
+  <text x="180" y="1265" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Annual Economic</text>
+  <text x="180" y="1280" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Value Generated</text>
+  <text x="180" y="1305" text-anchor="middle" font-size="9" fill="#047857" font-family="Roboto, sans-serif">McKinsey Global Institute</text>
+  
+  <rect x="300" y="1220" width="200" height="100" fill="#ffffff" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="400" y="1245" text-anchor="middle" font-size="20" font-weight="bold" fill="#10b981" font-family="Roboto, sans-serif">180+</text>
+  <text x="400" y="1265" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Countries with</text>
+  <text x="400" y="1280" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Open Data Initiatives</text>
+  <text x="400" y="1305" text-anchor="middle" font-size="9" fill="#047857" font-family="Roboto, sans-serif">Open Data Barometer</text>
+  
+  <rect x="520" y="1220" width="200" height="100" fill="#ffffff" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="620" y="1245" text-anchor="middle" font-size="20" font-weight="bold" fill="#10b981" font-family="Roboto, sans-serif">50M+</text>
+  <text x="620" y="1265" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Datasets Available</text>
+  <text x="620" y="1280" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Globally</text>
+  <text x="620" y="1305" text-anchor="middle" font-size="9" fill="#047857" font-family="Roboto, sans-serif">Various portals worldwide</text>
+  
+  <rect x="740" y="1220" width="200" height="100" fill="#ffffff" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="840" y="1245" text-anchor="middle" font-size="20" font-weight="bold" fill="#10b981" font-family="Roboto, sans-serif">10K+</text>
+  <text x="840" y="1265" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Apps and Services</text>
+  <text x="840" y="1280" text-anchor="middle" font-size="12" fill="#047857" font-family="Roboto, sans-serif">Built on Open Data</text>
+  <text x="840" y="1305" text-anchor="middle" font-size="9" fill="#047857" font-family="Roboto, sans-serif">ODI Research</text>
+  
+  <rect x="960" y="1220" width="160" height="100" fill="#f0f9ff" stroke="#0891b2" stroke-width="1" rx="8"/>
+  <text x="1040" y="1245" text-anchor="middle" font-size="16" font-weight="bold" fill="#0891b2" font-family="Roboto, sans-serif">Toronto</text>
+  <text x="1040" y="1265" text-anchor="middle" font-size="12" fill="#0369a1" font-family="Roboto, sans-serif">523 datasets</text>
+  <text x="1040" y="1280" text-anchor="middle" font-size="12" fill="#0369a1" font-family="Roboto, sans-serif">CKAN platform</text>
+  <text x="1040" y="1295" text-anchor="middle" font-size="12" fill="#0369a1" font-family="Roboto, sans-serif">Open license</text>
+
+  <!-- Toronto Context Banner -->
+  <rect x="50" y="1360" width="1100" height="80" fill="#1e40af"/>
+  <text x="600" y="1390" text-anchor="middle" font-size="18" font-weight="bold" fill="white" font-family="Roboto, sans-serif">
+    Toronto Open Data: Part of Global Movement, Local Innovation
+  </text>
+  <text x="600" y="1415" text-anchor="middle" font-size="14" fill="#e0f2fe" font-family="Roboto, sans-serif">
+    523 datasets • CKAN platform • Open Government License • API access • Community engagement
+  </text>
+
+  <!-- Sources -->
+  <rect x="50" y="1460" width="1100" height="60" fill="#f8fafc" stroke="#64748b" stroke-width="1" rx="5"/>
+  <text x="70" y="1485" font-size="12" font-weight="bold" fill="#334155" font-family="Roboto, sans-serif">Sources:</text>
+  <text x="70" y="1505" font-size="10" fill="#64748b" font-family="Roboto, sans-serif">• Open Knowledge Foundation • McKinsey Global Institute • Open Data Barometer • OECD Open Data Guidelines</text>
+
+</svg>

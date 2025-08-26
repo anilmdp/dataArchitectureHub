@@ -1,0 +1,302 @@
+<svg viewBox="0 0 1600 1300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="systemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="platformGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="adminGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="managementGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="businessGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="operationalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="workGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#138d75;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <marker id="setupArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+    <marker id="dependsArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c" />
+    </marker>
+    <marker id="enablesArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1300" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="70" fill="url(#headerGrad)"/>
+  <text x="800" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">SOX Platform Setup Hierarchy: Multi-Layer Initialization Process</text>
+  <text x="800" y="50" text-anchor="middle" fill="white" font-size="14" font-family="Arial">7 Sequential Setup Layers Required Before Any SOX Work Can Begin</text>
+
+  <!-- Setup Overview -->
+  <rect x="50" y="90" width="1500" height="80" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="115" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">SETUP COMPLEXITY: WHY SOX IMPLEMENTATIONS TAKE 6-12 MONTHS</text>
+  
+  <text x="70" y="140" fill="#e74c3c" font-size="12" font-weight="bold" font-family="Arial">❌ CANNOT START:</text>
+  <text x="200" y="140" fill="#2c3e50" font-size="11" font-family="Arial">SOX work without completing ALL prerequisite layers</text>
+  
+  <text x="70" y="155" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">✅ SEQUENCE CRITICAL:</text>
+  <text x="200" y="155" fill="#2c3e50" font-size="11" font-family="Arial">Each layer depends on completion of previous layers</text>
+
+  <text x="600" y="140" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">⏱️ TIME IMPACT:</text>
+  <text x="720" y="140" fill="#2c3e50" font-size="11" font-family="Arial">Each layer requires 2-8 weeks depending on organization size</text>
+  
+  <text x="600" y="155" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">🔄 ITERATION:</text>
+  <text x="720" y="155" fill="#2c3e50" font-size="11" font-family="Arial">Multiple feedback loops and revisions at each layer</text>
+
+  <!-- Layer 0: System Infrastructure -->
+  <rect x="50" y="190" width="1500" height="120" rx="8" fill="url(#systemGrad)" filter="url(#shadow)"/>
+  <text x="800" y="220" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 0: SYSTEM INFRASTRUCTURE SETUP</text>
+  <text x="800" y="240" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Foundation Platform Configuration (IT Department)</text>
+
+  <rect x="70" y="255" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="270" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">INFRASTRUCTURE</text>
+  <text x="80" y="285" fill="#2c3e50" font-size="9" font-family="Arial">• Server provisioning • Database setup</text>
+  <text x="80" y="295" fill="#2c3e50" font-size="9" font-family="Arial">• Security configuration • Backup systems</text>
+
+  <rect x="370" y="255" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="270" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">INTEGRATIONS</text>
+  <text x="380" y="285" fill="#2c3e50" font-size="9" font-family="Arial">• ERP connections • LDAP/SSO setup</text>
+  <text x="380" y="295" fill="#2c3e50" font-size="9" font-family="Arial">• Email services • File storage</text>
+
+  <rect x="670" y="255" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="270" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">MCP/AI SERVICES</text>
+  <text x="680" y="285" fill="#2c3e50" font-size="9" font-family="Arial">• AI model deployment • Apache Hop setup</text>
+  <text x="680" y="295" fill="#2c3e50" font-size="9" font-family="Arial">• WebSocket services • Template engine</text>
+
+  <rect x="970" y="255" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="270" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">MONITORING</text>
+  <text x="980" y="285" fill="#2c3e50" font-size="9" font-family="Arial">• Performance monitoring • Audit logging</text>
+  <text x="980" y="295" fill="#2c3e50" font-size="9" font-family="Arial">• Error tracking • Health checks</text>
+
+  <rect x="1270" y="255" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="270" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 3-6 WEEKS</text>
+  <text x="1280" y="285" fill="#2c3e50" font-size="9" font-family="Arial">Depends on infrastructure complexity</text>
+  <text x="1280" y="295" fill="#2c3e50" font-size="9" font-family="Arial">and integration requirements</text>
+
+  <!-- Layer 1: Platform Administration -->
+  <rect x="50" y="330" width="1500" height="120" rx="8" fill="url(#platformGrad)" filter="url(#shadow)"/>
+  <text x="800" y="360" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 1: PLATFORM ADMINISTRATION SETUP</text>
+  <text x="800" y="380" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Initial Platform Configuration (System Administrator)</text>
+
+  <rect x="70" y="395" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="410" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">SUPER ADMIN ACCOUNT</text>
+  <text x="80" y="425" fill="#2c3e50" font-size="9" font-family="Arial">• System administrator creation</text>
+  <text x="80" y="435" fill="#2c3e50" font-size="9" font-family="Arial">• Global platform settings</text>
+
+  <rect x="370" y="395" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="410" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">GLOBAL SETTINGS</text>
+  <text x="380" y="425" fill="#2c3e50" font-size="9" font-family="Arial">• Company information • Fiscal year</text>
+  <text x="380" y="435" fill="#2c3e50" font-size="9" font-family="Arial">• Time zones • Currency settings</text>
+
+  <rect x="670" y="395" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="410" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">SECURITY POLICIES</text>
+  <text x="680" y="425" fill="#2c3e50" font-size="9" font-family="Arial">• Password policies • Session timeouts</text>
+  <text x="680" y="435" fill="#2c3e50" font-size="9" font-family="Arial">• Access controls • Audit settings</text>
+
+  <rect x="970" y="395" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="410" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">SYSTEM TEMPLATES</text>
+  <text x="980" y="425" fill="#2c3e50" font-size="9" font-family="Arial">• Base AI templates • Default workflows</text>
+  <text x="980" y="435" fill="#2c3e50" font-size="9" font-family="Arial">• System roles • Email templates</text>
+
+  <rect x="1270" y="395" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="410" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 1-2 WEEKS</text>
+  <text x="1280" y="425" fill="#2c3e50" font-size="9" font-family="Arial">Basic configuration and</text>
+  <text x="1280" y="435" fill="#2c3e50" font-size="9" font-family="Arial">initial testing</text>
+
+  <!-- Layer 2: Administrative User Setup -->
+  <rect x="50" y="470" width="1500" height="120" rx="8" fill="url(#adminGrad)" filter="url(#shadow)"/>
+  <text x="800" y="500" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 2: ADMINISTRATIVE USER SETUP</text>
+  <text x="800" y="520" text-anchor="middle" fill="white" font-size="12" font-family="Arial">SOX Program Leadership &amp; Key Admin Users (System Admin + HR)</text>
+
+  <rect x="70" y="535" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="550" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">SOX PROGRAM ADMIN</text>
+  <text x="80" y="565" fill="#2c3e50" font-size="9" font-family="Arial">• SOX Manager account creation</text>
+  <text x="80" y="575" fill="#2c3e50" font-size="9" font-family="Arial">• Program-level permissions</text>
+
+  <rect x="370" y="535" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="550" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">EXECUTIVE USERS</text>
+  <text x="380" y="565" fill="#2c3e50" font-size="9" font-family="Arial">• CEO/CFO accounts • Audit Committee</text>
+  <text x="380" y="575" fill="#2c3e50" font-size="9" font-family="Arial">• Executive dashboard access</text>
+
+  <rect x="670" y="535" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="550" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">COMPLIANCE TEAM</text>
+  <text x="680" y="565" fill="#2c3e50" font-size="9" font-family="Arial">• Internal audit team • SOX analysts</text>
+  <text x="680" y="575" fill="#2c3e50" font-size="9" font-family="Arial">• Testing team leads</text>
+
+  <rect x="970" y="535" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="550" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">ROLE DEFINITIONS</text>
+  <text x="980" y="565" fill="#2c3e50" font-size="9" font-family="Arial">• Permission matrices • Approval levels</text>
+  <text x="980" y="575" fill="#2c3e50" font-size="9" font-family="Arial">• Segregation of duties</text>
+
+  <rect x="1270" y="535" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="550" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 1-2 WEEKS</text>
+  <text x="1280" y="565" fill="#2c3e50" font-size="9" font-family="Arial">User identification and</text>
+  <text x="1280" y="575" fill="#2c3e50" font-size="9" font-family="Arial">initial access setup</text>
+
+  <!-- Layer 3: Organizational Structure -->
+  <rect x="50" y="610" width="1500" height="120" rx="8" fill="url(#managementGrad)" filter="url(#shadow)"/>
+  <text x="800" y="640" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 3: ORGANIZATIONAL STRUCTURE SETUP</text>
+  <text x="800" y="660" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Corporate Hierarchy &amp; Entity Configuration (SOX Manager + Finance)</text>
+
+  <rect x="70" y="675" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="690" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">LEGAL ENTITIES</text>
+  <text x="80" y="705" fill="#2c3e50" font-size="9" font-family="Arial">• Parent company • Subsidiaries</text>
+  <text x="80" y="715" fill="#2c3e50" font-size="9" font-family="Arial">• Joint ventures • SPEs</text>
+
+  <rect x="370" y="675" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="690" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">BUSINESS UNITS</text>
+  <text x="380" y="705" fill="#2c3e50" font-size="9" font-family="Arial">• Operating divisions • Geographic regions</text>
+  <text x="380" y="715" fill="#2c3e50" font-size="9" font-family="Arial">• Functional departments</text>
+
+  <rect x="670" y="675" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="690" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">LOCATIONS</text>
+  <text x="680" y="705" fill="#2c3e50" font-size="9" font-family="Arial">• Corporate headquarters • Regional offices</text>
+  <text x="680" y="715" fill="#2c3e50" font-size="9" font-family="Arial">• Manufacturing sites • Service centers</text>
+
+  <rect x="970" y="675" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="690" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">REPORTING HIERARCHY</text>
+  <text x="980" y="705" fill="#2c3e50" font-size="9" font-family="Arial">• Management reporting lines</text>
+  <text x="980" y="715" fill="#2c3e50" font-size="9" font-family="Arial">• Consolidation structure</text>
+
+  <rect x="1270" y="675" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="690" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 2-4 WEEKS</text>
+  <text x="1280" y="705" fill="#2c3e50" font-size="9" font-family="Arial">Complex for multi-entity</text>
+  <text x="1280" y="715" fill="#2c3e50" font-size="9" font-family="Arial">organizations</text>
+
+  <!-- Layer 4: Business Process Framework -->
+  <rect x="50" y="750" width="1500" height="120" rx="8" fill="url(#businessGrad)" filter="url(#shadow)"/>
+  <text x="800" y="780" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 4: BUSINESS PROCESS FRAMEWORK</text>
+  <text x="800" y="800" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Process Mapping &amp; Risk Assessment (SOX Manager + Process Owners)</text>
+
+  <rect x="70" y="815" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="830" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">PROCESS IDENTIFICATION</text>
+  <text x="80" y="845" fill="#2c3e50" font-size="9" font-family="Arial">• Financial reporting processes</text>
+  <text x="80" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• Supporting business processes</text>
+
+  <rect x="370" y="815" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="830" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">RISK ASSESSMENT</text>
+  <text x="380" y="845" fill="#2c3e50" font-size="9" font-family="Arial">• Process-level risks • Materiality analysis</text>
+  <text x="380" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• Risk ratings • Impact assessment</text>
+
+  <rect x="670" y="815" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="830" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">PROCESS MAPPING</text>
+  <text x="680" y="845" fill="#2c3e50" font-size="9" font-family="Arial">• End-to-end process flows</text>
+  <text x="680" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• System touchpoints • Data flows</text>
+
+  <rect x="970" y="815" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="830" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">PROCESS OWNERSHIP</text>
+  <text x="980" y="845" fill="#2c3e50" font-size="9" font-family="Arial">• Process owner assignment</text>
+  <text x="980" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• Responsibility matrices</text>
+
+  <rect x="1270" y="815" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="830" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 4-8 WEEKS</text>
+  <text x="1280" y="845" fill="#2c3e50" font-size="9" font-family="Arial">Most time-intensive layer</text>
+  <text x="1280" y="855" fill="#2c3e50" font-size="9" font-family="Arial">Requires business input</text>
+
+  <!-- Layer 5: Control Design &amp; Assignment -->
+  <rect x="50" y="890" width="1500" height="120" rx="8" fill="url(#operationalGrad)" filter="url(#shadow)"/>
+  <text x="800" y="920" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 5: CONTROL DESIGN &amp; ASSIGNMENT</text>
+  <text x="800" y="940" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Control Library Creation &amp; User Assignment (SOX Manager + Control Owners)</text>
+
+  <rect x="70" y="955" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="970" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">CONTROL LIBRARY</text>
+  <text x="80" y="985" fill="#2c3e50" font-size="9" font-family="Arial">• SOX control definitions</text>
+  <text x="80" y="995" fill="#2c3e50" font-size="9" font-family="Arial">• Control activities • Procedures</text>
+
+  <rect x="370" y="955" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="970" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">CONTROL MAPPING</text>
+  <text x="380" y="985" fill="#2c3e50" font-size="9" font-family="Arial">• Risk-to-control mapping</text>
+  <text x="380" y="995" fill="#2c3e50" font-size="9" font-family="Arial">• Financial statement assertions</text>
+
+  <rect x="670" y="955" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="970" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">USER ASSIGNMENT</text>
+  <text x="680" y="985" fill="#2c3e50" font-size="9" font-family="Arial">• Control owner creation</text>
+  <text x="680" y="995" fill="#2c3e50" font-size="9" font-family="Arial">• Business user accounts</text>
+
+  <rect x="970" y="955" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="970" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">TESTING FRAMEWORK</text>
+  <text x="980" y="985" fill="#2c3e50" font-size="9" font-family="Arial">• Testing procedures • Sample methods</text>
+  <text x="980" y="995" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence requirements</text>
+
+  <rect x="1270" y="955" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="970" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 3-6 WEEKS</text>
+  <text x="1280" y="985" fill="#2c3e50" font-size="9" font-family="Arial">Control design complexity</text>
+  <text x="1280" y="995" fill="#2c3e50" font-size="9" font-family="Arial">and user onboarding</text>
+
+  <!-- Layer 6: Testing Teams &amp; Schedules -->
+  <rect x="50" y="1030" width="1500" height="120" rx="8" fill="url(#workGrad)" filter="url(#shadow)"/>
+  <text x="800" y="1060" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">LAYER 6: TESTING TEAMS &amp; SCHEDULES</text>
+  <text x="800" y="1080" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Testing Resource Allocation &amp; Calendar Setup (SOX Manager + HR)</text>
+
+  <rect x="70" y="1095" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="210" y="1110" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">TESTING TEAMS</text>
+  <text x="80" y="1125" fill="#2c3e50" font-size="9" font-family="Arial">• SOX analyst accounts</text>
+  <text x="80" y="1135" fill="#2c3e50" font-size="9" font-family="Arial">• Testing reviewer setup</text>
+
+  <rect x="370" y="1095" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="510" y="1110" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">CYCLE SCHEDULING</text>
+  <text x="380" y="1125" fill="#2c3e50" font-size="9" font-family="Arial">• Q1/Q2/Q3/YE calendars</text>
+  <text x="380" y="1135" fill="#2c3e50" font-size="9" font-family="Arial">• Testing windows • Due dates</text>
+
+  <rect x="670" y="1095" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="810" y="1110" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">RESOURCE ALLOCATION</text>
+  <text x="680" y="1125" fill="#2c3e50" font-size="9" font-family="Arial">• Tester assignments</text>
+  <text x="680" y="1135" fill="#2c3e50" font-size="9" font-family="Arial">• Workload balancing</text>
+
+  <rect x="970" y="1095" width="280" height="45" rx="5" fill="rgba(255,255,255,0.9)"/>
+  <text x="1110" y="1110" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">WORKFLOW SETUP</text>
+  <text x="980" y="1125" fill="#2c3e50" font-size="9" font-family="Arial">• Approval workflows</text>
+  <text x="980" y="1135" fill="#2c3e50" font-size="9" font-family="Arial">• Notification templates</text>
+
+  <rect x="1270" y="1095" width="260" height="45" rx="5" fill="#ffecee" stroke="#e74c3c"/>
+  <text x="1400" y="1110" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">⏱️ DURATION: 2-3 WEEKS</text>
+  <text x="1280" y="1125" fill="#2c3e50" font-size="9" font-family="Arial">Team setup and</text>
+  <text x="1280" y="1135" fill="#2c3e50" font-size="9" font-family="Arial">training coordination</text>
+
+  <!-- Final Layer: SOX Work Can Begin -->
+  <rect x="50" y="1170" width="1500" height="80" rx="8" fill="#d4edda" stroke="#28a745" stroke-width="3" filter="url(#shadow)"/>
+  <text x="800" y="1200" text-anchor="middle" fill="#155724" font-size="18" font-weight="bold" font-family="Arial">✅ SOX OPERATIONAL WORK CAN NOW BEGIN</text>
+  <text x="800" y="1220" text-anchor="middle" fill="#155724" font-size="14" font-family="Arial">All Prerequisites Complete - Testing Cycles Can Start</text>
+  <text x="800" y="1235" text-anchor="middle" fill="#6c757d" font-size="11" font-family="Arial">Total Setup Time: 16-32 weeks depending on organization complexity</text>
+
+  <!-- Dependency Arrows -->
+  <line x1="800" y1="310" x2="800" y2="330" stroke="#2c3e50" stroke-width="3" marker-end="url(#setupArrow)"/>
+  <line x1="800" y1="450" x2="800" y2="470" stroke="#2c3e50" stroke-width="3" marker-end="url(#setupArrow)"/>
+  <line x1="800" y1="590" x2="800" y2="610" stroke="#2c3e50" stroke-width="3" marker-end="url(#setupArrow)"/>
+  <line x1="800" y1="730" x2="800" y2="750" stroke="#2c3e50" stroke-width="3" marker-end="url(#setupArrow)"/>
+  <line x1="800" y1="870" x2="800" y2="890" stroke="#2c3e50" stroke-width="3" marker-end="url(#setupArrow)"/>
+  <line x1="800" y1="1010" x2="800" y2="1030" stroke="#2c3e50" stroke-width="3" marker-end="url(#setupArrow)"/>
+  <line x1="800" y1="1150" x2="800" y2="1170" stroke="#28a745" stroke-width="4" marker-end="url(#enablesArrow)"/>
+
+  <!-- Summary Insights -->
+  <rect x="50" y="1270" width="1500" height="20" rx="5" fill="#f8f9fa"/>
+  <text x="800" y="1285" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold" font-family="Arial">CRITICAL INSIGHT: Each layer creates the foundation for the next - skipping or rushing any layer causes downstream failures</text>
+
+</svg>

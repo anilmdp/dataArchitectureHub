@@ -1,0 +1,372 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="execGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="managerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analystGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="excelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#217346;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#185c37;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mobileGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1200" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="70" fill="url(#headerGrad)"/>
+  <text x="800" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">SOX Platform UI Strategy &amp; Mockup Framework</text>
+  <text x="800" y="50" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Multi-Tiered Interface Design for Different User Personas &amp; Use Cases</text>
+
+  <!-- UI Strategy Overview -->
+  <rect x="50" y="90" width="1500" height="100" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="115" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">UI DESIGN PHILOSOPHY: PROGRESSIVE COMPLEXITY</text>
+  
+  <rect x="70" y="130" width="460" height="50" rx="5" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="300" y="150" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">FAMILIAR ENTRY POINTS</text>
+  <text x="80" y="165" fill="#2c3e50" font-size="10" font-family="Arial">Start with Excel-like interfaces users already know</text>
+
+  <rect x="570" y="130" width="460" height="50" rx="5" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="800" y="150" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">GUIDED ENHANCEMENT</text>
+  <text x="580" y="165" fill="#2c3e50" font-size="10" font-family="Arial">Gradually introduce advanced features as users gain confidence</text>
+
+  <rect x="1070" y="130" width="460" height="50" rx="5" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="1300" y="150" text-anchor="middle" fill="#8e44ad" font-size="12" font-weight="bold" font-family="Arial">POWER USER INTERFACES</text>
+  <text x="1080" y="165" fill="#2c3e50" font-size="10" font-family="Arial">Full-featured dashboards for advanced users and executives</text>
+
+  <!-- User Persona Interfaces -->
+  <text x="800" y="220" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">PERSONA-DRIVEN INTERFACE DESIGN</text>
+
+  <!-- Executive Dashboard -->
+  <rect x="50" y="240" width="480" height="320" rx="12" fill="url(#execGrad)" filter="url(#shadow)"/>
+  <text x="290" y="270" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">EXECUTIVE DASHBOARD</text>
+  <text x="290" y="290" text-anchor="middle" fill="white" font-size="12" font-family="Arial">CFO, Audit Committee, Senior Management</text>
+
+  <!-- Executive Dashboard Content -->
+  <rect x="70" y="305" width="440" height="240" rx="8" fill="rgba(255,255,255,0.95)"/>
+  
+  <!-- Top KPI Cards -->
+  <rect x="85" y="320" width="95" height="60" rx="4" fill="#27ae60"/>
+  <text x="132" y="340" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">CONTROLS</text>
+  <text x="132" y="355" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">847</text>
+  <text x="132" y="370" text-anchor="middle" fill="white" font-size="9" font-family="Arial">98% Effective</text>
+
+  <rect x="195" y="320" width="95" height="60" rx="4" fill="#3498db"/>
+  <text x="242" y="340" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">TESTING</text>
+  <text x="242" y="355" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">Q3</text>
+  <text x="242" y="370" text-anchor="middle" fill="white" font-size="9" font-family="Arial">On Track</text>
+
+  <rect x="305" y="320" width="95" height="60" rx="4" fill="#f39c12"/>
+  <text x="352" y="340" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">DEFICIENCIES</text>
+  <text x="352" y="355" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">3</text>
+  <text x="352" y="370" text-anchor="middle" fill="white" font-size="9" font-family="Arial">2 Remediated</text>
+
+  <rect x="415" y="320" width="85" height="60" rx="4" fill="#e74c3c"/>
+  <text x="457" y="340" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">RISK SCORE</text>
+  <text x="457" y="355" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">Low</text>
+  <text x="457" y="370" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Improving</text>
+
+  <!-- Risk Heatmap -->
+  <rect x="85" y="395" width="200" height="120" rx="4" fill="#ecf0f1" stroke="#bdc3c7"/>
+  <text x="185" y="410" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Risk Heatmap</text>
+  <!-- Heatmap squares -->
+  <rect x="95" y="420" width="15" height="15" fill="#27ae60"/>
+  <rect x="115" y="420" width="15" height="15" fill="#27ae60"/>
+  <rect x="135" y="420" width="15" height="15" fill="#f39c12"/>
+  <rect x="155" y="420" width="15" height="15" fill="#27ae60"/>
+  <rect x="175" y="420" width="15" height="15" fill="#27ae60"/>
+  <rect x="195" y="420" width="15" height="15" fill="#27ae60"/>
+  <rect x="215" y="420" width="15" height="15" fill="#27ae60"/>
+  <rect x="235" y="420" width="15" height="15" fill="#e74c3c"/>
+  <rect x="255" y="420" width="15" height="15" fill="#27ae60"/>
+
+  <!-- Trend Chart -->
+  <rect x="300" y="395" width="200" height="120" rx="4" fill="#ecf0f1" stroke="#bdc3c7"/>
+  <text x="400" y="410" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Control Effectiveness Trend</text>
+  <path d="M 310 480 Q 350 460 390 450 Q 430 440 470 435 Q 490 430 490 425" stroke="#3498db" stroke-width="3" fill="none"/>
+
+  <!-- Manager Interface -->
+  <rect x="560" y="240" width="480" height="320" rx="12" fill="url(#managerGrad)" filter="url(#shadow)"/>
+  <text x="800" y="270" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">MANAGER INTERFACE</text>
+  <text x="800" y="290" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Control Owners, Business Unit Managers</text>
+
+  <!-- Manager Interface Content -->
+  <rect x="580" y="305" width="440" height="240" rx="8" fill="rgba(255,255,255,0.95)"/>
+  
+  <!-- Control Grid -->
+  <rect x="595" y="320" width="410" height="140" rx="4" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="800" y="335" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">My Controls - Q3 Testing Status</text>
+  
+  <!-- Grid Headers -->
+  <rect x="605" y="345" width="390" height="20" rx="2" fill="#e9ecef"/>
+  <text x="615" y="357" fill="#495057" font-size="9" font-weight="bold" font-family="Arial">Control ID</text>
+  <text x="695" y="357" fill="#495057" font-size="9" font-weight="bold" font-family="Arial">Description</text>
+  <text x="825" y="357" fill="#495057" font-size="9" font-weight="bold" font-family="Arial">Status</text>
+  <text x="885" y="357" fill="#495057" font-size="9" font-weight="bold" font-family="Arial">Due Date</text>
+  <text x="945" y="357" fill="#495057" font-size="9" font-weight="bold" font-family="Arial">Actions</text>
+
+  <!-- Grid Rows -->
+  <rect x="605" y="365" width="390" height="18" fill="#ffffff"/>
+  <text x="615" y="376" fill="#212529" font-size="8" font-family="Arial">FIN-001</text>
+  <text x="695" y="376" fill="#212529" font-size="8" font-family="Arial">3-way Match AP</text>
+  <rect x="825" y="368" width="45" height="12" rx="6" fill="#28a745"/>
+  <text x="847" y="376" text-anchor="middle" fill="white" font-size="7" font-family="Arial">Complete</text>
+  <text x="885" y="376" fill="#212529" font-size="8" font-family="Arial">08/15</text>
+  <rect x="945" y="368" width="35" height="12" rx="2" fill="#007bff"/>
+  <text x="962" y="376" text-anchor="middle" fill="white" font-size="7" font-family="Arial">View</text>
+
+  <rect x="605" y="383" width="390" height="18" fill="#f8f9fa"/>
+  <text x="615" y="394" fill="#212529" font-size="8" font-family="Arial">FIN-002</text>
+  <text x="695" y="394" fill="#212529" font-size="8" font-family="Arial">Bank Reconciliation</text>
+  <rect x="825" y="386" width="45" height="12" rx="6" fill="#ffc107"/>
+  <text x="847" y="394" text-anchor="middle" fill="white" font-size="7" font-family="Arial">In Progress</text>
+  <text x="885" y="394" fill="#212529" font-size="8" font-family="Arial">08/20</text>
+  <rect x="945" y="386" width="35" height="12" rx="2" fill="#28a745"/>
+  <text x="962" y="394" text-anchor="middle" fill="white" font-size="7" font-family="Arial">Test</text>
+
+  <!-- Quick Actions -->
+  <rect x="595" y="475" width="410" height="60" rx="4" fill="#e3f2fd" stroke="#2196f3"/>
+  <text x="800" y="490" text-anchor="middle" fill="#1976d2" font-size="11" font-weight="bold" font-family="Arial">Quick Actions</text>
+  <rect x="615" y="500" width="80" height="25" rx="4" fill="#2196f3"/>
+  <text x="655" y="516" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Start Testing</text>
+  <rect x="705" y="500" width="80" height="25" rx="4" fill="#4caf50"/>
+  <text x="745" y="516" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Upload Evidence</text>
+  <rect x="795" y="500" width="80" height="25" rx="4" fill="#ff9800"/>
+  <text x="835" y="516" text-anchor="middle" fill="white" font-size="9" font-family="Arial">Request Help</text>
+  <rect x="885" y="500" width="80" height="25" rx="4" fill="#9c27b0"/>
+  <text x="925" y="516" text-anchor="middle" fill="white" font-size="9" font-family="Arial">AI Assistant</text>
+
+  <!-- Analyst Workbench -->
+  <rect x="1070" y="240" width="480" height="320" rx="12" fill="url(#analystGrad)" filter="url(#shadow)"/>
+  <text x="1310" y="270" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">ANALYST WORKBENCH</text>
+  <text x="1310" y="290" text-anchor="middle" fill="white" font-size="12" font-family="Arial">SOX Analysts, Internal Auditors, Testers</text>
+
+  <!-- Analyst Interface Content -->
+  <rect x="1090" y="305" width="440" height="240" rx="8" fill="rgba(255,255,255,0.95)"/>
+  
+  <!-- Testing Workflow -->
+  <rect x="1105" y="320" width="200" height="100" rx="4" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="1205" y="335" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Testing Workflow</text>
+  
+  <!-- Workflow Steps -->
+  <circle cx="1125" cy="350" r="8" fill="#3498db"/>
+  <text x="1140" y="355" fill="#2c3e50" font-size="8" font-family="Arial">1. Sample Selection</text>
+  <circle cx="1125" cy="370" r="8" fill="#27ae60"/>
+  <text x="1140" y="375" fill="#2c3e50" font-size="8" font-family="Arial">2. Evidence Collection</text>
+  <circle cx="1125" cy="390" r="8" fill="#f39c12"/>
+  <text x="1140" y="395" fill="#2c3e50" font-size="8" font-family="Arial">3. Testing Procedures</text>
+  <circle cx="1125" cy="410" r="8" fill="#e74c3c"/>
+  <text x="1140" y="415" fill="#2c3e50" font-size="8" font-family="Arial">4. Conclusion</text>
+
+  <!-- Sample Details -->
+  <rect x="1320" y="320" width="200" height="100" rx="4" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="1420" y="335" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">Current Sample</text>
+  <text x="1330" y="350" fill="#2c3e50" font-size="9" font-family="Arial">Population: 2,847 invoices</text>
+  <text x="1330" y="365" fill="#2c3e50" font-size="9" font-family="Arial">Sample Size: 25 items</text>
+  <text x="1330" y="380" fill="#2c3e50" font-size="9" font-family="Arial">Method: Statistical</text>
+  <text x="1330" y="395" fill="#2c3e50" font-size="9" font-family="Arial">Confidence: 95%</text>
+  <text x="1330" y="410" fill="#2c3e50" font-size="9" font-family="Arial">Tested: 18/25</text>
+
+  <!-- AI Assistant Panel -->
+  <rect x="1105" y="435" width="410" height="100" rx="4" fill="#e8f5e8" stroke="#27ae60"/>
+  <text x="1310" y="450" text-anchor="middle" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">AI Testing Assistant</text>
+  <rect x="1115" y="460" width="390" height="20" rx="2" fill="#ffffff"/>
+  <text x="1125" y="472" fill="#6c757d" font-size="9" font-family="Arial">💡 AI Suggestion: Invoice #INV-24-5847 shows unusual approval pattern - recommend additional testing</text>
+  <rect x="1115" y="485" width="390" height="40" rx="2" fill="#ffffff"/>
+  <text x="1125" y="497" fill="#2c3e50" font-size="9" font-family="Arial">🤖 Type your question about this control test...</text>
+  <rect x="1450" y="505" width="50" height="15" rx="2" fill="#27ae60"/>
+  <text x="1475" y="515" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Ask AI</text>
+
+  <!-- Excel Integration Layer -->
+  <text x="800" y="600" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">EXCEL INTEGRATION LAYER</text>
+
+  <!-- Excel Interface -->
+  <rect x="50" y="620" width="700" height="280" rx="12" fill="url(#excelGrad)" filter="url(#shadow)"/>
+  <text x="400" y="650" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">EXCEL-NATIVE INTERFACE</text>
+  <text x="400" y="670" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Familiar Environment with Enterprise Controls</text>
+
+  <!-- Excel Mockup -->
+  <rect x="70" y="685" width="660" height="200" rx="8" fill="#ffffff"/>
+  
+  <!-- Excel Ribbon -->
+  <rect x="70" y="685" width="660" height="30" rx="8" fill="#f1f3f4"/>
+  <rect x="80" y="692" width="60" height="16" rx="2" fill="#217346"/>
+  <text x="110" y="703" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial">SOX Tools</text>
+  <rect x="150" y="692" width="50" height="16" rx="2" fill="#e74c3c"/>
+  <text x="175" y="703" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Test Control</text>
+  <rect x="210" y="692" width="50" height="16" rx="2" fill="#3498db"/>
+  <text x="235" y="703" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Upload Evidence</text>
+  <rect x="270" y="692" width="50" height="16" rx="2" fill="#f39c12"/>
+  <text x="295" y="703" text-anchor="middle" fill="white" font-size="8" font-family="Arial">AI Assistant</text>
+
+  <!-- Excel Grid -->
+  <rect x="80" y="720" width="640" height="150" rx="4" fill="#ffffff" stroke="#dee2e6"/>
+  <!-- Column Headers -->
+  <rect x="80" y="720" width="640" height="25" fill="#f8f9fa"/>
+  <text x="95" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">A</text>
+  <text x="155" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">B</text>
+  <text x="255" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">C</text>
+  <text x="355" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">D</text>
+  <text x="455" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">E</text>
+  <text x="555" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">F</text>
+  <text x="655" y="735" fill="#495057" font-size="10" font-weight="bold" font-family="Arial">G</text>
+
+  <!-- Row Headers and Data -->
+  <text x="95" y="760" fill="#495057" font-size="9" font-family="Arial">Control ID</text>
+  <text x="155" y="760" fill="#495057" font-size="9" font-family="Arial">Description</text>
+  <text x="255" y="760" fill="#495057" font-size="9" font-family="Arial">Frequency</text>
+  <text x="355" y="760" fill="#495057" font-size="9" font-family="Arial">Owner</text>
+  <text x="455" y="760" fill="#495057" font-size="9" font-family="Arial">Last Test</text>
+  <text x="555" y="760" fill="#495057" font-size="9" font-family="Arial">Result</text>
+  <text x="655" y="760" fill="#495057" font-size="9" font-family="Arial">AI Score</text>
+
+  <text x="95" y="780" fill="#212529" font-size="9" font-family="Arial">FIN-001</text>
+  <text x="155" y="780" fill="#212529" font-size="9" font-family="Arial">3-way Match</text>
+  <text x="255" y="780" fill="#212529" font-size="9" font-family="Arial">Daily</text>
+  <text x="355" y="780" fill="#212529" font-size="9" font-family="Arial">J. Smith</text>
+  <text x="455" y="780" fill="#212529" font-size="9" font-family="Arial">07/28/25</text>
+  <rect x="550" y="772" width="40" height="15" rx="7" fill="#28a745"/>
+  <text x="570" y="782" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Passed</text>
+  <text x="665" y="780" fill="#27ae60" font-size="9" font-weight="bold" font-family="Arial">95%</text>
+
+  <!-- Mobile Interface -->
+  <rect x="770" y="620" width="300" height="280" rx="12" fill="url(#mobileGrad)" filter="url(#shadow)"/>
+  <text x="920" y="650" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">MOBILE INTERFACE</text>
+  <text x="920" y="670" text-anchor="middle" fill="white" font-size="12" font-family="Arial">iOS/Android PWA</text>
+
+  <!-- Mobile Mockup -->
+  <rect x="790" y="685" width="260" height="200" rx="15" fill="#000000"/>
+  <rect x="800" y="695" width="240" height="180" rx="8" fill="#ffffff"/>
+  
+  <!-- Mobile Header -->
+  <rect x="800" y="695" width="240" height="40" rx="8" fill="#3498db"/>
+  <text x="920" y="715" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Arial">SOX Mobile</text>
+  <circle cx="1020" cy="715" r="8" fill="rgba(255,255,255,0.3)"/>
+  <text x="1020" y="719" text-anchor="middle" fill="white" font-size="10" font-family="Arial">👤</text>
+
+  <!-- Mobile Cards -->
+  <rect x="810" y="745" width="220" height="35" rx="4" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="820" y="760" fill="#2c3e50" font-size="10" font-weight="bold" font-family="Arial">🔍 My Open Tests (3)</text>
+  <text x="820" y="772" fill="#6c757d" font-size="8" font-family="Arial">2 due this week</text>
+
+  <rect x="810" y="785" width="220" height="35" rx="4" fill="#fff3cd" stroke="#ffeaa7"/>
+  <text x="820" y="800" fill="#856404" font-size="10" font-weight="bold" font-family="Arial">⚠️ Approval Needed</text>
+  <text x="820" y="812" fill="#856404" font-size="8" font-family="Arial">Bank Rec - Q3 Testing</text>
+
+  <rect x="810" y="825" width="220" height="35" rx="4" fill="#d1ecf1" stroke="#bee5eb"/>
+  <text x="820" y="840" fill="#0c5460" font-size="10" font-weight="bold" font-family="Arial">📊 Quick Dashboard</text>
+  <text x="820" y="852" fill="#0c5460" font-size="8" font-family="Arial">View executive summary</text>
+
+  <!-- API Integration -->
+  <rect x="1090" y="620" width="460" height="280" rx="12" fill="#34495e" filter="url(#shadow)"/>
+  <text x="1320" y="650" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">API &amp; INTEGRATION LAYER</text>
+  <text x="1320" y="670" text-anchor="middle" fill="white" font-size="12" font-family="Arial">Headless Architecture for Custom Solutions</text>
+
+  <!-- API Documentation -->
+  <rect x="1110" y="685" width="420" height="200" rx="8" fill="rgba(255,255,255,0.95)"/>
+  <text x="1320" y="705" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">RESTful API Endpoints</text>
+
+  <!-- API Examples -->
+  <rect x="1120" y="715" width="400" height="80" rx="4" fill="#2c3e50"/>
+  <text x="1130" y="730" fill="#00ff00" font-size="9" font-family="monospace">GET /api/v1/controls?entity_id=123</text>
+  <text x="1130" y="745" fill="#00ff00" font-size="9" font-family="monospace">POST /api/v1/tests/{test_id}/samples</text>
+  <text x="1130" y="760" fill="#00ff00" font-size="9" font-family="monospace">PUT /api/v1/evidence/{evidence_id}</text>
+  <text x="1130" y="775" fill="#00ff00" font-size="9" font-family="monospace">GET /api/v1/reports/sox-404?cycle=Q3</text>
+  <text x="1130" y="790" fill="#00ff00" font-size="9" font-family="monospace">POST /api/v1/ai/assistant/query</text>
+
+  <!-- Integration Options -->
+  <rect x="1120" y="805" width="190" height="70" rx="4" fill="#e8f4fd" stroke="#3498db"/>
+  <text x="1215" y="820" text-anchor="middle" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">Integration Options</text>
+  <text x="1130" y="835" fill="#2c3e50" font-size="9" font-family="Arial">• Power BI/Tableau Connectors</text>
+  <text x="1130" y="848" fill="#2c3e50" font-size="9" font-family="Arial">• ServiceNow GRC Plugin</text>
+  <text x="1130" y="861" fill="#2c3e50" font-size="9" font-family="Arial">• Custom Application SDKs</text>
+
+  <rect x="1330" y="805" width="190" height="70" rx="4" fill="#f0fff4" stroke="#27ae60"/>
+  <text x="1425" y="820" text-anchor="middle" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">Webhook Events</text>
+  <text x="1340" y="835" fill="#2c3e50" font-size="9" font-family="Arial">• Control Test Completed</text>
+  <text x="1340" y="848" fill="#2c3e50" font-size="9" font-family="Arial">• Deficiency Identified</text>
+  <text x="1340" y="861" fill="#2c3e50" font-size="9" font-family="Arial">• Approval Required</text>
+
+  <!-- Implementation Strategy -->
+  <rect x="50" y="920" width="1500" height="120" rx="8" fill="#ffffff" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800" y="945" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">UI IMPLEMENTATION STRATEGY</text>
+
+  <rect x="70" y="960" width="280" height="70" rx="5" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="210" y="980" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="bold" font-family="Arial">PHASE 1: EXCEL FIRST</text>
+  <text x="80" y="995" fill="#2c3e50" font-size="10" font-family="Arial">• Start with enhanced Excel interface</text>
+  <text x="80" y="1008" fill="#2c3e50" font-size="10" font-family="Arial">• Add SOX ribbon with AI assistant</text>
+  <text x="80" y="1021" fill="#2c3e50" font-size="10" font-family="Arial">• Prove value with familiar tools</text>
+
+  <rect x="370" y="960" width="280" height="70" rx="5" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="510" y="980" text-anchor="middle" fill="#3498db" font-size="12" font-weight="bold" font-family="Arial">PHASE 2: WEB ENHANCEMENT</text>
+  <text x="380" y="995" fill="#2c3e50" font-size="10" font-family="Arial">• Introduce manager dashboard</text>
+  <text x="380" y="1008" fill="#2c3e50" font-size="10" font-family="Arial">• Add real-time collaboration</text>
+  <text x="380" y="1021" fill="#2c3e50" font-size="10" font-family="Arial">• Progressive web app features</text>
+
+  <rect x="670" y="960" width="280" height="70" rx="5" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="810" y="980" text-anchor="middle" fill="#8e44ad" font-size="12" font-weight="bold" font-family="Arial">PHASE 3: FULL PLATFORM</text>
+  <text x="680" y="995" fill="#2c3e50" font-size="10" font-family="Arial">• Executive dashboards</text>
+  <text x="680" y="1008" fill="#2c3e50" font-size="10" font-family="Arial">• Mobile applications</text>
+  <text x="680" y="1021" fill="#2c3e50" font-size="10" font-family="Arial">• Advanced analytics</text>
+
+  <rect x="970" y="960" width="280" height="70" rx="5" fill="#fff3e0" stroke="#f39c12" stroke-width="2"/>
+  <text x="1110" y="980" text-anchor="middle" fill="#f39c12" font-size="12" font-weight="bold" font-family="Arial">PHASE 4: AI INTELLIGENCE</text>
+  <text x="980" y="995" fill="#2c3e50" font-size="10" font-family="Arial">• Predictive risk scoring</text>
+  <text x="980" y="1008" fill="#2c3e50" font-size="10" font-family="Arial">• Auto-generated insights</text>
+  <text x="980" y="1021" fill="#2c3e50" font-size="10" font-family="Arial">• Personalized recommendations</text>
+
+  <rect x="1270" y="960" width="260" height="70" rx="5" fill="#ffebee" stroke="#e74c3c" stroke-width="2"/>
+  <text x="1400" y="980" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="bold" font-family="Arial">ONGOING: API ECOSYSTEM</text>
+  <text x="1280" y="995" fill="#2c3e50" font-size="10" font-family="Arial">• Third-party integrations</text>
+  <text x="1280" y="1008" fill="#2c3e50" font-size="10" font-family="Arial">• Custom applications</text>
+  <text x="1280" y="1021" fill="#2c3e50" font-size="10" font-family="Arial">• Partner ecosystem</text>
+
+  <!-- Bottom Summary -->
+  <rect x="50" y="1060" width="1500" height="100" rx="8" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  <text x="800" y="1085" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">UI DESIGN PRINCIPLES</text>
+  
+  <text x="70" y="1105" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">✓ Progressive Disclosure:</text>
+  <text x="220" y="1105" fill="#2c3e50" font-size="11" font-family="Arial">Start simple, add complexity as users gain confidence</text>
+  
+  <text x="70" y="1125" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">✓ Contextual Intelligence:</text>
+  <text x="220" y="1125" fill="#2c3e50" font-size="11" font-family="Arial">AI assistant provides guidance at every step</text>
+  
+  <text x="70" y="1145" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">✓ Unified Experience:</text>
+  <text x="220" y="1145" fill="#2c3e50" font-size="11" font-family="Arial">Consistent data model across all interfaces</text>
+
+  <text x="600" y="1105" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">✓ Mobile-First Design:</text>
+  <text x="750" y="1105" fill="#2c3e50" font-size="11" font-family="Arial">Essential functions available on any device</text>
+  
+  <text x="600" y="1125" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">✓ Real-time Collaboration:</text>
+  <text x="750" y="1125" fill="#2c3e50" font-size="11" font-family="Arial">Live updates and shared workspaces</text>
+  
+  <text x="600" y="1145" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">✓ API-First Architecture:</text>
+  <text x="750" y="1145" fill="#2c3e50" font-size="11" font-family="Arial">Headless backend supports any frontend</text>
+
+</svg>

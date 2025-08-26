@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial Black', sans-serif; font-size: 24px; font-weight: bold; }
+      .section-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; }
+      .subsection { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; }
+      .code { font-family: 'Courier New', monospace; font-size: 10px; }
+      .highlight { fill: #e8f4f8; stroke: #2196F3; stroke-width: 2; }
+      .division-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .category-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .dataset-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .unified-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .stats-box { fill: #fce4ec; stroke: #e91e63; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#1976d2"/>
+  <text x="600" y="45" text-anchor="middle" class="title" fill="white">🏢 Toronto Data Organization Structure</text>
+
+  <!-- Data Hierarchy Overview -->
+  <rect x="20" y="100" width="1160" height="200" class="highlight" rx="10"/>
+  <text x="40" y="130" class="section-title" fill="#2196F3">📊 Three-Layer Data Hierarchy</text>
+
+  <!-- Hierarchy Levels -->
+  <rect x="60" y="150" width="300" height="120" fill="white" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <text x="210" y="175" text-anchor="middle" class="subsection" fill="#1976d2">🏛️ DIVISIONS (46)</text>
+  <text x="70" y="195" class="small" fill="#000">Organizational units within</text>
+  <text x="70" y="210" class="small" fill="#000">City of Toronto government</text>
+  <text x="70" y="230" class="small" fill="#666">Examples:</text>
+  <text x="70" y="245" class="small" fill="#666">• Transportation Services</text>
+  <text x="70" y="260" class="small" fill="#666">• Public Health</text>
+
+  <rect x="400" y="150" width="300" height="120" fill="white" stroke="#4caf50" stroke-width="2" rx="8"/>
+  <text x="550" y="175" text-anchor="middle" class="subsection" fill="#4caf50">🏷️ CATEGORIES (298)</text>
+  <text x="410" y="195" class="small" fill="#000">Subject matter classifications</text>
+  <text x="410" y="210" class="small" fill="#000">for organizing datasets</text>
+  <text x="410" y="230" class="small" fill="#666">Examples:</text>
+  <text x="410" y="245" class="small" fill="#666">• Traffic Volumes</text>
+  <text x="410" y="260" class="small" fill="#666">• Building Permits</text>
+
+  <rect x="740" y="150" width="300" height="120" fill="white" stroke="#ff9800" stroke-width="2" rx="8"/>
+  <text x="890" y="175" text-anchor="middle" class="subsection" fill="#ff9800">📁 DATASETS (523)</text>
+  <text x="750" y="195" class="small" fill="#000">Individual data files/resources</text>
+  <text x="750" y="210" class="small" fill="#000">available for download</text>
+  <text x="750" y="230" class="small" fill="#666">Examples:</text>
+  <text x="750" y="245" class="small" fill="#666">• ttc-ridership-2024.csv</text>
+  <text x="750" y="260" class="small" fill="#666">• building-permits-q3.json</text>
+
+  <!-- Arrows showing hierarchy -->
+  <path d="M 360 210 L 400 210" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 700 210 L 740 210" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Division Analysis -->
+  <rect x="20" y="320" width="560" height="450" class="division-box" rx="10"/>
+  <text x="40" y="350" class="section-title" fill="#1976d2">🏛️ Division Analysis (46 Total)</text>
+
+  <!-- Top Divisions by Dataset Count -->
+  <rect x="40" y="370" width="520" height="180" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="50" y="390" class="subsection" fill="#000">📊 Top Divisions by Dataset Count</text>
+
+  <!-- Division bars -->
+  <rect x="60" y="410" width="200" height="20" fill="#1976d2" rx="3"/>
+  <text x="70" y="425" class="small" fill="white">Transportation Services</text>
+  <text x="270" y="425" class="small" fill="#000">47 datasets</text>
+
+  <rect x="60" y="440" width="180" height="20" fill="#1976d2" rx="3"/>
+  <text x="70" y="455" class="small" fill="white">Public Health</text>
+  <text x="250" y="455" class="small" fill="#000">32 datasets</text>
+
+  <rect x="60" y="470" width="160" height="20" fill="#1976d2" rx="3"/>
+  <text x="70" y="485" class="small" fill="white">Parks, Forestry &amp; Recreation</text>
+  <text x="230" y="485" class="small" fill="#000">28 datasets</text>
+
+  <rect x="60" y="500" width="140" height="20" fill="#1976d2" rx="3"/>
+  <text x="70" y="515" class="small" fill="white">City Planning</text>
+  <text x="210" y="515" class="small" fill="#000">25 datasets</text>
+
+  <rect x="60" y="530" width="120" height="20" fill="#1976d2" rx="3"/>
+  <text x="70" y="545" class="small" fill="white">Fire Services</text>
+  <text x="190" y="545" class="small" fill="#000">19 datasets</text>
+
+  <!-- Division Categories -->
+  <rect x="40" y="570" width="250" height="190" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="50" y="590" class="subsection" fill="#000">🏢 Division Types</text>
+  <text x="50" y="610" class="small" fill="#1976d2" font-weight="bold">Core Services (15 divisions)</text>
+  <text x="60" y="625" class="small" fill="#000">• Transportation, Public Health</text>
+  <text x="60" y="640" class="small" fill="#000">• Fire, Police, Emergency</text>
+  <text x="50" y="660" class="small" fill="#4caf50" font-weight="bold">Planning &amp; Development (8)</text>
+  <text x="60" y="675" class="small" fill="#000">• City Planning, Housing</text>
+  <text x="60" y="690" class="small" fill="#000">• Economic Development</text>
+  <text x="50" y="710" class="small" fill="#ff9800" font-weight="bold">Corporate Services (12)</text>
+  <text x="60" y="725" class="small" fill="#000">• Finance, Legal, IT</text>
+  <text x="60" y="740" class="small" fill="#000">• Human Resources, Audit</text>
+  <text x="50" y="745" class="small" fill="#9c27b0" font-weight="bold">Community Services (11)</text>
+
+  <rect x="310" y="570" width="270" height="190" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="320" y="590" class="subsection" fill="#000">📈 Data Richness Patterns</text>
+  <text x="320" y="610" class="small" fill="#000">High Data Producers (10+ datasets):</text>
+  <text x="330" y="625" class="small" fill="#1976d2">• Transportation: Traffic, TTC, Cycling</text>
+  <text x="330" y="640" class="small" fill="#1976d2">• Public Health: Inspections, Statistics</text>
+  <text x="330" y="655" class="small" fill="#1976d2">• Parks: Facilities, Programs, Usage</text>
+  <text x="320" y="680" class="small" fill="#000">Moderate Producers (3-9 datasets):</text>
+  <text x="330" y="695" class="small" fill="#4caf50">• Planning: Permits, Zoning, Development</text>
+  <text x="330" y="710" class="small" fill="#4caf50">• Fire: Incidents, Stations, Response</text>
+  <text x="320" y="730" class="small" fill="#000">Specialized Producers (1-2 datasets):</text>
+  <text x="330" y="745" class="small" fill="#ff9800">• Legal, Audit, Internal Services</text>
+
+  <!-- Category Analysis -->
+  <rect x="620" y="320" width="560" height="450" class="category-box" rx="10"/>
+  <text x="640" y="350" class="section-title" fill="#4caf50">🏷️ Category Analysis (298 Total)</text>
+
+  <!-- Category Distribution -->
+  <rect x="640" y="370" width="520" height="180" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="650" y="390" class="subsection" fill="#000">📊 Category Distribution by Theme</text>
+
+  <!-- Category pie chart representation as bars -->
+  <rect x="660" y="410" width="120" height="20" fill="#4caf50" rx="3"/>
+  <text x="670" y="425" class="small" fill="white">Transportation</text>
+  <text x="790" y="425" class="small" fill="#000">67 categories</text>
+
+  <rect x="660" y="440" width="100" height="20" fill="#4caf50" rx="3"/>
+  <text x="670" y="455" class="small" fill="white">Health &amp; Safety</text>
+  <text x="770" y="455" class="small" fill="#000">45 categories</text>
+
+  <rect x="660" y="470" width="90" height="20" fill="#4caf50" rx="3"/>
+  <text x="670" y="485" class="small" fill="white">Planning</text>
+  <text x="760" y="485" class="small" fill="#000">38 categories</text>
+
+  <rect x="660" y="500" width="80" height="20" fill="#4caf50" rx="3"/>
+  <text x="670" y="515" class="small" fill="white">Environment</text>
+  <text x="750" y="515" class="small" fill="#000">34 categories</text>
+
+  <rect x="660" y="530" width="70" height="20" fill="#4caf50" rx="3"/>
+  <text x="670" y="545" class="small" fill="white">Other</text>
+  <text x="740" y="545" class="small" fill="#000">114 categories</text>
+
+  <!-- Category Types -->
+  <rect x="640" y="570" width="250" height="190" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="650" y="590" class="subsection" fill="#000">🎯 Category Types</text>
+  <text x="650" y="610" class="small" fill="#4caf50" font-weight="bold">Geographic Categories</text>
+  <text x="660" y="625" class="small" fill="#000">• Ward boundaries, Districts</text>
+  <text x="660" y="640" class="small" fill="#000">• Facility locations, Service areas</text>
+  <text x="650" y="660" class="small" fill="#1976d2" font-weight="bold">Temporal Categories</text>
+  <text x="660" y="675" class="small" fill="#000">• Annual reports, Quarterly data</text>
+  <text x="660" y="690" class="small" fill="#000">• Real-time feeds, Historical trends</text>
+  <text x="650" y="710" class="small" fill="#ff9800" font-weight="bold">Functional Categories</text>
+  <text x="660" y="725" class="small" fill="#000">• Permits, Inspections, Licenses</text>
+  <text x="660" y="740" class="small" fill="#000">• Programs, Services, Resources</text>
+
+  <rect x="910" y="570" width="250" height="190" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="920" y="590" class="subsection" fill="#000">🔍 Category Insights</text>
+  <text x="920" y="610" class="small" fill="#000">Most Active Categories:</text>
+  <text x="930" y="625" class="small" fill="#4caf50">• Traffic Signals (15 datasets)</text>
+  <text x="930" y="640" class="small" fill="#4caf50">• Building Permits (12 datasets)</text>
+  <text x="930" y="655" class="small" fill="#4caf50">• Public Health Inspections (10)</text>
+  <text x="920" y="675" class="small" fill="#000">Emerging Categories:</text>
+  <text x="930" y="690" class="small" fill="#1976d2">• Open Data Portal Usage</text>
+  <text x="930" y="705" class="small" fill="#1976d2">• Digital Services Metrics</text>
+  <text x="920" y="725" class="small" fill="#000">Specialized Categories:</text>
+  <text x="930" y="740" class="small" fill="#ff9800">• COVID-19 Response Data</text>
+
+  <!-- Dataset Statistics -->
+  <rect x="20" y="790" width="1160" height="250" class="dataset-box" rx="10"/>
+  <text x="40" y="820" class="section-title" fill="#ff9800">📁 Dataset Statistics (523 Total)</text>
+
+  <!-- Dataset Metrics -->
+  <rect x="40" y="840" width="360" height="180" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="50" y="860" class="subsection" fill="#000">📈 Dataset Metrics</text>
+  <text x="50" y="880" class="small" fill="#000">Average datasets per division: 11.4</text>
+  <text x="50" y="895" class="small" fill="#000">Average datasets per category: 1.8</text>
+  <text x="50" y="910" class="small" fill="#000">Most datasets in one category: 15</text>
+  <text x="50" y="925" class="small" fill="#000">Categories with single dataset: 187 (63%)</text>
+  <text x="50" y="940" class="small" fill="#000">Multi-dataset categories: 111 (37%)</text>
+  <text x="50" y="960" class="small" fill="#ff9800" font-weight="bold">High specialization with some clusters</text>
+  <text x="50" y="980" class="small" fill="#000">Update frequencies:</text>
+  <text x="50" y="995" class="small" fill="#666">• Real-time: 23 datasets</text>
+  <text x="50" y="1010" class="small" fill="#666">• Daily/Weekly: 87 datasets</text>
+
+  <rect x="420" y="840" width="360" height="180" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="430" y="860" class="subsection" fill="#000">🗂️ Format Distribution</text>
+  <text x="430" y="880" class="small" fill="#000">CSV: 340 datasets (65%)</text>
+  <text x="430" y="895" class="small" fill="#000">SHP: 104 datasets (20%)</text>
+  <text x="430" y="910" class="small" fill="#000">JSON: 52 datasets (10%)</text>
+  <text x="430" y="925" class="small" fill="#000">XML: 16 datasets (3%)</text>
+  <text x="430" y="940" class="small" fill="#000">Other: 11 datasets (2%)</text>
+  <text x="430" y="960" class="small" fill="#ff9800" font-weight="bold">Strong preference for CSV</text>
+  <text x="430" y="980" class="small" fill="#000">Size distribution:</text>
+  <text x="430" y="995" class="small" fill="#666">• &lt;1MB: 298 datasets (57%)</text>
+  <text x="430" y="1010" class="small" fill="#666">• 1MB-100MB: 187 datasets (36%)</text>
+
+  <rect x="800" y="840" width="360" height="180" fill="white" stroke="#ff9800" stroke-width="1" rx="5"/>
+  <text x="810" y="860" class="subsection" fill="#000">🎯 Dataset Quality Patterns</text>
+  <text x="810" y="880" class="small" fill="#000">Complete metadata: 89% of datasets</text>
+  <text x="810" y="895" class="small" fill="#000">Regular updates: 76% active</text>
+  <text x="810" y="910" class="small" fill="#000">Machine-readable: 95% (CSV/JSON/SHP)</text>
+  <text x="810" y="925" class="small" fill="#000">Geographic data: 28% with coordinates</text>
+  <text x="810" y="940" class="small" fill="#000">Historical data: 31% multi-year</text>
+  <text x="810" y="960" class="small" fill="#ff9800" font-weight="bold">High quality, automation-ready</text>
+  <text x="810" y="980" class="small" fill="#000">Popular downloads:</text>
+  <text x="810" y="995" class="small" fill="#666">• Traffic data: 45% of requests</text>
+  <text x="810" y="1010" class="small" fill="#666">• Building permits: 23% of requests</text>
+
+  <!-- Our Unified Model -->
+  <rect x="20" y="1060" width="1160" height="280" class="unified-box" rx="10"/>
+  <text x="40" y="1090" class="section-title" fill="#9c27b0">🔄 Our Unified Data Model (344 Dimensions)</text>
+
+  <!-- Model Transformation -->
+  <rect x="40" y="1110" width="540" height="140" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="1130" class="subsection" fill="#000">🔀 Transformation Process</text>
+  <text x="50" y="1150" class="small" fill="#000">Original Structure: 46 Divisions × 298 Categories × 523 Datasets</text>
+  <text x="50" y="1165" class="small" fill="#666">Challenge: Complex many-to-many relationships</text>
+  <text x="50" y="1185" class="small" fill="#9c27b0" font-weight="bold">Unified Model: 344 Dimensions</text>
+  <text x="50" y="1200" class="small" fill="#000">• Division dimensions: 46 (preserved)</text>
+  <text x="50" y="1215" class="small" fill="#000">• Category dimensions: 298 (preserved)</text>
+  <text x="50" y="1230" class="small" fill="#000">• Combined dimensions: 0 (none needed)</text>
+  <text x="50" y="1245" class="small" fill="#4caf50">Clean separation with relationship mapping</text>
+
+  <rect x="600" y="1110" width="540" height="140" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="610" y="1130" class="subsection" fill="#000">✨ Model Benefits</text>
+  <text x="610" y="1150" class="small" fill="#000">Frontend Advantages:</text>
+  <text x="620" y="1165" class="small" fill="#4caf50">• No complex joins required</text>
+  <text x="620" y="1180" class="small" fill="#4caf50">• Fast dual-tree rendering</text>
+  <text x="620" y="1195" class="small" fill="#4caf50">• Intuitive search and filtering</text>
+  <text x="610" y="1215" class="small" fill="#000">Data Integrity:</text>
+  <text x="620" y="1230" class="small" fill="#1976d2">• Maintains original relationships</text>
+  <text x="620" y="1245" class="small" fill="#1976d2">• Enables dataset traceability</text>
+
+  <!-- Model Statistics -->
+  <rect x="40" y="1270" width="1120" height="60" fill="white" stroke="#9c27b0" stroke-width="2" rx="8"/>
+  <text x="60" y="1295" class="subsection" fill="#9c27b0">📊 Unified Model Impact</text>
+  <text x="60" y="1315" class="text" fill="#000">Reduced complexity from 6,734,708 potential relationships (46×298×523) to 344 manageable dimensions</text>
+  <text x="60" y="1325" class="text" fill="#9c27b0" font-weight="bold">99.995% complexity reduction while preserving 100% data accessibility and relationships</text>
+
+  <!-- Summary -->
+  <rect x="20" y="1360" width="1160" height="220" class="stats-box" rx="10"/>
+  <text x="40" y="1390" class="section-title" fill="#e91e63">📋 Organization Summary</text>
+
+  <rect x="40" y="1410" width="1120" height="160" fill="white" stroke="#e91e63" stroke-width="2" rx="8"/>
+  <text x="60" y="1435" class="subsection" fill="#e91e63">🎯 Key Organizational Insights</text>
+  <text x="60" y="1455" class="text" fill="#000">Toronto's data organization reflects a modern, well-structured municipal government with:</text>
+  <text x="80" y="1475" class="text" fill="#000">• 46 distinct divisions covering all aspects of city operations</text>
+  <text x="80" y="1490" class="text" fill="#000">• 298 specialized categories enabling precise data classification</text>
+  <text x="80" y="1505" class="text" fill="#000">• 523 high-quality datasets with strong metadata and regular updates</text>
+  <text x="60" y="1525" class="text" fill="#000">Our unified model successfully bridges the gap between Toronto's complex organizational</text>
+  <text x="60" y="1540" class="text" fill="#000">structure and user-friendly data exploration, enabling both detailed analysis and</text>
+  <text x="60" y="1555" class="text" fill="#e91e63" font-weight="bold">intuitive discovery through our dual-tree visualization interface.</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

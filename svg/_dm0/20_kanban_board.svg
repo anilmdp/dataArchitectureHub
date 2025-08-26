@@ -1,0 +1,224 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1976D2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="columnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="60" fill="url(#headerGrad)"/>
+  <text x="30" y="35" fill="white" font-size="18" font-weight="bold" font-family="Arial">SOX Personal Kanban Board</text>
+  
+  <!-- User Info -->
+  <circle cx="1450" cy="30" r="15" fill="white"/>
+  <text x="1450" y="35" text-anchor="middle" fill="#1976D2" font-size="12" font-weight="bold" font-family="Arial">JS</text>
+  <text x="1480" y="35" fill="white" font-size="14" font-family="Arial">Jane Smith</text>
+
+  <!-- Board Controls -->
+  <rect x="20" y="80" width="1560" height="50" rx="5" fill="white" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  
+  <!-- Board Selector -->
+  <text x="40" y="105" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Board:</text>
+  <rect x="80" y="90" width="150" height="25" rx="3" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="90" y="105" fill="#333" font-size="11" font-family="Arial">My SOX Tasks ▼</text>
+  
+  <!-- Filters -->
+  <text x="260" y="105" fill="#333" font-size="12" font-weight="bold" font-family="Arial">Filters:</text>
+  <rect x="310" y="90" width="70" height="20" rx="10" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="345" y="102" text-anchor="middle" fill="#2196F3" font-size="9" font-weight="bold" font-family="Arial">All Types</text>
+  
+  <rect x="390" y="90" width="60" height="20" rx="10" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <text x="420" y="102" text-anchor="middle" fill="#F44336" font-size="9" font-weight="bold" font-family="Arial">Overdue</text>
+
+  <!-- Actions -->
+  <rect x="1200" y="90" width="80" height="25" rx="3" fill="#4CAF50" stroke="#45a049" stroke-width="1"/>
+  <text x="1240" y="105" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">+ Add Card</text>
+  
+  <rect x="1290" y="90" width="80" height="25" rx="3" fill="#FF9800" stroke="#F57C00" stroke-width="1"/>
+  <text x="1330" y="105" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">⚙ Settings</text>
+  
+  <rect x="1380" y="90" width="80" height="25" rx="3" fill="#2196F3" stroke="#1976D2" stroke-width="1"/>
+  <text x="1420" y="105" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">📊 Reports</text>
+
+  <!-- Column 1: Assigned to Me -->
+  <rect x="30" y="150" width="300" height="800" rx="8" fill="url(#columnGrad)" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="30" y="150" width="300" height="40" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="180" y="173" text-anchor="middle" fill="#1976D2" font-size="14" font-weight="bold" font-family="Arial">Assigned to Me</text>
+  <circle cx="280" cy="170" r="8" fill="#2196F3"/>
+  <text x="280" y="174" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">5</text>
+  
+  <!-- Card 1 - High Priority Test -->
+  <rect x="45" y="210" width="270" height="100" rx="5" fill="white" stroke="#F44336" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="45" y="210" width="270" height="25" rx="5" fill="#FFEBEE"/>
+  <circle cx="60" cy="222" r="4" fill="#F44336"/>
+  <text x="70" y="226" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Test Revenue Recognition - Q1</text>
+  <text x="280" y="226" fill="#666" font-size="9" font-family="Arial">📅 Due: 2/15</text>
+  
+  <text x="55" y="245" fill="#666" font-size="10" font-family="Arial">Control Testing for Revenue Recognition</text>
+  <text x="55" y="258" fill="#666" font-size="10" font-family="Arial">Sample size: 25 transactions</text>
+  
+  <rect x="55" y="270" width="40" height="15" rx="7" fill="#F44336"/>
+  <text x="75" y="280" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">HIGH</text>
+  
+  <rect x="105" y="270" width="50" height="15" rx="7" fill="#2196F3"/>
+  <text x="130" y="280" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">TESTING</text>
+  
+  <rect x="165" y="270" width="35" height="15" rx="7" fill="#FF9800"/>
+  <text x="182" y="280" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">Q1</text>
+  
+  <text x="55" y="300" fill="#999" font-size="9" font-family="Arial">🔗 T10_Test #1234 | ⏱ 8h est.</text>
+  <text x="280" y="300" text-anchor="end" fill="#666" font-size="9" font-family="Arial">📝 ✏️ 🗑️</text>
+
+  <!-- Card 2 - Medium Priority Deficiency -->
+  <rect x="45" y="320" width="270" height="85" rx="5" fill="white" stroke="#FF9800" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="45" y="320" width="270" height="25" rx="5" fill="#FFF3E0"/>
+  <circle cx="60" cy="332" r="4" fill="#FF9800"/>
+  <text x="70" y="336" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Remediate Control Gap</text>
+  <text x="280" y="336" fill="#666" font-size="9" font-family="Arial">📅 Due: 2/20</text>
+  
+  <text x="55" y="355" fill="#666" font-size="10" font-family="Arial">Missing segregation of duties in AP</text>
+  
+  <rect x="55" y="370" width="45" height="15" rx="7" fill="#FF9800"/>
+  <text x="77" y="380" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">MEDIUM</text>
+  
+  <rect x="110" y="370" width="60" height="15" rx="7" fill="#F44336"/>
+  <text x="140" y="380" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">DEFICIENCY</text>
+  
+  <text x="55" y="395" fill="#999" font-size="9" font-family="Arial">🔗 T35_Deficiency #567</text>
+
+  <!-- Card 3 - Low Priority Evidence -->
+  <rect x="45" y="415" width="270" height="70" rx="5" fill="white" stroke="#4CAF50" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="45" y="415" width="270" height="25" rx="5" fill="#E8F5E9"/>
+  <circle cx="60" cy="427" r="4" fill="#4CAF50"/>
+  <text x="70" y="431" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Collect IT Logs</text>
+  <text x="280" y="431" fill="#666" font-size="9" font-family="Arial">📅 Due: 2/25</text>
+  
+  <text x="55" y="450" fill="#666" font-size="10" font-family="Arial">System access logs for Q4 review</text>
+  
+  <rect x="55" y="460" width="35" height="15" rx="7" fill="#4CAF50"/>
+  <text x="72" y="470" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">LOW</text>
+  
+  <rect x="100" y="460" width="55" height="15" rx="7" fill="#9C27B0"/>
+  <text x="127" y="470" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">EVIDENCE</text>
+  
+  <text x="55" y="480" fill="#999" font-size="9" font-family="Arial">🔗 T11_Evidence #890</text>
+
+  <!-- Column 2: In Progress -->
+  <rect x="350" y="150" width="300" height="800" rx="8" fill="url(#columnGrad)" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="350" y="150" width="300" height="40" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="500" y="173" text-anchor="middle" fill="#F57C00" font-size="14" font-weight="bold" font-family="Arial">In Progress</text>
+  <circle cx="600" cy="170" r="8" fill="#FF9800"/>
+  <text x="600" y="174" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">3</text>
+  <text x="620" y="175" fill="#666" font-size="10" font-family="Arial">WIP: 3/5</text>
+
+  <!-- In Progress Card 1 -->
+  <rect x="365" y="210" width="270" height="90" rx="5" fill="white" stroke="#2196F3" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="365" y="210" width="270" height="25" rx="5" fill="#E3F2FD"/>
+  <circle cx="380" cy="222" r="4" fill="#2196F3"/>
+  <text x="390" y="226" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Review Excel Import</text>
+  <text x="600" y="226" fill="#666" font-size="9" font-family="Arial">📅 Due: Today</text>
+  
+  <text x="375" y="245" fill="#666" font-size="10" font-family="Arial">Organization data conflicts: 3 items</text>
+  <text x="375" y="258" fill="#666" font-size="10" font-family="Arial">Progress: 65% complete</text>
+  
+  <!-- Progress bar -->
+  <rect x="375" y="270" width="100" height="8" rx="4" fill="#f0f0f0"/>
+  <rect x="375" y="270" width="65" height="8" rx="4" fill="#4CAF50"/>
+  
+  <rect x="485" y="270" width="45" height="15" rx="7" fill="#2196F3"/>
+  <text x="507" y="280" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">REVIEW</text>
+  
+  <text x="375" y="295" fill="#999" font-size="9" font-family="Arial">🔗 T50_ImportSession #123</text>
+
+  <!-- Column 3: Pending Review -->
+  <rect x="670" y="150" width="300" height="800" rx="8" fill="url(#columnGrad)" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="670" y="150" width="300" height="40" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="820" y="173" text-anchor="middle" fill="#7B1FA2" font-size="14" font-weight="bold" font-family="Arial">Pending Review</text>
+  <circle cx="920" cy="170" r="8" fill="#9C27B0"/>
+  <text x="920" y="174" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">2</text>
+
+  <!-- Pending Review Card -->
+  <rect x="685" y="210" width="270" height="80" rx="5" fill="white" stroke="#9C27B0" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="685" y="210" width="270" height="25" rx="5" fill="#F3E5F5"/>
+  <circle cx="700" cy="222" r="4" fill="#9C27B0"/>
+  <text x="710" y="226" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Awaiting Manager Approval</text>
+  <text x="920" y="226" fill="#666" font-size="9" font-family="Arial">📅 Due: 2/18</text>
+  
+  <text x="695" y="245" fill="#666" font-size="10" font-family="Arial">Control design documentation</text>
+  <text x="695" y="258" fill="#666" font-size="10" font-family="Arial">Waiting for: Sarah Johnson</text>
+  
+  <rect x="695" y="270" width="55" height="15" rx="7" fill="#9C27B0"/>
+  <text x="722" y="280" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">APPROVAL</text>
+  
+  <text x="695" y="285" fill="#999" font-size="9" font-family="Arial">🔗 T08_Control #456</text>
+
+  <!-- Column 4: Blocked -->
+  <rect x="990" y="150" width="300" height="800" rx="8" fill="url(#columnGrad)" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="990" y="150" width="300" height="40" rx="8" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <text x="1140" y="173" text-anchor="middle" fill="#D32F2F" font-size="14" font-weight="bold" font-family="Arial">Blocked</text>
+  <circle cx="1240" cy="170" r="8" fill="#F44336"/>
+  <text x="1240" y="174" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">1</text>
+
+  <!-- Blocked Card -->
+  <rect x="1005" y="210" width="270" height="95" rx="5" fill="white" stroke="#F44336" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="1005" y="210" width="270" height="25" rx="5" fill="#FFEBEE"/>
+  <circle cx="1020" cy="222" r="4" fill="#F44336"/>
+  <text x="1030" y="226" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Waiting for IT Access</text>
+  <text x="1240" y="226" fill="#666" font-size="9" font-family="Arial">📅 Overdue</text>
+  
+  <text x="1015" y="245" fill="#666" font-size="10" font-family="Arial">Need database access for testing</text>
+  <text x="1015" y="258" fill="#666" font-size="10" font-family="Arial">Blocked since: 2/10</text>
+  <text x="1015" y="271" fill="#666" font-size="10" font-family="Arial">Contact: IT Helpdesk</text>
+  
+  <rect x="1015" y="280" width="50" height="15" rx="7" fill="#F44336"/>
+  <text x="1040" y="290" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">BLOCKED</text>
+  
+  <text x="1015" y="300" fill="#999" font-size="9" font-family="Arial">🔗 T10_Test #789</text>
+
+  <!-- Column 5: Completed -->
+  <rect x="1310" y="150" width="270" height="800" rx="8" fill="url(#columnGrad)" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="1310" y="150" width="270" height="40" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="1445" y="173" text-anchor="middle" fill="#388E3C" font-size="14" font-weight="bold" font-family="Arial">Completed</text>
+  <circle cx="1540" cy="170" r="8" fill="#4CAF50"/>
+  <text x="1540" y="174" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">4</text>
+
+  <!-- Completed Card (collapsed) -->
+  <rect x="1325" y="210" width="240" height="50" rx="5" fill="white" stroke="#4CAF50" stroke-width="1" filter="url(#cardShadow)"/>
+  <circle cx="1340" cy="235" r="4" fill="#4CAF50"/>
+  <text x="1350" y="230" fill="#333" font-size="10" font-weight="bold" font-family="Arial">Cash Controls Testing</text>
+  <text x="1350" y="245" fill="#666" font-size="9" font-family="Arial">Completed: 2/12 ✓</text>
+  <text x="1540" y="235" fill="#999" font-size="8" font-family="Arial">📂</text>
+
+  <!-- Add card zones (dashed) -->
+  <rect x="45" y="900" width="270" height="40" rx="5" fill="none" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="180" y="923" text-anchor="middle" fill="#999" font-size="11" font-family="Arial">+ Drop card here or click to add</text>
+
+  <rect x="365" y="900" width="270" height="40" rx="5" fill="none" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="500" y="923" text-anchor="middle" fill="#999" font-size="11" font-family="Arial">+ Drop card here</text>
+
+  <!-- Quick stats footer -->
+  <rect x="30" y="960" width="1550" height="30" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="50" y="978" fill="#333" font-size="11" font-weight="bold" font-family="Arial">Today's Summary:</text>
+  <text x="170" y="978" fill="#4CAF50" font-size="10" font-family="Arial">✓ 4 Completed</text>
+  <text x="260" y="978" fill="#FF9800" font-size="10" font-family="Arial">◐ 3 In Progress</text>
+  <text x="360" y="978" fill="#F44336" font-size="10" font-family="Arial">⚠ 1 Overdue</text>
+  <text x="450" y="978" fill="#2196F3" font-size="10" font-family="Arial">📋 5 Assigned</text>
+  
+  <text x="1200" y="978" fill="#666" font-size="10" font-family="Arial">Total Time: 24h estimated | 16h actual</text>
+  <text x="1450" y="978" fill="#666" font-size="10" font-family="Arial">Last updated: 2 min ago</text>
+
+</svg>

@@ -1,0 +1,386 @@
+<svg viewBox="0 0 1800 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1976D2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1200" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1800" height="70" fill="url(#headerGrad)"/>
+  <text x="900" y="35" text-anchor="middle" fill="white" font-size="24" font-weight="bold" font-family="Arial">SOX Platform - Complete Data Model Overview</text>
+  <text x="900" y="55" text-anchor="middle" fill="white" font-size="14" font-family="Arial">62 Tables across 10 Categories | Conceptual Groups → Logical Tables</text>
+
+  <!-- Stats Panel -->
+  <rect x="50" y="90" width="1700" height="60" rx="8" fill="white" stroke="#ddd" stroke-width="1" filter="url(#shadow)"/>
+  <text x="70" y="115" fill="#333" font-size="14" font-weight="bold" font-family="Arial">Platform Statistics:</text>
+  <text x="70" y="135" fill="#666" font-size="12" font-family="Arial">📊 Total Tables: 62 | 🏗️ Conceptual Groups: 16 | 📁 Categories: 10 | 🔗 Relationships: 45+ | 📈 Growth: +30 tables since v1.0</text>
+  
+  <text x="1400" y="115" fill="#333" font-size="14" font-weight="bold" font-family="Arial">Coverage:</text>
+  <text x="1400" y="135" fill="#666" font-size="12" font-family="Arial">✅ Core SOX: 100% | ✅ Workflow: 100% | ✅ Audit: 100% | 🆕 Kanban: New</text>
+
+  <!-- Category 1: Organizational Structure -->
+  <rect x="50" y="170" width="340" height="240" rx="8" fill="#B3E5FC" stroke="#1976D2" stroke-width="2" filter="url(#shadow)"/>
+  <text x="220" y="195" text-anchor="middle" fill="#1976D2" font-size="16" font-weight="bold" font-family="Arial">ORGANIZATIONAL STRUCTURE</text>
+  <text x="220" y="215" text-anchor="middle" fill="#1565C0" font-size="12" font-family="Arial">9 Tables | 2 Conceptual Groups</text>
+  
+  <!-- Organization Management Group -->
+  <rect x="70" y="225" width="145" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#1976D2" stroke-width="1"/>
+  <text x="142" y="245" text-anchor="middle" fill="#1976D2" font-size="12" font-weight="bold" font-family="Arial">Organization Management</text>
+  <text x="80" y="265" fill="#333" font-size="10" font-family="Arial">T01_Organization</text>
+  <text x="80" y="280" fill="#333" font-size="10" font-family="Arial">T02_BusinessUnit</text>
+  <text x="80" y="295" fill="#333" font-size="10" font-family="Arial">T03_Department</text>
+  <text x="80" y="310" fill="#333" font-size="10" font-family="Arial">T04_Position</text>
+  <text x="80" y="325" fill="#333" font-size="10" font-family="Arial">T05_Employee</text>
+  <text x="80" y="340" fill="#333" font-size="10" font-family="Arial">T13_Stakeholder</text>
+  
+  <!-- User Access Management Group -->
+  <rect x="225" y="225" width="145" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#1976D2" stroke-width="1"/>
+  <text x="297" y="245" text-anchor="middle" fill="#1976D2" font-size="12" font-weight="bold" font-family="Arial">User Access Management</text>
+  <text x="235" y="265" fill="#333" font-size="10" font-family="Arial">T17_User</text>
+  <text x="235" y="280" fill="#333" font-size="10" font-family="Arial">T18_Role</text>
+  <text x="235" y="295" fill="#333" font-size="10" font-family="Arial">T19_UserRole</text>
+
+  <text x="70" y="370" fill="#1976D2" font-size="11" font-weight="bold" font-family="Arial">Core Foundation:</text>
+  <text x="70" y="385" fill="#666" font-size="10" font-family="Arial">• Hierarchical org structure</text>
+  <text x="70" y="395" fill="#666" font-size="10" font-family="Arial">• Role-based access control</text>
+
+  <!-- Category 2: Financial  &amp; Accounting -->
+  <rect x="410" y="170" width="340" height="240" rx="8" fill="#FFAB91" stroke="#FF5722" stroke-width="2" filter="url(#shadow)"/>
+  <text x="580" y="195" text-anchor="middle" fill="#D84315" font-size="16" font-weight="bold" font-family="Arial">FINANCIAL  &amp; ACCOUNTING</text>
+  <text x="580" y="215" text-anchor="middle" fill="#BF360C" font-size="12" font-family="Arial">3 Tables | 1 Conceptual Group</text>
+  
+  <!-- Financial Account Management Group -->
+  <rect x="430" y="225" width="300" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#FF5722" stroke-width="1"/>
+  <text x="580" y="245" text-anchor="middle" fill="#D84315" font-size="12" font-weight="bold" font-family="Arial">Financial Account Management</text>
+  <text x="440" y="265" fill="#333" font-size="10" font-family="Arial">T26_FinancialAccount</text>
+  <text x="440" y="280" fill="#333" font-size="10" font-family="Arial">T27_AccountBalance</text>
+  <text x="440" y="295" fill="#333" font-size="10" font-family="Arial">T28_JournalEntry</text>
+
+  <text x="430" y="370" fill="#D84315" font-size="11" font-weight="bold" font-family="Arial">Financial Foundation:</text>
+  <text x="430" y="385" fill="#666" font-size="10" font-family="Arial">• Chart of accounts</text>
+  <text x="430" y="395" fill="#666" font-size="10" font-family="Arial">• Transaction tracking</text>
+
+  <!-- Category 3: SOX Compliance Core -->
+  <rect x="770" y="170" width="500" height="240" rx="8" fill="#FFF176" stroke="#FBC02D" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1020" y="195" text-anchor="middle" fill="#F57F17" font-size="16" font-weight="bold" font-family="Arial">SOX COMPLIANCE CORE</text>
+  <text x="1020" y="215" text-anchor="middle" fill="#E65100" font-size="12" font-family="Arial">17 Tables | 5 Conceptual Groups</text>
+  
+  <!-- Business Process Risk -->
+  <rect x="790" y="225" width="90" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#FBC02D" stroke-width="1"/>
+  <text x="835" y="240" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Business</text>
+  <text x="835" y="252" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Process Risk</text>
+  <text x="800" y="270" fill="#333" font-size="9" font-family="Arial">T06_Process</text>
+  <text x="800" y="283" fill="#333" font-size="9" font-family="Arial">T07_Risk</text>
+  <text x="800" y="296" fill="#333" font-size="9" font-family="Arial">T08_Control</text>
+  <text x="800" y="309" fill="#333" font-size="9" font-family="Arial">T09_RiskControlMapping</text>
+  
+  <!-- Control Framework -->
+  <rect x="890" y="225" width="90" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#FBC02D" stroke-width="1"/>
+  <text x="935" y="240" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Control</text>
+  <text x="935" y="252" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Framework</text>
+  <text x="900" y="270" fill="#333" font-size="9" font-family="Arial">T29_ControlObjective</text>
+  <text x="900" y="283" fill="#333" font-size="9" font-family="Arial">T30_FinancialStatementAssertion</text>
+  <text x="900" y="296" fill="#333" font-size="9" font-family="Arial">T31_MaterialityThreshold</text>
+  
+  <!-- Process Risk Management -->
+  <rect x="990" y="225" width="90" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#FBC02D" stroke-width="1"/>
+  <text x="1035" y="240" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Process Risk</text>
+  <text x="1035" y="252" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Management</text>
+  <text x="1000" y="270" fill="#333" font-size="9" font-family="Arial">T20_ProcessRiskScenario</text>
+  <text x="1000" y="283" fill="#333" font-size="9" font-family="Arial">T21_ProcessFailureMode</text>
+  <text x="1000" y="296" fill="#333" font-size="9" font-family="Arial">T22_ProcessRiskAssessment</text>
+  
+  <!-- Process Execution -->
+  <rect x="1090" y="225" width="90" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#FBC02D" stroke-width="1"/>
+  <text x="1135" y="240" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Process</text>
+  <text x="1135" y="252" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Execution</text>
+  <text x="1100" y="270" fill="#333" font-size="9" font-family="Arial">T23_ProcessStep</text>
+  <text x="1100" y="283" fill="#333" font-size="9" font-family="Arial">T24_ProcessExecution</text>
+  <text x="1100" y="296" fill="#333" font-size="9" font-family="Arial">T25_ProcessArtifact</text>
+  
+  <!-- Project Management -->
+  <rect x="1190" y="225" width="70" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#FBC02D" stroke-width="1"/>
+  <text x="1225" y="240" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Project</text>
+  <text x="1225" y="252" text-anchor="middle" fill="#F57F17" font-size="10" font-weight="bold" font-family="Arial">Management</text>
+  <text x="1200" y="270" fill="#333" font-size="9" font-family="Arial">T14_Project</text>
+
+  <text x="790" y="370" fill="#F57F17" font-size="11" font-weight="bold" font-family="Arial">SOX Heart:</text>
+  <text x="790" y="385" fill="#666" font-size="10" font-family="Arial">• Risk-control mapping • Process tracking • Project coordination</text>
+
+  <!-- Category 4: Testing  &amp; Validation -->
+  <rect x="1290" y="170" width="260" height="240" rx="8" fill="#CE93D8" stroke="#8E24AA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1420" y="195" text-anchor="middle" fill="#6A1B9A" font-size="16" font-weight="bold" font-family="Arial">TESTING  &amp; VALIDATION</text>
+  <text x="1420" y="215" text-anchor="middle" fill="#4A148C" font-size="12" font-family="Arial">6 Tables | 2 Conceptual Groups</text>
+  
+  <!-- Audit Testing -->
+  <rect x="1310" y="225" width="110" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#8E24AA" stroke-width="1"/>
+  <text x="1365" y="240" text-anchor="middle" fill="#6A1B9A" font-size="11" font-weight="bold" font-family="Arial">Audit Testing</text>
+  <text x="1320" y="260" fill="#333" font-size="10" font-family="Arial">T10_Test</text>
+  <text x="1320" y="275" fill="#333" font-size="10" font-family="Arial">T11_Evidence</text>
+  <text x="1320" y="290" fill="#333" font-size="10" font-family="Arial">T12_Issue</text>
+  
+  <!-- Sample Population -->
+  <rect x="1430" y="225" width="110" height="120" rx="5" fill="rgba(255,255,255,0.9)" stroke="#8E24AA" stroke-width="1"/>
+  <text x="1485" y="240" text-anchor="middle" fill="#6A1B9A" font-size="11" font-weight="bold" font-family="Arial">Sample Population</text>
+  <text x="1440" y="260" fill="#333" font-size="10" font-family="Arial">T32_SamplePopulation</text>
+  <text x="1440" y="275" fill="#333" font-size="10" font-family="Arial">T33_PopulationCriteria</text>
+  <text x="1440" y="290" fill="#333" font-size="10" font-family="Arial">T34_DataExtract</text>
+
+  <text x="1310" y="370" fill="#6A1B9A" font-size="11" font-weight="bold" font-family="Arial">Quality Assurance:</text>
+  <text x="1310" y="385" fill="#666" font-size="10" font-family="Arial">• Statistical sampling</text>
+  <text x="1310" y="395" fill="#666" font-size="10" font-family="Arial">• Evidence collection</text>
+
+  <!-- Category 5: Deficiency Management -->
+  <rect x="50" y="430" width="260" height="180" rx="8" fill="#FFCC80" stroke="#F57C00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="455" text-anchor="middle" fill="#E65100" font-size="16" font-weight="bold" font-family="Arial">DEFICIENCY MANAGEMENT</text>
+  <text x="180" y="475" text-anchor="middle" fill="#BF360C" font-size="12" font-family="Arial">3 Tables | 1 Conceptual Group</text>
+  
+  <rect x="70" y="485" width="220" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#F57C00" stroke-width="1"/>
+  <text x="180" y="505" text-anchor="middle" fill="#E65100" font-size="12" font-weight="bold" font-family="Arial">Exception Deficiency Tracking</text>
+  <text x="80" y="525" fill="#333" font-size="10" font-family="Arial">T35_Deficiency</text>
+  <text x="80" y="540" fill="#333" font-size="10" font-family="Arial">T36_Exception</text>
+  <text x="80" y="555" fill="#333" font-size="10" font-family="Arial">T37_RemediationPlan</text>
+
+  <text x="70" y="585" fill="#E65100" font-size="11" font-weight="bold" font-family="Arial">Issue Resolution:</text>
+  <text x="70" y="600" fill="#666" font-size="10" font-family="Arial">• Exception tracking • Remediation planning</text>
+
+  <!-- Category 6: Workflow  &amp; Automation -->
+  <rect x="330" y="430" width="260" height="180" rx="8" fill="#81D4FA" stroke="#0277BD" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="455" text-anchor="middle" fill="#01579B" font-size="16" font-weight="bold" font-family="Arial">WORKFLOW  &amp; AUTOMATION</text>
+  <text x="460" y="475" text-anchor="middle" fill="#0D47A1" font-size="12" font-family="Arial">6 Tables | 2 Conceptual Groups</text>
+  
+  <rect x="350" y="485" width="100" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#0277BD" stroke-width="1"/>
+  <text x="400" y="500" text-anchor="middle" fill="#01579B" font-size="11" font-weight="bold" font-family="Arial">Process Workflow</text>
+  <text x="360" y="520" fill="#333" font-size="10" font-family="Arial">T38_Workflow</text>
+  <text x="360" y="535" fill="#333" font-size="10" font-family="Arial">T39_WorkflowStep</text>
+  <text x="360" y="550" fill="#333" font-size="10" font-family="Arial">T40_WorkflowAssignment</text>
+  
+  <rect x="460" y="485" width="120" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#0277BD" stroke-width="1"/>
+  <text x="520" y="500" text-anchor="middle" fill="#01579B" font-size="11" font-weight="bold" font-family="Arial">Personal Productivity</text>
+  <text x="470" y="520" fill="#333" font-size="10" font-family="Arial">T56_UserKanbanBoard</text>
+  <text x="470" y="535" fill="#333" font-size="10" font-family="Arial">T57_KanbanColumn</text>
+  <text x="470" y="550" fill="#333" font-size="10" font-family="Arial">T58_KanbanCard</text>
+
+  <text x="350" y="585" fill="#01579B" font-size="11" font-weight="bold" font-family="Arial">Process Automation:</text>
+  <text x="350" y="600" fill="#666" font-size="10" font-family="Arial">• Workflow engine • Personal kanban</text>
+
+  <!-- Category 7: Reporting  &amp; Certification -->
+  <rect x="610" y="430" width="260" height="180" rx="8" fill="#B39DDB" stroke="#7B1FA2" stroke-width="2" filter="url(#shadow)"/>
+  <text x="740" y="455" text-anchor="middle" fill="#4A148C" font-size="16" font-weight="bold" font-family="Arial">REPORTING  &amp; CERTIFICATION</text>
+  <text x="740" y="475" text-anchor="middle" fill="#6A1B9A" font-size="12" font-family="Arial">3 Tables | 1 Conceptual Group</text>
+  
+  <rect x="630" y="485" width="220" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#7B1FA2" stroke-width="1"/>
+  <text x="740" y="505" text-anchor="middle" fill="#4A148C" font-size="12" font-weight="bold" font-family="Arial">Management Reporting</text>
+  <text x="640" y="525" fill="#333" font-size="10" font-family="Arial">T41_ManagementReport</text>
+  <text x="640" y="540" fill="#333" font-size="10" font-family="Arial">T42_CertificationDocument</text>
+  <text x="640" y="555" fill="#333" font-size="10" font-family="Arial">T43_ExternalAuditorPackage</text>
+
+  <text x="630" y="585" fill="#4A148C" font-size="11" font-weight="bold" font-family="Arial">Compliance Output:</text>
+  <text x="630" y="600" fill="#666" font-size="10" font-family="Arial">• Management reports • External packages</text>
+
+  <!-- Category 8: AI  &amp; Automation -->
+  <rect x="890" y="430" width="260" height="180" rx="8" fill="#C8E6C9" stroke="#388E3C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1020" y="455" text-anchor="middle" fill="#1B5E20" font-size="16" font-weight="bold" font-family="Arial">AI  &amp; AUTOMATION</text>
+  <text x="1020" y="475" text-anchor="middle" fill="#2E7D32" font-size="12" font-family="Arial">6 Tables | 2 Conceptual Groups</text>
+  
+  <rect x="910" y="485" width="100" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#388E3C" stroke-width="1"/>
+  <text x="960" y="500" text-anchor="middle" fill="#1B5E20" font-size="11" font-weight="bold" font-family="Arial">Intelligent Auto</text>
+  <text x="920" y="520" fill="#333" font-size="10" font-family="Arial">T44_AITemplate</text>
+  <text x="920" y="535" fill="#333" font-size="10" font-family="Arial">T45_AutomationRule</text>
+  <text x="920" y="550" fill="#333" font-size="10" font-family="Arial">T46_DataSource</text>
+  
+  <rect x="1020" y="485" width="120" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#388E3C" stroke-width="1"/>
+  <text x="1080" y="500" text-anchor="middle" fill="#1B5E20" font-size="11" font-weight="bold" font-family="Arial">Kanban Intelligence</text>
+  <text x="1030" y="520" fill="#333" font-size="10" font-family="Arial">T59_KanbanQuickAdd</text>
+  <text x="1030" y="535" fill="#333" font-size="10" font-family="Arial">T60_KanbanSuggestion</text>
+
+  <text x="910" y="585" fill="#1B5E20" font-size="11" font-weight="bold" font-family="Arial">Smart Automation:</text>
+  <text x="910" y="600" fill="#666" font-size="10" font-family="Arial">• AI templates • Smart suggestions</text>
+
+  <!-- Category 9: Audit Infrastructure -->
+  <rect x="1170" y="430" width="260" height="180" rx="8" fill="#FFE082" stroke="#F9A825" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1300" y="455" text-anchor="middle" fill="#F57F00" font-size="16" font-weight="bold" font-family="Arial">AUDIT INFRASTRUCTURE</text>
+  <text x="1300" y="475" text-anchor="middle" fill="#E65100" font-size="12" font-family="Arial">3 Tables | 1 Conceptual Group</text>
+  
+  <rect x="1190" y="485" width="220" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#F9A825" stroke-width="1"/>
+  <text x="1300" y="505" text-anchor="middle" fill="#F57F00" font-size="12" font-weight="bold" font-family="Arial">Enhanced Audit Trail</text>
+  <text x="1200" y="525" fill="#333" font-size="10" font-family="Arial">T47_AuditTrail</text>
+  <text x="1200" y="540" fill="#333" font-size="10" font-family="Arial">T48_DigitalSignature</text>
+  <text x="1200" y="555" fill="#333" font-size="10" font-family="Arial">T49_EvidencePackage</text>
+
+  <text x="1190" y="585" fill="#F57F00" font-size="11" font-weight="bold" font-family="Arial">Audit Security:</text>
+  <text x="1190" y="600" fill="#666" font-size="10" font-family="Arial">• Complete lineage • Digital signatures</text>
+
+  <!-- Category 10: Excel Integration -->
+  <rect x="1450" y="430" width="300" height="180" rx="8" fill="#E1BEE7" stroke="#8E24AA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1600" y="455" text-anchor="middle" fill="#6A1B9A" font-size="16" font-weight="bold" font-family="Arial">EXCEL INTEGRATION</text>
+  <text x="1600" y="475" text-anchor="middle" fill="#4A148C" font-size="12" font-family="Arial">8 Tables | 2 Conceptual Groups</text>
+  
+  <rect x="1470" y="485" width="120" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#8E24AA" stroke-width="1"/>
+  <text x="1530" y="500" text-anchor="middle" fill="#6A1B9A" font-size="11" font-weight="bold" font-family="Arial">Data Sync</text>
+  <text x="1480" y="520" fill="#333" font-size="10" font-family="Arial">T15_SyncTemplate</text>
+  <text x="1480" y="535" fill="#333" font-size="10" font-family="Arial">T16_FieldMapping</text>
+  
+  <rect x="1600" y="485" width="140" height="80" rx="5" fill="rgba(255,255,255,0.9)" stroke="#8E24AA" stroke-width="1"/>
+  <text x="1670" y="500" text-anchor="middle" fill="#6A1B9A" font-size="11" font-weight="bold" font-family="Arial">Import Staging</text>
+  <text x="1610" y="515" fill="#333" font-size="9" font-family="Arial">T50_ImportSession</text>
+  <text x="1610" y="527" fill="#333" font-size="9" font-family="Arial">T51_StagingRecord</text>
+  <text x="1610" y="539" fill="#333" font-size="9" font-family="Arial">T52_DataConflict</text>
+  <text x="1610" y="551" fill="#333" font-size="9" font-family="Arial">T53_ApprovalWorkflow</text>
+  <text x="1610" y="563" fill="#333" font-size="9" font-family="Arial">T54_ConflictComment</text>
+  <text x="1710" y="515" fill="#333" font-size="9" font-family="Arial">T55_ValidationRule</text>
+
+  <text x="1470" y="585" fill="#6A1B9A" font-size="11" font-weight="bold" font-family="Arial">Excel Bridge:</text>
+  <text x="1470" y="600" fill="#666" font-size="10" font-family="Arial">• Template sync • Conflict resolution</text>
+
+  <!-- Multi-Language Support -->
+  <rect x="50" y="630" width="840" height="120" rx="8" fill="white" stroke="#9E9E9E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="470" y="655" text-anchor="middle" fill="#424242" font-size="16" font-weight="bold" font-family="Arial">MULTI-LANGUAGE SUPPORT FRAMEWORK</text>
+  <text x="470" y="675" text-anchor="middle" fill="#616161" font-size="12" font-family="Arial">Cross-cutting concern for all description fields</text>
+  
+  <rect x="70" y="685" width="250" height="55" rx="5" fill="rgba(158,158,158,0.1)" stroke="#9E9E9E" stroke-width="1"/>
+  <text x="195" y="705" text-anchor="middle" fill="#424242" font-size="12" font-weight="bold" font-family="Arial">JSON Translation Pattern</text>
+  <text x="80" y="720" fill="#333" font-size="10" font-family="Arial">• description_translations: JSON field</text>
+  <text x="80" y="732" fill="#333" font-size="10" font-family="Arial">• {"en": "English", "es": "Español"}</text>
+  
+  <rect x="340" y="685" width="250" height="55" rx="5" fill="rgba(158,158,158,0.1)" stroke="#9E9E9E" stroke-width="1"/>
+  <text x="465" y="705" text-anchor="middle" fill="#424242" font-size="12" font-weight="bold" font-family="Arial">Translation Infrastructure</text>
+  <text x="350" y="720" fill="#333" font-size="10" font-family="Arial">• T56_SupportedLanguage</text>
+  <text x="350" y="732" fill="#333" font-size="10" font-family="Arial">• T57_TranslationAudit</text>
+  
+  <rect x="610" y="685" width="270" height="55" rx="5" fill="rgba(158,158,158,0.1)" stroke="#9E9E9E" stroke-width="1"/>
+  <text x="745" y="705" text-anchor="middle" fill="#424242" font-size="12" font-weight="bold" font-family="Arial">Affected Fields</text>
+  <text x="620" y="720" fill="#333" font-size="10" font-family="Arial">• All description, name, title fields</text>
+  <text x="620" y="732" fill="#333" font-size="10" font-family="Arial">• User-facing content priority</text>
+
+  <!-- Data Flow Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Core Flow -->
+  <path d="M 390 290 Q 470 290 470 290 Q 550 290 580 290" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="485" y="285" text-anchor="middle" fill="#666" font-size="9" font-family="Arial">Foundation</text>
+  
+  <path d="M 750 290 Q 850 290 950 290 Q 1050 290 1150 290" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="950" y="285" text-anchor="middle" fill="#666" font-size="9" font-family="Arial">Core SOX Flow</text>
+  
+  <path d="M 1020 410 Q 1020 450 1020 490" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="1040" y="450" fill="#666" font-size="9" font-family="Arial">AI Enhanced</text>
+
+  <!-- Integration Points -->
+  <circle cx="580" cy="520" r="20" fill="none" stroke="#FF5722" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="580" y="525" text-anchor="middle" fill="#FF5722" font-size="10" font-weight="bold" font-family="Arial">PIVOT</text>
+  
+  <circle cx="1300" cy="520" r="20" fill="none" stroke="#8E24AA" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="1300" y="525" text-anchor="middle" fill="#8E24AA" font-size="10" font-weight="bold" font-family="Arial">AUDIT</text>
+
+  <!-- Evolution Timeline -->
+  <rect x="920" y="630" width="830" height="120" rx="8" fill="white" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1335" y="655" text-anchor="middle" fill="#2E7D32" font-size="16" font-weight="bold" font-family="Arial">PLATFORM EVOLUTION</text>
+  <text x="1335" y="675" text-anchor="middle" fill="#388E3C" font-size="12" font-family="Arial">From Core SOX to Comprehensive Platform</text>
+  
+  <!-- Evolution Stages -->
+  <rect x="940" y="685" width="120" height="55" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="1000" y="705" text-anchor="middle" fill="#2E7D32" font-size="11" font-weight="bold" font-family="Arial">v1.0 Foundation</text>
+  <text x="950" y="720" fill="#333" font-size="10" font-family="Arial">• Core 32 tables</text>
+  <text x="950" y="732" fill="#333" font-size="10" font-family="Arial">• Basic SOX compliance</text>
+  
+  <rect x="1080" y="685" width="120" height="55" rx="5" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+  <text x="1140" y="705" text-anchor="middle" fill="#1976D2" font-size="11" font-weight="bold" font-family="Arial">v2.0 Enhanced</text>
+  <text x="1090" y="720" fill="#333" font-size="10" font-family="Arial">• +15 workflow tables</text>
+  <text x="1090" y="732" fill="#333" font-size="10" font-family="Arial">• Excel integration</text>
+  
+  <rect x="1220" y="685" width="120" height="55" rx="5" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="1280" y="705" text-anchor="middle" fill="#F57C00" font-size="11" font-weight="bold" font-family="Arial">v3.0 Intelligent</text>
+  <text x="1230" y="720" fill="#333" font-size="10" font-family="Arial">• +8 AI tables</text>
+  <text x="1230" y="732" fill="#333" font-size="10" font-family="Arial">• Smart automation</text>
+  
+  <rect x="1360" y="685" width="120" height="55" rx="5" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1"/>
+  <text x="1420" y="705" text-anchor="middle" fill="#7B1FA2" font-size="11" font-weight="bold" font-family="Arial">v4.0 Personal</text>
+  <text x="1370" y="720" fill="#333" font-size="10" font-family="Arial">• +7 kanban tables</text>
+  <text x="1370" y="732" fill="#333" font-size="10" font-family="Arial">• User productivity</text>
+  
+  <rect x="1500" y="685" width="120" height="55" rx="5" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <text x="1560" y="705" text-anchor="middle" fill="#D32F2F" font-size="11" font-weight="bold" font-family="Arial">v5.0 Global</text>
+  <text x="1510" y="720" fill="#333" font-size="10" font-family="Arial">• Multi-language</text>
+  <text x="1510" y="732" fill="#333" font-size="10" font-family="Arial">• 62 total tables</text>
+
+  <!-- Complexity Metrics -->
+  <rect x="50" y="770" width="1700" height="80" rx="8" fill="white" stroke="#607D8B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="900" y="795" text-anchor="middle" fill="#37474F" font-size="16" font-weight="bold" font-family="Arial">COMPLEXITY  &amp; INTEGRATION METRICS</text>
+  
+  <text x="70" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">Database Size:</text>
+  <text x="70" y="835" fill="#666" font-size="11" font-family="Arial">62 Tables | ~400 Columns | 45+ Relationships</text>
+  
+  <text x="300" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">Integration Points:</text>
+  <text x="300" y="835" fill="#666" font-size="11" font-family="Arial">Excel Bridge | Kanban System | AI Engine</text>
+  
+  <text x="530" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">User Experience:</text>
+  <text x="530" y="835" fill="#666" font-size="11" font-family="Arial">Personal Dashboards | Smart Workflows</text>
+  
+  <text x="750" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">Audit Compliance:</text>
+  <text x="750" y="835" fill="#666" font-size="11" font-family="Arial">100% Traceable | Digital Signatures</text>
+  
+  <text x="980" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">Scalability:</text>
+  <text x="980" y="835" fill="#666" font-size="11" font-family="Arial">Multi-tenant | Global Language Support</text>
+  
+  <text x="1200" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">Performance:</text>
+  <text x="1200" y="835" fill="#666" font-size="11" font-family="Arial">Optimized Queries | Indexed Relations</text>
+  
+  <text x="1420" y="820" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial">Maintenance:</text>
+  <text x="1420" y="835" fill="#666" font-size="11" font-family="Arial">Modular Design | Version Control</text>
+
+  <!-- Key Insights -->
+  <rect x="50" y="870" width="1700" height="120" rx="8" fill="#f8f9fa" stroke="#28a745" stroke-width="2" filter="url(#shadow)"/>
+  <text x="900" y="895" text-anchor="middle" fill="#155724" font-size="18" font-weight="bold" font-family="Arial">🏆 KEY PLATFORM ACHIEVEMENTS</text>
+  
+  <rect x="70" y="910" width="320" height="70" rx="5" fill="rgba(40,167,69,0.1)" stroke="#28a745" stroke-width="1"/>
+  <text x="230" y="930" text-anchor="middle" fill="#155724" font-size="12" font-weight="bold" font-family="Arial">📊 Complete SOX Coverage</text>
+  <text x="80" y="945" fill="#333" font-size="10" font-family="Arial">✅ All COSO components mapped</text>
+  <text x="80" y="957" fill="#333" font-size="10" font-family="Arial">✅ PCAOB compliance ready</text>
+  <text x="80" y="969" fill="#333" font-size="10" font-family="Arial">✅ Audit trail complete</text>
+  
+  <rect x="410" y="910" width="320" height="70" rx="5" fill="rgba(40,167,69,0.1)" stroke="#28a745" stroke-width="1"/>
+  <text x="570" y="930" text-anchor="middle" fill="#155724" font-size="12" font-weight="bold" font-family="Arial">🚀 User Experience Excellence</text>
+  <text x="420" y="945" fill="#333" font-size="10" font-family="Arial">✅ Personal kanban boards</text>
+  <text x="420" y="957" fill="#333" font-size="10" font-family="Arial">✅ Smart task automation</text>
+  <text x="420" y="969" fill="#333" font-size="10" font-family="Arial">✅ Context-aware workflows</text>
+  
+  <rect x="750" y="910" width="320" height="70" rx="5" fill="rgba(40,167,69,0.1)" stroke="#28a745" stroke-width="1"/>
+  <text x="910" y="930" text-anchor="middle" fill="#155724" font-size="12" font-weight="bold" font-family="Arial">🔧 Technical Innovation</text>
+  <text x="760" y="945" fill="#333" font-size="10" font-family="Arial">✅ AI-powered suggestions</text>
+  <text x="760" y="957" fill="#333" font-size="10" font-family="Arial">✅ Conflict resolution engine</text>
+  <text x="760" y="969" fill="#333" font-size="10" font-family="Arial">✅ Multi-language support</text>
+  
+  <rect x="1090" y="910" width="320" height="70" rx="5" fill="rgba(40,167,69,0.1)" stroke="#28a745" stroke-width="1"/>
+  <text x="1250" y="930" text-anchor="middle" fill="#155724" font-size="12" font-weight="bold" font-family="Arial">🌐 Enterprise Ready</text>
+  <text x="1100" y="945" fill="#333" font-size="10" font-family="Arial">✅ Scalable architecture</text>
+  <text x="1100" y="957" fill="#333" font-size="10" font-family="Arial">✅ Excel integration bridge</text>
+  <text x="1100" y="969" fill="#333" font-size="10" font-family="Arial">✅ Global deployment ready</text>
+  
+  <rect x="1430" y="910" width="300" height="70" rx="5" fill="rgba(40,167,69,0.1)" stroke="#28a745" stroke-width="1"/>
+  <text x="1580" y="930" text-anchor="middle" fill="#155724" font-size="12" font-weight="bold" font-family="Arial">📈 Growth Metrics</text>
+  <text x="1440" y="945" fill="#333" font-size="10" font-family="Arial">✅ 94% increase from v1.0</text>
+  <text x="1440" y="957" fill="#333" font-size="10" font-family="Arial">✅ Modular extensibility</text>
+  <text x="1440" y="969" fill="#333" font-size="10" font-family="Arial">✅ Future-proof design</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1000" width="1800" height="40" fill="#37474F"/>
+  <text x="900" y="1025" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="Arial">
+    SOX Platform Data Architecture | From 32 tables to 62 tables | Complete audit-ready solution
+  </text>
+
+</svg>

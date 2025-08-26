@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#ffffff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="60" fill="#ffffff" stroke="#f5f5f5" stroke-width="1"/>
+  <text x="20" y="35" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#333333">SOX Platform</text>
+  
+  <!-- User &amp; Logout -->
+  <text x="1200" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#666666">J. Brown</text>
+  <text x="1280" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#666666">|</text>
+  <text x="1300" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#999999">Logout</text>
+  
+  <!-- Minimal Sidebar -->
+  <rect x="0" y="60" width="60" height="840" fill="#fafafa" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <!-- Sidebar Icons -->
+  <rect x="15" y="80" width="30" height="30" fill="#333333" rx="3"/>
+  <text x="25" y="98" font-family="Arial, sans-serif" font-size="14" fill="white">≡</text>
+  
+  <circle cx="30" cy="140" r="8" fill="#007bff"/>
+  <text x="70" y="145" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Dashboard</text>
+  
+  <rect x="22" y="175" width="16" height="12" fill="#cccccc" rx="2"/>
+  <text x="70" y="185" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#999999">Organizations</text>
+  
+  <rect x="22" y="210" width="16" height="12" fill="#cccccc" rx="2"/>
+  <text x="70" y="220" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#999999">Units</text>
+  
+  <rect x="22" y="245" width="16" height="12" fill="#cccccc" rx="2"/>
+  <text x="70" y="255" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#999999">Departments</text>
+  
+  <rect x="22" y="280" width="16" height="12" fill="#cccccc" rx="2"/>
+  <text x="70" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#999999">Controls</text>
+  
+  <rect x="22" y="315" width="16" height="12" fill="#cccccc" rx="2"/>
+  <text x="70" y="325" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#999999">Processes</text>
+  
+  <!-- Expanded Sidebar (hover state) -->
+  <rect x="60" y="60" width="200" height="840" fill="#fafafa" stroke="#f0f0f0" stroke-width="1" opacity="0.95"/>
+  
+  <text x="80" y="100" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#333333">Navigation</text>
+  
+  <rect x="70" y="120" width="180" height="30" fill="#007bff" rx="3"/>
+  <text x="80" y="138" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="white">Dashboard</text>
+  
+  <text x="80" y="173" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Organizations</text>
+  <text x="230" y="173" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999">5</text>
+  
+  <text x="80" y="208" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Business Units</text>
+  <text x="220" y="208" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999">12</text>
+  
+  <text x="80" y="243" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Departments</text>
+  <text x="220" y="243" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999">38</text>
+  
+  <text x="80" y="278" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Controls</text>
+  <text x="210" y="278" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999">147</text>
+  
+  <text x="80" y="313" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Processes</text>
+  <text x="220" y="313" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999">89</text>
+  
+  <!-- Main Content -->
+  <rect x="270" y="60" width="1130" height="840" fill="#ffffff"/>
+  
+  <!-- Clean Header -->
+  <text x="290" y="100" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="100" fill="#333333">Dashboard</text>
+  <line x1="290" y1="110" x2="1380" y2="110" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <!-- Metrics Row -->
+  <rect x="290" y="140" width="270" height="100" fill="#ffffff" stroke="#f5f5f5" stroke-width="1"/>
+  <text x="310" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="300" fill="#999999">COMPLIANCE SCORE</text>
+  <text x="310" y="200" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="100" fill="#333333">94</text>
+  <text x="380" y="200" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="100" fill="#333333">%</text>
+  <text x="310" y="220" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Above target</text>
+  
+  <rect x="580" y="140" width="270" height="100" fill="#ffffff" stroke="#f5f5f5" stroke-width="1"/>
+  <text x="600" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="300" fill="#999999">ACTIVE CONTROLS</text>
+  <text x="600" y="200" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="100" fill="#333333">147</text>
+  <text x="600" y="220" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">3 need attention</text>
+  
+  <rect x="870" y="140" width="270" height="100" fill="#ffffff" stroke="#f5f5f5" stroke-width="1"/>
+  <text x="890" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="300" fill="#999999">ORGANIZATIONS</text>
+  <text x="890" y="200" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="100" fill="#333333">5</text>
+  <text x="890" y="220" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">All compliant</text>
+  
+  <rect x="1160" y="140" width="240" height="100" fill="#ffffff" stroke="#f5f5f5" stroke-width="1"/>
+  <text x="1180" y="165" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="300" fill="#999999">PERIOD STATUS</text>
+  <text x="1180" y="200" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="100" fill="#333333">89</text>
+  <text x="1240" y="200" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="100" fill="#333333">%</text>
+  <text x="1180" y="220" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666666">Complete</text>
+  
+  <!-- Data Tables -->
+  <text x="290" y="290" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#333333">Organizations</text>
+  <line x1="290" y1="300" x2="700" y2="300" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <!-- Clean Table -->
+  <text x="310" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Acme Corporation</text>
+  <text x="600" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Compliant</text>
+  <line x1="290" y1="340" x2="700" y2="340" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="310" y="365" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Global Industries Ltd</text>
+  <text x="600" y="365" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#ffc107">Review</text>
+  <line x1="290" y1="375" x2="700" y2="375" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="310" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">TechStart Inc</text>
+  <text x="600" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Compliant</text>
+  <line x1="290" y1="410" x2="700" y2="410" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="310" y="435" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Manufacturing Corp</text>
+  <text x="600" y="435" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Compliant</text>
+  <line x1="290" y1="445" x2="700" y2="445" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="310" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Services LLC</text>
+  <text x="600" y="470" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Compliant</text>
+  
+  <!-- Business Units Section -->
+  <text x="730" y="290" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#333333">Business Units</text>
+  <line x1="730" y1="300" x2="1140" y2="300" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <text x="750" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">North America</text>
+  <text x="1040" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">12 Controls</text>
+  <line x1="730" y1="340" x2="1140" y2="340" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="750" y="365" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Europe</text>
+  <text x="1040" y="365" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">8 Controls</text>
+  <line x1="730" y1="375" x2="1140" y2="375" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="750" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Asia Pacific</text>
+  <text x="1040" y="400" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#ffc107">5 Controls</text>
+  <line x1="730" y1="410" x2="1140" y2="410" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <!-- Departments -->
+  <text x="290" y="520" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#333333">Departments</text>
+  <line x1="290" y1="530" x2="700" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <text x="310" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Finance</text>
+  <text x="600" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">45 Controls</text>
+  <line x1="290" y1="570" x2="700" y2="570" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="310" y="595" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Operations</text>
+  <text x="600" y="595" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">32 Controls</text>
+  <line x1="290" y1="605" x2="700" y2="605" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="310" y="630" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">IT</text>
+  <text x="600" y="630" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#ffc107">28 Controls</text>
+  <line x1="290" y1="640" x2="700" y2="640" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <!-- Controls -->
+  <text x="730" y="520" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#333333">Controls</text>
+  <line x1="730" y1="530" x2="1140" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <text x="750" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Financial Reporting</text>
+  <text x="1040" y="560" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Effective</text>
+  <line x1="730" y1="570" x2="1140" y2="570" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="750" y="595" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Access Management</text>
+  <text x="1040" y="595" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Effective</text>
+  <line x1="730" y1="605" x2="1140" y2="605" stroke="#f8f8f8" stroke-width="1"/>
+  
+  <text x="750" y="630" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#333333">Change Management</text>
+  <text x="1040" y="630" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#ffc107">Review</text>
+  
+  <!-- Minimal Actions -->
+  <text x="290" y="710" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#333333">Actions</text>
+  <line x1="290" y1="720" x2="1380" y2="720" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <rect x="290" y="740" width="150" height="35" fill="#ffffff" stroke="#007bff" stroke-width="1" rx="3"/>
+  <text x="340" y="760" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#007bff">Download</text>
+  
+  <rect x="460" y="740" width="150" height="35" fill="#ffffff" stroke="#28a745" stroke-width="1" rx="3"/>
+  <text x="515" y="760" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#28a745">Generate</text>
+  
+  <rect x="630" y="740" width="150" height="35" fill="#ffffff" stroke="#17a2b8" stroke-width="1" rx="3"/>
+  <text x="690" y="760" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#17a2b8">Export</text>
+</svg>

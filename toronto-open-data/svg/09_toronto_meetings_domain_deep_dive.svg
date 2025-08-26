@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 1800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial Black', sans-serif; font-size: 24px; font-weight: bold; }
+      .section-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; }
+      .subsection { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; }
+      .code { font-family: 'Courier New', monospace; font-size: 10px; }
+      .highlight { fill: #e8f4f8; stroke: #2196F3; stroke-width: 2; }
+      .tmmis-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .dataset-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .process-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .governance-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .insights-box { fill: #fce4ec; stroke: #e91e63; stroke-width: 2; }
+      .retired-box { fill: #ffebee; stroke: #f44336; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1800" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#1976d2"/>
+  <text x="600" y="45" text-anchor="middle" class="title" fill="white">🏛️ Toronto Meetings Domain - Deep Dive Analysis</text>
+
+  <!-- Domain Overview -->
+  <rect x="20" y="100" width="1160" height="180" class="highlight" rx="10"/>
+  <text x="40" y="130" class="section-title" fill="#2196F3">📊 Meetings Domain Overview</text>
+
+  <rect x="40" y="150" width="1120" height="110" fill="white" stroke="#2196F3" stroke-width="2" rx="8"/>
+  <text x="60" y="175" class="subsection" fill="#2196F3">Toronto Meeting Management Information System (TMMIS) Ecosystem</text>
+  <text x="60" y="195" class="text" fill="#000">The meetings domain represents Toronto's commitment to democratic transparency through comprehensive</text>
+  <text x="60" y="210" class="text" fill="#000">digital governance. This domain encompasses 5 specialized datasets tracking every aspect of municipal</text>
+  <text x="60" y="225" class="text" fill="#000">decision-making: from meeting schedules to individual voting records and conflict declarations.</text>
+  <text x="60" y="245" class="text" fill="#2196F3" font-weight="bold">Status: Mixed (3 Active, 2 Retired) | Coverage: 2006-2026 | Update Frequency: Real-time to Monthly</text>
+
+  <!-- TMMIS System Architecture -->
+  <rect x="20" y="300" width="1160" height="350" class="tmmis-box" rx="10"/>
+  <text x="40" y="330" class="section-title" fill="#1976d2">🖥️ TMMIS System Architecture</text>
+
+  <!-- Core System -->
+  <rect x="40" y="350" width="360" height="140" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="50" y="370" class="subsection" fill="#000">🏗️ Core Infrastructure</text>
+  <text x="50" y="390" class="small" fill="#1976d2" font-weight="bold">Toronto Meeting Management Information System</text>
+  <text x="50" y="405" class="small" fill="#000">• Web-based municipal governance platform</text>
+  <text x="50" y="420" class="small" fill="#000">• Real-time meeting information</text>
+  <text x="50" y="435" class="small" fill="#000">• Integrated with City Clerk operations</text>
+  <text x="50" y="450" class="small" fill="#000">• JavaScript-enabled interface</text>
+  <text x="50" y="465" class="small" fill="#000">• Public access since 1999</text>
+  <text x="50" y="480" class="small" fill="#1976d2">Contact: clerk@toronto.ca</text>
+
+  <!-- Data Flow -->
+  <rect x="420" y="350" width="360" height="140" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="430" y="370" class="subsection" fill="#000">🔄 Data Processing Flow</text>
+  <text x="430" y="390" class="small" fill="#000">1. Meeting occurs with official recording</text>
+  <text x="430" y="405" class="small" fill="#000">2. Minutes published (several days delay)</text>
+  <text x="430" y="420" class="small" fill="#000">3. TMMIS database updated</text>
+  <text x="430" y="435" class="small" fill="#000">4. Open Data portal synchronized</text>
+  <text x="430" y="450" class="small" fill="#000">5. CSV/XML/JSON exports generated</text>
+  <text x="430" y="465" class="small" fill="#000">6. Public access through multiple channels</text>
+  <text x="430" y="480" class="small" fill="#1976d2">Update frequency: "As available"</text>
+
+  <!-- Integration Points -->
+  <rect x="800" y="350" width="360" height="140" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="810" y="370" class="subsection" fill="#000">🔗 Integration Ecosystem</text>
+  <text x="810" y="390" class="small" fill="#1976d2" font-weight="bold">Connected Systems:</text>
+  <text x="810" y="405" class="small" fill="#000">• Municipal Code Chapter 27 compliance</text>
+  <text x="810" y="420" class="small" fill="#000">• Municipal Conflict of Interest Act</text>
+  <text x="810" y="435" class="small" fill="#000">• Open Data Portal (CKAN API)</text>
+  <text x="810" y="450" class="small" fill="#000">• City Council procedures by-law</text>
+  <text x="810" y="465" class="small" fill="#000">• Board secretariat systems</text>
+  <text x="810" y="480" class="small" fill="#1976d2">Full legislative compliance framework</text>
+
+  <!-- Historical Context -->
+  <rect x="40" y="510" width="1120" height="130" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="50" y="530" class="subsection" fill="#000">📅 Historical Evolution &amp; Milestones</text>
+  <text x="50" y="550" class="small" fill="#000">1999: TMMIS launched - First digital meeting management</text>
+  <text x="50" y="565" class="small" fill="#000">2006: Systematic voting record collection begins</text>
+  <text x="50" y="580" class="small" fill="#000">2010: Downloadable format introduction (CSV/XML/JSON)</text>
+  <text x="50" y="595" class="small" fill="#000">2019: Municipal Conflict of Interest Act changes - Written declarations required</text>
+  <text x="50" y="610" class="small" fill="#000">2025: Current term coverage (2022-2026), mixed dataset status</text>
+  <text x="50" y="625" class="small" fill="#1976d2" font-weight="bold">20+ years of continuous digital governance innovation</text>
+
+  <!-- 5 Datasets Analysis -->
+  <rect x="20" y="670" width="1160" height="650" class="dataset-box" rx="10"/>
+  <text x="40" y="700" class="section-title" fill="#4caf50">📁 Five Core Datasets Analysis</text>
+
+  <!-- Dataset 1: Meeting Schedule -->
+  <rect x="40" y="720" width="560" height="120" class="retired-box" rx="5"/>
+  <text x="50" y="740" class="subsection" fill="#f44336">📅 1. City Council Meeting Schedule Reports [RETIRED]</text>
+  <text x="50" y="760" class="small" fill="#000">Original Purpose: Real-time meeting schedule from TMMIS extraction</text>
+  <text x="50" y="775" class="small" fill="#000">Data Structure: Date, start time, meeting name (end times not predictive)</text>
+  <text x="50" y="790" class="small" fill="#000">Coverage: Annual approved schedules for Council, Committees, Community Councils</text>
+  <text x="50" y="805" class="small" fill="#f44336" font-weight="bold">Status: RETIRED - Functionality likely integrated into live TMMIS system</text>
+  <text x="50" y="820" class="small" fill="#666">Calendar integration supported, static data after upload</text>
+  <text x="320" y="760" class="small" fill="#000">Update Frequency: Real-time (when active)</text>
+  <text x="320" y="775" class="small" fill="#000">Format: CSV, calendar-compatible</text>
+  <text x="320" y="790" class="small" fill="#000">Scope: City-wide meeting coordination</text>
+  <text x="320" y="805" class="small" fill="#000">Integration: Agencies, boards, tribunals</text>
+  <text x="320" y="820" class="small" fill="#000">Rescheduling: No Council approval needed</text>
+
+  <!-- Dataset 2: Declared Interests -->
+  <rect x="620" y="720" width="560" height="120" class="retired-box" rx="5"/>
+  <text x="630" y="740" class="subsection" fill="#f44336">⚖️ 2. Registry of Declared Interests [RETIRED]</text>
+  <text x="630" y="760" class="small" fill="#000">Legal Basis: Municipal Conflict of Interest Act (March 1, 2019 changes)</text>
+  <text x="630" y="775" class="small" fill="#000">Dual Declaration System: Verbal (in minutes) + Written (to Clerk)</text>
+  <text x="630" y="790" class="small" fill="#000">Historical Coverage: Pre-2019 verbal only, post-2019 both types</text>
+  <text x="630" y="805" class="small" fill="#f44336" font-weight="bold">Status: RETIRED - Compliance tracking may continue via other systems</text>
+  <text x="630" y="820" class="small" fill="#666">PDF links to original written declarations</text>
+  <text x="900" y="760" class="small" fill="#000">Fields: Committee, Member Names, Item #</text>
+  <text x="900" y="775" class="small" fill="#000">Item Title, Receive Date, Declarations</text>
+  <text x="900" y="790" class="small" fill="#000">Scope: Council members + appointed Board members</text>
+  <text x="900" y="805" class="small" fill="#000">Timing: Available after minutes published</text>
+  <text x="900" y="820" class="small" fill="#000">Transparency: Public inspection mandate</text>
+
+  <!-- Dataset 3: Voting Record -->
+  <rect x="40" y="860" width="560" height="120" fill="white" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="50" y="880" class="subsection" fill="#4caf50">🗳️ 3. Members Voting Record [ACTIVE]</text>
+  <text x="50" y="900" class="small" fill="#4caf50" font-weight="bold">Comprehensive Coverage: 2006-2026 (current term: 2022-2026)</text>
+  <text x="50" y="915" class="small" fill="#000">Vote Types: "Yes", "No", "Absent" (includes conflict abstentions)</text>
+  <text x="50" y="930" class="small" fill="#000">Scope: Recorded votes only (Article 12 Council Procedures by-law)</text>
+  <text x="50" y="945" class="small" fill="#000">Innovation: Downloadable format since 2010 (beyond published minutes)</text>
+  <text x="50" y="960" class="small" fill="#4caf50">Contact: clerk@toronto.ca | Update: As available</text>
+  <text x="320" y="900" class="small" fill="#000">Formats: CSV, XML, JSON</text>
+  <text x="320" y="915" class="small" fill="#000">Terms: Separate files per council term</text>
+  <text x="320" y="930" class="small" fill="#000">Timing: Available after minutes published</text>
+  <text x="320" y="945" class="small" fill="#000">Last Updated: 2025-08-08</text>
+  <text x="320" y="960" class="small" fill="#000">Access: Direct CKAN API endpoint</text>
+
+  <!-- Dataset 4: Attendance -->
+  <rect x="620" y="860" width="560" height="120" fill="white" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="630" y="880" class="subsection" fill="#4caf50">👥 4. Meeting Attendance Record [ACTIVE]</text>
+  <text x="630" y="900" class="small" fill="#4caf50" font-weight="bold">Session-Based Recording: New session = meeting recess</text>
+  <text x="630" y="915" class="small" fill="#000">Attendance Logic: Present if attending any/all sessions</text>
+  <text x="630" y="930" class="small" fill="#000">Special Indicators: "Closed Session", "Roll Call" for quorum</text>
+  <text x="630" y="945" class="small" fill="#000">Compliance: Municipal Code Chapter 27 Council Procedures</text>
+  <text x="630" y="960" class="small" fill="#4caf50">Legislative meeting support by City Clerk</text>
+  <text x="900" y="900" class="small" fill="#000">Timing: After minutes publication</text>
+  <text x="900" y="915" class="small" fill="#000">Coverage: All Council legislative meetings</text>
+  <text x="900" y="930" class="small" fill="#000">Granularity: By session within meetings</text>
+  <text x="900" y="945" class="small" fill="#000">Transparency: Individual member reports</text>
+  <text x="900" y="960" class="small" fill="#000">Download: CSV format available</text>
+
+  <!-- Dataset 5: Report Request Log -->
+  <rect x="40" y="1000" width="1120" height="120" fill="white" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="50" y="1020" class="subsection" fill="#4caf50">📋 5. Report Request Log - City Council and Committees [ACTIVE]</text>
+  <text x="50" y="1040" class="small" fill="#4caf50" font-weight="bold">Purpose: City Clerk's Office maintains comprehensive log of report requests</text>
+  <text x="50" y="1055" class="small" fill="#000">Scope: Council + Committees + Board of Health adopted requests</text>
+  <text x="50" y="1070" class="small" fill="#000">Request Status Tracking: Open → Closed → Due → Ongoing → Not Carried Forward (NCF)</text>
+  <text x="50" y="1085" class="small" fill="#000">Timing Logic: Specific dates (YYYY-MM-DD), timeframes (Q2 2019), or "not indicated"</text>
+  <text x="50" y="1100" class="small" fill="#4caf50">Exception: Manual compilation, reference/convenience purposes</text>
+  
+  <text x="620" y="1040" class="small" fill="#000">Update Cycle: End of each meeting cycle</text>
+  <text x="620" y="1055" class="small" fill="#000">Exclusions: Direct to Council, Budget briefings, Other Boards</text>
+  <text x="620" y="1070" class="small" fill="#000">Status Updates: councilmeeting@toronto.ca</text>
+  <text x="620" y="1085" class="small" fill="#000">Term Management: Outstanding requests not carried forward</text>
+  <text x="620" y="1100" class="small" fill="#000">Linking: "Closing" items referenced in status column</text>
+
+  <!-- Dataset Status Summary -->
+  <rect x="40" y="1140" width="1120" height="170" fill="white" stroke="#4caf50" stroke-width="2" rx="8"/>
+  <text x="60" y="1165" class="subsection" fill="#4caf50">📊 Dataset Status &amp; Availability Summary</text>
+  
+  <!-- Active Datasets -->
+  <rect x="80" y="1185" width="480" height="60" fill="#e8f5e8" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="90" y="1205" class="small" fill="#4caf50" font-weight="bold">✅ ACTIVE DATASETS (3):</text>
+  <text x="90" y="1220" class="small" fill="#000">• Voting Records: 2006-2026, multiple formats</text>
+  <text x="90" y="1235" class="small" fill="#000">• Attendance Records: Session-based tracking</text>
+  <text x="320" y="1220" class="small" fill="#000">• Report Request Log: Ongoing cycle updates</text>
+  <text x="320" y="1235" class="small" fill="#000">All provide real-time democratic oversight</text>
+
+  <!-- Retired Datasets -->
+  <rect x="580" y="1185" width="480" height="60" fill="#ffebee" stroke="#f44336" stroke-width="1" rx="3"/>
+  <text x="590" y="1205" class="small" fill="#f44336" font-weight="bold">❌ RETIRED DATASETS (2):</text>
+  <text x="590" y="1220" class="small" fill="#000">• Meeting Schedule: Likely integrated into live TMMIS</text>
+  <text x="590" y="1235" class="small" fill="#000">• Declared Interests: Legal compliance continues</text>
+  <text x="820" y="1220" class="small" fill="#000">Functions preserved in core systems</text>
+  <text x="820" y="1235" class="small" fill="#000">Data access may continue via other methods</text>
+
+  <text x="60" y="1275" class="text" fill="#4caf50" font-weight="bold">Overall Domain Health: 60% Active (3/5) | Core democratic functions maintained</text>
+  <text x="60" y="1295" class="text" fill="#000">2025 Status: Primary datasets (voting, attendance, reports) continue comprehensive tracking</text>
+
+  <!-- Governance Insights -->
+  <rect x="20" y="1340" width="1160" height="280" class="governance-box" rx="10"/>
+  <text x="40" y="1370" class="section-title" fill="#9c27b0">🏛️ Democratic Governance Insights</text>
+
+  <!-- Transparency Mechanisms -->
+  <rect x="40" y="1390" width="360" height="120" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="1410" class="subsection" fill="#000">🔍 Transparency Mechanisms</text>
+  <text x="50" y="1430" class="small" fill="#9c27b0" font-weight="bold">Multi-Layer Oversight:</text>
+  <text x="50" y="1445" class="small" fill="#000">• Real-time meeting schedules</text>
+  <text x="50" y="1460" class="small" fill="#000">• Individual voting accountability</text>
+  <text x="50" y="1475" class="small" fill="#000">• Attendance performance tracking</text>
+  <text x="50" y="1490" class="small" fill="#000">• Conflict of interest disclosure</text>
+  <text x="50" y="1505" class="small" fill="#9c27b0">Complete democratic process visibility</text>
+
+  <!-- Legal Compliance -->
+  <rect x="420" y="1390" width="360" height="120" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="430" y="1410" class="subsection" fill="#000">⚖️ Legal Compliance Framework</text>
+  <text x="430" y="1430" class="small" fill="#9c27b0" font-weight="bold">Regulatory Integration:</text>
+  <text x="430" y="1445" class="small" fill="#000">• Municipal Code Chapter 27</text>
+  <text x="430" y="1460" class="small" fill="#000">• Municipal Conflict of Interest Act</text>
+  <text x="430" y="1475" class="small" fill="#000">• Council Procedures by-law</text>
+  <text x="430" y="1490" class="small" fill="#000">• Open Government requirements</text>
+  <text x="430" y="1505" class="small" fill="#9c27b0">Full legislative compliance automation</text>
+
+  <!-- Citizen Engagement -->
+  <rect x="800" y="1390" width="360" height="120" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="810" y="1410" class="subsection" fill="#000">👥 Citizen Engagement Impact</text>
+  <text x="810" y="1430" class="small" fill="#9c27b0" font-weight="bold">Democratic Participation:</text>
+  <text x="810" y="1445" class="small" fill="#000">• Public access since 1999</text>
+  <text x="810" y="1460" class="small" fill="#000">• Multiple format support (CSV/XML/JSON)</text>
+  <text x="810" y="1475" class="small" fill="#000">• Individual member accountability</text>
+  <text x="810" y="1490" class="small" fill="#000">• Report request transparency</text>
+  <text x="810" y="1505" class="small" fill="#9c27b0">Informed civic engagement enabling</text>
+
+  <!-- Technical Innovation -->
+  <rect x="40" y="1530" width="1120" height="80" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="1550" class="subsection" fill="#000">💻 Technical Innovation in Democratic Process</text>
+  <text x="50" y="1570" class="text" fill="#000">Toronto's meetings domain represents 25+ years of digital governance evolution, from basic web publishing (1999)</text>
+  <text x="50" y="1585" class="text" fill="#000">to comprehensive API-driven transparency (2025). The integration of TMMIS, CKAN, and multiple data formats</text>
+  <text x="50" y="1600" class="text" fill="#9c27b0" font-weight="bold">creates a world-class model for municipal transparency and democratic accountability.</text>
+
+  <!-- Future Opportunities -->
+  <rect x="20" y="1640" width="1160" height="140" class="insights-box" rx="10"/>
+  <text x="40" y="1670" class="section-title" fill="#e91e63">🚀 Future Analysis Opportunities</text>
+
+  <rect x="40" y="1690" width="1120" height="80" fill="white" stroke="#e91e63" stroke-width="2" rx="8"/>
+  <text x="60" y="1715" class="subsection" fill="#e91e63">🎯 Potential Dashboard Visualizations</text>
+  <text x="60" y="1735" class="text" fill="#000">• Council Voting Patterns Analysis (2006-2026): Trend analysis, member alignment, issue tracking</text>
+  <text x="60" y="1750" class="text" fill="#000">• Meeting Attendance Performance: Individual/committee performance, session participation rates</text>
+  <text x="60" y="1765" class="text" fill="#e91e63" font-weight="bold">• Report Request Flow Visualization: Request lifecycle, department response times, completion rates</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

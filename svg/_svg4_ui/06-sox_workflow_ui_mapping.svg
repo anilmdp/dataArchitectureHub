@@ -1,0 +1,475 @@
+<svg viewBox="0 0 1600 2400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="loginGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="setupGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="planningGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="foundationGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="executionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="optimizeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#138d75;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scalingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2c3e50"/>
+    </marker>
+    <marker id="decisionArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="2400" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1600" height="80" fill="#2c3e50"/>
+  <text x="800" y="30" text-anchor="middle" fill="white" font-size="24" font-weight="bold" font-family="Arial">SOX WORKFLOW &amp; UI MAPPING DIAGRAM</text>
+  <text x="800" y="55" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Complete User Journey from Login to SOX Compliance Achievement</text>
+
+  <!-- PHASE 1: LOGIN & AUTHENTICATION -->
+  <rect x="50" y="100" width="1500" height="120" rx="10" fill="url(#loginGrad)" filter="url(#shadow)"/>
+  <text x="800" y="130" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 1: LOGIN &amp; AUTHENTICATION</text>
+  
+  <!-- Login Flow -->
+  <rect x="80" y="150" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#2980b9" stroke-width="2"/>
+  <text x="180" y="170" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">LOGIN SCREEN</text>
+  <text x="180" y="185" text-anchor="middle" fill="#2c3e50" font-size="10" font-family="Arial">SSO Integration</text>
+  <text x="180" y="200" text-anchor="middle" fill="#2c3e50" font-size="9" font-family="Arial">Active Directory Auth</text>
+
+  <rect x="320" y="150" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#2980b9" stroke-width="2"/>
+  <text x="420" y="170" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">ROLE DETECTION</text>
+  <text x="420" y="185" text-anchor="middle" fill="#2c3e50" font-size="10" font-family="Arial">Executive/Manager/Analyst</text>
+  <text x="420" y="200" text-anchor="middle" fill="#2c3e50" font-size="9" font-family="Arial">Persona-based routing</text>
+
+  <rect x="560" y="150" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#2980b9" stroke-width="2"/>
+  <text x="660" y="170" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">DASHBOARD ROUTER</text>
+  <text x="660" y="185" text-anchor="middle" fill="#2c3e50" font-size="10" font-family="Arial">Route to appropriate UI</text>
+  <text x="660" y="200" text-anchor="middle" fill="#2c3e50" font-size="9" font-family="Arial">Based on role &amp; phase</text>
+
+  <!-- First Time Setup Branch -->
+  <rect x="1200" y="150" width="220" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e74c3c" stroke-width="2"/>
+  <text x="1310" y="170" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">FIRST TIME SETUP?</text>
+  <text x="1310" y="185" text-anchor="middle" fill="#e74c3c" font-size="10" font-family="Arial">Decision Point</text>
+  <text x="1310" y="200" text-anchor="middle" fill="#2c3e50" font-size="9" font-family="Arial">Yes → Setup | No → Dashboard</text>
+
+  <!-- Flow Arrows -->
+  <path d="M 280 180 L 320 180" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 520 180 L 560 180" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 760 180 L 1200 180" stroke="#2c3e50" stroke-width="3" marker-end="url(#decisionArrow)"/>
+
+  <!-- PHASE 2: INITIAL SETUP (First Time Users) -->
+  <rect x="50" y="240" width="1500" height="160" rx="10" fill="url(#setupGrad)" filter="url(#shadow)"/>
+  <text x="800" y="270" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 2: INITIAL SETUP (First Time Implementation)</text>
+  
+  <!-- Setup UI Components -->
+  <rect x="80" y="290" width="280" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#8e44ad" stroke-width="2"/>
+  <text x="220" y="310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">ORGANIZATION SETUP WIZARD</text>
+  <text x="90" y="330" fill="#2c3e50" font-size="10" font-family="Arial">• Company structure input</text>
+  <text x="90" y="345" fill="#2c3e50" font-size="10" font-family="Arial">• Legal entities configuration</text>
+  <text x="90" y="360" fill="#2c3e50" font-size="10" font-family="Arial">• Business units mapping</text>
+  <text x="90" y="375" fill="#2c3e50" font-size="10" font-family="Arial">• User role definitions</text>
+
+  <rect x="390" y="290" width="280" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#8e44ad" stroke-width="2"/>
+  <text x="530" y="310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">INTEGRATION SETUP</text>
+  <text x="400" y="330" fill="#2c3e50" font-size="10" font-family="Arial">• SAP connection configuration</text>
+  <text x="400" y="345" fill="#2c3e50" font-size="10" font-family="Arial">• Active Directory sync</text>
+  <text x="400" y="360" fill="#2c3e50" font-size="10" font-family="Arial">• Office 365 integration</text>
+  <text x="400" y="375" fill="#2c3e50" font-size="10" font-family="Arial">• Email notifications setup</text>
+
+  <rect x="700" y="290" width="280" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#8e44ad" stroke-width="2"/>
+  <text x="840" y="310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">TEAM ONBOARDING</text>
+  <text x="710" y="330" fill="#2c3e50" font-size="10" font-family="Arial">• Team member invitations</text>
+  <text x="710" y="345" fill="#2c3e50" font-size="10" font-family="Arial">• Role assignments</text>
+  <text x="710" y="360" fill="#2c3e50" font-size="10" font-family="Arial">• Initial training assignments</text>
+  <text x="710" y="375" fill="#2c3e50" font-size="10" font-family="Arial">• Access permissions setup</text>
+
+  <rect x="1010" y="290" width="280" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#8e44ad" stroke-width="2"/>
+  <text x="1150" y="310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">INITIAL ASSESSMENT</text>
+  <text x="1020" y="330" fill="#2c3e50" font-size="10" font-family="Arial">• Current SOX maturity level</text>
+  <text x="1020" y="345" fill="#2c3e50" font-size="10" font-family="Arial">• Existing control inventory</text>
+  <text x="1020" y="360" fill="#2c3e50" font-size="10" font-family="Arial">• Risk tolerance settings</text>
+  <text x="1020" y="375" fill="#2c3e50" font-size="10" font-family="Arial">• Timeline &amp; budget planning</text>
+
+  <!-- Setup Flow -->
+  <path d="M 360 340 L 390 340" stroke="#8e44ad" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 670 340 L 700 340" stroke="#8e44ad" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 980 340 L 1010 340" stroke="#8e44ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Connection to Planning Phase -->
+  <path d="M 800 400 L 800 440" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 3: STRATEGIC PLANNING -->
+  <rect x="50" y="440" width="1500" height="180" rx="10" fill="url(#planningGrad)" filter="url(#shadow)"/>
+  <text x="800" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 3: STRATEGIC PLANNING &amp; ASSESSMENT (Weeks 1-8)</text>
+  
+  <!-- Executive Dashboard -->
+  <rect x="80" y="490" width="340" height="120" rx="8" fill="rgba(255,255,255,0.9)" stroke="#c0392b" stroke-width="2"/>
+  <text x="250" y="510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">EXECUTIVE DASHBOARD</text>
+  <text x="90" y="530" fill="#2c3e50" font-size="10" font-family="Arial">📊 High-level progress tracking</text>
+  <text x="90" y="545" fill="#2c3e50" font-size="10" font-family="Arial">💰 Budget allocation &amp; approval</text>
+  <text x="90" y="560" fill="#2c3e50" font-size="10" font-family="Arial">⏰ Timeline review &amp; sign-off</text>
+  <text x="90" y="575" fill="#2c3e50" font-size="10" font-family="Arial">🎯 Strategic objectives setting</text>
+  <text x="90" y="590" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">Primary Users: CEO, CFO, Executive Team</text>
+
+  <!-- Manager Planning Interface -->
+  <rect x="450" y="490" width="340" height="120" rx="8" fill="rgba(255,255,255,0.9)" stroke="#c0392b" stroke-width="2"/>
+  <text x="620" y="510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">MANAGER PLANNING INTERFACE</text>
+  <text x="460" y="530" fill="#2c3e50" font-size="10" font-family="Arial">📋 Project plan creation</text>
+  <text x="460" y="545" fill="#2c3e50" font-size="10" font-family="Arial">👥 Resource allocation planning</text>
+  <text x="460" y="560" fill="#2c3e50" font-size="10" font-family="Arial">📈 Risk assessment matrix</text>
+  <text x="460" y="575" fill="#2c3e50" font-size="10" font-family="Arial">🔍 Gap analysis tool</text>
+  <text x="460" y="590" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">Primary Users: SOX Manager, IT Manager</text>
+
+  <!-- Analyst Assessment Tools -->
+  <rect x="820" y="490" width="340" height="120" rx="8" fill="rgba(255,255,255,0.9)" stroke="#c0392b" stroke-width="2"/>
+  <text x="990" y="510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">ANALYST ASSESSMENT TOOLS</text>
+  <text x="830" y="530" fill="#2c3e50" font-size="10" font-family="Arial">🔎 Current state documentation</text>
+  <text x="830" y="545" fill="#2c3e50" font-size="10" font-family="Arial">📊 Process mapping interface</text>
+  <text x="830" y="560" fill="#2c3e50" font-size="10" font-family="Arial">⚠️ Risk identification forms</text>
+  <text x="830" y="575" fill="#2c3e50" font-size="10" font-family="Arial">📝 Requirements gathering</text>
+  <text x="830" y="590" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">Primary Users: SOX Analysts, Process Owners</text>
+
+  <!-- AI Recommendation Engine -->
+  <rect x="1190" y="490" width="330" height="120" rx="8" fill="rgba(255,255,255,0.9)" stroke="#9b59b6" stroke-width="3"/>
+  <text x="1355" y="510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">AI RECOMMENDATION ENGINE</text>
+  <text x="1200" y="530" fill="#9b59b6" font-size="10" font-family="Arial">🤖 Industry best practices suggestions</text>
+  <text x="1200" y="545" fill="#9b59b6" font-size="10" font-family="Arial">📈 Timeline optimization recommendations</text>
+  <text x="1200" y="560" fill="#9b59b6" font-size="10" font-family="Arial">💡 Resource optimization insights</text>
+  <text x="1200" y="575" fill="#9b59b6" font-size="10" font-family="Arial">⚡ Quick-win identification</text>
+  <text x="1200" y="590" fill="#9b59b6" font-size="9" font-weight="bold" font-family="Arial">Background AI Service - All Users</text>
+
+  <!-- Flow to Foundation -->
+  <path d="M 800 620 L 800 660" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 4: FOUNDATION IMPLEMENTATION -->
+  <rect x="50" y="660" width="1500" height="280" rx="10" fill="url(#foundationGrad)" filter="url(#shadow)"/>
+  <text x="800" y="690" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 4: FOUNDATION IMPLEMENTATION (Weeks 9-36)</text>
+  
+  <!-- Layer 1: Infrastructure -->
+  <rect x="80" y="710" width="360" height="55" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e67e22" stroke-width="2"/>
+  <text x="260" y="730" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">LAYER 1: INFRASTRUCTURE SETUP UI</text>
+  <text x="90" y="745" fill="#2c3e50" font-size="10" font-family="Arial">🔧 Server deployment dashboard • 🔐 Security configuration • 📡 Integration status</text>
+  <text x="90" y="755" fill="#e67e22" font-size="9" font-weight="bold" font-family="Arial">Users: IT Team, Technical Lead</text>
+
+  <!-- Layer 2: Business Configuration -->
+  <rect x="80" y="775" width="360" height="55" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e67e22" stroke-width="2"/>
+  <text x="260" y="795" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">LAYER 2: BUSINESS CONFIG UI</text>
+  <text x="90" y="810" fill="#2c3e50" font-size="10" font-family="Arial">📋 Control library builder • 🏢 Org structure config • 🤖 AI template generator</text>
+  <text x="90" y="820" fill="#e67e22" font-size="9" font-weight="bold" font-family="Arial">Users: SOX Manager, Business Analysts</text>
+
+  <!-- Layer 3: User Training -->
+  <rect x="80" y="840" width="360" height="55" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e67e22" stroke-width="2"/>
+  <text x="260" y="860" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">LAYER 3: TRAINING PORTAL</text>
+  <text x="90" y="875" fill="#2c3e50" font-size="10" font-family="Arial">🎓 Interactive training modules • 📖 Documentation library • 📊 Progress tracking</text>
+  <text x="90" y="885" fill="#e67e22" font-size="9" font-weight="bold" font-family="Arial">Users: All Team Members, End Users</text>
+
+  <!-- Concurrent UI Systems -->
+  <rect x="470" y="710" width="360" height="185" rx="8" fill="rgba(255,255,255,0.9)" stroke="#27ae60" stroke-width="2"/>
+  <text x="650" y="730" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">CONCURRENT UI SYSTEMS</text>
+  
+  <text x="480" y="750" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">📊 PROGRESS DASHBOARD</text>
+  <text x="480" y="765" fill="#2c3e50" font-size="9" font-family="Arial">• Real-time layer completion tracking</text>
+  <text x="480" y="777" fill="#2c3e50" font-size="9" font-family="Arial">• Resource utilization monitoring</text>
+  
+  <text x="480" y="795" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">⚠️ ISSUE MANAGEMENT</text>
+  <text x="480" y="810" fill="#2c3e50" font-size="9" font-family="Arial">• Blocker identification &amp; escalation</text>
+  <text x="480" y="822" fill="#2c3e50" font-size="9" font-family="Arial">• Risk mitigation workflows</text>
+  
+  <text x="480" y="840" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">👥 COLLABORATION TOOLS</text>
+  <text x="480" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• Team communication center</text>
+  <text x="480" y="867" fill="#2c3e50" font-size="9" font-family="Arial">• Document sharing &amp; approval</text>
+  <text x="480" y="879" fill="#2c3e50" font-size="9" font-family="Arial">• Meeting scheduler &amp; notes</text>
+
+  <!-- AI Learning Interface -->
+  <rect x="860" y="710" width="320" height="185" rx="8" fill="rgba(255,255,255,0.9)" stroke="#9b59b6" stroke-width="3"/>
+  <text x="1020" y="730" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">AI LEARNING INTERFACE</text>
+  
+  <text x="870" y="750" fill="#9b59b6" font-size="11" font-weight="bold" font-family="Arial">🔍 PATTERN RECOGNITION</text>
+  <text x="870" y="765" fill="#2c3e50" font-size="9" font-family="Arial">• Excel workflow analysis</text>
+  <text x="870" y="777" fill="#2c3e50" font-size="9" font-family="Arial">• Business rule extraction</text>
+  
+  <text x="870" y="795" fill="#9b59b6" font-size="11" font-weight="bold" font-family="Arial">🎯 TEMPLATE GENERATION</text>
+  <text x="870" y="810" fill="#2c3e50" font-size="9" font-family="Arial">• Control procedure automation</text>
+  <text x="870" y="822" fill="#2c3e50" font-size="9" font-family="Arial">• Testing methodology creation</text>
+  
+  <text x="870" y="840" fill="#9b59b6" font-size="11" font-weight="bold" font-family="Arial">📈 LEARNING ANALYTICS</text>
+  <text x="870" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• Model accuracy tracking</text>
+  <text x="870" y="867" fill="#2c3e50" font-size="9" font-family="Arial">• User adoption metrics</text>
+  <text x="870" y="879" fill="#2c3e50" font-size="9" font-family="Arial">• Improvement recommendations</text>
+
+  <!-- Testing & Validation UI -->
+  <rect x="1210" y="710" width="310" height="185" rx="8" fill="rgba(255,255,255,0.9)" stroke="#3498db" stroke-width="2"/>
+  <text x="1365" y="730" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">TESTING &amp; VALIDATION UI</text>
+  
+  <text x="1220" y="750" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">🧪 SYSTEM TESTING</text>
+  <text x="1220" y="765" fill="#2c3e50" font-size="9" font-family="Arial">• Load testing dashboard</text>
+  <text x="1220" y="777" fill="#2c3e50" font-size="9" font-family="Arial">• Security test results</text>
+  
+  <text x="1220" y="795" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">✅ USER ACCEPTANCE</text>
+  <text x="1220" y="810" fill="#2c3e50" font-size="9" font-family="Arial">• UAT workflow interface</text>
+  <text x="1220" y="822" fill="#2c3e50" font-size="9" font-family="Arial">• Approval tracking system</text>
+  
+  <text x="1220" y="840" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">🔍 AUDITOR REVIEW</text>
+  <text x="1220" y="855" fill="#2c3e50" font-size="9" font-family="Arial">• External auditor portal</text>
+  <text x="1220" y="867" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence package viewer</text>
+  <text x="1220" y="879" fill="#2c3e50" font-size="9" font-family="Arial">• Audit trail documentation</text>
+
+  <!-- Flow to Execution -->
+  <path d="M 800 940 L 800 980" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 5: SOX CYCLE EXECUTION -->
+  <rect x="50" y="980" width="1500" height="220" rx="10" fill="url(#executionGrad)" filter="url(#shadow)"/>
+  <text x="800" y="1010" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 5: SOX CYCLE EXECUTION (Weeks 37-72)</text>
+  
+  <!-- Quarterly Testing Interface -->
+  <rect x="80" y="1030" width="360" height="160" rx="8" fill="rgba(255,255,255,0.9)" stroke="#229954" stroke-width="2"/>
+  <text x="260" y="1050" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">QUARTERLY TESTING INTERFACE</text>
+  
+  <text x="90" y="1070" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">Q1 TESTING (Weeks 37-48)</text>
+  <text x="90" y="1085" fill="#2c3e50" font-size="9" font-family="Arial">• Conservative approach with 12 controls</text>
+  <text x="90" y="1097" fill="#2c3e50" font-size="9" font-family="Arial">• Manual testing with system support</text>
+  
+  <text x="90" y="1115" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">Q2-Q3 SCALING</text>
+  <text x="90" y="1130" fill="#2c3e50" font-size="9" font-family="Arial">• Expand to all 47 controls</text>
+  <text x="90" y="1142" fill="#2c3e50" font-size="9" font-family="Arial">• Increased automation</text>
+  
+  <text x="90" y="1160" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">YEAR-END PREP</text>
+  <text x="90" y="1175" fill="#2c3e50" font-size="9" font-family="Arial">• Management assessment</text>
+  <text x="90" y="1187" fill="#2c3e50" font-size="9" font-family="Arial">Users: SOX Analysts, Process Owners</text>
+
+  <!-- AI-Enhanced Testing -->
+  <rect x="470" y="1030" width="360" height="160" rx="8" fill="rgba(255,255,255,0.9)" stroke="#9b59b6" stroke-width="3"/>
+  <text x="650" y="1050" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">AI-ENHANCED TESTING UI</text>
+  
+  <text x="480" y="1070" fill="#9b59b6" font-size="11" font-weight="bold" font-family="Arial">🎯 SMART SAMPLE SELECTION</text>
+  <text x="480" y="1085" fill="#2c3e50" font-size="9" font-family="Arial">• AI-recommended sample sizes</text>
+  <text x="480" y="1097" fill="#2c3e50" font-size="9" font-family="Arial">• Risk-based selection algorithms</text>
+  
+  <text x="480" y="1115" fill="#9b59b6" font-size="11" font-weight="bold" font-family="Arial">⚡ AUTOMATED EVIDENCE</text>
+  <text x="480" y="1130" fill="#2c3e50" font-size="9" font-family="Arial">• Auto-collection from SAP/systems</text>
+  <text x="480" y="1142" fill="#2c3e50" font-size="9" font-family="Arial">• Document validation &amp; matching</text>
+  
+  <text x="480" y="1160" fill="#9b59b6" font-size="11" font-weight="bold" font-family="Arial">🔍 EXCEPTION DETECTION</text>
+  <text x="480" y="1175" fill="#2c3e50" font-size="9" font-family="Arial">• Pattern-based anomaly identification</text>
+  <text x="480" y="1187" fill="#2c3e50" font-size="9" font-family="Arial">Users: All Testing Personnel</text>
+
+  <!-- Real-time Analytics -->
+  <rect x="860" y="1030" width="320" height="160" rx="8" fill="rgba(255,255,255,0.9)" stroke="#3498db" stroke-width="2"/>
+  <text x="1020" y="1050" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">REAL-TIME ANALYTICS</text>
+  
+  <text x="870" y="1070" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">📊 TESTING PROGRESS</text>
+  <text x="870" y="1085" fill="#2c3e50" font-size="9" font-family="Arial">• Control completion tracking</text>
+  <text x="870" y="1097" fill="#2c3e50" font-size="9" font-family="Arial">• Exception trend analysis</text>
+  
+  <text x="870" y="1115" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">⚠️ RISK MONITORING</text>
+  <text x="870" y="1130" fill="#2c3e50" font-size="9" font-family="Arial">• Deficiency identification</text>
+  <text x="870" y="1142" fill="#2c3e50" font-size="9" font-family="Arial">• Remediation tracking</text>
+  
+  <text x="870" y="1160" fill="#3498db" font-size="11" font-weight="bold" font-family="Arial">📈 PERFORMANCE METRICS</text>
+  <text x="870" y="1175" fill="#2c3e50" font-size="9" font-family="Arial">• Efficiency improvements</text>
+  <text x="870" y="1187" fill="#2c3e50" font-size="9" font-family="Arial">Users: Managers, Executives</text>
+
+  <!-- Management Reporting -->
+  <rect x="1210" y="1030" width="310" height="160" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e67e22" stroke-width="2"/>
+  <text x="1365" y="1050" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">MANAGEMENT REPORTING</text>
+  
+  <text x="1220" y="1070" fill="#e67e22" font-size="11" font-weight="bold" font-family="Arial">📋 EXECUTIVE SUMMARY</text>
+  <text x="1220" y="1085" fill="#2c3e50" font-size="9" font-family="Arial">• High-level status dashboard</text>
+  <text x="1220" y="1097" fill="#2c3e50" font-size="9" font-family="Arial">• Board-ready presentations</text>
+  
+  <text x="1220" y="1115" fill="#e67e22" font-size="11" font-weight="bold" font-family="Arial">🔍 AUDIT PREPARATION</text>
+  <text x="1220" y="1130" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence package generation</text>
+  <text x="1220" y="1142" fill="#2c3e50" font-size="9" font-family="Arial">• Auditor collaboration portal</text>
+  
+  <text x="1220" y="1160" fill="#e67e22" font-size="11" font-weight="bold" font-family="Arial">📊 COMPLIANCE STATUS</text>
+  <text x="1220" y="1175" fill="#2c3e50" font-size="9" font-family="Arial">• Real-time compliance scoring</text>
+  <text x="1220" y="1187" fill="#2c3e50" font-size="9" font-family="Arial">Users: CFO, Executives</text>
+
+  <!-- Flow to Optimization -->
+  <path d="M 800 1200 L 800 1240" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 6: OPTIMIZATION -->
+  <rect x="50" y="1240" width="1500" height="160" rx="10" fill="url(#optimizeGrad)" filter="url(#shadow)"/>
+  <text x="800" y="1270" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 6: LESSONS LEARNED &amp; OPTIMIZATION (Weeks 73-78)</text>
+  
+  <!-- Knowledge Capture -->
+  <rect x="80" y="1290" width="360" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#138d75" stroke-width="2"/>
+  <text x="260" y="1310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">KNOWLEDGE CAPTURE SYSTEM</text>
+  <text x="90" y="1330" fill="#2c3e50" font-size="10" font-family="Arial">📝 Lessons learned documentation</text>
+  <text x="90" y="1345" fill="#2c3e50" font-size="10" font-family="Arial">🎯 Best practices codification</text>
+  <text x="90" y="1360" fill="#2c3e50" font-size="10" font-family="Arial">⚙️ Process optimization insights</text>
+  <text x="90" y="1375" fill="#16a085" font-size="9" font-weight="bold" font-family="Arial">Users: Project Team, AI System</text>
+
+  <!-- Template Library -->
+  <rect x="470" y="1290" width="360" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#138d75" stroke-width="2"/>
+  <text x="650" y="1310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">TEMPLATE LIBRARY MANAGEMENT</text>
+  <text x="480" y="1330" fill="#2c3e50" font-size="10" font-family="Arial">📚 47 control templates cataloged</text>
+  <text x="480" y="1345" fill="#2c3e50" font-size="10" font-family="Arial">🔍 Searchable knowledge base</text>
+  <text x="480" y="1360" fill="#2c3e50" font-size="10" font-family="Arial">⚡ Rapid deployment toolkit</text>
+  <text x="480" y="1375" fill="#16a085" font-size="9" font-weight="bold" font-family="Arial">Users: Future Implementation Teams</text>
+
+  <!-- AI Model Refinement -->
+  <rect x="860" y="1290" width="320" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#9b59b6" stroke-width="3"/>
+  <text x="1020" y="1310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">AI MODEL REFINEMENT</text>
+  <text x="870" y="1330" fill="#9b59b6" font-size="10" font-family="Arial">🤖 Advanced pattern recognition</text>
+  <text x="870" y="1345" fill="#9b59b6" font-size="10" font-family="Arial">📈 Predictive analytics enhancement</text>
+  <text x="870" y="1360" fill="#9b59b6" font-size="10" font-family="Arial">🎯 95% automation achievement</text>
+  <text x="870" y="1375" fill="#9b59b6" font-size="9" font-weight="bold" font-family="Arial">Background AI Enhancement</text>
+
+  <!-- ROI Analysis -->
+  <rect x="1210" y="1290" width="310" height="100" rx="8" fill="rgba(255,255,255,0.9)" stroke="#138d75" stroke-width="2"/>
+  <text x="1365" y="1310" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">ROI ANALYSIS DASHBOARD</text>
+  <text x="1220" y="1330" fill="#2c3e50" font-size="10" font-family="Arial">💰 Cost reduction metrics</text>
+  <text x="1220" y="1345" fill="#2c3e50" font-size="10" font-family="Arial">⏱️ Time savings quantification</text>
+  <text x="1220" y="1360" fill="#2c3e50" font-size="10" font-family="Arial">📊 Business value demonstration</text>
+  <text x="1220" y="1375" fill="#16a085" font-size="9" font-weight="bold" font-family="Arial">Users: Executives, Stakeholders</text>
+
+  <!-- Flow to Scaling -->
+  <path d="M 800 1400 L 800 1440" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 7: SCALING & MARKET EXPANSION -->
+  <rect x="50" y="1440" width="1500" height="140" rx="10" fill="url(#scalingGrad)" filter="url(#shadow)"/>
+  <text x="800" y="1470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">PHASE 7: SCALING &amp; MARKET EXPANSION (Implementation #2+)</text>
+  
+  <!-- Rapid Deployment -->
+  <rect x="80" y="1490" width="440" height="80" rx="8" fill="rgba(255,255,255,0.9)" stroke="#34495e" stroke-width="2"/>
+  <text x="300" y="1510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">RAPID DEPLOYMENT INTERFACE</text>
+  <text x="90" y="1530" fill="#2c3e50" font-size="10" font-family="Arial">⚡ Template-driven setup (16-20 weeks vs 72 weeks)</text>
+  <text x="90" y="1545" fill="#2c3e50" font-size="10" font-family="Arial">🤖 AI-automated configuration</text>
+  <text x="90" y="1560" fill="#2c3e50" font-size="10" font-family="Arial">Users: Implementation Teams, Customer Organizations</text>
+
+  <!-- Multi-Tenant Platform -->
+  <rect x="550" y="1490" width="440" height="80" rx="8" fill="rgba(255,255,255,0.9)" stroke="#34495e" stroke-width="2"/>
+  <text x="770" y="1510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">MULTI-TENANT PLATFORM</text>
+  <text x="560" y="1530" fill="#2c3e50" font-size="10" font-family="Arial">🏢 Multiple customer isolation</text>
+  <text x="560" y="1545" fill="#2c3e50" font-size="10" font-family="Arial">📊 Cross-customer analytics &amp; benchmarking</text>
+  <text x="560" y="1560" fill="#2c3e50" font-size="10" font-family="Arial">Users: Platform Administrators, Multiple Customers</text>
+
+  <!-- Partner Portal -->
+  <rect x="1020" y="1490" width="500" height="80" rx="8" fill="rgba(255,255,255,0.9)" stroke="#34495e" stroke-width="2"/>
+  <text x="1270" y="1510" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">PARTNER ECOSYSTEM PORTAL</text>
+  <text x="1030" y="1530" fill="#2c3e50" font-size="10" font-family="Arial">🤝 Implementation partner onboarding &amp; training</text>
+  <text x="1030" y="1545" fill="#2c3e50" font-size="10" font-family="Arial">💼 Sales &amp; delivery support tools</text>
+  <text x="1030" y="1560" fill="#2c3e50" font-size="10" font-family="Arial">Users: Implementation Partners, Sales Teams</text>
+
+  <!-- CONTINUOUS OPERATIONS -->
+  <rect x="50" y="1600" width="1500" height="120" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="800" y="1630" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">CONTINUOUS OPERATIONS &amp; PLATFORM EVOLUTION</text>
+  
+  <!-- Ongoing Monitoring -->
+  <rect x="80" y="1650" width="300" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#ecf0f1" stroke-width="2"/>
+  <text x="230" y="1670" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">24/7 MONITORING</text>
+  <text x="90" y="1685" fill="#2c3e50" font-size="9" font-family="Arial">• System health dashboards</text>
+  <text x="90" y="1697" fill="#2c3e50" font-size="9" font-family="Arial">• Performance optimization</text>
+
+  <!-- Customer Success -->
+  <rect x="400" y="1650" width="300" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#ecf0f1" stroke-width="2"/>
+  <text x="550" y="1670" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">CUSTOMER SUCCESS</text>
+  <text x="410" y="1685" fill="#2c3e50" font-size="9" font-family="Arial">• Usage analytics &amp; optimization</text>
+  <text x="410" y="1697" fill="#2c3e50" font-size="9" font-family="Arial">• Proactive support &amp; guidance</text>
+
+  <!-- Platform Evolution -->
+  <rect x="720" y="1650" width="300" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#ecf0f1" stroke-width="2"/>
+  <text x="870" y="1670" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">PLATFORM EVOLUTION</text>
+  <text x="730" y="1685" fill="#2c3e50" font-size="9" font-family="Arial">• Continuous feature development</text>
+  <text x="730" y="1697" fill="#2c3e50" font-size="9" font-family="Arial">• Market feedback integration</text>
+
+  <!-- Global Expansion -->
+  <rect x="1040" y="1650" width="480" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#ecf0f1" stroke-width="2"/>
+  <text x="1280" y="1670" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="bold" font-family="Arial">GLOBAL EXPANSION &amp; MARKET DOMINANCE</text>
+  <text x="1050" y="1685" fill="#2c3e50" font-size="9" font-family="Arial">• Multi-language support • Regional compliance adaptation</text>
+  <text x="1050" y="1697" fill="#2c3e50" font-size="9" font-family="Arial">• Enterprise-scale deployment • IPO/acquisition readiness</text>
+
+  <!-- USER FLOW LEGEND -->
+  <rect x="50" y="1740" width="1500" height="180" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="2"/>
+  <text x="800" y="1770" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold" font-family="Arial">USER FLOW LEGEND &amp; UI ROUTING RULES</text>
+  
+  <!-- Executive Flow -->
+  <rect x="80" y="1790" width="280" height="120" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+  <text x="220" y="1810" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">👔 EXECUTIVE FLOW</text>
+  <text x="90" y="1830" fill="#3498db" font-size="10" font-weight="bold" font-family="Arial">Login → Role: Executive</text>
+  <text x="90" y="1845" fill="#2c3e50" font-size="9" font-family="Arial">• Always routes to Executive Dashboard</text>
+  <text x="90" y="1857" fill="#2c3e50" font-size="9" font-family="Arial">• High-level progress &amp; budget focus</text>
+  <text x="90" y="1869" fill="#2c3e50" font-size="9" font-family="Arial">• Risk indicators &amp; strategic decisions</text>
+  <text x="90" y="1881" fill="#2c3e50" font-size="9" font-family="Arial">• Meeting scheduler &amp; board reports</text>
+  <text x="90" y="1893" fill="#3498db" font-size="9" font-weight="bold" font-family="Arial">Users: CEO, CFO, C-Suite</text>
+
+  <!-- Manager Flow -->
+  <rect x="380" y="1790" width="280" height="120" rx="8" fill="#f0f8e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="520" y="1810" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">👥 MANAGER FLOW</text>
+  <text x="390" y="1830" fill="#27ae60" font-size="10" font-weight="bold" font-family="Arial">Login → Role: Manager</text>
+  <text x="390" y="1845" fill="#2c3e50" font-size="9" font-family="Arial">• Routes to Manager Dashboard</text>
+  <text x="390" y="1857" fill="#2c3e50" font-size="9" font-family="Arial">• Detailed project management views</text>
+  <text x="390" y="1869" fill="#2c3e50" font-size="9" font-family="Arial">• Team resource allocation</text>
+  <text x="390" y="1881" fill="#2c3e50" font-size="9" font-family="Arial">• Issue escalation &amp; resolution</text>
+  <text x="390" y="1893" fill="#27ae60" font-size="9" font-weight="bold" font-family="Arial">Users: SOX Manager, IT Manager</text>
+
+  <!-- Analyst Flow -->
+  <rect x="680" y="1790" width="280" height="120" rx="8" fill="#fff8e1" stroke="#f39c12" stroke-width="2"/>
+  <text x="820" y="1810" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">🔍 ANALYST FLOW</text>
+  <text x="690" y="1830" fill="#f39c12" font-size="10" font-weight="bold" font-family="Arial">Login → Role: Analyst</text>
+  <text x="690" y="1845" fill="#2c3e50" font-size="9" font-family="Arial">• Routes to Task Dashboard</text>
+  <text x="690" y="1857" fill="#2c3e50" font-size="9" font-family="Arial">• Daily task lists &amp; priorities</text>
+  <text x="690" y="1869" fill="#2c3e50" font-size="9" font-family="Arial">• Control testing interfaces</text>
+  <text x="690" y="1881" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence collection tools</text>
+  <text x="690" y="1893" fill="#f39c12" font-size="9" font-weight="bold" font-family="Arial">Users: SOX Analysts, Testers</text>
+
+  <!-- Process Owner Flow -->
+  <rect x="980" y="1790" width="280" height="120" rx="8" fill="#f4ecf7" stroke="#9b59b6" stroke-width="2"/>
+  <text x="1120" y="1810" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">🏢 PROCESS OWNER FLOW</text>
+  <text x="990" y="1830" fill="#9b59b6" font-size="10" font-weight="bold" font-family="Arial">Login → Role: Process Owner</text>
+  <text x="990" y="1845" fill="#2c3e50" font-size="9" font-family="Arial">• Routes to Process Dashboard</text>
+  <text x="990" y="1857" fill="#2c3e50" font-size="9" font-family="Arial">• Process-specific control views</text>
+  <text x="990" y="1869" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence submission portals</text>
+  <text x="990" y="1881" fill="#2c3e50" font-size="9" font-family="Arial">• Training &amp; documentation access</text>
+  <text x="990" y="1893" fill="#9b59b6" font-size="9" font-weight="bold" font-family="Arial">Users: Business Process Owners</text>
+
+  <!-- External User Flow -->
+  <rect x="1280" y="1790" width="240" height="120" rx="8" fill="#fdf2f2" stroke="#e74c3c" stroke-width="2"/>
+  <text x="1400" y="1810" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold" font-family="Arial">🔍 EXTERNAL FLOW</text>
+  <text x="1290" y="1830" fill="#e74c3c" font-size="10" font-weight="bold" font-family="Arial">Login → Role: Auditor</text>
+  <text x="1290" y="1845" fill="#2c3e50" font-size="9" font-family="Arial">• Read-only audit portal</text>
+  <text x="1290" y="1857" fill="#2c3e50" font-size="9" font-family="Arial">• Evidence review interface</text>
+  <text x="1290" y="1869" fill="#2c3e50" font-size="9" font-family="Arial">• Audit trail access</text>
+  <text x="1290" y="1881" fill="#2c3e50" font-size="9" font-family="Arial">• Export capabilities</text>
+  <text x="1290" y="1893" fill="#e74c3c" font-size="9" font-weight="bold" font-family="Arial">Users: External Auditors</text>
+
+  <!-- Navigation Rules -->
+  <rect x="50" y="1940" width="1500" height="80" rx="8" fill="#e8f5e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="800" y="1965" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold" font-family="Arial">DYNAMIC UI ROUTING &amp; NAVIGATION RULES</text>
+  
+  <text x="70" y="1985" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">🔄 PHASE-AWARE ROUTING:</text>
+  <text x="70" y="2000" fill="#2c3e50" font-size="10" font-family="Arial">• Planning Phase: Focus on assessment &amp; setup interfaces • Foundation Phase: Layer-specific UI progression</text>
+  <text x="70" y="2012" fill="#2c3e50" font-size="10" font-family="Arial">• Execution Phase: Testing &amp; monitoring dashboards • Optimization: Knowledge capture &amp; template management</text>
+
+  <text x="800" y="1985" fill="#27ae60" font-size="11" font-weight="bold" font-family="Arial">⚡ CONTEXTUAL ADAPTATION:</text>
+  <text x="800" y="2000" fill="#2c3e50" font-size="10" font-family="Arial">• First-time users see setup wizards • Returning users bypass to appropriate dashboard</text>
+  <text x="800" y="2012" fill="#2c3e50" font-size="10" font-family="Arial">• AI learns user preferences &amp; customizes interface layout automatically</text>
+
+  <!-- Completion Status -->
+  <rect x="50" y="2040" width="1500" height="60" rx="8" fill="#d4edda" stroke="#28a745" stroke-width="3"/>
+  <text x="800" y="2065" text-anchor="middle" fill="#155724" font-size="16" font-weight="bold" font-family="Arial">✅ COMPLETE SOX WORKFLOW &amp; UI MAPPING</text>
+  <text x="800" y="2085" text-anchor="middle" fill="#155724" font-size="12" font-family="Arial">From Initial Login to Market-Dominant Platform - Every User Journey Mapped</text>
+
+</svg>

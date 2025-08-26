@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial Black', sans-serif; font-size: 24px; font-weight: bold; }
+      .section-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; }
+      .subsection { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; }
+      .code { font-family: 'Courier New', monospace; font-size: 10px; }
+      .highlight { fill: #e8f4f8; stroke: #2196F3; stroke-width: 2; }
+      .ckan-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .api-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .warning-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .success-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .data-box { fill: #fce4ec; stroke: #e91e63; stroke-width: 2; }
+      .tech-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#1976d2"/>
+  <text x="600" y="45" text-anchor="middle" class="title" fill="white">🛠️ CKAN Platform &amp; API Deep Dive</text>
+
+  <!-- CKAN Overview Section -->
+  <rect x="20" y="100" width="560" height="350" class="ckan-box" rx="10"/>
+  <text x="40" y="130" class="section-title" fill="#1976d2">📊 What is CKAN?</text>
+  
+  <!-- CKAN Definition -->
+  <rect x="40" y="150" width="520" height="120" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="50" y="175" class="subsection" fill="#000">Comprehensive Knowledge Archive Network</text>
+  <text x="50" y="195" class="text" fill="#000">CKAN is the world's leading open-source data portal platform, powering</text>
+  <text x="50" y="210" class="text" fill="#000">government data portals across the globe. Created by the Open Knowledge</text>
+  <text x="50" y="225" class="text" fill="#000">Foundation, it provides a complete web-based solution for storing,</text>
+  <text x="50" y="240" class="text" fill="#000">cataloging, and distributing open data.</text>
+  <text x="50" y="260" class="small" fill="#1976d2" font-weight="bold">Used by: Canada, UK, Australia, European Union, and 100+ organizations</text>
+
+  <!-- CKAN Features -->
+  <rect x="40" y="290" width="260" height="150" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="50" y="310" class="subsection" fill="#000">🔧 Core Features</text>
+  <text x="50" y="330" class="small" fill="#000">• Dataset catalog management</text>
+  <text x="50" y="345" class="small" fill="#000">• Metadata standardization</text>
+  <text x="50" y="360" class="small" fill="#000">• File upload &amp; storage</text>
+  <text x="50" y="375" class="small" fill="#000">• Search &amp; filtering</text>
+  <text x="50" y="390" class="small" fill="#000">• User management</text>
+  <text x="50" y="405" class="small" fill="#000">• API endpoints</text>
+  <text x="50" y="420" class="small" fill="#1976d2">Built on Python/PostgreSQL</text>
+
+  <rect x="320" y="290" width="240" height="150" fill="white" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="330" y="310" class="subsection" fill="#000">🌐 Why Governments Choose CKAN</text>
+  <text x="330" y="330" class="small" fill="#000">• Open source (no licensing costs)</text>
+  <text x="330" y="345" class="small" fill="#000">• Standards compliant (DCAT, W3C)</text>
+  <text x="330" y="360" class="small" fill="#000">• Scalable architecture</text>
+  <text x="330" y="375" class="small" fill="#000">• Extensive plugin ecosystem</text>
+  <text x="330" y="390" class="small" fill="#000">• Strong security model</text>
+  <text x="330" y="405" class="small" fill="#000">• API-first design</text>
+  <text x="330" y="420" class="small" fill="#1976d2">Perfect for transparency initiatives</text>
+
+  <!-- Toronto's CKAN Implementation -->
+  <rect x="620" y="100" width="560" height="350" class="api-box" rx="10"/>
+  <text x="640" y="130" class="section-title" fill="#4caf50">🏢 Toronto's CKAN Implementation</text>
+
+  <!-- Infrastructure -->
+  <rect x="640" y="150" width="520" height="100" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="650" y="175" class="subsection" fill="#000">🖥️ Infrastructure Setup</text>
+  <text x="650" y="195" class="code" fill="#000">Domain: ckan0.cf.opendata.inter.prod-toronto.ca</text>
+  <text x="650" y="210" class="text" fill="#000">Hosted on Toronto's cloud infrastructure with redundancy</text>
+  <text x="650" y="225" class="text" fill="#000">Load balanced, SSL secured, monitored 24/7</text>
+  <text x="650" y="240" class="small" fill="#4caf50">Production-grade deployment with high availability</text>
+
+  <!-- Organization Structure -->
+  <rect x="640" y="270" width="250" height="170" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="650" y="290" class="subsection" fill="#000">🏛️ Organization Structure</text>
+  <text x="650" y="310" class="small" fill="#000">Single Organization Model:</text>
+  <text x="650" y="325" class="code" fill="#000">City of Toronto</text>
+  <text x="650" y="340" class="code" fill="#666">ID: 6ed95875-f7d6-4200-964c</text>
+  <text x="650" y="355" class="code" fill="#666">-91024cc49cba</text>
+  <text x="650" y="375" class="small" fill="#000">All datasets unified under</text>
+  <text x="650" y="390" class="small" fill="#000">one organizational umbrella,</text>
+  <text x="650" y="405" class="small" fill="#000">simplifying management</text>
+  <text x="650" y="420" class="small" fill="#4caf50">523 active datasets</text>
+
+  <rect x="910" y="270" width="250" height="170" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="920" y="290" class="subsection" fill="#000">📁 Dataset Distribution</text>
+  <text x="920" y="310" class="small" fill="#000">Format Breakdown:</text>
+  <text x="920" y="325" class="small" fill="#000">• CSV: 65% (most common)</text>
+  <text x="920" y="340" class="small" fill="#000">• SHP: 20% (geographic)</text>
+  <text x="920" y="355" class="small" fill="#000">• JSON: 10% (web APIs)</text>
+  <text x="920" y="370" class="small" fill="#000">• XML: 3% (structured)</text>
+  <text x="920" y="385" class="small" fill="#000">• Other: 2% (PDF, KML, etc.)</text>
+  <text x="920" y="405" class="small" fill="#000">Focus on machine-readable</text>
+  <text x="920" y="420" class="small" fill="#4caf50">formats for automation</text>
+
+  <!-- API Endpoints Section -->
+  <rect x="20" y="480" width="1160" height="400" class="highlight" rx="10"/>
+  <text x="40" y="510" class="section-title" fill="#2196F3">🔗 CKAN API Endpoints (Action API v3)</text>
+
+  <!-- Core Endpoints -->
+  <rect x="40" y="530" width="360" height="200" fill="white" stroke="#2196F3" stroke-width="1" rx="5"/>
+  <text x="50" y="550" class="subsection" fill="#000">📋 Dataset Operations</text>
+  <text x="50" y="575" class="code" fill="#000">package_list</text>
+  <text x="50" y="590" class="small" fill="#666">Returns all dataset IDs (523 items)</text>
+  <text x="50" y="610" class="code" fill="#000">package_show?id={dataset_id}</text>
+  <text x="50" y="625" class="small" fill="#666">Full dataset metadata &amp; resources</text>
+  <text x="50" y="645" class="code" fill="#000">package_search?q={query}</text>
+  <text x="50" y="660" class="small" fill="#666">Search with filters &amp; facets</text>
+  <text x="50" y="680" class="code" fill="#000">current_package_list_with_resources</text>
+  <text x="50" y="695" class="small" fill="#666">All datasets with download URLs</text>
+  <text x="50" y="715" class="small" fill="#2196f3" font-weight="bold">Most commonly used endpoints</text>
+
+  <rect x="420" y="530" width="360" height="200" fill="white" stroke="#2196F3" stroke-width="1" rx="5"/>
+  <text x="430" y="550" class="subsection" fill="#000">🏢 Organization &amp; Groups</text>
+  <text x="430" y="575" class="code" fill="#000">organization_list</text>
+  <text x="430" y="590" class="small" fill="#666">Returns: ["city-of-toronto"]</text>
+  <text x="430" y="610" class="code" fill="#000">organization_show?id=city-of-toronto</text>
+  <text x="430" y="625" class="small" fill="#666">Organization details &amp; dataset count</text>
+  <text x="430" y="645" class="code" fill="#000">group_list</text>
+  <text x="430" y="660" class="small" fill="#666">Topic-based groupings</text>
+  <text x="430" y="680" class="code" fill="#000">tag_list</text>
+  <text x="430" y="695" class="small" fill="#666">All tags: toronto, transportation, etc.</text>
+  <text x="430" y="715" class="small" fill="#2196f3" font-weight="bold">Structure &amp; categorization</text>
+
+  <rect x="800" y="530" width="360" height="200" fill="white" stroke="#2196F3" stroke-width="1" rx="5"/>
+  <text x="810" y="550" class="subsection" fill="#000">📊 Statistics &amp; Discovery</text>
+  <text x="810" y="575" class="code" fill="#000">status_show</text>
+  <text x="810" y="590" class="small" fill="#666">Site stats: dataset count, users</text>
+  <text x="810" y="610" class="code" fill="#000">package_autocomplete?q={prefix}</text>
+  <text x="810" y="625" class="small" fill="#666">Search suggestions</text>
+  <text x="810" y="645" class="code" fill="#000">resource_show?id={resource_id}</text>
+  <text x="810" y="660" class="small" fill="#666">Individual file details</text>
+  <text x="810" y="680" class="code" fill="#000">recently_changed_packages_activity_list</text>
+  <text x="810" y="695" class="small" fill="#666">Recent updates feed</text>
+  <text x="810" y="715" class="small" fill="#2196f3" font-weight="bold">Monitoring &amp; discovery tools</text>
+
+  <!-- API Examples -->
+  <rect x="40" y="750" width="1120" height="120" fill="white" stroke="#2196F3" stroke-width="2" rx="8"/>
+  <text x="50" y="775" class="subsection" fill="#2196F3">⚡ Working API Examples (Tested 2025-08-21)</text>
+  <text x="50" y="795" class="code" fill="#000">curl "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_list" | jq .</text>
+  <text x="50" y="810" class="small" fill="#666">Returns: JSON array of 523 dataset IDs</text>
+  <text x="50" y="830" class="code" fill="#000">curl "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/organization_show?id=city-of-toronto"</text>
+  <text x="50" y="845" class="small" fill="#666">Returns: Organization details with package count</text>
+  <text x="50" y="860" class="small" fill="#4caf50" font-weight="bold">All endpoints return JSON, no authentication required for public data</text>
+
+  <!-- Technical Architecture Section -->
+  <rect x="20" y="900" width="1160" height="350" class="tech-box" rx="10"/>
+  <text x="40" y="930" class="section-title" fill="#9c27b0">🏗️ Technical Architecture &amp; Integration</text>
+
+  <!-- Architecture Components -->
+  <rect x="40" y="950" width="360" height="140" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="970" class="subsection" fill="#000">🔧 CKAN Stack Components</text>
+  <text x="50" y="990" class="small" fill="#000">• Python Flask web framework</text>
+  <text x="50" y="1005" class="small" fill="#000">• PostgreSQL database</text>
+  <text x="50" y="1020" class="small" fill="#000">• Apache Solr search engine</text>
+  <text x="50" y="1035" class="small" fill="#000">• Redis caching layer</text>
+  <text x="50" y="1050" class="small" fill="#000">• Nginx web server</text>
+  <text x="50" y="1065" class="small" fill="#000">• FileStore for uploads</text>
+  <text x="50" y="1080" class="small" fill="#9c27b0">Modern, scalable architecture</text>
+
+  <rect x="420" y="950" width="360" height="140" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="430" y="970" class="subsection" fill="#000">🔌 API Integration Patterns</text>
+  <text x="430" y="990" class="small" fill="#000">• RESTful endpoints (GET/POST)</text>
+  <text x="430" y="1005" class="small" fill="#000">• JSON request/response format</text>
+  <text x="430" y="1020" class="small" fill="#000">• HTTP status codes (200, 404, 500)</text>
+  <text x="430" y="1035" class="small" fill="#000">• CORS enabled for web apps</text>
+  <text x="430" y="1050" class="small" fill="#000">• Rate limiting (undocumented)</text>
+  <text x="430" y="1065" class="small" fill="#000">• Pagination for large results</text>
+  <text x="430" y="1080" class="small" fill="#9c27b0">Developer-friendly design</text>
+
+  <rect x="800" y="950" width="360" height="140" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="810" y="970" class="subsection" fill="#000">💻 Our Integration Approach</text>
+  <text x="810" y="990" class="small" fill="#000">• Bulk dataset enumeration</text>
+  <text x="810" y="1005" class="small" fill="#000">• Metadata extraction pipeline</text>
+  <text x="810" y="1020" class="small" fill="#000">• Local CSV generation</text>
+  <text x="810" y="1035" class="small" fill="#000">• CORS workaround implementation</text>
+  <text x="810" y="1050" class="small" fill="#000">• Unified data model creation</text>
+  <text x="810" y="1065" class="small" fill="#000">• React frontend integration</text>
+  <text x="810" y="1080" class="small" fill="#9c27b0">End-to-end solution</text>
+
+  <!-- Data Flow -->
+  <rect x="40" y="1110" width="1120" height="130" fill="white" stroke="#9c27b0" stroke-width="1" rx="5"/>
+  <text x="50" y="1130" class="subsection" fill="#000">🔄 Data Flow: CKAN to Our Dashboard</text>
+  
+  <!-- Flow Steps -->
+  <rect x="60" y="1150" width="140" height="40" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="3"/>
+  <text x="130" y="1175" text-anchor="middle" class="small" fill="#000">1. CKAN API</text>
+
+  <rect x="220" y="1150" width="140" height="40" fill="#e8f5e8" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="290" y="1175" text-anchor="middle" class="small" fill="#000">2. Python Script</text>
+
+  <rect x="380" y="1150" width="140" height="40" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="3"/>
+  <text x="450" y="1175" text-anchor="middle" class="small" fill="#000">3. CSV Generation</text>
+
+  <rect x="540" y="1150" width="140" height="40" fill="#fce4ec" stroke="#e91e63" stroke-width="1" rx="3"/>
+  <text x="610" y="1175" text-anchor="middle" class="small" fill="#000">4. Data Modeling</text>
+
+  <rect x="700" y="1150" width="140" height="40" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="770" y="1175" text-anchor="middle" class="small" fill="#000">5. React Frontend</text>
+
+  <rect x="860" y="1150" width="140" height="40" fill="#e0f2f1" stroke="#00796b" stroke-width="1" rx="3"/>
+  <text x="930" y="1175" text-anchor="middle" class="small" fill="#000">6. User Interface</text>
+
+  <!-- Arrows -->
+  <path d="M 200 1170 L 220 1170" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow-small)"/>
+  <path d="M 360 1170 L 380 1170" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow-small)"/>
+  <path d="M 520 1170 L 540 1170" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow-small)"/>
+  <path d="M 680 1170 L 700 1170" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow-small)"/>
+  <path d="M 840 1170 L 860 1170" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrow-small)"/>
+
+  <text x="50" y="1210" class="small" fill="#666">523 datasets → Unified model → 344 dimensions → Interactive visualization</text>
+  <text x="50" y="1225" class="small" fill="#9c27b0" font-weight="bold">Seamless integration from CKAN API to user-friendly interface</text>
+
+  <!-- Best Practices Section -->
+  <rect x="20" y="1270" width="1160" height="310" class="success-box" rx="10"/>
+  <text x="40" y="1300" class="section-title" fill="#4caf50">💡 CKAN Integration Best Practices</text>
+
+  <rect x="40" y="1320" width="360" height="120" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="50" y="1340" class="subsection" fill="#000">⚡ Performance Optimization</text>
+  <text x="50" y="1360" class="small" fill="#000">• Batch API calls when possible</text>
+  <text x="50" y="1375" class="small" fill="#000">• Cache responses locally</text>
+  <text x="50" y="1390" class="small" fill="#000">• Use pagination for large results</text>
+  <text x="50" y="1405" class="small" fill="#000">• Implement retry logic</text>
+  <text x="50" y="1420" class="small" fill="#000">• Monitor rate limits</text>
+  <text x="50" y="1435" class="small" fill="#4caf50">Minimize API load</text>
+
+  <rect x="420" y="1320" width="360" height="120" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="430" y="1340" class="subsection" fill="#000">🛡️ Error Handling</text>
+  <text x="430" y="1360" class="small" fill="#000">• Handle HTTP status codes</text>
+  <text x="430" y="1375" class="small" fill="#000">• Validate JSON responses</text>
+  <text x="430" y="1390" class="small" fill="#000">• Graceful degradation</text>
+  <text x="430" y="1405" class="small" fill="#000">• Fallback to cached data</text>
+  <text x="430" y="1420" class="small" fill="#000">• Log errors appropriately</text>
+  <text x="430" y="1435" class="small" fill="#4caf50">Robust integration</text>
+
+  <rect x="800" y="1320" width="360" height="120" fill="white" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="810" y="1340" class="subsection" fill="#000">🔐 Security Considerations</text>
+  <text x="810" y="1360" class="small" fill="#000">• HTTPS only for API calls</text>
+  <text x="810" y="1375" class="small" fill="#000">• Sanitize user search inputs</text>
+  <text x="810" y="1390" class="small" fill="#000">• Validate dataset IDs</text>
+  <text x="810" y="1405" class="small" fill="#000">• Handle CORS properly</text>
+  <text x="810" y="1420" class="small" fill="#000">• No API keys in frontend</text>
+  <text x="810" y="1435" class="small" fill="#4caf50">Secure by design</text>
+
+  <!-- Summary -->
+  <rect x="40" y="1460" width="1120" height="110" fill="white" stroke="#4caf50" stroke-width="2" rx="8"/>
+  <text x="60" y="1485" class="subsection" fill="#4caf50">✅ CKAN Platform Summary</text>
+  <text x="60" y="1505" class="text" fill="#000">CKAN provides Toronto with a world-class, standards-compliant data portal platform.</text>
+  <text x="60" y="1520" class="text" fill="#000">The Action API v3 offers comprehensive programmatic access to all 523 datasets.</text>
+  <text x="60" y="1535" class="text" fill="#000">Our integration approach leverages CKAN's strengths while solving CORS limitations</text>
+  <text x="60" y="1550" class="text" fill="#4caf50" font-weight="bold">through local data processing, enabling seamless dashboard functionality.</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-small" markerWidth="8" markerHeight="8" refX="7" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,4 L7,2 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

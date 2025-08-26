@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOX Compliance Dashboard - Interactive Prototype</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            text-align: center;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        /* Navigation Styles */
+        .nav-bar {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            padding: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-item {
+            padding: 10px 15px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-1px);
+        }
+
+        .nav-item.active {
+            background: rgba(255,255,255,0.3);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 25px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #3498db;
+            font-size: 12px;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 30px 0;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .timeline-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        .progress-bar-container {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 40px;
+            background: #ecf0f1;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            border-radius: 20px;
+            width: 40%;
+            position: relative;
+            transition: width 2s ease-in-out;
+            animation: progressPulse 2s infinite;
+        }
+
+        @keyframes progressPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .milestones {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .milestone {
+            text-align: center;
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .milestone-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .milestone-circle:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .milestone-circle.complete {
+            background: #27ae60;
+            box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.3);
+        }
+
+        .milestone-circle.current {
+            background: #f39c12;
+            box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .milestone-circle.pending {
+            background: #95a5a6;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(243, 156, 18, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(243, 156, 18, 0); }
+        }
+
+        .milestone-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .milestone-status {
+            font-size: 9px;
+            font-weight: 500;
+        }
+
+        .milestone-status.complete { color: #27ae60; }
+        .milestone-status.current { color: #f39c12; }
+        .milestone-status.pending { color: #95a5a6; }
+
+        /* Dashboard Cards */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            padding: 20px 25px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .card-header.metrics { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+        .card-header.phase { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); }
+        .card-header.team { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .metric-item {
+            margin-bottom: 20px;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .metric-value.success { color: #27ae60; }
+        .metric-value.warning { color: #f39c12; }
+        .metric-value.danger { color: #e74c3c; }
+
+        .metric-description {
+            font-size: 11px;
+            color: #7f8c8d;
+        }
+
+        .risk-indicator {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .risk-indicator.medium {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+        }
+
+        .phase-progress {
+            margin: 15px 0;
+        }
+
+        .phase-progress-bar {
+            width: 100%;
+            height: 12px;
+            background: #ecf0f1;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .phase-progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            width: 70%;
+            border-radius: 6px;
+            transition: width 1.5s ease-in-out;
+        }
+
+        .phase-details {
+            list-style: none;
+        }
+
+        .phase-details li {
+            font-size: 11px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .phase-details li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .alert {
+            background: #fff5f5;
+            border: 1px solid #fed7d7;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 15px;
+        }
+
+        .alert-title {
+            font-size: 11px;
+            font-weight: 600;
+            color: #e53e3e;
+            margin-bottom: 5px;
+        }
+
+        .alert-text {
+            font-size: 10px;
+            color: #2c3e50;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .member-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 auto 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .member-avatar.available { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); }
+        .member-avatar.busy { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .member-avatar.overloaded { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+        .member-avatar.training { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+        .member-name {
+            font-size: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .member-status {
+            font-size: 9px;
+            font-weight: 500;
+        }
+
+        .member-status.available { color: #27ae60; }
+        .member-status.busy { color: #f39c12; }
+        .member-status.overloaded { color: #e74c3c; }
+        .member-status.training { color: #3498db; }
+
+        .utilization-bar {
+            width: 100%;
+            height: 15px;
+            background: #ecf0f1;
+            border-radius: 7px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .utilization-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            width: 80%;
+            border-radius: 7px;
+            transition: width 1.5s ease-in-out;
+        }
+
+        /* Action Buttons */
+        .action-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .action-btn {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .action-btn.primary { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+        .action-btn.success { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); }
+        .action-btn.warning { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .action-btn.purple { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .milestones {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .milestone {
+                flex: 0 0 calc(50% - 7.5px);
+            }
+
+            .action-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Interactive Elements */
+        .clickable {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .clickable:hover {
+            opacity: 0.8;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+        }
+
+        /* Status Indicators */
+        .status-online {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #27ae60;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: statusPulse 2s infinite;
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>SOX Compliance Dashboard</h1>
+            <p>Cradle-to-Grave Process Management System</p>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-items">
+                    <div class="nav-item active" data-section="overview">Overview</div>
+                    <div class="nav-item" data-section="planning">Planning</div>
+                    <div class="nav-item" data-section="foundation">Foundation</div>
+                    <div class="nav-item" data-section="execution">Execution</div>
+                    <div class="nav-item" data-section="optimize">Optimize</div>
+                    <div class="nav-item" data-section="scaling">Scaling</div>
+                    <div class="nav-item" data-section="templates">Templates</div>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">JS</div>
+                    <span>John Smith (Executive)</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Timeline Section -->
+            <section class="timeline-section loading">
+                <h2 class="timeline-title">SOX Implementation Timeline</h2>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                            <div class="progress-text">40% Complete - Foundation Phase</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="milestones">
+                    <div class="milestone">
+                        <div class="milestone-circle complete tooltip clickable" data-tooltip="Planning phase completed successfully"></div>
+                        <div class="milestone-label">Planning</div>
+                        <div class="milestone-status complete">✓ Complete</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-circle current tooltip clickable" data-tooltip="Foundation phase 70% complete"></div>
+                        <div class="milestone-label">Foundation</div>
+                        <div class="milestone-status current">In Progress</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-circle pending tooltip clickable" data-tooltip="Execution phase scheduled to start Week 37"></div>
+                        <div class="milestone-label">Execution</div>
+                        <div class="milestone-status pending">Pending</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-circle pending tooltip clickable" data-tooltip="Optimization phase scheduled for Week 73"></div>
+                        <div class="milestone-label">Optimize</div>
+                        <div class="milestone-status pending">Pending</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-circle pending tooltip clickable" data-tooltip="Scaling phase for implementation 2"></div>
+                        <div class="milestone-label">Scaling</div>
+                        <div class="milestone-status pending">Pending</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Cards -->
+            <div class="dashboard-grid">
+                <!-- Key Metrics Card -->
+                <div class="card loading">
+                    <div class="card-header metrics">Key Metrics</div>
+                    <div class="card-body">
+                        <div class="metric-item">
+                            <div class="metric-label">Budget Status:</div>
+                            <div class="metric-value success">$1.2M / $1.5M</div>
+                            <div class="metric-description">80% utilized, on track</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Timeline:</div>
+                            <div class="metric-value warning">Week 28 / 72</div>
+                            <div class="metric-description">39% complete, 2 weeks behind</div>
+                        </div>
+                        <div class="risk-indicator medium tooltip" data-tooltip="Medium risk due to SAP integration delays">
+                            MED
+                        </div>
+                        <div style="text-align: center; font-size: 11px; color: #7f8c8d; margin-top: 10px;">Risk Level</div>
+                    </div>
+                </div>
+
+                <!-- Current Phase Card -->
+                <div class="card loading">
+                    <div class="card-header phase">Current Phase: Foundation</div>
+                    <div class="card-body">
+                        <div class="metric-label">Layer 2: Business Configuration</div>
+                        <div class="phase-progress">
+                            <div class="phase-progress-bar">
+                                <div class="phase-progress-fill"></div>
+                            </div>
+                            <div style="text-align: right; font-size: 12px; color: #27ae60; font-weight: 600; margin-top: 5px;">70%</div>
+                        </div>
+                        <ul class="phase-details">
+                            <li>Control library creation: 35/47 controls complete</li>
+                            <li>AI template generation: Learning from patterns</li>
+                            <li>User training: 28/47 users certified</li>
+                        </ul>
+                        <div class="alert">
+                            <div class="alert-title">⚠ Attention Required:</div>
+                            <div class="alert-text">SAP integration 2 weeks behind schedule</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Status Card -->
+                <div class="card loading">
+                    <div class="card-header team">Team Status</div>
+                    <div class="card-body">
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-avatar available tooltip" data-tooltip="Available for new assignments">JS</div>
+                                <div class="member-name">John Smith</div>
+                                <div class="member-status available">Available</div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar busy tooltip" data-tooltip="Working on control documentation">MD</div>
+                                <div class="member-name">Mary Davis</div>
+                                <div class="member-status busy">Busy</div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar overloaded tooltip" data-tooltip="Needs support - handling SAP integration issues">RJ</div>
+                                <div class="member-name">Robert Jones</div>
+                                <div class="member-status overloaded">Overloaded</div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar training tooltip" data-tooltip="Currently in SOX certification training">SK</div>
+                                <div class="member-name">Sarah Kim</div>
+                                <div class="member-status training">Training</div>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-label" style="margin-top: 20px;">Team Utilization:</div>
+                        <div class="utilization-bar">
+                            <div class="utilization-fill"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 5px;">
+                            <span style="font-size: 11px; color: #7f8c8d;">Current Load</span>
+                            <span style="font-size: 12px; color: #f39c12; font-weight: 600;">80% (High)</span>
+                        </div>
+                        <div style="font-size: 11px; color: #7f8c8d; margin-top: 10px;">
+                            Recommendation: Add 1 analyst for Q4
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Panel -->
+            <section class="action-panel loading">
+                <div class="action-grid">
+                    <button class="action-btn primary clickable" onclick="drillDown()">
+                        📊 Drill Down
+                    </button>
+                    <button class="action-btn success clickable" onclick="exportReport()">
+                        📄 Export Report
+                    </button>
+                    <button class="action-btn warning clickable" onclick="scheduleMeeting()">
+                        📅 Schedule Meeting
+                    </button>
+                    <button class="action-btn purple clickable" onclick="showAIInsights()">
+                        🤖 AI Insights
+                    </button>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid #ecf0f1;">
+                    <div>
+                        <div style="font-size: 12px; font-weight: 600; color: #2c3e50; margin-bottom: 5px;">Quick Stats:</div>
+                        <div style="font-size: 10px; color: #27ae60;">• 127 tasks completed this week</div>
+                        <div style="font-size: 10px; color: #3498db;">• 23 AI recommendations generated</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; font-weight: 600; color: #2c3e50; margin-bottom: 5px;">System Status:</div>
+                        <div style="display: flex; align-items: center; font-size: 10px; color: #27ae60;">
+                            <span class="status-online"></span>
+                            All systems operational
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // Animation and Interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loading animation delay
+            const loadingElements = document.querySelectorAll('.loading');
+            loadingElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.style.animationDelay = `${index * 200}ms`;
+                }, 100);
+            });
+
+            // Navigation functionality
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Simulate section switching
+                    const section = this.dataset.section;
+                    console.log(`Switching to section: ${section}`);
+                    
+                    // Add some visual feedback
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Milestone interactions
+            const milestones = document.querySelectorAll('.milestone-circle');
+            milestones.forEach(milestone => {
+                milestone.addEventListener('click', function() {
+                    // Simulate milestone detail view
+                    const status = this.classList.contains('complete') ? 'Complete' : 
+                                  this.classList.contains('current') ? 'In Progress' : 'Pending';
+                    showNotification(`Milestone Status: ${status}`, 'info');
+                });
+            });
+
+            // Team member interactions
+            const teamMembers = document.querySelectorAll('.member-avatar');
+            teamMembers.forEach(member => {
+                member.addEventListener('click', function() {
+                    const name = this.parentElement.querySelector('.member-name').textContent;
+                    const status = this.parentElement.querySelector('.member-status').textContent;
+                    showNotification(`${name} - Status: ${status}`, 'info');
+                });
+            });
+
+            // Animate progress bars on load
+            setTimeout(() => {
+                const progressFill = document.querySelector('.progress-fill');
+                const phaseFill = document.querySelector('.phase-progress-fill');
+                const utilizationFill = document.querySelector('.utilization-fill');
+                
+                if (progressFill) progressFill.style.width = '40%';
+                if (phaseFill) phaseFill.style.width = '70%';
+                if (utilizationFill) utilizationFill.style.width = '80%';
+            }, 1000);
+        });
+
+        // Action button functions
+        function drillDown() {
+            showNotification('Opening detailed view...', 'success');
+            // Simulate loading detailed view
+            setTimeout(() => {
+                console.log('Drill down view would load here');
+            }, 500);
+        }
+
+        function exportReport() {
+            showNotification('Generating SOX progress report...', 'info');
+            // Simulate report generation
+            setTimeout(() => {
+                showNotification('Report exported successfully!', 'success');
+            }, 2000);
+        }
+
+        function scheduleMeeting() {
+            showNotification('Opening calendar integration...', 'info');
+            // Simulate calendar integration
+            setTimeout(() => {
+                console.log('Calendar integration would open here');
+            }, 500);
+        }
+
+        function showAIInsights() {
+            showNotification('Loading AI recommendations...', 'info');
+            // Simulate AI insights
+            setTimeout(() => {
+                const insights = [
+                    'Consider adding 1 senior analyst to reduce timeline risk',
+                    'SAP integration can be accelerated with external consultant',
+                    'Inventory controls show 95% automation potential',
+                    'User adoption rate will improve with additional training'
+                ];
+                const randomInsight = insights[Math.floor(Math.random() * insights.length)];
+                showNotification(`AI Insight: ${randomInsight}`, 'success');
+            }, 1500);
+        }
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 20px;
+                border-radius: 8px;
+                color: white;
+                font-weight: 500;
+                font-size: 14px;
+                z-index: 10000;
+                max-width: 350px;
+                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+                transform: translateX(400px);
+                transition: all 0.3s ease;
+            `;
+
+            switch(type) {
+                case 'success':
+                    notification.style.background = 'linear-gradient(135deg, #27ae60 0%, #2ecc71 100%)';
+                    break;
+                case 'warning':
+                    notification.style.background = 'linear-gradient(135deg, #f39c12 0%, #e67e22 100%)';
+                    break;
+                case 'error':
+                    notification.style.background = 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)';
+                    break;
+                default:
+                    notification.style.background = 'linear-gradient(135deg, #3498db 0%, #2980b9 100%)';
+            }
+
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+
+            // Auto remove
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 4000);
+        }
+
+        // Simulate real-time updates
+        setInterval(() => {
+            const onlineIndicator = document.querySelector('.status-online');
+            if (onlineIndicator) {
+                onlineIndicator.style.opacity = onlineIndicator.style.opacity === '0.5' ? '1' : '0.5';
+            }
+        }, 1000);
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'd':
+                        e.preventDefault();
+                        drillDown();
+                        break;
+                    case 'e':
+                        e.preventDefault();
+                        exportReport();
+                        break;
+                    case 'm':
+                        e.preventDefault();
+                        scheduleMeeting();
+                        break;
+                    case 'i':
+                        e.preventDefault();
+                        showAIInsights();
+                        break;
+                }
+            }
+        });
+
+        // Welcome message
+        setTimeout(() => {
+            showNotification('Welcome to SOX Dashboard! Use Ctrl+D for drill-down, Ctrl+E for export.', 'info');
+        }, 2000);
+    </script>
+</body>
+</html>
